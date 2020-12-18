@@ -645,8 +645,10 @@ def get_qr_base64():
             "qr": qr
         })
     except NoSuchElementException:
+        phone = g.driver.get_id().replace("\"", "").replace("@c.us", "")
         return jsonify({
             "success": True,
+            "msisdn": phone,
             "isLoggedIn": True,
             "qr": None
         })
@@ -682,7 +684,6 @@ def get_chats():
     """Return all the chats"""
     result = g.driver.get_all_chats()
     return jsonify(result)
-
 
 @app.route("/chats/<chat_id>/messages", methods=["GET"])
 @login_required

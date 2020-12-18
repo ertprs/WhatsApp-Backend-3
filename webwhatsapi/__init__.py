@@ -317,6 +317,9 @@ class WhatsAPIDriver(object):
         """Returns if user's phone is connected to the internet."""
         return self.wapi_functions.isConnected()
 
+    def get_id(self):
+        return self.driver.execute_script("return window.localStorage['last-wid'];")
+
     def wait_for_login(self, timeout=90):
         """
         Waits for the app to log in or for the QR to appear
