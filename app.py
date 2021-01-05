@@ -137,6 +137,7 @@ class NewMessageObserver:
 # Flask Application
 app = Flask(__name__)
 app.json_encoder = WhatsAPIJSONEncoder
+logging.basicConfig(filename='whatsapp_development.log', level=logging.INFO, format='%(asctime)s  %(levelname)s : %(message)s')
 
 # Logger
 logger = None
@@ -152,6 +153,8 @@ semaphores = dict()
 SANDBOX_URL = "http://r2mp-sandbox.rancardmobility.com"
 PRODUCTION_URL = "http://r2mp.rancard.com"
 LOCAL = "http://localhost:8080"
+
+SERVER = LOCAL
 
 # API key needed for auth with this API, change as per usage
 API_KEY = "5ohsRCA8os7xW7arVagm3O861lMZwFfl"
@@ -284,6 +287,52 @@ def init_timer(client_id):
     # Create a timer to call check_new_message function after every 2 seconds.
     # client_id param is needed to be passed to check_new_message
     timers[client_id] = RepeatedTimer(2, check_new_messages, client_id)
+
+def init_login_timer(client_id):
+    """Create a timer for the client driver to watch for events
+
+    @param client_id: ID of clinet user
+    """
+    if client_id in timers and timers[client_id]:
+        timers[client_id].start()
+        return
+    # Create a timer to call check_new_message function after every 2 seconds.
+    # client_id param is needed to be passed to check_new_message
+    timers[client_id] = RepeatedTimer(2, serve_user_login, client_id)
+
+def serve_user_login(client_id):
+    """Check if user is logged in and send them to the custom api
+
+    @param client_id: ID of client user
+    """
+
+    try:
+        """ Get qr as base64 string"""
+
+        qr = drivers[client_id].get_qr_base64()
+        body = {
+            'success': True,
+            'appId': client_id,
+            'isLoggedIn': False,
+            'qr': qr
+        }
+        response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
+    except NoSuchElementException:
+        phone = drivers[client_id].get_id().replace("\"", "").replace("@c.us", "")
+        body = {
+            'success': True,
+            'isLoggedIn': True,
+            'appId': client_id,
+            "msisdn": phone,
+            "qr": None
+        }
+        try:
+            timers[client_id].stop()
+            timers[client_id] = None
+        except:
+            pass
+        response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
+
 
 
 def check_new_messages(client_id):
@@ -496,6 +545,7 @@ def release_semaphore(client_id):
 
 @app.before_request
 def before_request():
+    logging.info("New Request")
     """This runs before every API request. The function take cares of creating
     driver object is not already created. Also it checks for few prerequisits
     parameters and set global variables for other functions to use
@@ -504,14 +554,11 @@ def before_request():
     auth-key: key string to identify valid request
     client_id: to identify for which client the request is to be run
     """
-    global logger
 
     if not request.url_rule:
         abort(404)
 
-    if logger == None:
-        create_logger()
-    logger.info("API call " + request.method + " " + request.url)
+    logging.info("API call " + request.method + " " + request.ur)
 
     auth_key = request.headers.get("auth-key")
     g.client_id = request.headers.get("client_id")
@@ -519,33 +566,45 @@ def before_request():
 
     if API_KEY and auth_key != API_KEY:
         abort(401, "you must send valid auth-key")
+        logging.error("You must send a valid auth key")
         raise Exception()
 
     if not g.client_id and rule_parent != "admin":
         abort(400, "client ID is mandatory")
+        logging.error("you must send a valid auth ey")
 
+    logging.info("About acquiring semaphore for client" + g.client_id)
     acquire_semaphore(g.client_id)
 
     # Create a driver object if not exist for client requests.
+
     if rule_parent != "admin":
         if g.client_id not in drivers:
+            logging.info("About to initialise new driver ")
             drivers[g.client_id] = init_client(g.client_id)
 
         g.driver = drivers[g.client_id]
         g.driver_status = WhatsAPIDriverStatus.Unknown
 
+
         if g.driver is not None:
-            g.driver_status = g.driver.get_status()
+            logging.info("About getting driver status")
+            # g.driver_status = WhatsAPIDriverStatus.Unknown
+            # g.driver_status = g.driver.get_status()
+            logging.info("Driver Status - " + g.driver_status)
 
         # If driver status is unkown, means driver has closed somehow, reopen it
+        logging.info("Checking if driver is unknown")
         if (
                 g.driver_status != WhatsAPIDriverStatus.NotLoggedIn
                 and g.driver_status != WhatsAPIDriverStatus.LoggedIn
         ):
+            logging.info("Re-initiaising driver")
             drivers[g.client_id] = init_client(g.client_id)
-            g.driver_status = g.driver.get_status()
+            # g.driver_status = g.driver.get_status()
 
         # init_timer(g.client_id)
+        logging.info("subscribing to new messages")
         g.driver.subscribe_new_messages(NewMessageObserver(g.client_id))
 
 
@@ -633,12 +692,30 @@ def get_qr():
     qr = g.driver.get_qr_plain()
     return jsonify({"qr": qr})
 
+@app.route("/screen/qr/request", methods=["POST"])
+def begin_login_timer():
+    logging.info("QR requested")
+    """ Initialise login timer """
+    try:
+        init_login_timer(g.client_id)
+        logging.info("Timer initialised")
+        return jsonify({
+            "success": True
+        })
+    except Exception:
+        logging.error("Timer initialisation failed")
+        return jsonify({
+            "success": False
+        })
+
 
 @app.route("/screen/qr/base64", methods=["GET"])
 def get_qr_base64():
+    logging.info("QR code in base64 requested")
     """ Get qr as base64 string"""
     try:
         qr = g.driver.get_qr_base64()
+        logging.info("Successfully returning QR code as base 64 string")
         return jsonify({
             "success": True,
             "isLoggedIn": False,
@@ -646,6 +723,7 @@ def get_qr_base64():
         })
     except NoSuchElementException:
         phone = g.driver.get_id().replace("\"", "").replace("@c.us", "")
+        logging.info("User is logged In, Successfully returning phone number")
         return jsonify({
             "success": True,
             "msisdn": phone,
@@ -722,6 +800,7 @@ def send_message(chat_id):
         res = send_media(chat_id, request)
     else:
         message = request.form.get("message")
+        logging.info("Sending :" +message + "to " + chat_id)
         res = g.driver.chat_send_message(chat_id, message)
 
     if res:
@@ -781,10 +860,10 @@ def run_clients():
     return jsonify(result)
 
 
-@app.route("/admin/clients", methods=["DELETE"])
+@app.route("/admin/client", methods=["DELETE"])
 def kill_clients():
     """Force kill driver and other objects for a perticular clien"""
-    clients = request.form.get("clients").split(",")
+    clients = request.form.get("clients")
     kill_dead = request.args.get("kill_dead", default=False)
     kill_dead = kill_dead and kill_dead in ["true", "1"]
 
