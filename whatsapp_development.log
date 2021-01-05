@@ -1,21 +1,246 @@
-2021-01-05 12:09:49,725|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
-2021-01-05 12:10:52,505|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
-2021-01-05 12:11:51,637|INFO|API call DELETE http://0.0.0.0:8888/admin/clients
-2021-01-05 12:16:14,227|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
-2021-01-05 12:18:50,173|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
-2021-01-05 12:20:01,893|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
-2021-01-05 12:20:54,715|INFO|API call DELETE http://0.0.0.0:8888/admin/clients
-2021-01-05 12:30:45,530|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
-2021-01-05 12:32:16,609|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
-2021-01-05 12:33:16,454|INFO|API call DELETE http://0.0.0.0:8888/admin/clients
-2021-01-05 12:33:36,701|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
-2021-01-05 12:34:10,614|INFO|API call DELETE http://0.0.0.0:8888/admin/clients
-2021-01-05 12:44:54,876|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
-2021-01-05 12:47:14,232|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
-2021-01-05 12:48:47,313|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
-2021-01-05 12:55:44,002|INFO|API call DELETE http://0.0.0.0:8888/admin/client
-2021-01-05 12:56:55,829|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
-2021-01-05 12:58:48,588|INFO|API call DELETE http://0.0.0.0:8888/admin/client
-2021-01-05 12:59:28,789|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
-2021-01-05 13:00:43,792|INFO|API call DELETE http://0.0.0.0:8888/admin/client
-2021-01-05 13:04:58,363|INFO|API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 14:54:06,360  WARNING :  * Debugger is active!
+2021-01-05 14:54:06,361  INFO :  * Debugger PIN: 264-190-915
+2021-01-05 14:54:15,512  INFO :  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+2021-01-05 14:54:15,513  INFO :  * Restarting with stat
+2021-01-05 14:54:15,958  WARNING :  * Debugger is active!
+2021-01-05 14:54:15,959  INFO :  * Debugger PIN: 264-190-915
+2021-01-05 14:54:57,507  INFO :  * Detected change in '/home/rancard005/Development/Rancard/WhatsApp-Backend/app.py', reloading
+2021-01-05 14:54:57,605  INFO :  * Restarting with stat
+2021-01-05 14:54:58,108  WARNING :  * Debugger is active!
+2021-01-05 14:54:58,109  INFO :  * Debugger PIN: 264-190-915
+2021-01-05 14:55:20,679  INFO :  * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+2021-01-05 14:55:20,679  INFO :  * Restarting with stat
+2021-01-05 14:55:21,154  WARNING :  * Debugger is active!
+2021-01-05 14:55:21,155  INFO :  * Debugger PIN: 264-190-915
+New Request
+2021-01-05 14:57:27,091  INFO : New Request
+API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 14:57:27,093  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+About acquiring semaphore for client5fe496065390133d7cc8de33
+2021-01-05 14:57:27,093  INFO : About acquiring semaphore for client5fe496065390133d7cc8de33
+About to initialise new driver 
+2021-01-05 14:57:27,093  INFO : About to initialise new driver 
+2021-01-05 14:57:27,093  INFO : Checking for profile at /home/rancard005/Development/Rancard/WhatsApp-Backend/chrome_cache/5fe496065390133d7cc8de33
+2021-01-05 14:57:27,094  INFO : Starting webdriver
+About getting driver status
+2021-01-05 14:57:28,806  INFO : About getting driver status
+Driver Status - Unknown
+2021-01-05 14:57:28,806  INFO : Driver Status - Unknown
+Checking if driver is unknown
+2021-01-05 14:57:28,806  INFO : Checking if driver is unknown
+Re-initiaising driver
+2021-01-05 14:57:28,806  INFO : Re-initiaising driver
+subscribing to new messages
+2021-01-05 14:57:28,807  INFO : subscribing to new messages
+QR requested
+2021-01-05 14:57:28,807  INFO : QR requested
+Timer initialised
+2021-01-05 14:57:28,807  INFO : Timer initialised
+2021-01-05 14:57:28,808  INFO : 127.0.0.1 - - [05/Jan/2021 14:57:28] "[37mPOST /screen/qr/request HTTP/1.1[0m" 200 -
+2021-01-05 14:57:39,695  WARNING : Connection pool is full, discarding connection: 127.0.0.1
+2021-01-05 14:57:39,804  WARNING : Connection pool is full, discarding connection: 127.0.0.1
+2021-01-05 14:57:39,944  WARNING : Connection pool is full, discarding connection: 127.0.0.1
+2021-01-05 14:57:40,009  WARNING : Connection pool is full, discarding connection: 127.0.0.1
+2021-01-05 14:57:40,074  WARNING : Connection pool is full, discarding connection: 127.0.0.1
+New Request
+2021-01-05 14:57:55,859  INFO : New Request
+API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 14:57:55,860  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+About acquiring semaphore for client5fe496065390133d7cc8de33
+2021-01-05 14:57:55,861  INFO : About acquiring semaphore for client5fe496065390133d7cc8de33
+About getting driver status
+2021-01-05 14:57:55,861  INFO : About getting driver status
+Driver Status - Unknown
+2021-01-05 14:57:55,861  INFO : Driver Status - Unknown
+Checking if driver is unknown
+2021-01-05 14:57:55,861  INFO : Checking if driver is unknown
+Re-initiaising driver
+2021-01-05 14:57:55,861  INFO : Re-initiaising driver
+subscribing to new messages
+2021-01-05 14:57:55,861  INFO : subscribing to new messages
+QR requested
+2021-01-05 14:57:55,862  INFO : QR requested
+Timer initialised
+2021-01-05 14:57:55,862  INFO : Timer initialised
+2021-01-05 14:57:55,863  INFO : 127.0.0.1 - - [05/Jan/2021 14:57:55] "[37mPOST /screen/qr/request HTTP/1.1[0m" 200 -
+2021-01-05 14:58:46,704  INFO :  * Detected change in '/home/rancard005/Development/Rancard/WhatsApp-Backend/app.py', reloading
+2021-01-05 14:58:46,858  INFO :  * Restarting with stat
+New Request
+API call POST http://0.0.0.0:8888/screen/qr/request
+About acquiring semaphore for client5fe496065390133d7cc8de33
+About to initialise new driver 
+About getting driver status
+Driver Status - Unknown
+Checking if driver is unknown
+Re-initiaising driver
+subscribing to new messages
+QR requested
+Timer initialised
+New Request
+API call POST http://0.0.0.0:8888/screen/qr/request
+About acquiring semaphore for client5fe496065390133d7cc8de33
+About getting driver status
+Driver Status - Unknown
+Checking if driver is unknown
+Re-initiaising driver
+subscribing to new messages
+QR requested
+Timer initialised
+New Request
+API call POST http://0.0.0.0:8888/screen/qr/request
+About acquiring semaphore for client5fe496065390133d7cc8de33
+About getting driver status
+Driver Status - Unknown
+Checking if driver is unknown
+Re-initiaising driver
+subscribing to new messages
+QR requested
+Timer initialised
+New Request
+API call POST http://0.0.0.0:8888/screen/qr/request
+About acquiring semaphore for client5fe496065390133d7cc8de33
+About to initialise new driver 
+About getting driver status
+Driver Status - NotLoggedIn
+Checking if driver is unknown
+subscribing to new messages
+QR requested
+Timer initialised
+New Request
+API call POST http://0.0.0.0:8888/screen/qr/request
+About acquiring semaphore for client5fe496065390133d7cc8de33
+About to initialise new driver 
+About getting driver status
+Driver Status - NotLoggedIn
+Checking if driver is unknown
+subscribing to new messages
+QR requested
+Timer initialised
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+New Request
+API call POST http://0.0.0.0:8888/screen/qr/request
+About acquiring semaphore for client5fe496065390133d7cc8de33
+About to initialise new driver 
+About getting driver status
+Driver Status - NotLoggedIn
+Checking if driver is unknown
+subscribing to new messages
+QR requested
+Timer initialised
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Timer killed successfully
+Timer killed successfully
+Timer killed successfully
+Timer killed successfully
+Timer killed successfully
+Timer killed successfully
+New Request
+API call POST http://0.0.0.0:8888/screen/qr/request
+About acquiring semaphore for client5fe496065390133d7cc8de33
+About getting driver status
+Driver Status - LoggedIn
+Checking if driver is unknown
+subscribing to new messages
+QR requested
+Timer initialised
+Timer killed successfully
+Timer killed successfully
+Timer killed successfully
+Timer killed successfully
+Timer killed successfully
+Timer killed successfully
+New Request
+API call DELETE http://0.0.0.0:8888/admin/client
+About acquiring semaphore for client5fe496065390133d7cc8de33
+New Request
+API call POST http://0.0.0.0:8888/screen/qr/request
+About acquiring semaphore for client5fe496065390133d7cc8de33
+About to initialise new driver 
+About getting driver status
+Driver Status - NotLoggedIn
+Checking if driver is unknown
+subscribing to new messages
+QR requested
+Timer initialised
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Sending QR to server
+Timer killed successfully
+Error occurred trying to kill timer
+Error occurred trying to kill timer
+Error occurred trying to kill timer
+Error occurred trying to kill timer
+Error occurred trying to kill timer
+2021-01-05 15:25:19,344  INFO : New Request
+2021-01-05 15:25:19,346  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-05 15:25:19,347  INFO : About acquiring semaphore for client5fe496065390133d7cc8de33
+2021-01-05 15:25:29,234  INFO : New Request
+2021-01-05 15:25:29,235  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 15:25:29,235  INFO : About acquiring semaphore for client5fe496065390133d7cc8de33
+2021-01-05 15:25:29,235  INFO : About to initialise new driver 
+2021-01-05 15:25:31,006  INFO : About getting driver status
+2021-01-05 15:25:41,923  INFO : Driver Status - NotLoggedIn
+2021-01-05 15:25:41,923  INFO : Checking if driver is unknown
+2021-01-05 15:25:41,923  INFO : subscribing to new messages
+2021-01-05 15:25:41,924  INFO : QR requested
+2021-01-05 15:25:41,924  INFO : Timer initialised
+2021-01-05 15:25:43,989  INFO : Sending QR to server
+2021-01-05 15:25:45,971  INFO : Sending QR to server
+2021-01-05 15:25:48,023  INFO : Sending QR to server
+2021-01-05 15:25:49,988  INFO : Sending QR to server
+2021-01-05 15:25:51,989  INFO : Sending QR to server
+2021-01-05 15:25:54,009  INFO : Sending QR to server
+2021-01-05 15:25:55,994  INFO : Sending QR to server
