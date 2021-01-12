@@ -244,3 +244,2263 @@ Error occurred trying to kill timer
 2021-01-05 15:25:51,989  INFO : Sending QR to server
 2021-01-05 15:25:54,009  INFO : Sending QR to server
 2021-01-05 15:25:55,994  INFO : Sending QR to server
+2021-01-05 17:30:51,734  INFO : New Request
+2021-01-05 17:30:51,785  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 17:30:51,785  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 17:30:51,785  INFO : About to initialise new driver 
+2021-01-05 17:30:58,622  INFO : About getting driver status
+2021-01-05 17:31:08,650  INFO : Driver Status - NotLoggedIn
+2021-01-05 17:31:08,650  INFO : Checking if driver is unknown
+2021-01-05 17:31:08,650  INFO : subscribing to new messages
+2021-01-05 17:31:08,650  INFO : QR requested
+2021-01-05 17:31:08,650  INFO : Timer initialised
+2021-01-05 17:31:10,720  INFO : Sending QR to server
+2021-01-05 17:31:12,722  INFO : Sending QR to server
+2021-01-05 17:31:14,709  INFO : Sending QR to server
+2021-01-05 17:31:16,703  INFO : Sending QR to server
+2021-01-05 17:31:18,720  INFO : Sending QR to server
+2021-01-05 17:31:20,705  INFO : Sending QR to server
+2021-01-05 17:31:22,702  INFO : Sending QR to server
+2021-01-05 17:31:24,726  INFO : Sending QR to server
+2021-01-05 17:31:26,727  INFO : Sending QR to server
+2021-01-05 17:31:28,744  INFO : Sending QR to server
+2021-01-05 17:31:30,743  INFO : Sending QR to server
+2021-01-05 17:31:32,744  INFO : Sending QR to server
+2021-01-05 17:31:34,761  INFO : Sending QR to server
+2021-01-05 17:31:36,745  INFO : Sending QR to server
+2021-01-05 17:31:38,744  INFO : Sending QR to server
+2021-01-05 17:31:41,226  INFO : Sending QR to server
+2021-01-05 17:31:53,069  INFO : Timer killed successfully
+2021-01-05 17:31:58,438  INFO : New Request
+2021-01-05 17:31:58,439  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 17:31:58,439  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 17:31:58,439  INFO : About getting driver status
+2021-01-05 17:32:53,284  ERROR : Error occurred trying to kill timer
+2021-01-05 17:32:53,287  ERROR : Error occurred trying to kill timer
+2021-01-05 17:32:53,289  ERROR : Error occurred trying to kill timer
+2021-01-05 17:32:53,291  ERROR : Error occurred trying to kill timer
+2021-01-05 17:32:53,293  ERROR : Error occurred trying to kill timer
+2021-01-05 17:33:03,351  INFO : Driver Status - LoggedInAnotherBrowser
+2021-01-05 17:33:03,352  INFO : Checking if driver is unknown
+2021-01-05 17:33:03,352  INFO : Re-initiaising driver
+2021-01-05 17:33:14,771  INFO : New Request
+2021-01-05 17:33:14,771  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 17:33:14,772  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 17:33:23,439  INFO : subscribing to new messages
+2021-01-05 17:33:23,439  INFO : QR requested
+2021-01-05 17:33:23,439  INFO : Timer initialised
+2021-01-05 17:33:23,440  INFO : About getting driver status
+2021-01-05 17:34:33,721  INFO : Driver Status - LoggedInAnotherBrowser
+2021-01-05 17:34:33,721  INFO : Checking if driver is unknown
+2021-01-05 17:34:33,721  INFO : Re-initiaising driver
+2021-01-05 17:34:33,751  INFO : Timer killed successfully
+2021-01-05 17:34:33,781  ERROR : Error occurred trying to kill timer
+2021-01-05 17:34:33,807  ERROR : Error occurred trying to kill timer
+2021-01-05 17:34:33,841  ERROR : Error occurred trying to kill timer
+2021-01-05 17:34:33,873  ERROR : Error occurred trying to kill timer
+2021-01-05 17:35:08,300  INFO : New Request
+2021-01-05 17:35:08,301  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 17:35:08,302  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 17:35:18,303  INFO : About getting driver status
+2021-01-05 17:36:05,053  INFO : New Request
+2021-01-05 17:36:05,054  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 17:36:05,054  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 17:36:05,054  INFO : About to initialise new driver 
+2021-01-05 17:36:10,443  INFO : About getting driver status
+2021-01-05 17:36:23,558  INFO : Driver Status - NotLoggedIn
+2021-01-05 17:36:23,558  INFO : Checking if driver is unknown
+2021-01-05 17:36:23,559  INFO : subscribing to new messages
+2021-01-05 17:36:23,559  INFO : QR requested
+2021-01-05 17:36:23,559  INFO : Timer initialised
+2021-01-05 17:36:25,648  INFO : Sending QR to server
+2021-01-05 17:36:27,608  INFO : Sending QR to server
+2021-01-05 17:36:29,665  INFO : Sending QR to server
+2021-01-05 17:36:31,651  INFO : Sending QR to server
+2021-01-05 17:36:33,662  INFO : Sending QR to server
+2021-01-05 17:36:35,665  INFO : Sending QR to server
+2021-01-05 17:36:37,648  INFO : Sending QR to server
+2021-01-05 17:36:49,805  INFO : Timer killed successfully
+2021-01-05 17:37:40,056  ERROR : Error occurred trying to kill timer
+2021-01-05 17:37:40,061  ERROR : Error occurred trying to kill timer
+2021-01-05 17:37:40,067  ERROR : Error occurred trying to kill timer
+2021-01-05 17:37:40,067  ERROR : Error occurred trying to kill timer
+2021-01-05 17:37:40,076  ERROR : Error occurred trying to kill timer
+2021-01-05 17:42:27,275  INFO : New Request
+2021-01-05 17:42:27,276  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 17:42:27,276  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 17:42:27,276  INFO : About getting driver status
+2021-01-05 17:42:27,305  INFO : Driver Status - LoggedIn
+2021-01-05 17:42:27,305  INFO : Checking if driver is unknown
+2021-01-05 17:42:27,306  INFO : subscribing to new messages
+2021-01-05 17:42:27,306  INFO : QR requested
+2021-01-05 17:42:27,306  INFO : Timer initialised
+2021-01-05 17:42:39,405  INFO : Timer killed successfully
+2021-01-05 17:42:45,248  INFO : New Request
+2021-01-05 17:42:45,248  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 17:42:45,249  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 17:42:45,249  INFO : About getting driver status
+2021-01-05 17:43:21,121  INFO : New Request
+2021-01-05 17:43:21,121  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 17:43:21,122  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 17:43:29,623  INFO : Driver Status - LoggedIn
+2021-01-05 17:43:29,623  INFO : Checking if driver is unknown
+2021-01-05 17:43:29,623  INFO : subscribing to new messages
+2021-01-05 17:43:29,623  INFO : QR requested
+2021-01-05 17:43:29,623  INFO : Timer initialised
+2021-01-05 17:43:29,624  INFO : About getting driver status
+2021-01-05 17:43:29,628  INFO : Timer killed successfully
+2021-01-05 17:43:29,633  ERROR : Error occurred trying to kill timer
+2021-01-05 17:43:29,643  ERROR : Error occurred trying to kill timer
+2021-01-05 17:43:29,659  ERROR : Error occurred trying to kill timer
+2021-01-05 17:43:29,666  ERROR : Error occurred trying to kill timer
+2021-01-05 17:43:29,687  INFO : Driver Status - LoggedIn
+2021-01-05 17:43:29,687  INFO : Checking if driver is unknown
+2021-01-05 17:43:29,687  INFO : subscribing to new messages
+2021-01-05 17:43:29,687  INFO : QR requested
+2021-01-05 17:43:29,688  INFO : Timer initialised
+2021-01-05 17:43:41,838  INFO : Timer killed successfully
+2021-01-05 17:44:32,030  ERROR : Error occurred trying to kill timer
+2021-01-05 17:44:32,034  ERROR : Error occurred trying to kill timer
+2021-01-05 17:44:32,036  ERROR : Error occurred trying to kill timer
+2021-01-05 17:44:32,042  ERROR : Error occurred trying to kill timer
+2021-01-05 17:44:32,051  ERROR : Error occurred trying to kill timer
+2021-01-05 17:56:24,632  INFO : New Request
+2021-01-05 17:56:24,632  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-05 17:56:24,632  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 17:56:26,748  INFO : New Request
+2021-01-05 17:56:26,750  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 17:56:26,751  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 17:56:26,751  INFO : About getting driver status
+2021-01-05 17:56:26,780  INFO : Driver Status - LoggedIn
+2021-01-05 17:56:26,781  INFO : Checking if driver is unknown
+2021-01-05 17:56:26,781  INFO : subscribing to new messages
+2021-01-05 17:56:26,781  INFO : QR requested
+2021-01-05 17:56:26,782  INFO : Timer initialised
+2021-01-05 17:56:38,870  INFO : Timer killed successfully
+2021-01-05 17:57:29,074  ERROR : Error occurred trying to kill timer
+2021-01-05 17:57:29,079  ERROR : Error occurred trying to kill timer
+2021-01-05 17:57:29,084  ERROR : Error occurred trying to kill timer
+2021-01-05 17:57:29,089  ERROR : Error occurred trying to kill timer
+2021-01-05 17:57:29,096  ERROR : Error occurred trying to kill timer
+2021-01-05 18:00:32,510  INFO : New Request
+2021-01-05 18:00:32,510  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-05 18:00:32,510  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 18:00:44,443  INFO : New Request
+2021-01-05 18:00:44,444  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 18:00:44,444  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 18:00:44,444  INFO : About getting driver status
+2021-01-05 18:00:44,474  INFO : Driver Status - LoggedIn
+2021-01-05 18:00:44,474  INFO : Checking if driver is unknown
+2021-01-05 18:00:44,474  INFO : subscribing to new messages
+2021-01-05 18:00:44,475  INFO : QR requested
+2021-01-05 18:00:44,475  INFO : Timer initialised
+2021-01-05 18:00:56,625  INFO : Timer killed successfully
+2021-01-05 18:01:14,869  INFO : New Request
+2021-01-05 18:01:14,870  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-05 18:01:14,870  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 18:01:46,807  ERROR : Error occurred trying to kill timer
+2021-01-05 18:01:46,815  ERROR : Error occurred trying to kill timer
+2021-01-05 18:01:46,834  ERROR : Error occurred trying to kill timer
+2021-01-05 18:01:46,850  ERROR : Error occurred trying to kill timer
+2021-01-05 18:01:46,856  ERROR : Error occurred trying to kill timer
+2021-01-05 18:02:49,773  INFO : New Request
+2021-01-05 18:02:49,774  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-05 18:02:49,775  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-05 18:02:49,778  INFO : About to initialise new driver 
+2021-01-05 18:02:56,730  INFO : About getting driver status
+2021-01-05 18:03:06,778  INFO : Driver Status - NotLoggedIn
+2021-01-05 18:03:06,778  INFO : Checking if driver is unknown
+2021-01-05 18:03:06,779  INFO : subscribing to new messages
+2021-01-05 18:03:06,779  INFO : QR requested
+2021-01-05 18:03:06,779  INFO : Timer initialised
+2021-01-05 18:03:08,869  INFO : Sending QR to server
+2021-01-05 18:03:10,827  INFO : Sending QR to server
+2021-01-05 18:03:12,870  INFO : Sending QR to server
+2021-01-05 18:03:14,851  INFO : Sending QR to server
+2021-01-05 18:03:16,868  INFO : Sending QR to server
+2021-01-05 18:03:18,870  INFO : Sending QR to server
+2021-01-05 18:03:20,867  INFO : Sending QR to server
+2021-01-05 18:03:33,306  INFO : Timer killed successfully
+2021-01-05 18:04:23,487  ERROR : Error occurred trying to kill timer
+2021-01-05 18:04:23,497  ERROR : Error occurred trying to kill timer
+2021-01-05 18:04:23,522  ERROR : Error occurred trying to kill timer
+2021-01-05 18:04:23,528  ERROR : Error occurred trying to kill timer
+2021-01-05 18:04:23,544  ERROR : Error occurred trying to kill timer
+2021-01-05 18:26:16,157  INFO : New Request
+2021-01-05 18:29:22,109  INFO : New Request
+2021-01-05 18:29:23,609  INFO : New Request
+2021-01-05 18:29:29,760  INFO : New Request
+2021-01-05 20:14:47,099  INFO : New Request
+2021-01-05 22:57:35,832  INFO : New Request
+2021-01-05 22:57:51,834  INFO : New Request
+2021-01-05 23:01:37,002  INFO : New Request
+2021-01-06 00:05:26,203  INFO : New Request
+2021-01-06 00:05:38,177  INFO : New Request
+2021-01-06 00:06:02,757  INFO : New Request
+2021-01-06 00:30:36,014  INFO : New Request
+2021-01-06 08:32:54,150  INFO : New Request
+2021-01-06 08:32:55,183  INFO : New Request
+2021-01-06 08:36:22,424  INFO : New Request
+2021-01-06 10:00:32,568  INFO : New Request
+2021-01-06 10:00:32,594  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 10:00:32,594  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 10:34:45,710  INFO : New Request
+2021-01-06 10:34:45,731  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 10:34:45,731  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 10:34:57,185  INFO : New Request
+2021-01-06 10:34:57,187  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 10:34:57,187  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 10:35:03,923  INFO : New Request
+2021-01-06 10:35:04,505  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 10:35:04,505  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 10:36:46,874  INFO : New Request
+2021-01-06 10:36:46,875  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 10:36:46,875  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 10:36:57,068  INFO : New Request
+2021-01-06 10:36:57,068  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 10:36:57,069  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 10:38:14,989  INFO : New Request
+2021-01-06 10:38:14,990  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 10:38:14,990  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 10:42:11,715  INFO : New Request
+2021-01-06 10:42:11,715  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 10:42:11,716  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 10:42:18,568  INFO : New Request
+2021-01-06 10:42:18,568  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 10:42:18,568  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 10:56:15,397  INFO : New Request
+2021-01-06 10:56:15,414  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 10:56:15,415  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 10:57:00,079  INFO : New Request
+2021-01-06 10:57:00,080  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-06 10:57:00,080  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 10:57:00,080  INFO : About to initialise new driver 
+2021-01-06 10:57:10,055  INFO : About getting driver status
+2021-01-06 10:57:20,118  INFO : Driver Status - NotLoggedIn
+2021-01-06 10:57:20,118  INFO : Checking if driver is unknown
+2021-01-06 10:57:20,119  INFO : subscribing to new messages
+2021-01-06 10:57:20,119  INFO : QR requested
+2021-01-06 10:57:20,119  INFO : Timer initialised
+2021-01-06 10:57:22,216  INFO : Sending QR to server
+2021-01-06 10:57:24,216  INFO : Sending QR to server
+2021-01-06 10:57:26,178  INFO : Sending QR to server
+2021-01-06 10:57:28,262  INFO : Sending QR to server
+2021-01-06 10:57:30,309  INFO : Sending QR to server
+2021-01-06 10:57:32,197  INFO : Sending QR to server
+2021-01-06 10:57:34,219  INFO : Sending QR to server
+2021-01-06 10:57:36,213  INFO : Sending QR to server
+2021-01-06 10:57:38,216  INFO : Sending QR to server
+2021-01-06 10:57:40,216  INFO : Sending QR to server
+2021-01-06 10:57:42,214  INFO : Sending QR to server
+2021-01-06 10:57:44,215  INFO : Sending QR to server
+2021-01-06 10:57:46,216  INFO : Sending QR to server
+2021-01-06 10:57:48,217  INFO : Sending QR to server
+2021-01-06 10:57:50,216  INFO : Sending QR to server
+2021-01-06 10:57:52,230  INFO : Sending QR to server
+2021-01-06 10:57:54,250  INFO : Sending QR to server
+2021-01-06 10:57:56,249  INFO : Sending QR to server
+2021-01-06 10:57:58,216  INFO : Sending QR to server
+2021-01-06 10:58:00,228  INFO : Sending QR to server
+2021-01-06 10:58:02,230  INFO : Sending QR to server
+2021-01-06 10:58:04,225  INFO : Sending QR to server
+2021-01-06 10:58:06,228  INFO : Sending QR to server
+2021-01-06 10:58:08,229  INFO : Sending QR to server
+2021-01-06 10:58:10,230  INFO : Sending QR to server
+2021-01-06 10:58:12,215  INFO : Sending QR to server
+2021-01-06 10:58:14,230  INFO : Sending QR to server
+2021-01-06 10:58:16,228  INFO : Sending QR to server
+2021-01-06 10:58:18,228  INFO : Sending QR to server
+2021-01-06 10:58:20,228  INFO : Sending QR to server
+2021-01-06 10:58:22,231  INFO : Sending QR to server
+2021-01-06 10:58:24,229  INFO : Sending QR to server
+2021-01-06 10:58:26,225  INFO : Sending QR to server
+2021-01-06 10:58:38,274  INFO : Timer killed successfully
+2021-01-06 10:59:28,526  ERROR : Error occurred trying to kill timer
+2021-01-06 10:59:28,531  ERROR : Error occurred trying to kill timer
+2021-01-06 10:59:28,536  ERROR : Error occurred trying to kill timer
+2021-01-06 10:59:28,546  ERROR : Error occurred trying to kill timer
+2021-01-06 10:59:28,552  ERROR : Error occurred trying to kill timer
+2021-01-06 11:02:22,686  INFO : New Request
+2021-01-06 11:02:22,687  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 11:02:22,687  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 11:29:30,318  INFO : New Request
+2021-01-06 11:29:30,377  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-06 11:29:30,377  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 11:29:30,377  INFO : About getting driver status
+2021-01-06 11:29:30,435  INFO : Driver Status - LoggedIn
+2021-01-06 11:29:30,435  INFO : Checking if driver is unknown
+2021-01-06 11:29:30,436  INFO : subscribing to new messages
+2021-01-06 11:29:30,436  INFO : QR requested
+2021-01-06 11:29:30,436  INFO : Timer initialised
+2021-01-06 11:29:42,588  INFO : Timer killed successfully
+2021-01-06 11:30:32,727  ERROR : Error occurred trying to kill timer
+2021-01-06 11:30:32,735  ERROR : Error occurred trying to kill timer
+2021-01-06 11:30:32,753  ERROR : Error occurred trying to kill timer
+2021-01-06 11:30:32,764  ERROR : Error occurred trying to kill timer
+2021-01-06 11:30:32,768  ERROR : Error occurred trying to kill timer
+2021-01-06 11:57:37,543  INFO : New Request
+2021-01-06 13:13:10,578  INFO : New Request
+2021-01-06 13:13:12,016  INFO : New Request
+2021-01-06 13:28:55,532  INFO : New Request
+2021-01-06 13:29:01,320  INFO : New Request
+2021-01-06 13:29:15,853  INFO : New Request
+2021-01-06 13:29:19,314  INFO : New Request
+2021-01-06 13:29:19,656  INFO : New Request
+2021-01-06 13:29:29,591  INFO : New Request
+2021-01-06 14:19:17,213  INFO : New Request
+2021-01-06 14:19:17,260  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 14:19:17,261  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 14:19:34,093  INFO : New Request
+2021-01-06 14:19:34,093  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-06 14:19:34,093  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 14:19:34,094  INFO : About to initialise new driver 
+2021-01-06 14:19:43,948  INFO : About getting driver status
+2021-01-06 14:20:14,028  INFO : Driver Status - Unknown
+2021-01-06 14:20:14,028  INFO : Checking if driver is unknown
+2021-01-06 14:20:14,029  INFO : Re-initiaising driver
+2021-01-06 14:20:14,076  INFO : subscribing to new messages
+2021-01-06 14:20:14,076  INFO : QR requested
+2021-01-06 14:20:14,076  INFO : Timer initialised
+2021-01-06 14:20:26,265  INFO : Timer killed successfully
+2021-01-06 14:21:16,467  ERROR : Error occurred trying to kill timer
+2021-01-06 14:21:16,473  ERROR : Error occurred trying to kill timer
+2021-01-06 14:21:16,479  ERROR : Error occurred trying to kill timer
+2021-01-06 14:21:16,494  ERROR : Error occurred trying to kill timer
+2021-01-06 14:21:16,509  ERROR : Error occurred trying to kill timer
+2021-01-06 14:22:47,871  INFO : New Request
+2021-01-06 14:22:47,872  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 14:22:47,872  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 14:22:54,149  INFO : New Request
+2021-01-06 14:22:54,153  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-06 14:22:54,153  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 14:22:54,154  INFO : About getting driver status
+2021-01-06 14:23:04,228  INFO : Driver Status - NotLoggedIn
+2021-01-06 14:23:04,228  INFO : Checking if driver is unknown
+2021-01-06 14:23:04,228  INFO : subscribing to new messages
+2021-01-06 14:23:04,228  INFO : QR requested
+2021-01-06 14:23:04,229  INFO : Timer initialised
+2021-01-06 14:23:06,283  INFO : Sending QR to server
+2021-01-06 14:23:08,316  INFO : Sending QR to server
+2021-01-06 14:23:10,326  INFO : Sending QR to server
+2021-01-06 14:23:12,308  INFO : Sending QR to server
+2021-01-06 14:23:24,387  INFO : Timer killed successfully
+2021-01-06 14:24:14,518  ERROR : Error occurred trying to kill timer
+2021-01-06 14:24:14,522  ERROR : Error occurred trying to kill timer
+2021-01-06 14:24:14,524  ERROR : Error occurred trying to kill timer
+2021-01-06 14:24:14,539  ERROR : Error occurred trying to kill timer
+2021-01-06 14:24:14,552  ERROR : Error occurred trying to kill timer
+2021-01-06 14:47:18,832  INFO : New Request
+2021-01-06 14:47:18,871  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 14:47:18,872  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 14:48:19,433  INFO : New Request
+2021-01-06 14:48:19,434  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-06 14:48:19,434  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 14:48:19,434  INFO : About to initialise new driver 
+2021-01-06 14:48:30,259  INFO : About getting driver status
+2021-01-06 14:49:04,719  INFO : Driver Status - Unknown
+2021-01-06 14:49:04,733  INFO : Checking if driver is unknown
+2021-01-06 14:49:04,734  INFO : Re-initiaising driver
+2021-01-06 14:49:04,764  INFO : subscribing to new messages
+2021-01-06 14:49:04,764  INFO : QR requested
+2021-01-06 14:49:04,765  INFO : Timer initialised
+2021-01-06 14:49:17,901  INFO : Timer killed successfully
+2021-01-06 14:49:52,418  INFO : New Request
+2021-01-06 14:49:52,419  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-06 14:49:52,419  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 14:49:52,419  INFO : About getting driver status
+2021-01-06 14:49:52,526  INFO : Sending QR to server
+2021-01-06 14:49:52,705  INFO : New Request
+2021-01-06 14:49:52,705  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-06 14:49:52,706  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 14:50:02,556  INFO : Driver Status - NotLoggedIn
+2021-01-06 14:50:02,556  INFO : Checking if driver is unknown
+2021-01-06 14:50:02,556  INFO : subscribing to new messages
+2021-01-06 14:50:02,556  INFO : QR requested
+2021-01-06 14:50:02,556  INFO : Timer initialised
+2021-01-06 14:50:02,557  INFO : About getting driver status
+2021-01-06 14:50:44,899  INFO : New Request
+2021-01-06 14:50:44,900  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-06 14:50:44,900  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 14:50:44,901  INFO : About to initialise new driver 
+2021-01-06 14:50:54,250  INFO : About getting driver status
+2021-01-06 14:51:06,216  INFO : Driver Status - NotLoggedIn
+2021-01-06 14:51:06,216  INFO : Checking if driver is unknown
+2021-01-06 14:51:06,216  INFO : subscribing to new messages
+2021-01-06 14:51:06,217  INFO : QR requested
+2021-01-06 14:51:06,217  INFO : Timer initialised
+2021-01-06 14:51:09,288  INFO : Sending QR to server
+2021-01-06 14:51:12,291  INFO : Sending QR to server
+2021-01-06 14:51:25,332  INFO : Timer killed successfully
+2021-01-06 14:51:55,454  INFO : Timer killed successfully
+2021-01-06 14:51:55,464  INFO : Timer killed successfully
+2021-01-06 14:51:55,474  INFO : Timer killed successfully
+2021-01-06 16:26:32,798  INFO : New Request
+2021-01-06 16:26:32,828  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 16:26:32,829  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 16:27:37,587  INFO : New Request
+2021-01-06 16:27:37,588  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-06 16:27:37,588  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 16:27:37,588  INFO : About to initialise new driver 
+2021-01-06 16:27:44,647  INFO : About getting driver status
+2021-01-06 16:27:54,720  INFO : Driver Status - NotLoggedIn
+2021-01-06 16:27:54,720  INFO : Checking if driver is unknown
+2021-01-06 16:27:54,721  INFO : subscribing to new messages
+2021-01-06 16:27:54,721  INFO : QR requested
+2021-01-06 16:27:54,722  INFO : Timer initialised
+2021-01-06 16:27:57,784  INFO : Sending QR to server
+2021-01-06 16:28:00,820  INFO : Sending QR to server
+2021-01-06 16:28:03,826  INFO : Sending QR to server
+2021-01-06 16:28:06,809  INFO : Sending QR to server
+2021-01-06 16:28:09,807  INFO : Sending QR to server
+2021-01-06 16:28:12,824  INFO : Sending QR to server
+2021-01-06 16:28:15,806  INFO : Sending QR to server
+2021-01-06 16:28:18,787  INFO : Sending QR to server
+2021-01-06 16:28:21,822  INFO : Sending QR to server
+2021-01-06 16:28:24,806  INFO : Sending QR to server
+2021-01-06 16:28:27,826  INFO : Sending QR to server
+2021-01-06 16:28:30,806  INFO : Sending QR to server
+2021-01-06 16:28:33,823  INFO : Sending QR to server
+2021-01-06 16:28:36,804  INFO : Sending QR to server
+2021-01-06 16:28:39,808  INFO : Sending QR to server
+2021-01-06 16:28:42,823  INFO : Sending QR to server
+2021-01-06 16:28:45,803  INFO : Sending QR to server
+2021-01-06 16:28:48,816  INFO : Sending QR to server
+2021-01-06 16:28:51,800  INFO : Sending QR to server
+2021-01-06 16:28:54,803  INFO : Sending QR to server
+2021-01-06 16:28:57,821  INFO : Sending QR to server
+2021-01-06 16:29:00,807  INFO : Sending QR to server
+2021-01-06 16:29:03,806  INFO : Sending QR to server
+2021-01-06 16:29:06,820  INFO : Sending QR to server
+2021-01-06 16:29:09,838  INFO : Sending QR to server
+2021-01-06 16:29:12,839  INFO : Sending QR to server
+2021-01-06 16:29:15,819  INFO : Sending QR to server
+2021-01-06 16:29:18,819  INFO : Sending QR to server
+2021-01-06 16:29:21,802  INFO : Sending QR to server
+2021-01-06 16:29:24,821  INFO : Sending QR to server
+2021-01-06 16:29:27,822  INFO : Sending QR to server
+2021-01-06 16:29:30,819  INFO : Sending QR to server
+2021-01-06 16:29:33,819  INFO : Sending QR to server
+2021-01-06 16:29:36,819  INFO : Sending QR to server
+2021-01-06 16:29:39,819  INFO : Sending QR to server
+2021-01-06 16:29:42,799  INFO : Sending QR to server
+2021-01-06 16:29:46,429  INFO : Sending QR to server
+2021-01-06 16:29:48,818  INFO : Sending QR to server
+2021-01-06 16:29:51,852  INFO : Sending QR to server
+2021-01-06 16:29:54,831  INFO : Sending QR to server
+2021-01-06 16:29:57,821  INFO : Sending QR to server
+2021-01-06 16:30:00,819  INFO : Sending QR to server
+2021-01-06 16:30:03,838  INFO : Sending QR to server
+2021-01-06 16:30:06,838  INFO : Sending QR to server
+2021-01-06 16:30:09,837  INFO : Sending QR to server
+2021-01-06 16:30:12,835  INFO : Sending QR to server
+2021-01-06 16:30:15,836  INFO : Sending QR to server
+2021-01-06 16:30:18,835  INFO : Sending QR to server
+2021-01-06 16:30:21,828  INFO : Sending QR to server
+2021-01-06 16:30:24,821  INFO : Sending QR to server
+2021-01-06 16:30:27,834  INFO : Sending QR to server
+2021-01-06 16:30:30,833  INFO : Sending QR to server
+2021-01-06 16:30:33,851  INFO : Sending QR to server
+2021-01-06 16:30:36,831  INFO : Sending QR to server
+2021-01-06 16:30:39,836  INFO : Sending QR to server
+2021-01-06 16:30:42,838  INFO : Sending QR to server
+2021-01-06 16:30:45,836  INFO : Sending QR to server
+2021-01-06 16:30:48,835  INFO : Sending QR to server
+2021-01-06 16:30:51,833  INFO : Sending QR to server
+2021-01-06 16:30:54,831  INFO : Sending QR to server
+2021-01-06 16:30:57,851  INFO : Sending QR to server
+2021-01-06 16:31:00,851  INFO : Sending QR to server
+2021-01-06 16:31:03,849  INFO : Sending QR to server
+2021-01-06 16:31:06,849  INFO : Sending QR to server
+2021-01-06 16:31:09,826  INFO : Sending QR to server
+2021-01-06 16:31:12,851  INFO : Sending QR to server
+2021-01-06 16:31:15,850  INFO : Sending QR to server
+2021-01-06 16:31:18,849  INFO : Sending QR to server
+2021-01-06 16:31:21,851  INFO : Sending QR to server
+2021-01-06 16:31:24,848  INFO : Sending QR to server
+2021-01-06 16:31:27,848  INFO : Sending QR to server
+2021-01-06 16:31:30,825  INFO : Sending QR to server
+2021-01-06 16:31:33,849  INFO : Sending QR to server
+2021-01-06 16:31:36,848  INFO : Sending QR to server
+2021-01-06 16:31:50,212  INFO : Timer killed successfully
+2021-01-06 16:32:20,326  INFO : Timer killed successfully
+2021-01-06 16:32:20,331  INFO : Timer killed successfully
+2021-01-06 16:32:20,338  INFO : Timer killed successfully
+2021-01-06 17:07:54,339  INFO : New Request
+2021-01-06 17:07:54,340  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 17:07:54,341  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 17:08:24,915  INFO : New Request
+2021-01-06 17:08:24,916  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-06 17:08:24,916  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 17:08:24,916  INFO : About to initialise new driver 
+2021-01-06 17:08:29,472  INFO : About getting driver status
+2021-01-06 17:08:42,198  INFO : Driver Status - NotLoggedIn
+2021-01-06 17:08:42,198  INFO : Checking if driver is unknown
+2021-01-06 17:08:42,198  INFO : New timer started for driver
+2021-01-06 17:08:42,206  INFO : subscribing to new messages
+2021-01-06 17:08:42,207  INFO : QR requested
+2021-01-06 17:08:42,207  INFO : Timer initialised
+2021-01-06 17:17:03,408  INFO : New Request
+2021-01-06 17:17:03,409  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-06 17:17:03,409  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 17:17:03,410  INFO : About to initialise new driver 
+2021-01-06 17:17:05,568  INFO : About getting driver status
+2021-01-06 17:17:20,935  INFO : Driver Status - NotLoggedIn
+2021-01-06 17:17:20,935  INFO : Checking if driver is unknown
+2021-01-06 17:17:20,935  INFO : New timer started for driver
+2021-01-06 17:17:20,936  INFO : subscribing to new messages
+2021-01-06 17:17:20,936  INFO : QR requested
+2021-01-06 17:17:20,936  INFO : Timer initialised
+2021-01-06 17:17:24,000  INFO : Sending QR to server
+2021-01-06 17:17:27,024  INFO : Sending QR to server
+2021-01-06 17:17:30,002  INFO : Sending QR to server
+2021-01-06 17:17:33,024  INFO : Sending QR to server
+2021-01-06 17:17:46,060  INFO : Timer killed successfully
+2021-01-06 17:18:16,141  INFO : Timer killed successfully
+2021-01-06 17:18:16,145  INFO : Timer killed successfully
+2021-01-06 17:18:16,149  INFO : Timer killed successfully
+2021-01-06 17:28:48,541  INFO : New Request
+2021-01-06 17:28:48,567  INFO : API call GET http://0.0.0.0:8888/admin/clients
+2021-01-06 17:28:48,568  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 17:28:50,618  INFO : New Request
+2021-01-06 17:28:50,620  INFO : API call GET http://0.0.0.0:8888/admin/clients
+2021-01-06 17:28:50,621  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 17:29:35,199  INFO : New Request
+2021-01-06 17:29:35,200  INFO : API call GET http://0.0.0.0:8888/admin/clients
+2021-01-06 17:29:35,200  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 17:29:55,714  INFO : New Request
+2021-01-06 17:29:55,714  INFO : API call GET http://0.0.0.0:8888/admin/clients
+2021-01-06 17:29:55,714  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 17:30:29,832  INFO : New Request
+2021-01-06 17:30:29,833  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-06 17:30:29,833  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 17:30:31,943  INFO : New Request
+2021-01-06 17:30:31,944  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-06 17:30:31,944  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 17:30:31,944  INFO : About to initialise new driver 
+2021-01-06 17:30:35,296  INFO : About getting driver status
+2021-01-06 17:31:05,373  INFO : Driver Status - Unknown
+2021-01-06 17:31:05,556  INFO : Checking if driver is unknown
+2021-01-06 17:31:05,556  INFO : Re-initiaising driver
+2021-01-06 17:31:05,573  INFO : New timer started for driver
+2021-01-06 17:31:05,574  INFO : subscribing to new messages
+2021-01-06 17:31:05,574  INFO : QR requested
+2021-01-06 17:31:05,575  INFO : Timer initialised
+2021-01-06 17:31:18,715  INFO : Timer killed successfully
+2021-01-06 17:31:38,458  INFO : New Request
+2021-01-06 17:31:38,459  INFO : API call GET http://0.0.0.0:8888/admin/clients
+2021-01-06 17:31:38,460  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-06 17:31:49,002  ERROR : Error occurred trying to kill timer
+2021-01-06 17:31:49,049  ERROR : Error occurred trying to kill timer
+2021-01-06 17:31:49,072  ERROR : Error occurred trying to kill timer
+2021-01-06 17:32:22,656  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-06 17:32:22,656  INFO : Sending message to r2mp
+2021-01-06 17:32:28,999  INFO : New Request
+2021-01-06 17:32:50,951  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-06 17:32:50,952  INFO : Sending message to r2mp
+2021-01-06 17:32:52,570  INFO : New Request
+2021-01-06 17:33:23,055  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-06 17:33:23,056  INFO : Sending message to r2mp
+2021-01-06 17:33:24,585  INFO : New Request
+2021-01-06 17:35:40,473  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-06 17:35:40,473  INFO : Sending message to r2mp
+2021-01-06 17:35:41,867  INFO : New Request
+2021-01-06 17:40:34,754  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 17:41:10,800  INFO : [<MessageGroup - 3 messages in Collect $$>]
+2021-01-06 17:41:20,552  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 17:41:22,562  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 17:41:26,556  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 17:41:34,975  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 17:42:27,242  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 17:42:32,903  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-06 17:42:32,904  INFO : Sending message to r2mp
+2021-01-06 17:42:34,230  INFO : New Request
+2021-01-06 17:43:55,430  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 17:45:00,739  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 17:49:39,009  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 17:49:51,541  INFO : [<MessageGroup - 2 messages in No messing up!>]
+2021-01-06 17:51:24,843  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 17:51:39,249  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-06 17:51:39,250  INFO : Sending message to r2mp
+2021-01-06 17:51:40,657  INFO : New Request
+2021-01-06 17:53:06,789  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 17:54:24,903  INFO : [<MessageGroup - 1 message in Dela>]
+2021-01-06 17:54:24,903  INFO : Sending message to r2mp
+2021-01-06 17:54:26,063  INFO : [<MessageGroup - 1 message in Dela>]
+2021-01-06 17:54:26,063  INFO : Sending message to r2mp
+2021-01-06 17:54:26,403  INFO : New Request
+2021-01-06 17:54:27,432  INFO : New Request
+2021-01-06 17:54:35,696  INFO : [<MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>]
+2021-01-06 17:56:59,036  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-06 17:56:59,036  INFO : Sending message to r2mp
+2021-01-06 17:57:00,590  INFO : New Request
+2021-01-06 17:57:38,925  INFO : [<MessageGroup - 1 message in Dela>]
+2021-01-06 17:57:38,926  INFO : Sending message to r2mp
+2021-01-06 17:57:39,940  INFO : New Request
+2021-01-06 17:57:55,259  INFO : [<MessageGroup - 1 message in Dela>]
+2021-01-06 17:57:55,259  INFO : Sending message to r2mp
+2021-01-06 17:57:56,554  INFO : New Request
+2021-01-06 17:58:00,850  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 18:01:00,885  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 18:02:15,219  INFO : [<MessageGroup - 1 message in No messing up!>]
+2021-01-06 18:02:20,801  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 18:04:30,253  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 18:11:15,393  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 18:13:37,531  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 18:13:47,764  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 18:14:00,164  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 18:20:51,843  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-06 18:20:51,880  INFO : Sending message to r2mp
+2021-01-06 18:20:55,730  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-06 18:20:55,731  INFO : Sending message to r2mp
+2021-01-06 18:21:08,097  INFO : New Request
+2021-01-06 18:21:08,102  INFO : New Request
+2021-01-06 18:22:49,518  INFO : [<MessageGroup - 1 message in No messing up!>]
+2021-01-06 19:04:53,423  INFO : [<MessageGroup - 4 messages in Its Swagger Szn >, <MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:04:53,913  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:04:57,253  INFO : [<MessageGroup - 5 messages in Collect $$>, <MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:04:59,097  INFO : [<MessageGroup - 3 messages in Collect $$>, <MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:05:01,238  INFO : [<MessageGroup - 4 messages in Its Swagger Szn >, <MessageGroup - 3 messages in Collect $$>]
+2021-01-06 19:05:03,220  INFO : [<MessageGroup - 2 messages in Its Swagger Szn >, <MessageGroup - 2 messages in Collect $$>, <MessageGroup - 1 message in MERRY CHRISTMAS>]
+2021-01-06 19:05:35,287  INFO : [<MessageGroup - 2 messages in Collect $$>, <MessageGroup - 4 messages in Its Swagger Szn >]
+2021-01-06 19:05:37,272  INFO : [<MessageGroup - 6 messages in Its Swagger Szn >, <MessageGroup - 2 messages in Collect $$>]
+2021-01-06 19:05:39,551  INFO : [<MessageGroup - 2 messages in Collect $$>, <MessageGroup - 4 messages in Its Swagger Szn >]
+2021-01-06 19:05:41,728  INFO : [<MessageGroup - 1 message in Its Swagger Szn >, <MessageGroup - 3 messages in Collect $$>]
+2021-01-06 19:06:08,572  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:06:11,379  INFO : [<MessageGroup - 2 messages in Its Swagger Szn >, <MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:06:14,212  INFO : [<MessageGroup - 1 message in Its Swagger Szn >, <MessageGroup - 4 messages in Collect $$>]
+2021-01-06 19:06:15,190  INFO : [<MessageGroup - 3 messages in Its Swagger Szn >]
+2021-01-06 19:06:16,914  INFO : [<MessageGroup - 3 messages in Its Swagger Szn >]
+2021-01-06 19:06:19,639  INFO : [<MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>, <MessageGroup - 1 message in Its Swagger Szn >, <MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:06:20,561  INFO : [<MessageGroup - 2 messages in Its Swagger Szn >]
+2021-01-06 19:06:22,623  INFO : [<MessageGroup - 5 messages in Its Swagger Szn >]
+2021-01-06 19:06:24,622  INFO : [<MessageGroup - 4 messages in Collect $$>, <MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:06:26,595  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:06:49,666  INFO : [<MessageGroup - 1 message in Collect $$>, <MessageGroup - 1 message in Its Swagger Szn >, <MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>]
+2021-01-06 19:06:49,781  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:06:56,592  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:07:02,619  INFO : [<MessageGroup - 2 messages in Dela>, <MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:07:02,619  INFO : Sending message to r2mp
+2021-01-06 19:07:04,178  INFO : New Request
+2021-01-06 19:07:04,229  INFO : New Request
+2021-01-06 19:07:07,953  INFO : [<MessageGroup - 1 message in Dela>]
+2021-01-06 19:07:07,954  INFO : Sending message to r2mp
+2021-01-06 19:07:09,078  INFO : New Request
+2021-01-06 19:07:14,499  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:08:58,627  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:09:19,139  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:09:48,618  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-06 19:09:48,618  INFO : Sending message to r2mp
+2021-01-06 19:09:49,732  INFO : New Request
+2021-01-06 19:10:10,759  INFO : [<MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>]
+2021-01-06 19:10:30,817  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:10:36,840  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:11:06,811  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:11:08,771  INFO : [<MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>]
+2021-01-06 19:11:42,916  INFO : [<MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>]
+2021-01-06 19:13:17,254  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:13:44,837  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:14:05,476  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-06 19:14:05,476  INFO : Sending message to r2mp
+2021-01-06 19:14:13,706  INFO : [<MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>]
+2021-01-06 19:14:20,217  INFO : [<MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>]
+2021-01-06 19:15:18,960  INFO : [<MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>]
+2021-01-06 19:15:34,877  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:16:08,870  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:16:21,080  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:16:23,440  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:16:40,527  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-06 19:16:41,064  INFO : Sending message to r2mp
+2021-01-06 19:16:41,501  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:16:48,459  INFO : New Request
+2021-01-06 19:16:55,218  INFO : [<MessageGroup - 2 messages in Its Swagger Szn >]
+2021-01-06 19:17:08,641  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:17:16,398  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:17:19,190  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:17:21,262  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:17:46,997  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:17:54,357  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:18:07,429  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:18:19,421  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:18:23,215  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:21:17,188  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:22:25,207  INFO : [<MessageGroup - 3 messages in Collect $$>]
+2021-01-06 19:22:33,252  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:23:01,126  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:23:51,038  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:24:03,362  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:24:13,078  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 19:24:41,055  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:24:47,987  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:24:55,297  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:25:15,093  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:25:25,205  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:25:35,992  INFO : [<MessageGroup - 1 message in Its Swagger Szn >, <MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:26:13,093  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:26:43,097  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:27:01,791  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:27:09,316  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:31:17,216  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:31:28,728  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:33:39,475  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:34:23,597  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:36:29,286  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-06 19:36:29,307  INFO : Sending message to r2mp
+2021-01-06 19:36:31,378  INFO : New Request
+2021-01-06 19:38:03,308  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-06 19:38:03,308  INFO : Sending message to r2mp
+2021-01-06 19:38:04,444  INFO : New Request
+2021-01-06 19:38:19,328  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-06 19:38:19,328  INFO : Sending message to r2mp
+2021-01-06 19:38:20,523  INFO : New Request
+2021-01-06 19:39:35,360  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:41:39,464  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:44:26,809  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 19:46:45,527  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:49:14,277  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-06 19:49:14,278  INFO : Sending message to r2mp
+2021-01-06 19:49:15,723  INFO : New Request
+2021-01-06 19:50:13,530  INFO : [<MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>]
+2021-01-06 19:51:17,894  INFO : [<MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>]
+2021-01-06 19:54:59,565  INFO : [<MessageGroup - 2 messages in Its Swagger Szn >]
+2021-01-06 19:55:01,651  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:55:19,767  INFO : [<MessageGroup - 1 message in AAKH JCR>]
+2021-01-06 19:55:21,646  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:55:37,571  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 19:56:53,574  INFO : [<MessageGroup - 1 message in Jude>]
+2021-01-06 19:56:53,575  INFO : Sending message to r2mp
+2021-01-06 19:56:54,882  INFO : New Request
+2021-01-06 19:56:57,571  INFO : [<MessageGroup - 1 message in Jude>]
+2021-01-06 19:56:57,572  INFO : Sending message to r2mp
+2021-01-06 19:56:58,664  INFO : New Request
+2021-01-06 20:00:41,731  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:01:01,744  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:01:36,078  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:01:42,056  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-06 20:01:42,057  INFO : Sending message to r2mp
+2021-01-06 20:01:43,427  INFO : New Request
+2021-01-06 20:01:43,635  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-06 20:01:43,636  INFO : Sending message to r2mp
+2021-01-06 20:01:44,938  INFO : New Request
+2021-01-06 20:02:31,775  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:05:47,846  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 20:05:56,435  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:06:03,713  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:06:10,601  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:06:43,954  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 20:06:45,829  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:06:49,927  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:06:51,833  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:06:59,830  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:08:29,864  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:08:42,060  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:08:43,747  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:08:45,880  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 20:09:05,960  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:09:39,867  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:11:21,989  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:11:32,199  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:12:10,212  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:20:00,047  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:20:06,282  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:20:08,141  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:20:12,137  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:20:16,446  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:20:50,035  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:20:54,081  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:20:56,045  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:20:59,950  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:21:16,174  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:23:18,379  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:28:58,074  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 20:29:06,181  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:29:08,055  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:29:26,159  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:29:44,480  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:30:00,070  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:31:36,103  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:31:58,212  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:32:58,216  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:33:00,138  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:33:04,229  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:33:28,547  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:33:32,114  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:33:38,361  INFO : [<MessageGroup - 2 messages in Its Swagger Szn >]
+2021-01-06 20:33:40,126  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:33:48,778  INFO : [<MessageGroup - 1 message in Its Swagger Szn >, <MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:34:08,234  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:34:10,244  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:34:19,011  INFO : [<MessageGroup - 1 message in Collect $$>, <MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:34:28,143  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:34:38,762  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:34:40,454  INFO : [<MessageGroup - 1 message in Kafs RSL>]
+2021-01-06 20:34:40,455  INFO : Sending message to r2mp
+2021-01-06 20:34:42,161  INFO : New Request
+2021-01-06 20:34:46,248  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:35:04,271  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:35:06,264  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:35:24,158  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:35:36,181  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:35:38,369  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:35:42,383  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:35:54,490  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:36:14,595  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:36:20,265  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:36:22,421  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:36:30,279  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:36:42,496  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:36:58,294  INFO : [<MessageGroup - 2 messages in Its Swagger Szn >]
+2021-01-06 20:37:22,272  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:37:28,190  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:38:00,421  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:38:02,208  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:38:20,620  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:38:42,327  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:38:56,316  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:39:04,445  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:39:18,343  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:40:04,298  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:40:06,475  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 20:40:12,254  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:40:20,357  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:40:34,769  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:40:46,250  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:40:48,455  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:41:10,351  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:41:16,371  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:41:24,366  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:41:32,367  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:41:52,153  INFO : [<MessageGroup - 1 message in Collect $$>, <MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:41:53,391  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:42:10,607  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:42:27,006  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:42:28,585  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:42:53,794  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:43:52,293  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:44:16,524  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:44:27,417  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:44:58,311  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:45:26,698  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:45:51,054  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:46:56,660  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:47:30,861  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:51:36,630  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:51:44,737  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:51:50,624  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:51:59,046  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:52:28,568  INFO : [<MessageGroup - 3 messages in Collect $$>]
+2021-01-06 20:52:40,662  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:52:58,559  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:53:04,769  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:53:28,487  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:53:33,313  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 20:53:34,565  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:53:50,874  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:54:00,876  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:54:48,459  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 20:55:06,476  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 20:55:16,494  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:00:32,581  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:01:22,688  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:01:36,695  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:01:44,697  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:01:50,434  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:01:52,702  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:02:36,669  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:02:44,749  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 21:02:52,929  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:03:00,833  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:03:14,746  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:03:16,732  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:03:24,738  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:03:36,630  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:04:02,657  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:04:10,845  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:04:30,607  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:04:40,021  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:04:50,777  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:05:20,847  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 21:05:22,036  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:05:32,678  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:05:36,773  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:05:54,662  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:05:56,670  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:06:02,690  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:06:16,794  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:06:36,777  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:07:20,905  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 21:07:34,815  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:07:56,723  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:08:00,816  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:08:04,724  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:08:14,816  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:08:50,740  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 21:09:00,750  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:09:02,732  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:09:32,731  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:09:38,781  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 21:10:09,055  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:10:44,858  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:11:16,672  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:11:20,804  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:11:24,770  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:11:46,769  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:11:54,878  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 21:12:54,784  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:13:12,803  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:13:28,875  INFO : [<MessageGroup - 3 messages in Collect $$>]
+2021-01-06 21:13:34,806  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:13:48,816  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:14:08,814  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:14:11,021  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:15:44,947  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:16:26,962  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:16:49,173  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:16:58,883  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:17:10,874  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:17:22,873  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:18:04,920  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:18:06,927  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 21:18:22,893  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:19:18,940  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 21:19:24,940  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:19:26,277  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:19:47,036  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 21:20:01,069  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 21:20:12,699  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:20:34,942  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:20:45,078  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 21:21:05,063  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:21:45,159  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:21:48,971  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:22:23,073  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:23:57,205  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:24:30,990  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:24:53,096  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:26:13,109  INFO : [<MessageGroup - 3 messages in Collect $$>]
+2021-01-06 21:26:15,043  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:26:16,386  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:26:23,133  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:26:25,124  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:26:29,778  INFO : [<MessageGroup - 1 message in Its Swagger Szn >, <MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:26:49,064  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 21:26:55,028  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:27:01,017  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:27:09,007  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 21:27:25,664  INFO : [<MessageGroup - 4 messages in Its Swagger Szn >, <MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:27:27,084  INFO : [<MessageGroup - 5 messages in Its Swagger Szn >]
+2021-01-06 21:27:29,015  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 21:27:35,031  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:27:37,038  INFO : [<MessageGroup - 2 messages in Its Swagger Szn >]
+2021-01-06 21:27:39,048  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:27:47,031  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 21:27:57,734  INFO : [<MessageGroup - 2 messages in Collect $$>, <MessageGroup - 2 messages in Its Swagger Szn >]
+2021-01-06 21:28:03,058  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:28:13,032  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 21:28:25,065  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 21:28:31,798  INFO : [<MessageGroup - 1 message in Collect $$>, <MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 21:28:37,233  INFO : [<MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>]
+2021-01-06 21:28:43,173  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:28:52,386  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:29:01,098  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-06 21:29:03,050  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:29:05,048  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:29:21,938  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 21:29:31,381  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 21:29:37,562  INFO : [<MessageGroup - 1 message in No messing up!>]
+2021-01-06 21:29:39,060  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:29:41,663  INFO : [<MessageGroup - 1 message in No messing up!>]
+2021-01-06 21:29:55,184  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 21:29:57,041  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-06 21:29:59,103  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-06 21:30:19,210  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 10:50:33,098  INFO : New Request
+2021-01-11 10:50:33,147  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-11 10:50:33,148  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 10:50:45,719  INFO : New Request
+2021-01-11 10:50:45,720  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-11 10:50:45,720  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 10:50:45,720  INFO : About to initialise new driver 
+2021-01-11 10:50:49,766  INFO : About getting driver status
+2021-01-11 10:51:19,852  INFO : Driver Status - Unknown
+2021-01-11 10:51:19,853  INFO : Checking if driver is unknown
+2021-01-11 10:51:19,853  INFO : Re-initiaising driver
+2021-01-11 10:51:19,873  INFO : New timer started for driver
+2021-01-11 10:51:19,873  INFO : subscribing to new messages
+2021-01-11 10:51:19,874  INFO : QR requested
+2021-01-11 10:51:19,874  INFO : Timer initialised
+2021-01-11 10:51:32,978  INFO : Timer killed successfully
+2021-01-11 10:52:03,280  ERROR : Error occurred trying to kill timer
+2021-01-11 10:52:03,313  ERROR : Error occurred trying to kill timer
+2021-01-11 10:52:03,343  ERROR : Error occurred trying to kill timer
+2021-01-11 10:52:51,247  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 10:52:51,248  INFO : Sending message to r2mp
+2021-01-11 11:08:09,859  INFO : [<MessageGroup - 1 message in No messing up!>]
+2021-01-11 11:19:10,557  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:23:23,411  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 11:23:23,412  INFO : Sending message to r2mp
+2021-01-11 11:26:47,088  INFO : New Request
+2021-01-11 11:26:47,089  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 11:26:47,090  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 11:26:47,090  INFO : About getting driver status
+2021-01-11 11:26:47,298  INFO : Driver Status - LoggedIn
+2021-01-11 11:26:47,298  INFO : Checking if driver is unknown
+2021-01-11 11:26:47,298  INFO : Previous driver timer initialised
+2021-01-11 11:26:47,298  INFO : subscribing to new messages
+2021-01-11 11:26:47,299  INFO : Sending :to 233209559406@c.us
+2021-01-11 11:27:21,588  INFO : New Request
+2021-01-11 11:27:21,589  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 11:27:21,589  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 11:27:21,589  INFO : About getting driver status
+2021-01-11 11:27:21,597  INFO : Driver Status - LoggedIn
+2021-01-11 11:27:21,597  INFO : Checking if driver is unknown
+2021-01-11 11:27:21,597  INFO : Previous driver timer initialised
+2021-01-11 11:27:21,598  INFO : subscribing to new messages
+2021-01-11 11:27:21,598  INFO : Sending :What can I help you order today?to 233209559406@c.us
+2021-01-11 11:27:23,744  INFO : New Request
+2021-01-11 11:30:31,262  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 11:30:31,283  INFO : Sending message to r2mp
+2021-01-11 11:38:47,899  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-11 11:38:47,900  INFO : Sending message to r2mp
+2021-01-11 11:39:05,900  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-11 11:39:05,901  INFO : Sending message to r2mp
+2021-01-11 11:48:53,760  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:49:06,112  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:49:27,410  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:49:45,705  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:49:49,722  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:49:58,002  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:50:01,917  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:50:18,021  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:50:33,938  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:51:24,032  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:51:29,735  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:51:40,719  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:51:55,962  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:55:40,212  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:55:43,867  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 11:58:40,007  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:00:24,268  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:00:39,955  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:00:59,835  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:01:03,946  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:02:28,965  INFO : [<MessageGroup - 2 messages in Collect $$>, <MessageGroup - 1 message in Kranium>]
+2021-01-11 12:02:29,058  INFO : [<MessageGroup - 1 message in Kranium>]
+2021-01-11 12:02:29,059  INFO : Sending message to r2mp
+2021-01-11 12:02:35,197  INFO : [<MessageGroup - 1 message in Kranium>]
+2021-01-11 12:02:35,198  INFO : Sending message to r2mp
+2021-01-11 12:02:37,976  INFO : [<MessageGroup - 1 message in Kranium>]
+2021-01-11 12:02:37,977  INFO : Sending message to r2mp
+2021-01-11 12:05:46,459  INFO : [<MessageGroup - 1 message in Happy Birthday Leo >]
+2021-01-11 12:06:06,159  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:06:54,206  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:07:48,124  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:15:03,545  INFO : New Request
+2021-01-11 12:15:03,546  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 12:15:03,546  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:15:03,547  INFO : About getting driver status
+2021-01-11 12:15:04,084  INFO : Driver Status - LoggedIn
+2021-01-11 12:15:04,084  INFO : Checking if driver is unknown
+2021-01-11 12:15:04,085  INFO : Previous driver timer initialised
+2021-01-11 12:15:04,085  INFO : subscribing to new messages
+2021-01-11 12:15:04,085  INFO : Sending :to 233209559406@c.us
+2021-01-11 12:15:17,921  INFO : New Request
+2021-01-11 12:15:17,922  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 12:15:17,922  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:15:17,923  INFO : About getting driver status
+2021-01-11 12:15:19,220  INFO : Driver Status - LoggedIn
+2021-01-11 12:15:19,220  INFO : Checking if driver is unknown
+2021-01-11 12:15:19,220  INFO : Previous driver timer initialised
+2021-01-11 12:15:19,220  INFO : subscribing to new messages
+2021-01-11 12:15:19,223  INFO : Sending :to 233552607614@c.us
+2021-01-11 12:15:22,118  INFO : New Request
+2021-01-11 12:15:22,119  INFO : API call POST http://0.0.0.0:8888/chats/233558357181%40c.us/messages
+2021-01-11 12:15:22,121  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:15:22,121  INFO : About getting driver status
+2021-01-11 12:15:22,124  INFO : New Request
+2021-01-11 12:15:22,125  INFO : API call POST http://0.0.0.0:8888/chats/233558357181%40c.us/messages
+2021-01-11 12:15:22,126  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:15:22,126  INFO : About getting driver status
+2021-01-11 12:15:29,713  INFO : New Request
+2021-01-11 12:15:29,714  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 12:15:29,714  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:15:29,714  INFO : About getting driver status
+2021-01-11 12:15:29,740  INFO : New Request
+2021-01-11 12:15:29,741  INFO : API call POST http://0.0.0.0:8888/chats/233558357181%40c.us/messages
+2021-01-11 12:15:29,741  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:15:29,741  INFO : About getting driver status
+2021-01-11 12:15:29,820  INFO : New Request
+2021-01-11 12:15:29,821  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 12:15:29,822  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:15:29,822  INFO : About getting driver status
+2021-01-11 12:15:35,334  INFO : Driver Status - LoggedIn
+2021-01-11 12:15:35,334  INFO : Checking if driver is unknown
+2021-01-11 12:15:35,335  INFO : Previous driver timer initialised
+2021-01-11 12:15:35,335  INFO : subscribing to new messages
+2021-01-11 12:15:35,337  INFO : Sending :to 233558357181@c.us
+2021-01-11 12:15:35,366  INFO : Driver Status - LoggedIn
+2021-01-11 12:15:35,367  INFO : Checking if driver is unknown
+2021-01-11 12:15:35,367  INFO : Previous driver timer initialised
+2021-01-11 12:15:35,375  INFO : subscribing to new messages
+2021-01-11 12:15:35,376  INFO : Sending :to 233558357181@c.us
+2021-01-11 12:15:35,409  INFO : Driver Status - LoggedIn
+2021-01-11 12:15:35,410  INFO : Checking if driver is unknown
+2021-01-11 12:15:35,411  INFO : Previous driver timer initialised
+2021-01-11 12:15:35,411  INFO : subscribing to new messages
+2021-01-11 12:15:35,412  INFO : Sending :to 233552607614@c.us
+2021-01-11 12:15:35,431  INFO : Driver Status - LoggedIn
+2021-01-11 12:15:35,431  INFO : Checking if driver is unknown
+2021-01-11 12:15:35,432  INFO : Previous driver timer initialised
+2021-01-11 12:15:35,432  INFO : subscribing to new messages
+2021-01-11 12:15:35,432  INFO : Sending :to 233558357181@c.us
+2021-01-11 12:15:35,446  INFO : Driver Status - LoggedIn
+2021-01-11 12:15:35,447  INFO : Checking if driver is unknown
+2021-01-11 12:15:35,449  INFO : Previous driver timer initialised
+2021-01-11 12:15:35,452  INFO : subscribing to new messages
+2021-01-11 12:15:35,456  INFO : Sending :What can I help you order today?to 233209559406@c.us
+2021-01-11 12:18:49,579  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-11 12:18:49,579  INFO : Sending message to r2mp
+2021-01-11 12:18:50,607  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-11 12:18:50,608  INFO : Sending message to r2mp
+2021-01-11 12:18:58,640  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-11 12:18:58,641  INFO : Sending message to r2mp
+2021-01-11 12:25:37,536  INFO : New Request
+2021-01-11 12:25:37,539  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 12:25:37,539  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:25:37,544  INFO : About getting driver status
+2021-01-11 12:25:37,561  INFO : Driver Status - LoggedIn
+2021-01-11 12:25:37,562  INFO : Checking if driver is unknown
+2021-01-11 12:25:37,563  INFO : Previous driver timer initialised
+2021-01-11 12:25:37,563  INFO : subscribing to new messages
+2021-01-11 12:25:37,564  INFO : Sending :What can I help you order today?to 233552607614@c.us
+2021-01-11 12:25:37,618  INFO : New Request
+2021-01-11 12:25:40,136  INFO : New Request
+2021-01-11 12:25:40,335  INFO : New Request
+2021-01-11 12:25:40,336  INFO : API call POST http://0.0.0.0:8888/chats/233558357181%40c.us/messages
+2021-01-11 12:25:40,336  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:25:40,339  INFO : About getting driver status
+2021-01-11 12:25:40,356  INFO : New Request
+2021-01-11 12:25:40,357  INFO : API call POST http://0.0.0.0:8888/chats/233558357181%40c.us/messages
+2021-01-11 12:25:40,357  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:25:40,357  INFO : About getting driver status
+2021-01-11 12:25:40,370  INFO : Driver Status - LoggedIn
+2021-01-11 12:25:40,370  INFO : Checking if driver is unknown
+2021-01-11 12:25:40,370  INFO : Previous driver timer initialised
+2021-01-11 12:25:40,371  INFO : subscribing to new messages
+2021-01-11 12:25:40,371  INFO : Sending :What can I help you order today?to 233558357181@c.us
+2021-01-11 12:25:40,383  INFO : New Request
+2021-01-11 12:25:40,383  INFO : API call POST http://0.0.0.0:8888/chats/233558357181%40c.us/messages
+2021-01-11 12:25:40,384  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:25:40,384  INFO : About getting driver status
+2021-01-11 12:25:40,391  INFO : New Request
+2021-01-11 12:25:40,392  INFO : Driver Status - LoggedIn
+2021-01-11 12:25:40,411  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 12:25:40,413  INFO : Checking if driver is unknown
+2021-01-11 12:25:40,414  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:25:40,419  INFO : Previous driver timer initialised
+2021-01-11 12:25:40,423  INFO : About getting driver status
+2021-01-11 12:25:40,423  INFO : subscribing to new messages
+2021-01-11 12:25:40,442  INFO : Sending :What can I help you order today?to 233558357181@c.us
+2021-01-11 12:25:41,434  INFO : Driver Status - LoggedIn
+2021-01-11 12:25:41,435  INFO : Checking if driver is unknown
+2021-01-11 12:25:41,436  INFO : Previous driver timer initialised
+2021-01-11 12:25:41,436  INFO : subscribing to new messages
+2021-01-11 12:25:41,437  INFO : Sending :What can I help you order today?to 233558357181@c.us
+2021-01-11 12:25:41,442  INFO : New Request
+2021-01-11 12:25:41,449  INFO : Driver Status - LoggedIn
+2021-01-11 12:25:41,449  INFO : Checking if driver is unknown
+2021-01-11 12:25:41,449  INFO : Previous driver timer initialised
+2021-01-11 12:25:41,449  INFO : subscribing to new messages
+2021-01-11 12:25:41,449  INFO : Sending :What can I help you order today?to 233552607614@c.us
+2021-01-11 12:25:44,272  INFO : New Request
+2021-01-11 12:25:44,281  INFO : New Request
+2021-01-11 12:25:44,287  INFO : New Request
+2021-01-11 12:25:46,899  INFO : New Request
+2021-01-11 12:25:46,900  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 12:25:46,901  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:25:46,901  INFO : New Request
+2021-01-11 12:25:46,902  INFO : About getting driver status
+2021-01-11 12:25:46,902  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 12:25:46,907  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:25:46,907  INFO : About getting driver status
+2021-01-11 12:25:46,910  INFO : New Request
+2021-01-11 12:25:46,911  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 12:25:46,911  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:25:46,911  INFO : About getting driver status
+2021-01-11 12:25:46,914  INFO : Driver Status - LoggedIn
+2021-01-11 12:25:46,914  INFO : Checking if driver is unknown
+2021-01-11 12:25:46,915  INFO : Previous driver timer initialised
+2021-01-11 12:25:46,915  INFO : subscribing to new messages
+2021-01-11 12:25:46,915  INFO : Sending :to 233552607614@c.us
+2021-01-11 12:25:46,927  INFO : Driver Status - LoggedIn
+2021-01-11 12:25:46,928  INFO : Checking if driver is unknown
+2021-01-11 12:25:46,928  INFO : Previous driver timer initialised
+2021-01-11 12:25:46,928  INFO : subscribing to new messages
+2021-01-11 12:25:46,929  INFO : Sending :to 233552607614@c.us
+2021-01-11 12:25:46,939  INFO : Driver Status - LoggedIn
+2021-01-11 12:25:46,940  INFO : Checking if driver is unknown
+2021-01-11 12:25:46,940  INFO : Previous driver timer initialised
+2021-01-11 12:25:46,940  INFO : subscribing to new messages
+2021-01-11 12:25:46,941  INFO : Sending :to 233552607614@c.us
+2021-01-11 12:26:02,065  INFO : New Request
+2021-01-11 12:26:02,066  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 12:26:02,066  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:26:02,066  INFO : About getting driver status
+2021-01-11 12:26:32,221  INFO : Driver Status - LoggedIn
+2021-01-11 12:26:32,222  INFO : Checking if driver is unknown
+2021-01-11 12:26:32,222  INFO : Previous driver timer initialised
+2021-01-11 12:26:32,222  INFO : subscribing to new messages
+2021-01-11 12:26:32,223  INFO : Sending :What can I help you order today?to 233552607614@c.us
+2021-01-11 12:28:34,720  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 12:28:34,726  INFO : Sending message to r2mp
+2021-01-11 12:28:38,231  INFO : New Request
+2021-01-11 12:28:38,233  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 12:28:38,233  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:28:38,234  INFO : About getting driver status
+2021-01-11 12:28:38,247  INFO : Driver Status - LoggedIn
+2021-01-11 12:28:38,247  INFO : Checking if driver is unknown
+2021-01-11 12:28:38,247  INFO : Previous driver timer initialised
+2021-01-11 12:28:38,247  INFO : subscribing to new messages
+2021-01-11 12:28:38,248  INFO : Sending : 
+
+
+Hey!
+Welcome to SummerHut Pizza Demo.
+to 233209559406@c.us
+2021-01-11 12:28:54,475  INFO : New Request
+2021-01-11 12:28:54,476  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 12:28:54,476  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:28:54,477  INFO : About getting driver status
+2021-01-11 12:28:54,993  INFO : Driver Status - LoggedIn
+2021-01-11 12:28:54,993  INFO : Checking if driver is unknown
+2021-01-11 12:28:54,993  INFO : Previous driver timer initialised
+2021-01-11 12:28:54,993  INFO : subscribing to new messages
+2021-01-11 12:28:54,994  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-11 12:29:13,743  INFO : New Request
+2021-01-11 12:30:02,849  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 12:30:02,850  INFO : Sending message to r2mp
+2021-01-11 12:31:27,533  INFO : New Request
+2021-01-11 12:31:27,534  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 12:31:27,534  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 12:31:27,534  INFO : About getting driver status
+2021-01-11 12:31:27,544  INFO : Driver Status - LoggedIn
+2021-01-11 12:31:27,548  INFO : Checking if driver is unknown
+2021-01-11 12:31:27,548  INFO : Previous driver timer initialised
+2021-01-11 12:31:27,548  INFO : subscribing to new messages
+2021-01-11 12:31:27,551  INFO : Sending : 
+
+
+Hey!
+Welcome to SummerHut Pizza Demo.
+to 233209559406@c.us
+2021-01-11 12:41:37,070  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:41:43,092  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:41:57,181  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:42:05,087  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:42:55,606  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:44:29,281  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-11 12:45:09,556  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:45:17,147  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:45:25,250  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:45:49,614  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:45:54,066  INFO : [<MessageGroup - 1 message in Collect $$>, <MessageGroup - 1 message in AAKH JCR>]
+2021-01-11 12:45:55,395  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:46:01,682  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:46:09,171  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:54:19,474  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-11 12:58:11,503  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:58:43,400  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 12:58:53,478  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 13:03:39,469  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 13:10:19,558  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 13:13:37,616  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 13:14:23,608  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 13:14:23,608  INFO : Sending message to r2mp
+2021-01-11 13:14:38,927  INFO : New Request
+2021-01-11 13:14:38,928  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 13:14:38,928  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 13:14:38,928  INFO : About getting driver status
+2021-01-11 13:14:38,992  INFO : Driver Status - LoggedIn
+2021-01-11 13:14:38,992  INFO : Checking if driver is unknown
+2021-01-11 13:14:38,992  INFO : Previous driver timer initialised
+2021-01-11 13:14:38,992  INFO : subscribing to new messages
+2021-01-11 13:14:39,002  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-11 13:17:25,882  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-11 13:17:25,922  INFO : Sending message to r2mp
+2021-01-11 13:27:25,989  INFO : New Request
+2021-01-11 13:27:26,377  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 13:27:26,431  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 13:27:26,431  INFO : About to initialise new driver 
+2021-01-11 13:27:28,619  INFO : New Request
+2021-01-11 13:27:28,620  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-11 13:27:28,620  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 13:27:30,771  INFO : New Request
+2021-01-11 13:27:30,772  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-11 13:27:30,772  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 13:27:31,828  INFO : New Request
+2021-01-11 13:27:31,828  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 13:27:31,829  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 13:27:36,491  INFO : New Request
+2021-01-11 13:27:36,492  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-11 13:27:36,492  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 13:27:38,727  INFO : About to initialise new driver 
+2021-01-11 13:27:54,672  INFO : About getting driver status
+2021-01-11 13:27:55,084  INFO : About getting driver status
+2021-01-11 13:27:56,941  INFO : New Request
+2021-01-11 13:27:56,942  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-11 13:27:56,943  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 13:27:56,943  INFO : About getting driver status
+2021-01-11 13:28:06,432  INFO : Driver Status - NotLoggedIn
+2021-01-11 13:28:06,433  INFO : Checking if driver is unknown
+2021-01-11 13:28:06,433  INFO : New timer started for driver
+2021-01-11 13:28:06,433  INFO : subscribing to new messages
+2021-01-11 13:28:06,592  INFO : New Request
+2021-01-11 13:28:15,221  INFO : Driver Status - NotLoggedIn
+2021-01-11 13:28:15,221  INFO : Checking if driver is unknown
+2021-01-11 13:28:15,221  INFO : Previous driver timer initialised
+2021-01-11 13:28:15,221  INFO : subscribing to new messages
+2021-01-11 13:28:15,270  INFO : Driver Status - NotLoggedIn
+2021-01-11 13:28:15,270  INFO : Checking if driver is unknown
+2021-01-11 13:28:15,275  INFO : Previous driver timer initialised
+2021-01-11 13:28:15,275  INFO : subscribing to new messages
+2021-01-11 13:28:15,275  INFO : QR requested
+2021-01-11 13:28:15,276  INFO : Timer initialised
+2021-01-11 13:28:15,396  INFO : New Request
+2021-01-11 13:28:15,397  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 13:28:15,398  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 13:28:15,402  INFO : About getting driver status
+2021-01-11 13:28:25,515  INFO : Driver Status - NotLoggedIn
+2021-01-11 13:28:25,516  INFO : Checking if driver is unknown
+2021-01-11 13:28:25,516  INFO : Previous driver timer initialised
+2021-01-11 13:28:25,516  INFO : subscribing to new messages
+2021-01-11 13:28:25,528  INFO : New Request
+2021-01-11 13:28:25,628  INFO : Sending QR to server
+2021-01-11 13:28:25,696  INFO : Sending QR to server
+2021-01-11 13:28:25,760  INFO : Sending QR to server
+2021-01-11 13:28:27,329  INFO : Sending QR to server
+2021-01-11 13:28:30,348  INFO : Sending QR to server
+2021-01-11 13:28:33,368  INFO : Sending QR to server
+2021-01-11 13:28:36,370  INFO : Sending QR to server
+2021-01-11 13:28:39,367  INFO : Sending QR to server
+2021-01-11 13:28:42,368  INFO : Sending QR to server
+2021-01-11 13:28:45,327  INFO : Sending QR to server
+2021-01-11 13:28:59,018  INFO : Timer killed successfully
+2021-01-11 13:29:29,104  ERROR : Error occurred trying to kill timer
+2021-01-11 13:29:29,105  ERROR : Error occurred trying to kill timer
+2021-01-11 13:29:29,108  ERROR : Error occurred trying to kill timer
+2021-01-11 13:31:39,266  INFO : New Request
+2021-01-11 13:31:39,267  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-11 13:31:39,267  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 13:31:47,292  INFO : New Request
+2021-01-11 13:31:47,293  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-11 13:31:47,293  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 13:31:47,293  INFO : About to initialise new driver 
+2021-01-11 13:32:00,001  INFO : About getting driver status
+2021-01-11 13:32:10,040  INFO : Driver Status - NotLoggedIn
+2021-01-11 13:32:10,040  INFO : Checking if driver is unknown
+2021-01-11 13:32:10,040  INFO : New timer started for driver
+2021-01-11 13:32:10,040  INFO : subscribing to new messages
+2021-01-11 13:32:10,041  INFO : QR requested
+2021-01-11 13:32:10,042  INFO : Timer initialised
+2021-01-11 13:32:13,156  INFO : Sending QR to server
+2021-01-11 13:32:16,102  INFO : Sending QR to server
+2021-01-11 13:32:19,126  INFO : Sending QR to server
+2021-01-11 13:32:22,125  INFO : Sending QR to server
+2021-01-11 13:32:25,127  INFO : Sending QR to server
+2021-01-11 13:32:38,345  INFO : Timer killed successfully
+2021-01-11 13:33:08,485  ERROR : Error occurred trying to kill timer
+2021-01-11 13:33:08,489  ERROR : Error occurred trying to kill timer
+2021-01-11 13:33:08,495  ERROR : Error occurred trying to kill timer
+2021-01-11 13:34:26,878  INFO : New Request
+2021-01-11 13:34:26,878  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-11 13:34:26,879  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 13:40:09,083  INFO : New Request
+2021-01-11 13:40:09,084  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-11 13:40:09,085  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 13:40:09,085  INFO : About to initialise new driver 
+2021-01-11 13:40:19,675  INFO : About getting driver status
+2021-01-11 13:40:29,733  INFO : Driver Status - NotLoggedIn
+2021-01-11 13:40:29,733  INFO : Checking if driver is unknown
+2021-01-11 13:40:29,734  INFO : New timer started for driver
+2021-01-11 13:40:29,734  INFO : subscribing to new messages
+2021-01-11 13:40:29,734  INFO : QR requested
+2021-01-11 13:40:29,735  INFO : Timer initialised
+2021-01-11 13:40:32,798  INFO : Sending QR to server
+2021-01-11 13:40:35,804  INFO : Sending QR to server
+2021-01-11 13:40:38,802  INFO : Sending QR to server
+2021-01-11 13:40:41,833  INFO : Sending QR to server
+2021-01-11 13:40:44,842  INFO : Sending QR to server
+2021-01-11 13:40:47,822  INFO : Sending QR to server
+2021-01-11 13:40:50,822  INFO : Sending QR to server
+2021-01-11 13:40:53,820  INFO : Sending QR to server
+2021-01-11 13:40:56,815  INFO : Sending QR to server
+2021-01-11 13:40:59,802  INFO : Sending QR to server
+2021-01-11 13:41:02,820  INFO : Sending QR to server
+2021-01-11 13:41:05,822  INFO : Sending QR to server
+2021-01-11 13:41:08,796  INFO : Sending QR to server
+2021-01-11 13:41:11,822  INFO : Sending QR to server
+2021-01-11 13:41:14,820  INFO : Sending QR to server
+2021-01-11 13:41:27,914  INFO : Timer killed successfully
+2021-01-11 13:41:58,046  ERROR : Error occurred trying to kill timer
+2021-01-11 13:41:58,050  ERROR : Error occurred trying to kill timer
+2021-01-11 13:41:58,055  ERROR : Error occurred trying to kill timer
+2021-01-11 14:06:40,152  INFO : New Request
+2021-01-11 14:06:40,193  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-11 14:06:40,194  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 14:06:40,194  INFO : About to initialise new driver 
+2021-01-11 14:06:43,712  INFO : About getting driver status
+2021-01-11 14:06:54,765  INFO : Driver Status - NotLoggedIn
+2021-01-11 14:06:54,765  INFO : Checking if driver is unknown
+2021-01-11 14:06:54,765  INFO : New timer started for driver
+2021-01-11 14:06:54,765  INFO : subscribing to new messages
+2021-01-11 14:06:54,766  INFO : QR requested
+2021-01-11 14:06:54,766  INFO : Timer initialised
+2021-01-11 14:06:57,820  INFO : Sending QR to server
+2021-01-11 14:07:00,837  INFO : Sending QR to server
+2021-01-11 14:07:03,838  INFO : Sending QR to server
+2021-01-11 14:07:06,844  INFO : Sending QR to server
+2021-01-11 14:07:09,843  INFO : Sending QR to server
+2021-01-11 14:07:12,828  INFO : Sending QR to server
+2021-01-11 14:07:15,844  INFO : Sending QR to server
+2021-01-11 14:07:18,863  INFO : Sending QR to server
+2021-01-11 14:07:31,825  INFO : Previous driver timer initialised
+2021-01-11 14:07:31,825  INFO : Timer killed successfully
+2021-01-11 14:08:02,015  ERROR : Error occurred trying to kill timer
+2021-01-11 14:08:02,045  ERROR : Error occurred trying to kill timer
+2021-01-11 14:08:02,062  ERROR : Error occurred trying to kill timer
+2021-01-11 14:10:21,496  INFO : New Request
+2021-01-11 14:10:21,519  INFO : API call GET http://0.0.0.0:8888/admin/clients
+2021-01-11 14:10:21,519  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 14:10:26,095  INFO : New Request
+2021-01-11 14:10:26,095  INFO : API call GET http://0.0.0.0:8888/admin/clients
+2021-01-11 14:10:26,096  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 14:11:13,853  INFO : New Request
+2021-01-11 14:11:13,854  INFO : API call GET http://0.0.0.0:8888/admin/clients
+2021-01-11 14:11:13,855  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 14:11:25,944  INFO : New Request
+2021-01-11 14:11:25,944  INFO : API call GET http://0.0.0.0:8888/admin/clients
+2021-01-11 14:11:25,944  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:40:58,709  INFO : New Request
+2021-01-11 17:40:58,755  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-11 17:40:58,755  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:40:58,756  INFO : About to initialise new driver 
+2021-01-11 17:41:03,952  INFO : About getting driver status
+2021-01-11 17:41:14,058  INFO : Driver Status - NotLoggedIn
+2021-01-11 17:41:14,058  INFO : Checking if driver is unknown
+2021-01-11 17:41:14,058  INFO : New timer started for driver
+2021-01-11 17:41:14,059  INFO : subscribing to new messages
+2021-01-11 17:41:14,059  INFO : QR requested
+2021-01-11 17:41:14,059  INFO : Timer initialised
+2021-01-11 17:41:17,178  INFO : Sending QR to server
+2021-01-11 17:41:20,148  INFO : Sending QR to server
+2021-01-11 17:41:23,130  INFO : Sending QR to server
+2021-01-11 17:41:26,150  INFO : Sending QR to server
+2021-01-11 17:41:29,135  INFO : Sending QR to server
+2021-01-11 17:41:32,129  INFO : Sending QR to server
+2021-01-11 17:41:35,147  INFO : Sending QR to server
+2021-01-11 17:41:38,140  INFO : Sending QR to server
+2021-01-11 17:41:41,146  INFO : Sending QR to server
+2021-01-11 17:41:44,147  INFO : Sending QR to server
+2021-01-11 17:41:57,157  INFO : Previous driver timer initialised
+2021-01-11 17:41:57,157  INFO : Timer killed successfully
+2021-01-11 17:42:27,318  ERROR : Error occurred trying to kill timer
+2021-01-11 17:42:27,341  ERROR : Error occurred trying to kill timer
+2021-01-11 17:42:27,365  ERROR : Error occurred trying to kill timer
+2021-01-11 17:42:59,933  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:43:01,933  INFO : [<MessageGroup - 3 messages in Its Swagger Szn >, <MessageGroup - 1 message in 4teen>]
+2021-01-11 17:43:23,922  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:43:25,896  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 17:43:25,896  INFO : Sending message to r2mp
+2021-01-11 17:43:30,525  INFO : New Request
+2021-01-11 17:43:30,526  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 17:43:30,527  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:43:30,527  INFO : About getting driver status
+2021-01-11 17:43:30,543  INFO : Driver Status - LoggedIn
+2021-01-11 17:43:30,544  INFO : Checking if driver is unknown
+2021-01-11 17:43:30,544  INFO : Previous driver timer initialised
+2021-01-11 17:43:30,544  INFO : subscribing to new messages
+2021-01-11 17:43:30,620  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-11 17:43:31,466  INFO : New Request
+2021-01-11 17:43:31,467  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 17:43:31,467  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:43:31,467  INFO : About getting driver status
+2021-01-11 17:43:31,478  INFO : Driver Status - LoggedIn
+2021-01-11 17:43:31,478  INFO : Checking if driver is unknown
+2021-01-11 17:43:31,478  INFO : Previous driver timer initialised
+2021-01-11 17:43:31,479  INFO : subscribing to new messages
+2021-01-11 17:43:31,479  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-11 17:43:47,225  INFO : New Request
+2021-01-11 17:43:47,226  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 17:43:47,226  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:43:47,226  INFO : About getting driver status
+2021-01-11 17:43:47,259  INFO : Driver Status - LoggedIn
+2021-01-11 17:43:47,260  INFO : Checking if driver is unknown
+2021-01-11 17:43:47,260  INFO : Previous driver timer initialised
+2021-01-11 17:43:47,260  INFO : subscribing to new messages
+2021-01-11 17:43:47,261  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-11 17:43:50,475  INFO : New Request
+2021-01-11 17:43:50,475  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 17:43:50,476  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:43:50,476  INFO : About getting driver status
+2021-01-11 17:43:50,544  INFO : Driver Status - LoggedIn
+2021-01-11 17:43:50,544  INFO : Checking if driver is unknown
+2021-01-11 17:43:50,544  INFO : Previous driver timer initialised
+2021-01-11 17:43:50,545  INFO : subscribing to new messages
+2021-01-11 17:43:50,545  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-11 17:43:51,221  INFO : New Request
+2021-01-11 17:43:51,221  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 17:43:51,222  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:43:51,222  INFO : About getting driver status
+2021-01-11 17:43:51,240  INFO : Driver Status - LoggedIn
+2021-01-11 17:43:51,240  INFO : Checking if driver is unknown
+2021-01-11 17:43:51,240  INFO : Previous driver timer initialised
+2021-01-11 17:43:51,240  INFO : subscribing to new messages
+2021-01-11 17:43:51,241  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-11 17:43:52,055  INFO : New Request
+2021-01-11 17:43:52,055  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 17:43:52,055  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:43:52,056  INFO : About getting driver status
+2021-01-11 17:43:52,067  INFO : Driver Status - LoggedIn
+2021-01-11 17:43:52,067  INFO : Checking if driver is unknown
+2021-01-11 17:43:52,067  INFO : Previous driver timer initialised
+2021-01-11 17:43:52,067  INFO : subscribing to new messages
+2021-01-11 17:43:52,068  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-11 17:43:52,727  INFO : New Request
+2021-01-11 17:43:53,936  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:44:31,955  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 17:44:31,956  INFO : Sending message to r2mp
+2021-01-11 17:44:57,429  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:45:12,179  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:45:36,294  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 17:45:36,295  INFO : Sending message to r2mp
+2021-01-11 17:45:38,189  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:45:50,507  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:45:56,393  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:46:14,295  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:46:39,840  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-11 17:46:39,842  INFO : Sending message to r2mp
+2021-01-11 17:46:51,254  INFO : [<MessageGroup - 1 message in Its Swagger Szn >, <MessageGroup - 1 message in Gr>]
+2021-01-11 17:46:53,244  INFO : [<MessageGroup - 2 messages in Gr>, <MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:46:53,244  INFO : Sending message to r2mp
+2021-01-11 17:47:26,730  INFO : New Request
+2021-01-11 17:47:26,731  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:47:26,731  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:47:26,732  INFO : About getting driver status
+2021-01-11 17:47:26,742  INFO : Driver Status - LoggedIn
+2021-01-11 17:47:26,742  INFO : Checking if driver is unknown
+2021-01-11 17:47:26,743  INFO : Previous driver timer initialised
+2021-01-11 17:47:26,743  INFO : subscribing to new messages
+2021-01-11 17:47:26,743  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233552607614@c.us
+2021-01-11 17:47:26,758  INFO : New Request
+2021-01-11 17:47:26,759  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:47:26,759  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:47:26,759  INFO : About getting driver status
+2021-01-11 17:47:27,415  INFO : Driver Status - LoggedIn
+2021-01-11 17:47:27,415  INFO : Checking if driver is unknown
+2021-01-11 17:47:27,415  INFO : Previous driver timer initialised
+2021-01-11 17:47:27,415  INFO : subscribing to new messages
+2021-01-11 17:47:27,416  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233552607614@c.us
+2021-01-11 17:47:27,484  INFO : New Request
+2021-01-11 17:47:27,484  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:47:27,484  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:47:27,485  INFO : About getting driver status
+2021-01-11 17:47:28,142  INFO : New Request
+2021-01-11 17:47:28,142  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:47:28,142  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:47:28,142  INFO : About getting driver status
+2021-01-11 17:47:28,184  INFO : Driver Status - LoggedIn
+2021-01-11 17:47:28,184  INFO : Checking if driver is unknown
+2021-01-11 17:47:28,184  INFO : Previous driver timer initialised
+2021-01-11 17:47:28,184  INFO : subscribing to new messages
+2021-01-11 17:47:28,185  INFO : Sending : What can I help you order today?to 233552607614@c.us
+2021-01-11 17:47:28,192  INFO : Driver Status - LoggedIn
+2021-01-11 17:47:28,192  INFO : Checking if driver is unknown
+2021-01-11 17:47:28,192  INFO : Previous driver timer initialised
+2021-01-11 17:47:28,192  INFO : subscribing to new messages
+2021-01-11 17:47:28,193  INFO : Sending : What can I help you order today?to 233552607614@c.us
+2021-01-11 17:47:28,827  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:47:53,154  INFO : New Request
+2021-01-11 17:47:53,155  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:47:53,155  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:47:53,155  INFO : About getting driver status
+2021-01-11 17:48:00,271  INFO : New Request
+2021-01-11 17:48:00,273  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:48:00,273  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:48:00,273  INFO : About getting driver status
+2021-01-11 17:48:00,317  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:00,318  INFO : Checking if driver is unknown
+2021-01-11 17:48:00,318  INFO : Previous driver timer initialised
+2021-01-11 17:48:00,318  INFO : subscribing to new messages
+2021-01-11 17:48:00,319  INFO : Sending :Popular Ordersto 233552607614@c.us
+2021-01-11 17:48:00,552  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:00,552  INFO : Checking if driver is unknown
+2021-01-11 17:48:00,552  INFO : Previous driver timer initialised
+2021-01-11 17:48:00,552  INFO : subscribing to new messages
+2021-01-11 17:48:00,553  INFO : Sending :Popular Ordersto 233552607614@c.us
+2021-01-11 17:48:01,783  INFO : New Request
+2021-01-11 17:48:01,784  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:48:01,784  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:48:01,784  INFO : About getting driver status
+2021-01-11 17:48:02,699  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:02,699  INFO : Checking if driver is unknown
+2021-01-11 17:48:02,699  INFO : Previous driver timer initialised
+2021-01-11 17:48:02,699  INFO : subscribing to new messages
+2021-01-11 17:48:02,701  INFO : Sending :Classic Pizzasto 233552607614@c.us
+2021-01-11 17:48:02,702  INFO : New Request
+2021-01-11 17:48:02,704  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:48:02,704  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:48:02,704  INFO : About getting driver status
+2021-01-11 17:48:02,707  INFO : [<MessageGroup - 1 message in Gr>, <MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:48:02,707  INFO : Sending message to r2mp
+2021-01-11 17:48:03,547  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:03,547  INFO : Checking if driver is unknown
+2021-01-11 17:48:03,548  INFO : Previous driver timer initialised
+2021-01-11 17:48:03,548  INFO : subscribing to new messages
+2021-01-11 17:48:03,548  INFO : Sending :Classic Pizzasto 233552607614@c.us
+2021-01-11 17:48:03,556  INFO : New Request
+2021-01-11 17:48:03,557  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:48:03,557  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:48:03,557  INFO : About getting driver status
+2021-01-11 17:48:03,801  INFO : New Request
+2021-01-11 17:48:03,802  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:48:03,802  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:48:03,802  INFO : About getting driver status
+2021-01-11 17:48:04,203  INFO : New Request
+2021-01-11 17:48:04,203  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:48:04,203  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:48:04,203  INFO : About getting driver status
+2021-01-11 17:48:04,266  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:04,266  INFO : Checking if driver is unknown
+2021-01-11 17:48:04,266  INFO : Previous driver timer initialised
+2021-01-11 17:48:04,267  INFO : subscribing to new messages
+2021-01-11 17:48:04,267  INFO : Sending :Deluxe Pizzasto 233552607614@c.us
+2021-01-11 17:48:04,274  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:04,274  INFO : Checking if driver is unknown
+2021-01-11 17:48:04,275  INFO : Previous driver timer initialised
+2021-01-11 17:48:04,275  INFO : subscribing to new messages
+2021-01-11 17:48:04,275  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233552607614@c.us
+2021-01-11 17:48:04,283  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:04,283  INFO : Checking if driver is unknown
+2021-01-11 17:48:04,283  INFO : Previous driver timer initialised
+2021-01-11 17:48:04,284  INFO : subscribing to new messages
+2021-01-11 17:48:04,284  INFO : Sending :Deluxe Pizzasto 233552607614@c.us
+2021-01-11 17:48:05,036  INFO : New Request
+2021-01-11 17:48:05,037  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:48:05,037  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:48:05,037  INFO : About getting driver status
+2021-01-11 17:48:05,854  INFO : New Request
+2021-01-11 17:48:05,855  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:48:05,855  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:48:05,856  INFO : About getting driver status
+2021-01-11 17:48:06,335  INFO : New Request
+2021-01-11 17:48:06,335  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:48:06,336  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:48:06,336  INFO : About getting driver status
+2021-01-11 17:48:06,338  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:06,338  INFO : Checking if driver is unknown
+2021-01-11 17:48:06,338  INFO : Previous driver timer initialised
+2021-01-11 17:48:06,338  INFO : subscribing to new messages
+2021-01-11 17:48:06,339  INFO : Sending :Toppingsto 233552607614@c.us
+2021-01-11 17:48:06,347  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:06,347  INFO : Checking if driver is unknown
+2021-01-11 17:48:06,347  INFO : Previous driver timer initialised
+2021-01-11 17:48:06,347  INFO : subscribing to new messages
+2021-01-11 17:48:06,348  INFO : Sending : What can I help you order today?to 233552607614@c.us
+2021-01-11 17:48:06,355  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:06,355  INFO : Checking if driver is unknown
+2021-01-11 17:48:06,355  INFO : Previous driver timer initialised
+2021-01-11 17:48:06,356  INFO : subscribing to new messages
+2021-01-11 17:48:06,356  INFO : Sending :Toppingsto 233552607614@c.us
+2021-01-11 17:48:07,081  INFO : New Request
+2021-01-11 17:48:22,804  INFO : New Request
+2021-01-11 17:48:22,804  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:48:22,805  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:48:22,805  INFO : About getting driver status
+2021-01-11 17:48:23,560  INFO : New Request
+2021-01-11 17:48:23,615  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:23,616  INFO : Checking if driver is unknown
+2021-01-11 17:48:23,616  INFO : Previous driver timer initialised
+2021-01-11 17:48:23,616  INFO : subscribing to new messages
+2021-01-11 17:48:23,617  INFO : Sending :Popular Ordersto 233552607614@c.us
+2021-01-11 17:48:24,827  INFO : New Request
+2021-01-11 17:48:24,827  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:48:24,827  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:48:24,827  INFO : About getting driver status
+2021-01-11 17:48:25,506  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:48:25,512  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:25,512  INFO : Checking if driver is unknown
+2021-01-11 17:48:25,513  INFO : Previous driver timer initialised
+2021-01-11 17:48:25,513  INFO : subscribing to new messages
+2021-01-11 17:48:25,513  INFO : Sending :Classic Pizzasto 233552607614@c.us
+2021-01-11 17:48:26,417  INFO : New Request
+2021-01-11 17:48:26,417  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:48:26,417  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:48:26,417  INFO : About getting driver status
+2021-01-11 17:48:26,427  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:26,427  INFO : Checking if driver is unknown
+2021-01-11 17:48:26,427  INFO : Previous driver timer initialised
+2021-01-11 17:48:26,427  INFO : subscribing to new messages
+2021-01-11 17:48:26,428  INFO : Sending :Deluxe Pizzasto 233552607614@c.us
+2021-01-11 17:48:27,183  INFO : New Request
+2021-01-11 17:48:27,183  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-11 17:48:27,183  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:48:27,184  INFO : About getting driver status
+2021-01-11 17:48:27,193  INFO : Driver Status - LoggedIn
+2021-01-11 17:48:27,193  INFO : Checking if driver is unknown
+2021-01-11 17:48:27,194  INFO : Previous driver timer initialised
+2021-01-11 17:48:27,194  INFO : subscribing to new messages
+2021-01-11 17:48:27,194  INFO : Sending :Toppingsto 233552607614@c.us
+2021-01-11 17:48:27,966  INFO : New Request
+2021-01-11 17:48:28,024  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-11 17:48:28,024  INFO : Sending message to r2mp
+2021-01-11 17:48:51,441  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:48:54,042  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:50:12,194  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:50:24,198  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:50:32,317  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:50:46,104  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:51:02,093  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:51:18,128  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:51:36,209  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 17:53:20,363  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:53:40,420  INFO : New Request
+2021-01-11 17:53:40,422  INFO : API call GET http://0.0.0.0:8888/admin/clients
+2021-01-11 17:53:40,423  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:54:21,676  INFO : New Request
+2021-01-11 17:54:21,677  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-11 17:54:21,677  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:54:23,305  INFO : New Request
+2021-01-11 17:54:23,305  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-11 17:54:23,306  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:54:23,306  INFO : About to initialise new driver 
+2021-01-11 17:54:34,573  INFO : About getting driver status
+2021-01-11 17:54:44,609  INFO : Driver Status - NotLoggedIn
+2021-01-11 17:54:44,610  INFO : Checking if driver is unknown
+2021-01-11 17:54:44,610  INFO : New timer started for driver
+2021-01-11 17:54:44,610  INFO : subscribing to new messages
+2021-01-11 17:54:44,610  INFO : QR requested
+2021-01-11 17:54:44,610  INFO : Timer initialised
+2021-01-11 17:54:47,699  INFO : Sending QR to server
+2021-01-11 17:54:50,659  INFO : Sending QR to server
+2021-01-11 17:54:53,700  INFO : Sending QR to server
+2021-01-11 17:54:56,698  INFO : Sending QR to server
+2021-01-11 17:55:10,404  INFO : Previous driver timer initialised
+2021-01-11 17:55:10,404  INFO : Timer killed successfully
+2021-01-11 17:55:40,523  ERROR : Error occurred trying to kill timer
+2021-01-11 17:55:40,552  ERROR : Error occurred trying to kill timer
+2021-01-11 17:55:40,579  ERROR : Error occurred trying to kill timer
+2021-01-11 17:55:46,196  INFO : [<MessageGroup - 2 messages in Its Swagger Szn >]
+2021-01-11 17:56:09,965  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 17:56:09,966  INFO : Sending message to r2mp
+2021-01-11 17:56:11,223  INFO : New Request
+2021-01-11 17:56:11,223  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 17:56:11,224  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:56:11,224  INFO : About getting driver status
+2021-01-11 17:56:11,239  INFO : Driver Status - LoggedIn
+2021-01-11 17:56:11,239  INFO : Checking if driver is unknown
+2021-01-11 17:56:11,239  INFO : Previous driver timer initialised
+2021-01-11 17:56:11,239  INFO : subscribing to new messages
+2021-01-11 17:56:11,240  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-11 17:56:12,059  INFO : New Request
+2021-01-11 17:56:12,060  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 17:56:12,060  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:56:12,060  INFO : About getting driver status
+2021-01-11 17:56:12,071  INFO : Driver Status - LoggedIn
+2021-01-11 17:56:12,072  INFO : Checking if driver is unknown
+2021-01-11 17:56:12,072  INFO : Previous driver timer initialised
+2021-01-11 17:56:12,072  INFO : subscribing to new messages
+2021-01-11 17:56:12,073  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-11 17:56:27,695  INFO : New Request
+2021-01-11 17:56:27,695  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 17:56:27,695  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:56:27,696  INFO : About getting driver status
+2021-01-11 17:56:27,840  INFO : Driver Status - LoggedIn
+2021-01-11 17:56:27,840  INFO : Checking if driver is unknown
+2021-01-11 17:56:27,841  INFO : Previous driver timer initialised
+2021-01-11 17:56:27,841  INFO : subscribing to new messages
+2021-01-11 17:56:27,841  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-11 17:56:31,164  INFO : New Request
+2021-01-11 17:56:31,165  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 17:56:31,165  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:56:31,165  INFO : About getting driver status
+2021-01-11 17:56:31,791  INFO : [<MessageGroup - 1 message in AAKH JCR>, <MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-11 17:56:31,940  INFO : Driver Status - LoggedIn
+2021-01-11 17:56:31,940  INFO : Checking if driver is unknown
+2021-01-11 17:56:31,941  INFO : Previous driver timer initialised
+2021-01-11 17:56:31,941  INFO : subscribing to new messages
+2021-01-11 17:56:31,941  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-11 17:56:32,702  INFO : New Request
+2021-01-11 17:56:32,703  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 17:56:32,703  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:56:32,703  INFO : About getting driver status
+2021-01-11 17:56:32,768  INFO : Driver Status - LoggedIn
+2021-01-11 17:56:32,768  INFO : Checking if driver is unknown
+2021-01-11 17:56:32,768  INFO : Previous driver timer initialised
+2021-01-11 17:56:32,768  INFO : subscribing to new messages
+2021-01-11 17:56:32,769  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-11 17:56:33,314  INFO : New Request
+2021-01-11 17:56:33,314  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 17:56:33,315  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 17:56:33,315  INFO : About getting driver status
+2021-01-11 17:56:33,326  INFO : Driver Status - LoggedIn
+2021-01-11 17:56:33,327  INFO : Checking if driver is unknown
+2021-01-11 17:56:33,327  INFO : Previous driver timer initialised
+2021-01-11 17:56:33,327  INFO : subscribing to new messages
+2021-01-11 17:56:33,327  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-11 17:56:33,880  INFO : New Request
+2021-01-11 17:56:39,280  INFO : [<MessageGroup - 1 message in AAKH JCR>]
+2021-01-11 17:56:44,418  INFO : [<MessageGroup - 1 message in Collect $$>, <MessageGroup - 1 message in 4teen>]
+2021-01-11 17:57:11,467  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 17:57:11,468  INFO : Sending message to r2mp
+2021-01-11 17:57:21,395  INFO : [<MessageGroup - 1 message in AAKH JCR>]
+2021-01-11 18:00:11,882  INFO : New Request
+2021-01-11 18:00:11,884  INFO : API call GET http://0.0.0.0:8888/admin/clients
+2021-01-11 18:00:11,884  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:00:20,913  INFO : New Request
+2021-01-11 18:00:20,914  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-11 18:00:20,914  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:00:22,442  INFO : New Request
+2021-01-11 18:00:22,443  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-11 18:00:22,443  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:00:22,443  INFO : About to initialise new driver 
+2021-01-11 18:00:33,134  INFO : About getting driver status
+2021-01-11 18:00:43,183  INFO : Driver Status - NotLoggedIn
+2021-01-11 18:00:43,183  INFO : Checking if driver is unknown
+2021-01-11 18:00:43,183  INFO : New timer started for driver
+2021-01-11 18:00:43,184  INFO : subscribing to new messages
+2021-01-11 18:00:43,184  INFO : QR requested
+2021-01-11 18:00:43,188  INFO : Timer initialised
+2021-01-11 18:00:46,285  INFO : Sending QR to server
+2021-01-11 18:00:49,268  INFO : Sending QR to server
+2021-01-11 18:00:52,263  INFO : Sending QR to server
+2021-01-11 18:00:55,286  INFO : Sending QR to server
+2021-01-11 18:00:58,268  INFO : Sending QR to server
+2021-01-11 18:01:01,268  INFO : Sending QR to server
+2021-01-11 18:01:04,268  INFO : Sending QR to server
+2021-01-11 18:01:07,287  INFO : Sending QR to server
+2021-01-11 18:01:10,267  INFO : Sending QR to server
+2021-01-11 18:01:13,277  INFO : Sending QR to server
+2021-01-11 18:01:16,282  INFO : Sending QR to server
+2021-01-11 18:01:19,297  INFO : Sending QR to server
+2021-01-11 18:01:22,267  INFO : Sending QR to server
+2021-01-11 18:01:25,266  INFO : Sending QR to server
+2021-01-11 18:01:28,258  INFO : Sending QR to server
+2021-01-11 18:01:31,264  INFO : Sending QR to server
+2021-01-11 18:01:34,258  INFO : Sending QR to server
+2021-01-11 18:01:37,278  INFO : Sending QR to server
+2021-01-11 18:01:40,282  INFO : Sending QR to server
+2021-01-11 18:01:43,284  INFO : Sending QR to server
+2021-01-11 18:01:46,284  INFO : Sending QR to server
+2021-01-11 18:01:49,283  INFO : Sending QR to server
+2021-01-11 18:01:52,281  INFO : Sending QR to server
+2021-01-11 18:01:55,258  INFO : Sending QR to server
+2021-01-11 18:01:58,283  INFO : Sending QR to server
+2021-01-11 18:02:01,280  INFO : Sending QR to server
+2021-01-11 18:02:04,281  INFO : Sending QR to server
+2021-01-11 18:02:07,301  INFO : Sending QR to server
+2021-01-11 18:02:10,280  INFO : Sending QR to server
+2021-01-11 18:02:13,283  INFO : Sending QR to server
+2021-01-11 18:02:16,261  INFO : Sending QR to server
+2021-01-11 18:02:19,280  INFO : Sending QR to server
+2021-01-11 18:02:22,282  INFO : Sending QR to server
+2021-01-11 18:02:25,280  INFO : Sending QR to server
+2021-01-11 18:02:28,282  INFO : Sending QR to server
+2021-01-11 18:02:31,313  INFO : Sending QR to server
+2021-01-11 18:02:34,279  INFO : Sending QR to server
+2021-01-11 18:02:37,262  INFO : Sending QR to server
+2021-01-11 18:02:40,899  INFO : Sending QR to server
+2021-01-11 18:02:43,277  INFO : Sending QR to server
+2021-01-11 18:02:46,276  INFO : Sending QR to server
+2021-01-11 18:02:49,297  INFO : Sending QR to server
+2021-01-11 18:02:52,296  INFO : Sending QR to server
+2021-01-11 18:02:55,274  INFO : Sending QR to server
+2021-01-11 18:02:58,256  INFO : Sending QR to server
+2021-01-11 18:03:01,296  INFO : Sending QR to server
+2021-01-11 18:03:04,298  INFO : Sending QR to server
+2021-01-11 18:03:07,298  INFO : Sending QR to server
+2021-01-11 18:03:10,290  INFO : Sending QR to server
+2021-01-11 18:03:13,295  INFO : Sending QR to server
+2021-01-11 18:03:16,297  INFO : Sending QR to server
+2021-01-11 18:03:19,277  INFO : Sending QR to server
+2021-01-11 18:03:22,297  INFO : Sending QR to server
+2021-01-11 18:03:25,295  INFO : Sending QR to server
+2021-01-11 18:03:28,313  INFO : Sending QR to server
+2021-01-11 18:03:31,294  INFO : Sending QR to server
+2021-01-11 18:03:34,313  INFO : Sending QR to server
+2021-01-11 18:03:37,310  INFO : Sending QR to server
+2021-01-11 18:03:40,287  INFO : Sending QR to server
+2021-01-11 18:03:43,270  INFO : Sending QR to server
+2021-01-11 18:03:56,325  INFO : Previous driver timer initialised
+2021-01-11 18:03:56,325  INFO : Timer killed successfully
+2021-01-11 18:04:26,583  ERROR : Error occurred trying to kill timer
+2021-01-11 18:04:26,610  ERROR : Error occurred trying to kill timer
+2021-01-11 18:04:26,641  ERROR : Error occurred trying to kill timer
+2021-01-11 18:05:51,099  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 18:05:51,099  INFO : Sending message to r2mp
+2021-01-11 18:05:52,323  INFO : New Request
+2021-01-11 18:05:52,324  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:05:52,324  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:05:52,324  INFO : About getting driver status
+2021-01-11 18:05:52,431  INFO : Driver Status - LoggedIn
+2021-01-11 18:05:52,432  INFO : Checking if driver is unknown
+2021-01-11 18:05:52,432  INFO : Previous driver timer initialised
+2021-01-11 18:05:52,432  INFO : subscribing to new messages
+2021-01-11 18:05:52,433  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-11 18:05:53,173  INFO : New Request
+2021-01-11 18:05:53,173  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:05:53,173  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:05:53,173  INFO : About getting driver status
+2021-01-11 18:05:53,203  INFO : Driver Status - LoggedIn
+2021-01-11 18:05:53,204  INFO : Checking if driver is unknown
+2021-01-11 18:05:53,204  INFO : Previous driver timer initialised
+2021-01-11 18:05:53,204  INFO : subscribing to new messages
+2021-01-11 18:05:53,205  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-11 18:06:09,790  INFO : New Request
+2021-01-11 18:06:09,790  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:06:09,791  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:06:09,791  INFO : About getting driver status
+2021-01-11 18:06:09,931  INFO : Driver Status - LoggedIn
+2021-01-11 18:06:09,931  INFO : Checking if driver is unknown
+2021-01-11 18:06:09,931  INFO : Previous driver timer initialised
+2021-01-11 18:06:09,931  INFO : subscribing to new messages
+2021-01-11 18:06:09,932  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-11 18:06:10,924  INFO : New Request
+2021-01-11 18:06:10,924  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:06:10,924  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:06:10,925  INFO : About getting driver status
+2021-01-11 18:06:10,980  INFO : Driver Status - LoggedIn
+2021-01-11 18:06:10,980  INFO : Checking if driver is unknown
+2021-01-11 18:06:10,980  INFO : Previous driver timer initialised
+2021-01-11 18:06:10,980  INFO : subscribing to new messages
+2021-01-11 18:06:10,981  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-11 18:06:11,544  INFO : New Request
+2021-01-11 18:06:11,544  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:06:11,545  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:06:11,545  INFO : About getting driver status
+2021-01-11 18:06:11,554  INFO : Driver Status - LoggedIn
+2021-01-11 18:06:11,555  INFO : Checking if driver is unknown
+2021-01-11 18:06:11,555  INFO : Previous driver timer initialised
+2021-01-11 18:06:11,555  INFO : subscribing to new messages
+2021-01-11 18:06:11,555  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-11 18:06:12,108  INFO : New Request
+2021-01-11 18:06:12,109  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:06:12,109  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:06:12,109  INFO : About getting driver status
+2021-01-11 18:06:12,121  INFO : Driver Status - LoggedIn
+2021-01-11 18:06:12,121  INFO : Checking if driver is unknown
+2021-01-11 18:06:12,121  INFO : Previous driver timer initialised
+2021-01-11 18:06:12,121  INFO : subscribing to new messages
+2021-01-11 18:06:12,122  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-11 18:06:12,771  INFO : New Request
+2021-01-11 18:06:26,988  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 18:06:26,988  INFO : Sending message to r2mp
+2021-01-11 18:11:21,977  INFO : New Request
+2021-01-11 18:11:21,978  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-11 18:11:21,978  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:11:31,398  INFO : New Request
+2021-01-11 18:11:31,399  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-11 18:11:31,399  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:11:31,399  INFO : About to initialise new driver 
+2021-01-11 18:11:45,530  INFO : About getting driver status
+2021-01-11 18:11:55,578  INFO : Driver Status - NotLoggedIn
+2021-01-11 18:11:55,578  INFO : Checking if driver is unknown
+2021-01-11 18:11:55,578  INFO : New timer started for driver
+2021-01-11 18:11:55,579  INFO : subscribing to new messages
+2021-01-11 18:11:55,579  INFO : QR requested
+2021-01-11 18:11:55,579  INFO : Timer initialised
+2021-01-11 18:11:58,725  INFO : Sending QR to server
+2021-01-11 18:12:01,632  INFO : Sending QR to server
+2021-01-11 18:12:19,495  INFO : New Request
+2021-01-11 18:12:19,496  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-11 18:12:19,496  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:12:19,497  INFO : About to initialise new driver 
+2021-01-11 18:12:24,400  INFO : About getting driver status
+2021-01-11 18:12:35,025  INFO : Driver Status - NotLoggedIn
+2021-01-11 18:12:35,025  INFO : Checking if driver is unknown
+2021-01-11 18:12:35,026  INFO : New timer started for driver
+2021-01-11 18:12:35,026  INFO : subscribing to new messages
+2021-01-11 18:12:35,026  INFO : QR requested
+2021-01-11 18:12:35,026  INFO : Timer initialised
+2021-01-11 18:12:38,098  INFO : Sending QR to server
+2021-01-11 18:12:41,104  INFO : Sending QR to server
+2021-01-11 18:12:44,120  INFO : Sending QR to server
+2021-01-11 18:12:47,120  INFO : Sending QR to server
+2021-01-11 18:12:50,100  INFO : Sending QR to server
+2021-01-11 18:12:53,101  INFO : Sending QR to server
+2021-01-11 18:12:56,120  INFO : Sending QR to server
+2021-01-11 18:12:59,118  INFO : Sending QR to server
+2021-01-11 18:13:02,118  INFO : Sending QR to server
+2021-01-11 18:13:05,135  INFO : Sending QR to server
+2021-01-11 18:13:08,119  INFO : Sending QR to server
+2021-01-11 18:13:11,119  INFO : Sending QR to server
+2021-01-11 18:13:14,100  INFO : Sending QR to server
+2021-01-11 18:13:17,100  INFO : Sending QR to server
+2021-01-11 18:13:20,119  INFO : Sending QR to server
+2021-01-11 18:13:23,137  INFO : Sending QR to server
+2021-01-11 18:13:26,120  INFO : Sending QR to server
+2021-01-11 18:13:29,129  INFO : Sending QR to server
+2021-01-11 18:13:32,117  INFO : Sending QR to server
+2021-01-11 18:13:35,137  INFO : Sending QR to server
+2021-01-11 18:13:38,120  INFO : Sending QR to server
+2021-01-11 18:13:41,115  INFO : Sending QR to server
+2021-01-11 18:13:44,119  INFO : Sending QR to server
+2021-01-11 18:13:47,117  INFO : Sending QR to server
+2021-01-11 18:13:50,135  INFO : Sending QR to server
+2021-01-11 18:14:03,166  INFO : Previous driver timer initialised
+2021-01-11 18:14:03,166  INFO : Timer killed successfully
+2021-01-11 18:14:33,318  ERROR : Error occurred trying to kill timer
+2021-01-11 18:14:33,344  ERROR : Error occurred trying to kill timer
+2021-01-11 18:14:33,360  ERROR : Error occurred trying to kill timer
+2021-01-11 18:14:39,047  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 18:14:39,047  INFO : Sending message to r2mp
+2021-01-11 18:14:40,241  INFO : New Request
+2021-01-11 18:14:40,242  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:14:40,242  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:14:40,242  INFO : About getting driver status
+2021-01-11 18:14:40,256  INFO : Driver Status - LoggedIn
+2021-01-11 18:14:40,257  INFO : Checking if driver is unknown
+2021-01-11 18:14:40,257  INFO : Previous driver timer initialised
+2021-01-11 18:14:40,257  INFO : subscribing to new messages
+2021-01-11 18:14:40,258  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-11 18:14:40,960  INFO : New Request
+2021-01-11 18:14:40,961  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:14:40,961  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:14:40,962  INFO : About getting driver status
+2021-01-11 18:14:40,973  INFO : Driver Status - LoggedIn
+2021-01-11 18:14:40,973  INFO : Checking if driver is unknown
+2021-01-11 18:14:40,973  INFO : Previous driver timer initialised
+2021-01-11 18:14:40,973  INFO : subscribing to new messages
+2021-01-11 18:14:40,974  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-11 18:14:56,597  INFO : New Request
+2021-01-11 18:14:56,598  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:14:56,598  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:14:56,598  INFO : About getting driver status
+2021-01-11 18:14:56,694  INFO : Driver Status - LoggedIn
+2021-01-11 18:14:56,694  INFO : Checking if driver is unknown
+2021-01-11 18:14:56,695  INFO : Previous driver timer initialised
+2021-01-11 18:14:56,695  INFO : subscribing to new messages
+2021-01-11 18:14:56,695  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-11 18:14:59,813  INFO : New Request
+2021-01-11 18:14:59,814  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:14:59,814  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:14:59,815  INFO : About getting driver status
+2021-01-11 18:14:59,934  INFO : Driver Status - LoggedIn
+2021-01-11 18:14:59,934  INFO : Checking if driver is unknown
+2021-01-11 18:14:59,934  INFO : Previous driver timer initialised
+2021-01-11 18:14:59,934  INFO : subscribing to new messages
+2021-01-11 18:14:59,935  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-11 18:15:00,587  INFO : New Request
+2021-01-11 18:15:00,587  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:15:00,588  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:15:00,588  INFO : About getting driver status
+2021-01-11 18:15:00,601  INFO : Driver Status - LoggedIn
+2021-01-11 18:15:00,601  INFO : Checking if driver is unknown
+2021-01-11 18:15:00,601  INFO : Previous driver timer initialised
+2021-01-11 18:15:00,601  INFO : subscribing to new messages
+2021-01-11 18:15:00,602  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-11 18:15:01,263  INFO : New Request
+2021-01-11 18:15:01,263  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:15:01,263  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:15:01,264  INFO : About getting driver status
+2021-01-11 18:15:01,328  INFO : Driver Status - LoggedIn
+2021-01-11 18:15:01,328  INFO : Checking if driver is unknown
+2021-01-11 18:15:01,328  INFO : Previous driver timer initialised
+2021-01-11 18:15:01,328  INFO : subscribing to new messages
+2021-01-11 18:15:01,329  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-11 18:15:01,977  INFO : New Request
+2021-01-11 18:15:55,995  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 18:15:55,996  INFO : Sending message to r2mp
+2021-01-11 18:16:47,919  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 18:16:47,919  INFO : Sending message to r2mp
+2021-01-11 18:16:48,945  INFO : New Request
+2021-01-11 18:16:48,945  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:16:48,945  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:16:48,946  INFO : About getting driver status
+2021-01-11 18:16:48,953  INFO : Driver Status - LoggedIn
+2021-01-11 18:16:48,954  INFO : Checking if driver is unknown
+2021-01-11 18:16:48,954  INFO : Previous driver timer initialised
+2021-01-11 18:16:48,954  INFO : subscribing to new messages
+2021-01-11 18:16:48,954  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-11 18:16:49,657  INFO : New Request
+2021-01-11 18:16:49,657  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:16:49,657  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:16:49,657  INFO : About getting driver status
+2021-01-11 18:16:49,677  INFO : Driver Status - LoggedIn
+2021-01-11 18:16:49,677  INFO : Checking if driver is unknown
+2021-01-11 18:16:49,677  INFO : Previous driver timer initialised
+2021-01-11 18:16:49,678  INFO : subscribing to new messages
+2021-01-11 18:16:49,678  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-11 18:17:05,291  INFO : New Request
+2021-01-11 18:17:05,294  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:17:05,294  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:17:05,294  INFO : About getting driver status
+2021-01-11 18:17:05,326  INFO : Driver Status - LoggedIn
+2021-01-11 18:17:05,327  INFO : Checking if driver is unknown
+2021-01-11 18:17:05,327  INFO : Previous driver timer initialised
+2021-01-11 18:17:05,327  INFO : subscribing to new messages
+2021-01-11 18:17:05,328  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-11 18:17:06,482  INFO : New Request
+2021-01-11 18:17:06,483  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:17:06,483  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:17:06,483  INFO : About getting driver status
+2021-01-11 18:17:07,037  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-11 18:17:07,045  INFO : Driver Status - LoggedIn
+2021-01-11 18:17:07,045  INFO : Checking if driver is unknown
+2021-01-11 18:17:07,045  INFO : Previous driver timer initialised
+2021-01-11 18:17:07,045  INFO : subscribing to new messages
+2021-01-11 18:17:07,046  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-11 18:17:07,711  INFO : New Request
+2021-01-11 18:17:07,712  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:17:07,712  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:17:07,712  INFO : About getting driver status
+2021-01-11 18:17:07,776  INFO : Driver Status - LoggedIn
+2021-01-11 18:17:07,776  INFO : Checking if driver is unknown
+2021-01-11 18:17:07,776  INFO : Previous driver timer initialised
+2021-01-11 18:17:07,776  INFO : subscribing to new messages
+2021-01-11 18:17:07,777  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-11 18:17:08,435  INFO : New Request
+2021-01-11 18:17:08,436  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:17:08,436  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:17:08,436  INFO : About getting driver status
+2021-01-11 18:17:08,449  INFO : Driver Status - LoggedIn
+2021-01-11 18:17:08,449  INFO : Checking if driver is unknown
+2021-01-11 18:17:08,449  INFO : Previous driver timer initialised
+2021-01-11 18:17:08,450  INFO : subscribing to new messages
+2021-01-11 18:17:08,450  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-11 18:17:09,197  INFO : New Request
+2021-01-11 18:17:15,473  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 18:17:21,936  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 18:20:14,140  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 18:20:22,081  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 18:20:32,082  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 18:20:56,083  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 18:20:56,084  INFO : Sending message to r2mp
+2021-01-11 18:20:59,111  INFO : New Request
+2021-01-11 18:20:59,112  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:20:59,112  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:20:59,112  INFO : About getting driver status
+2021-01-11 18:20:59,121  INFO : Driver Status - LoggedIn
+2021-01-11 18:20:59,121  INFO : Checking if driver is unknown
+2021-01-11 18:20:59,121  INFO : Previous driver timer initialised
+2021-01-11 18:20:59,121  INFO : subscribing to new messages
+2021-01-11 18:20:59,122  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-11 18:21:00,082  INFO : New Request
+2021-01-11 18:21:00,082  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:21:00,083  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:21:00,083  INFO : About getting driver status
+2021-01-11 18:21:00,523  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-11 18:21:00,535  INFO : Driver Status - LoggedIn
+2021-01-11 18:21:00,536  INFO : Checking if driver is unknown
+2021-01-11 18:21:00,536  INFO : Previous driver timer initialised
+2021-01-11 18:21:00,536  INFO : subscribing to new messages
+2021-01-11 18:21:00,536  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-11 18:21:16,180  INFO : New Request
+2021-01-11 18:21:16,180  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:21:16,181  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:21:16,181  INFO : About getting driver status
+2021-01-11 18:21:16,490  INFO : Driver Status - LoggedIn
+2021-01-11 18:21:16,490  INFO : Checking if driver is unknown
+2021-01-11 18:21:16,491  INFO : Previous driver timer initialised
+2021-01-11 18:21:16,491  INFO : subscribing to new messages
+2021-01-11 18:21:16,491  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-11 18:21:17,565  INFO : New Request
+2021-01-11 18:21:17,566  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:21:17,566  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:21:17,567  INFO : About getting driver status
+2021-01-11 18:21:17,625  INFO : Driver Status - LoggedIn
+2021-01-11 18:21:17,626  INFO : Checking if driver is unknown
+2021-01-11 18:21:17,626  INFO : Previous driver timer initialised
+2021-01-11 18:21:17,626  INFO : subscribing to new messages
+2021-01-11 18:21:17,626  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-11 18:21:18,288  INFO : New Request
+2021-01-11 18:21:18,288  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:21:18,288  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:21:18,288  INFO : About getting driver status
+2021-01-11 18:21:18,299  INFO : Driver Status - LoggedIn
+2021-01-11 18:21:18,299  INFO : Checking if driver is unknown
+2021-01-11 18:21:18,300  INFO : Previous driver timer initialised
+2021-01-11 18:21:18,300  INFO : subscribing to new messages
+2021-01-11 18:21:18,300  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-11 18:21:18,953  INFO : New Request
+2021-01-11 18:21:18,953  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:21:18,953  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:21:18,953  INFO : About getting driver status
+2021-01-11 18:21:18,963  INFO : Driver Status - LoggedIn
+2021-01-11 18:21:18,963  INFO : Checking if driver is unknown
+2021-01-11 18:21:18,964  INFO : Previous driver timer initialised
+2021-01-11 18:21:18,964  INFO : subscribing to new messages
+2021-01-11 18:21:18,964  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-11 18:21:19,639  INFO : New Request
+2021-01-11 18:21:36,405  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-11 18:21:36,405  INFO : Sending message to r2mp
+2021-01-11 18:21:37,724  INFO : New Request
+2021-01-11 18:21:37,725  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:21:37,725  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:21:37,725  INFO : About getting driver status
+2021-01-11 18:21:37,738  INFO : Driver Status - LoggedIn
+2021-01-11 18:21:37,738  INFO : Checking if driver is unknown
+2021-01-11 18:21:37,739  INFO : Previous driver timer initialised
+2021-01-11 18:21:37,739  INFO : subscribing to new messages
+2021-01-11 18:21:37,739  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-11 18:21:38,489  INFO : New Request
+2021-01-11 18:21:38,490  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:21:38,490  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:21:38,490  INFO : About getting driver status
+2021-01-11 18:21:38,504  INFO : Driver Status - LoggedIn
+2021-01-11 18:21:38,504  INFO : Checking if driver is unknown
+2021-01-11 18:21:38,504  INFO : Previous driver timer initialised
+2021-01-11 18:21:38,504  INFO : subscribing to new messages
+2021-01-11 18:21:38,505  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-11 18:21:55,506  INFO : New Request
+2021-01-11 18:21:55,508  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-11 18:21:55,510  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-11 18:21:55,510  INFO : About getting driver status
+2021-01-11 18:21:55,730  INFO : Driver Status - LoggedIn
+2021-01-11 18:21:55,731  INFO : Checking if driver is unknown
+2021-01-11 18:21:55,731  INFO : Previous driver timer initialised
+2021-01-11 18:21:55,731  INFO : subscribing to new messages
+2021-01-11 18:21:55,731  INFO : Sending :Popular Ordersto 233209559406@c.us

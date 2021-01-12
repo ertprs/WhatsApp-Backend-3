@@ -39,7 +39,7 @@ import werkzeug
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
 
-from flask import Flask, send_file, request, abort, g, jsonify
+from flask import Flask, send_file, request, abort, g, jsonify, session
 from flask.json import JSONEncoder
 from functools import wraps
 from logging.handlers import TimedRotatingFileHandler
@@ -111,6 +111,7 @@ class NewMessageObserver:
 
     def on_message_received(self, new_messages):
         for message in new_messages:
+            logger.info("New Message event" + message)
             if message.chat_id.endswith("@c.us"):
                 if message.type == "chat" or message.type == "location":
                     body = reformat_message_r2mp(message, self.appId)
@@ -159,6 +160,9 @@ drivers = dict()
 timers = dict()
 # Store list of semaphores
 semaphores = dict()
+
+# store quick replies payload
+payload = dict()
 
 SANDBOX_URL = "http://r2mp-sandbox.rancardmobility.com"
 PRODUCTION_URL = "http://r2mp.rancard.com"
@@ -293,22 +297,26 @@ def init_timer(client_id):
     """
     if client_id in timers and timers[client_id]:
         timers[client_id].start()
+        logger.info("Previous driver timer initialised")
         return
     # Create a timer to call check_new_message function after every 2 seconds.
     # client_id param is needed to be passed to check_new_message
+    logger.info("New timer started for driver")
     timers[client_id] = RepeatedTimer(2, check_new_messages, client_id)
+
 
 def init_login_timer(client_id):
     """Create a timer for the client driver to watch for events
 
     @param client_id: ID of clinet user
     """
-    if client_id in timers and timers[client_id]:
-        timers[client_id].start()
+    timer_id = client_id + "login"
+    if timer_id in timers and timers[timer_id]:
+        timers[timer_id].start()
         return
     # Create a timer to call check_new_message function after every 2 seconds.
     # client_id param is needed to be passed to check_new_message
-    timers[client_id] = RepeatedTimer(2, serve_user_login, client_id)
+    timers[timer_id] = RepeatedTimer(3, serve_user_login, client_id)
 
 
 def serve_user_login(client_id):
@@ -339,14 +347,17 @@ def serve_user_login(client_id):
             "qr": None
         }
         try:
-            timers[client_id].stop()
-            timers[client_id] = None
+            timer_id = client_id + "login"
+            timers[timer_id].stop()
+            timers[timer_id] = None
+
+            init_timer(client_id)
+
             logger.info("Timer killed successfully")
         except:
             logger.error("Error occurred trying to kill timer")
             pass
         response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
-
 
 
 def check_new_messages(client_id):
@@ -379,11 +390,13 @@ def check_new_messages(client_id):
         release_semaphore(client_id)
         # If we have new messages, do something with it
         if res:
-            print(res)
-            for message_group in res:
-                if not message_group.chat._js_obj["isGroup"]:
-                    forwarder = threading.Thread(target=send_message_to_client, args=(message_group, client_id))
-                    forwarder.start()
+            logger.info(res)
+            # for message_group in res:
+            message_group = res[0]
+            if not message_group.chat._js_obj["isGroup"]:
+                storage = session
+                forwarder = threading.Thread(target=send_message_to_client, args=(message_group, client_id, storage))
+                forwarder.start()
     except Exception as e:
         print(str(e))
         pass
@@ -410,11 +423,11 @@ def reformat_message_r2mp(message, appId):
     return body
 
 
-def send_message_to_client(message_group, appId):
+def send_message_to_client(message_group, appId, storage):
     logger.info("Sending message to r2mp")
     # recipient_msisdn = message_group.chat.get_js_obj()['messages'][0]['to']['user']
-    for message in message_group.messages:
-        if message.type == "chat" or message.type == "location":
+    message = message_group.messages[0]
+    if message.type == "chat" or message.type == "location":
             body = {}
             # body['recipientMsisdn'] = recipient_msisdn
             body["recipientMsisdn"] = message._js_obj["to"].replace("@c.us", "")
@@ -431,14 +444,21 @@ def send_message_to_client(message_group, appId):
             body["messageId"] = message.id
             body["companyId"] = appId
             body["appId"] = appId
+
+            # if its a reply
+            if message._js_obj["quotedMsg"] is not None:
+                text = message._js_obj['quotedMsg']['body']
+                body['content'] = text
+                body['quick_reply_payload'] = { "payload" : payload[text] }
+                body['quick_reply'] = { "payload" : payload[text] }
+                body['payload'] = payload[text]
             forward_message_to_r2mp(body)
 
 
 def forward_message_to_r2mp(message_data):
     headers = {'Content-Type': 'application/json; charset=utf-8', 'x-r2-wp-screen-name': message_data["companyId"],
                'msisdn': message_data["recipientMsisdn"]}
-    # response = requests.post("https://r2mp.rancard.com/api/v1/bot?channelType=WHATSAPP",
-    # response = requests.post("http://localhost:8080/api/v1/bot?channelType=WHATSAPP",
+
     response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
                              headers=headers,
                              json=message_data)
@@ -472,7 +492,7 @@ def get_client_info(client_id):
     return {
         "is_alive": is_alive,
         "is_logged_in": is_logged_in,
-        # "is_timer": bool(timers[client_id]) and timers[client_id].is_running,
+        "is_timer": bool(timers[client_id]) and timers[client_id].is_running,
     }
 
 
@@ -600,7 +620,6 @@ def before_request():
         g.driver = drivers[g.client_id]
         g.driver_status = WhatsAPIDriverStatus.Unknown
 
-
         if g.driver is not None:
             logger.info("About getting driver status")
             # g.driver_status = WhatsAPIDriverStatus.Unknown
@@ -617,9 +636,9 @@ def before_request():
             drivers[g.client_id] = init_client(g.client_id)
             g.driver_status = g.driver.get_status()
 
-        # init_timer(g.client_id)
+        init_timer(g.client_id)
         logger.info("subscribing to new messages")
-        g.driver.subscribe_new_messages(NewMessageObserver(g.client_id))
+        # g.driver.subscribe_new_messages(NewMessageObserver(g.client_id))
 
 
 @app.after_request
@@ -675,7 +694,7 @@ def create_client():
 @app.route("/client", methods=["DELETE"])
 def delete_client():
     """Delete all objects related to client"""
-    preserve_cache = request.args.get("preserve_cache", False)
+    preserve_cache = request.args.get("preserve_cache", True)
     delete_client(g.client_id, preserve_cache)
     return jsonify({"Success": True})
 
@@ -778,6 +797,7 @@ def get_chats():
     result = g.driver.get_all_chats()
     return jsonify(result)
 
+
 @app.route("/chats/<chat_id>/messages", methods=["GET"])
 @login_required
 def get_messages(chat_id):
@@ -818,6 +838,8 @@ def send_message(chat_id):
         logger.info("Sending :" +message + "to " + chat_id)
         res = g.driver.chat_send_message(chat_id, message)
 
+        if request.form.get("payload") is not None:
+            payload[message] = request.form.get("payload")
     if res:
         return jsonify(res)
     else:
