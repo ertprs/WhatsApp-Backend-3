@@ -168,7 +168,7 @@ SANDBOX_URL = "http://r2mp-sandbox.rancardmobility.com"
 PRODUCTION_URL = "http://r2mp.rancard.com"
 LOCAL = "http://localhost:8080"
 
-SERVER = SANDBOX_URL
+SERVER = LOCAL
 
 # API key needed for auth with this API, change as per usage
 API_KEY = "5ohsRCA8os7xW7arVagm3O861lMZwFfl"
@@ -442,6 +442,7 @@ def send_message_to_client(message_group, appId, storage):
             body["timeSent"] = message.timestamp.isoformat()
             body["senderMsisdn"] = message.chat_id.replace("@c.us", "")
             body["messageId"] = message.id
+            body['senderUsername'] = message._js_obj['sender']['pushname']
             body["companyId"] = appId
             body["appId"] = appId
 
@@ -449,9 +450,8 @@ def send_message_to_client(message_group, appId, storage):
             if message._js_obj["quotedMsg"] is not None:
                 text = message._js_obj['quotedMsg']['body']
                 body['content'] = text
-                body['quick_reply_payload'] = { "payload" : payload[text] }
+                body['postback'] = { "payload" : payload[text] }
                 body['quick_reply'] = { "payload" : payload[text] }
-                body['payload'] = payload[text]
             forward_message_to_r2mp(body)
 
 
@@ -492,7 +492,7 @@ def get_client_info(client_id):
     return {
         "is_alive": is_alive,
         "is_logged_in": is_logged_in,
-        "is_timer": bool(timers[client_id]) and timers[client_id].is_running,
+        # "is_timer": bool(timers[client_id]) and timers[client_id].is_running,
     }
 
 
@@ -636,9 +636,9 @@ def before_request():
             drivers[g.client_id] = init_client(g.client_id)
             g.driver_status = g.driver.get_status()
 
-        init_timer(g.client_id)
+        # init_timer(g.client_id)
         logger.info("subscribing to new messages")
-        # g.driver.subscribe_new_messages(NewMessageObserver(g.client_id))
+        g.driver.subscribe_new_messages(NewMessageObserver(g.client_id))
 
 
 @app.after_request

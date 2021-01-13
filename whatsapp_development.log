@@ -2504,3 +2504,970 @@ Our menu will pop up in a secondto 233209559406@c.us
 2021-01-11 18:21:55,731  INFO : Previous driver timer initialised
 2021-01-11 18:21:55,731  INFO : subscribing to new messages
 2021-01-11 18:21:55,731  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-12 12:17:55,086  INFO : New Request
+2021-01-12 12:17:55,124  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-12 12:17:55,124  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:18:07,561  INFO : New Request
+2021-01-12 12:18:07,561  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-12 12:18:07,562  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:18:07,562  INFO : About to initialise new driver 
+2021-01-12 12:18:16,631  INFO : About getting driver status
+2021-01-12 12:18:46,721  INFO : Driver Status - Unknown
+2021-01-12 12:18:46,721  INFO : Checking if driver is unknown
+2021-01-12 12:18:46,721  INFO : Re-initiaising driver
+2021-01-12 12:18:46,761  INFO : New timer started for driver
+2021-01-12 12:18:46,761  INFO : subscribing to new messages
+2021-01-12 12:18:46,761  INFO : QR requested
+2021-01-12 12:18:46,762  INFO : Timer initialised
+2021-01-12 12:18:59,884  INFO : Previous driver timer initialised
+2021-01-12 12:18:59,884  INFO : Timer killed successfully
+2021-01-12 12:19:30,203  ERROR : Error occurred trying to kill timer
+2021-01-12 12:19:30,232  ERROR : Error occurred trying to kill timer
+2021-01-12 12:19:30,251  ERROR : Error occurred trying to kill timer
+2021-01-12 12:20:03,605  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 12:20:03,605  INFO : Sending message to r2mp
+2021-01-12 12:20:19,117  INFO : New Request
+2021-01-12 12:20:19,118  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:20:19,118  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:20:19,119  INFO : About getting driver status
+2021-01-12 12:20:19,142  INFO : Driver Status - LoggedIn
+2021-01-12 12:20:19,142  INFO : Checking if driver is unknown
+2021-01-12 12:20:19,142  INFO : Previous driver timer initialised
+2021-01-12 12:20:19,143  INFO : subscribing to new messages
+2021-01-12 12:20:19,144  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-12 12:20:20,529  INFO : New Request
+2021-01-12 12:20:20,530  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:20:20,530  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:20:20,531  INFO : About getting driver status
+2021-01-12 12:20:20,542  INFO : Driver Status - LoggedIn
+2021-01-12 12:20:20,542  INFO : Checking if driver is unknown
+2021-01-12 12:20:20,542  INFO : Previous driver timer initialised
+2021-01-12 12:20:20,542  INFO : subscribing to new messages
+2021-01-12 12:20:20,543  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-12 12:20:36,424  INFO : New Request
+2021-01-12 12:20:36,425  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:20:36,436  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:20:36,436  INFO : About getting driver status
+2021-01-12 12:20:37,115  INFO : Driver Status - LoggedIn
+2021-01-12 12:20:37,117  INFO : Checking if driver is unknown
+2021-01-12 12:20:37,118  INFO : Previous driver timer initialised
+2021-01-12 12:20:37,118  INFO : subscribing to new messages
+2021-01-12 12:20:37,119  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-12 12:20:39,423  INFO : New Request
+2021-01-12 12:20:39,424  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:20:39,425  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:20:39,425  INFO : About getting driver status
+2021-01-12 12:20:39,492  INFO : Driver Status - LoggedIn
+2021-01-12 12:20:39,492  INFO : Checking if driver is unknown
+2021-01-12 12:20:39,492  INFO : Previous driver timer initialised
+2021-01-12 12:20:39,492  INFO : subscribing to new messages
+2021-01-12 12:20:39,493  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-12 12:20:40,325  INFO : New Request
+2021-01-12 12:20:40,326  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:20:40,327  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:20:40,327  INFO : About getting driver status
+2021-01-12 12:20:40,340  INFO : Driver Status - LoggedIn
+2021-01-12 12:20:40,340  INFO : Checking if driver is unknown
+2021-01-12 12:20:40,340  INFO : Previous driver timer initialised
+2021-01-12 12:20:40,340  INFO : subscribing to new messages
+2021-01-12 12:20:40,341  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-12 12:20:41,523  INFO : New Request
+2021-01-12 12:20:41,523  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:20:41,523  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:20:41,524  INFO : About getting driver status
+2021-01-12 12:20:41,585  INFO : Driver Status - LoggedIn
+2021-01-12 12:20:41,585  INFO : Checking if driver is unknown
+2021-01-12 12:20:41,585  INFO : Previous driver timer initialised
+2021-01-12 12:20:41,585  INFO : subscribing to new messages
+2021-01-12 12:20:41,586  INFO : Sending :Terrific Tuesdayto 233209559406@c.us
+2021-01-12 12:20:42,453  INFO : New Request
+2021-01-12 12:20:42,453  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:20:42,453  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:20:42,453  INFO : About getting driver status
+2021-01-12 12:20:42,464  INFO : Driver Status - LoggedIn
+2021-01-12 12:20:42,465  INFO : Checking if driver is unknown
+2021-01-12 12:20:42,465  INFO : Previous driver timer initialised
+2021-01-12 12:20:42,465  INFO : subscribing to new messages
+2021-01-12 12:20:42,466  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-12 12:20:43,325  INFO : New Request
+2021-01-12 12:20:51,681  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 12:20:51,681  INFO : Sending message to r2mp
+2021-01-12 12:20:54,949  INFO : New Request
+2021-01-12 12:20:54,949  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:20:54,950  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:20:54,950  INFO : About getting driver status
+2021-01-12 12:20:54,977  INFO : Driver Status - LoggedIn
+2021-01-12 12:20:54,977  INFO : Checking if driver is unknown
+2021-01-12 12:20:54,977  INFO : Previous driver timer initialised
+2021-01-12 12:20:54,977  INFO : subscribing to new messages
+2021-01-12 12:20:54,978  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-12 12:20:55,813  INFO : New Request
+2021-01-12 12:20:55,813  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:20:55,814  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:20:55,814  INFO : About getting driver status
+2021-01-12 12:20:55,823  INFO : Driver Status - LoggedIn
+2021-01-12 12:20:55,823  INFO : Checking if driver is unknown
+2021-01-12 12:20:55,823  INFO : Previous driver timer initialised
+2021-01-12 12:20:55,823  INFO : subscribing to new messages
+2021-01-12 12:20:55,824  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-12 12:21:11,622  INFO : New Request
+2021-01-12 12:21:11,623  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:21:11,623  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:21:11,623  INFO : About getting driver status
+2021-01-12 12:21:11,822  INFO : Driver Status - LoggedIn
+2021-01-12 12:21:11,823  INFO : Checking if driver is unknown
+2021-01-12 12:21:11,823  INFO : Previous driver timer initialised
+2021-01-12 12:21:11,824  INFO : subscribing to new messages
+2021-01-12 12:21:11,825  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-12 12:21:15,120  INFO : New Request
+2021-01-12 12:21:15,120  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:21:15,121  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:21:15,121  INFO : About getting driver status
+2021-01-12 12:21:15,242  INFO : Driver Status - LoggedIn
+2021-01-12 12:21:15,242  INFO : Checking if driver is unknown
+2021-01-12 12:21:15,242  INFO : Previous driver timer initialised
+2021-01-12 12:21:15,242  INFO : subscribing to new messages
+2021-01-12 12:21:15,243  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-12 12:21:16,102  INFO : New Request
+2021-01-12 12:21:16,103  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:21:16,104  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:21:16,104  INFO : About getting driver status
+2021-01-12 12:21:16,118  INFO : Driver Status - LoggedIn
+2021-01-12 12:21:16,119  INFO : Checking if driver is unknown
+2021-01-12 12:21:16,119  INFO : Previous driver timer initialised
+2021-01-12 12:21:16,119  INFO : subscribing to new messages
+2021-01-12 12:21:16,120  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-12 12:21:16,758  INFO : New Request
+2021-01-12 12:21:16,759  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:21:16,759  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:21:16,759  INFO : About getting driver status
+2021-01-12 12:21:16,769  INFO : Driver Status - LoggedIn
+2021-01-12 12:21:16,769  INFO : Checking if driver is unknown
+2021-01-12 12:21:16,769  INFO : Previous driver timer initialised
+2021-01-12 12:21:16,769  INFO : subscribing to new messages
+2021-01-12 12:21:16,770  INFO : Sending :Terrific Tuesdayto 233209559406@c.us
+2021-01-12 12:21:17,535  INFO : New Request
+2021-01-12 12:21:17,536  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 12:21:17,537  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 12:21:17,537  INFO : About getting driver status
+2021-01-12 12:21:17,603  INFO : Driver Status - LoggedIn
+2021-01-12 12:21:17,603  INFO : Checking if driver is unknown
+2021-01-12 12:21:17,603  INFO : Previous driver timer initialised
+2021-01-12 12:21:17,603  INFO : subscribing to new messages
+2021-01-12 12:21:17,604  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-12 12:21:18,350  INFO : New Request
+2021-01-12 12:27:26,112  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-12 12:27:29,429  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-12 12:35:55,697  INFO : [<MessageGroup - 3 messages in Collect $$>]
+2021-01-12 12:36:09,940  INFO : [<MessageGroup - 3 messages in Collect $$>]
+2021-01-12 12:36:12,599  INFO : [<MessageGroup - 2 messages in Collect $$>, <MessageGroup - 4 messages in Cilla>]
+2021-01-12 12:36:13,968  INFO : [<MessageGroup - 3 messages in Collect $$>, <MessageGroup - 1 message in Cilla>]
+2021-01-12 12:36:15,962  INFO : [<MessageGroup - 3 messages in Collect $$>]
+2021-01-12 12:37:54,174  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 12:37:54,175  INFO : Sending message to r2mp
+2021-01-12 12:46:12,424  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-12 12:59:22,428  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-12 13:01:04,533  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-12 13:02:12,448  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-12 13:05:06,477  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-12 13:08:46,732  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-12 13:09:30,590  INFO : New Request
+2021-01-12 13:09:30,590  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 13:09:30,591  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 13:09:30,591  INFO : About getting driver status
+2021-01-12 13:09:30,602  INFO : Driver Status - LoggedIn
+2021-01-12 13:09:30,602  INFO : Checking if driver is unknown
+2021-01-12 13:09:30,602  INFO : Previous driver timer initialised
+2021-01-12 13:09:30,602  INFO : subscribing to new messages
+2021-01-12 13:09:30,602  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-12 13:09:33,253  INFO : New Request
+2021-01-12 13:09:33,253  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 13:09:33,253  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 13:09:33,254  INFO : About getting driver status
+2021-01-12 13:09:33,273  INFO : Driver Status - LoggedIn
+2021-01-12 13:09:33,273  INFO : Checking if driver is unknown
+2021-01-12 13:09:33,274  INFO : Previous driver timer initialised
+2021-01-12 13:09:33,274  INFO : subscribing to new messages
+2021-01-12 13:09:33,274  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-12 13:09:48,876  INFO : New Request
+2021-01-12 13:09:48,877  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 13:09:48,878  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 13:09:48,878  INFO : About getting driver status
+2021-01-12 13:09:49,128  INFO : Driver Status - LoggedIn
+2021-01-12 13:09:49,128  INFO : Checking if driver is unknown
+2021-01-12 13:09:49,129  INFO : Previous driver timer initialised
+2021-01-12 13:09:49,129  INFO : subscribing to new messages
+2021-01-12 13:09:49,129  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-12 13:09:50,151  INFO : New Request
+2021-01-12 13:09:50,152  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 13:09:50,152  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 13:09:50,152  INFO : About getting driver status
+2021-01-12 13:09:50,216  INFO : Driver Status - LoggedIn
+2021-01-12 13:09:50,216  INFO : Checking if driver is unknown
+2021-01-12 13:09:50,217  INFO : Previous driver timer initialised
+2021-01-12 13:09:50,217  INFO : subscribing to new messages
+2021-01-12 13:09:50,217  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-12 13:09:50,867  INFO : New Request
+2021-01-12 13:09:50,869  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 13:09:50,872  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 13:09:50,872  INFO : About getting driver status
+2021-01-12 13:09:50,887  INFO : Driver Status - LoggedIn
+2021-01-12 13:09:50,887  INFO : Checking if driver is unknown
+2021-01-12 13:09:50,888  INFO : Previous driver timer initialised
+2021-01-12 13:09:50,888  INFO : subscribing to new messages
+2021-01-12 13:09:50,888  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-12 13:09:51,539  INFO : New Request
+2021-01-12 13:09:51,540  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 13:09:51,540  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 13:09:51,540  INFO : About getting driver status
+2021-01-12 13:09:51,555  INFO : Driver Status - LoggedIn
+2021-01-12 13:09:51,555  INFO : Checking if driver is unknown
+2021-01-12 13:09:51,556  INFO : Previous driver timer initialised
+2021-01-12 13:09:51,556  INFO : subscribing to new messages
+2021-01-12 13:09:51,557  INFO : Sending :Terrific Tuesdayto 233209559406@c.us
+2021-01-12 13:09:52,224  INFO : New Request
+2021-01-12 13:09:52,225  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 13:09:52,225  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 13:09:52,225  INFO : About getting driver status
+2021-01-12 13:09:52,285  INFO : Driver Status - LoggedIn
+2021-01-12 13:09:52,285  INFO : Checking if driver is unknown
+2021-01-12 13:09:52,285  INFO : Previous driver timer initialised
+2021-01-12 13:09:52,286  INFO : subscribing to new messages
+2021-01-12 13:09:52,286  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-12 13:09:52,929  INFO : New Request
+2021-01-12 13:21:57,170  INFO : New Request
+2021-01-12 13:21:57,212  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-12 13:21:57,212  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 13:22:01,385  INFO : New Request
+2021-01-12 13:22:01,386  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-12 13:22:01,386  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 13:22:01,387  INFO : About to initialise new driver 
+2021-01-12 13:22:21,502  INFO : About getting driver status
+2021-01-12 13:22:31,593  INFO : Driver Status - NotLoggedIn
+2021-01-12 13:22:31,593  INFO : Checking if driver is unknown
+2021-01-12 13:22:31,593  INFO : New timer started for driver
+2021-01-12 13:22:31,594  INFO : subscribing to new messages
+2021-01-12 13:22:31,594  INFO : QR requested
+2021-01-12 13:22:31,595  INFO : Timer initialised
+2021-01-12 13:22:34,651  INFO : Sending QR to server
+2021-01-12 13:22:37,649  INFO : Sending QR to server
+2021-01-12 13:22:40,671  INFO : Sending QR to server
+2021-01-12 13:22:43,706  INFO : Sending QR to server
+2021-01-12 13:22:46,683  INFO : Sending QR to server
+2021-01-12 13:22:49,671  INFO : Sending QR to server
+2021-01-12 13:22:52,685  INFO : Sending QR to server
+2021-01-12 13:22:55,702  INFO : Sending QR to server
+2021-01-12 13:22:58,666  INFO : Sending QR to server
+2021-01-12 13:23:01,688  INFO : Sending QR to server
+2021-01-12 13:23:04,687  INFO : Sending QR to server
+2021-01-12 13:23:17,689  INFO : Previous driver timer initialised
+2021-01-12 13:23:17,689  INFO : Timer killed successfully
+2021-01-12 13:23:47,822  ERROR : Error occurred trying to kill timer
+2021-01-12 13:23:47,887  ERROR : Error occurred trying to kill timer
+2021-01-12 13:23:47,954  ERROR : Error occurred trying to kill timer
+2021-01-12 13:24:08,668  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 13:24:08,669  INFO : Sending message to r2mp
+2021-01-12 13:29:58,743  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 13:29:58,743  INFO : Sending message to r2mp
+2021-01-12 13:37:47,221  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 13:37:47,222  INFO : Sending message to r2mp
+2021-01-12 13:52:05,697  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 13:52:05,698  INFO : Sending message to r2mp
+2021-01-12 14:06:28,563  INFO : [<MessageGroup - 2 messages in Boys Abr3>]
+2021-01-12 14:09:20,461  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 14:09:20,513  INFO : Sending message to r2mp
+2021-01-12 14:09:30,518  INFO : New Request
+2021-01-12 14:09:30,519  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:09:30,520  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:09:30,520  INFO : About getting driver status
+2021-01-12 14:09:30,686  INFO : Driver Status - LoggedIn
+2021-01-12 14:09:30,686  INFO : Checking if driver is unknown
+2021-01-12 14:09:30,686  INFO : Previous driver timer initialised
+2021-01-12 14:09:30,686  INFO : subscribing to new messages
+2021-01-12 14:09:30,687  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-12 14:09:32,105  INFO : New Request
+2021-01-12 14:09:32,106  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:09:32,106  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:09:32,106  INFO : About getting driver status
+2021-01-12 14:09:32,114  INFO : Driver Status - LoggedIn
+2021-01-12 14:09:32,114  INFO : Checking if driver is unknown
+2021-01-12 14:09:32,114  INFO : Previous driver timer initialised
+2021-01-12 14:09:32,114  INFO : subscribing to new messages
+2021-01-12 14:09:32,114  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-12 14:09:48,222  INFO : New Request
+2021-01-12 14:09:48,223  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:09:48,223  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:09:48,223  INFO : About getting driver status
+2021-01-12 14:09:48,396  INFO : Driver Status - LoggedIn
+2021-01-12 14:09:48,396  INFO : Checking if driver is unknown
+2021-01-12 14:09:48,396  INFO : Previous driver timer initialised
+2021-01-12 14:09:48,396  INFO : subscribing to new messages
+2021-01-12 14:09:48,396  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-12 14:09:50,847  INFO : New Request
+2021-01-12 14:09:50,848  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:09:50,848  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:09:50,848  INFO : About getting driver status
+2021-01-12 14:09:50,915  INFO : Driver Status - LoggedIn
+2021-01-12 14:09:50,916  INFO : Checking if driver is unknown
+2021-01-12 14:09:50,916  INFO : Previous driver timer initialised
+2021-01-12 14:09:50,916  INFO : subscribing to new messages
+2021-01-12 14:09:50,916  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-12 14:09:51,766  INFO : New Request
+2021-01-12 14:09:51,766  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:09:51,767  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:09:51,767  INFO : About getting driver status
+2021-01-12 14:09:51,853  INFO : Driver Status - LoggedIn
+2021-01-12 14:09:51,853  INFO : Checking if driver is unknown
+2021-01-12 14:09:51,853  INFO : Previous driver timer initialised
+2021-01-12 14:09:51,853  INFO : subscribing to new messages
+2021-01-12 14:09:51,854  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-12 14:09:52,497  INFO : New Request
+2021-01-12 14:09:52,497  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:09:52,497  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:09:52,498  INFO : About getting driver status
+2021-01-12 14:09:52,511  INFO : Driver Status - LoggedIn
+2021-01-12 14:09:52,511  INFO : Checking if driver is unknown
+2021-01-12 14:09:52,512  INFO : Previous driver timer initialised
+2021-01-12 14:09:52,512  INFO : subscribing to new messages
+2021-01-12 14:09:52,513  INFO : Sending :Terrific Tuesdayto 233209559406@c.us
+2021-01-12 14:09:53,177  INFO : New Request
+2021-01-12 14:09:53,209  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:09:53,209  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:09:53,209  INFO : About getting driver status
+2021-01-12 14:09:53,221  INFO : Driver Status - LoggedIn
+2021-01-12 14:09:53,221  INFO : Checking if driver is unknown
+2021-01-12 14:09:53,221  INFO : Previous driver timer initialised
+2021-01-12 14:09:53,221  INFO : subscribing to new messages
+2021-01-12 14:09:53,222  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-12 14:09:53,962  INFO : New Request
+2021-01-12 14:10:12,749  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 14:10:12,749  INFO : Sending message to r2mp
+2021-01-12 14:12:23,152  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-12 14:12:40,689  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-12 14:13:48,618  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-12 14:14:42,720  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-12 14:14:48,844  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-12 14:15:00,827  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-12 14:15:04,752  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-12 14:20:28,879  INFO : New Request
+2021-01-12 14:20:28,906  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-12 14:20:28,906  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:20:34,118  INFO : New Request
+2021-01-12 14:20:34,118  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-12 14:20:34,119  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:20:34,119  INFO : About to initialise new driver 
+2021-01-12 14:20:54,195  INFO : About getting driver status
+2021-01-12 14:21:04,294  INFO : Driver Status - NotLoggedIn
+2021-01-12 14:21:04,294  INFO : Checking if driver is unknown
+2021-01-12 14:21:04,294  INFO : New timer started for driver
+2021-01-12 14:21:04,295  INFO : subscribing to new messages
+2021-01-12 14:21:04,295  INFO : QR requested
+2021-01-12 14:21:04,295  INFO : Timer initialised
+2021-01-12 14:21:07,415  INFO : Sending QR to server
+2021-01-12 14:21:10,373  INFO : Sending QR to server
+2021-01-12 14:21:13,373  INFO : Sending QR to server
+2021-01-12 14:21:16,355  INFO : Sending QR to server
+2021-01-12 14:21:19,373  INFO : Sending QR to server
+2021-01-12 14:21:22,374  INFO : Sending QR to server
+2021-01-12 14:21:25,390  INFO : Sending QR to server
+2021-01-12 14:21:28,369  INFO : Sending QR to server
+2021-01-12 14:21:31,391  INFO : Sending QR to server
+2021-01-12 14:21:34,368  INFO : Sending QR to server
+2021-01-12 14:21:37,375  INFO : Sending QR to server
+2021-01-12 14:21:40,370  INFO : Sending QR to server
+2021-01-12 14:21:43,373  INFO : Sending QR to server
+2021-01-12 14:21:46,348  INFO : Sending QR to server
+2021-01-12 14:21:49,349  INFO : Sending QR to server
+2021-01-12 14:21:52,389  INFO : Sending QR to server
+2021-01-12 14:21:55,390  INFO : Sending QR to server
+2021-01-12 14:21:58,388  INFO : Sending QR to server
+2021-01-12 14:22:01,347  INFO : Sending QR to server
+2021-01-12 14:22:04,385  INFO : Sending QR to server
+2021-01-12 14:22:07,406  INFO : Sending QR to server
+2021-01-12 14:22:10,390  INFO : Sending QR to server
+2021-01-12 14:22:13,407  INFO : Sending QR to server
+2021-01-12 14:22:16,390  INFO : Sending QR to server
+2021-01-12 14:22:19,388  INFO : Sending QR to server
+2021-01-12 14:22:22,403  INFO : Sending QR to server
+2021-01-12 14:22:35,401  INFO : Previous driver timer initialised
+2021-01-12 14:22:35,402  INFO : Timer killed successfully
+2021-01-12 14:23:07,426  ERROR : Error occurred trying to kill timer
+2021-01-12 14:23:07,462  ERROR : Error occurred trying to kill timer
+2021-01-12 14:23:07,481  ERROR : Error occurred trying to kill timer
+2021-01-12 14:24:27,899  INFO : New Request
+2021-01-12 14:24:27,900  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-12 14:24:27,900  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:24:36,505  INFO : New Request
+2021-01-12 14:24:36,506  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-12 14:24:36,506  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:24:36,506  INFO : About to initialise new driver 
+2021-01-12 14:24:43,393  INFO : About getting driver status
+2021-01-12 14:24:53,472  INFO : Driver Status - NotLoggedIn
+2021-01-12 14:24:53,473  INFO : Checking if driver is unknown
+2021-01-12 14:24:53,473  INFO : New timer started for driver
+2021-01-12 14:24:53,473  INFO : subscribing to new messages
+2021-01-12 14:24:53,473  INFO : QR requested
+2021-01-12 14:24:53,474  INFO : Timer initialised
+2021-01-12 14:24:56,569  INFO : Sending QR to server
+2021-01-12 14:24:59,561  INFO : Sending QR to server
+2021-01-12 14:25:02,561  INFO : Sending QR to server
+2021-01-12 14:25:05,562  INFO : Sending QR to server
+2021-01-12 14:25:08,966  INFO : Sending QR to server
+2021-01-12 14:25:21,591  INFO : Previous driver timer initialised
+2021-01-12 14:25:21,591  INFO : Timer killed successfully
+2021-01-12 14:25:51,746  ERROR : Error occurred trying to kill timer
+2021-01-12 14:25:51,768  ERROR : Error occurred trying to kill timer
+2021-01-12 14:25:51,793  ERROR : Error occurred trying to kill timer
+2021-01-12 14:53:45,305  INFO : New Request
+2021-01-12 14:53:45,444  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-12 14:53:45,444  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:53:55,485  INFO : New Request
+2021-01-12 14:53:55,486  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-12 14:53:55,486  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:53:55,486  INFO : About to initialise new driver 
+2021-01-12 14:54:15,299  INFO : About getting driver status
+2021-01-12 14:54:25,339  INFO : Driver Status - NotLoggedIn
+2021-01-12 14:54:25,340  INFO : Checking if driver is unknown
+2021-01-12 14:54:25,340  INFO : New timer started for driver
+2021-01-12 14:54:25,340  INFO : subscribing to new messages
+2021-01-12 14:54:25,340  INFO : QR requested
+2021-01-12 14:54:25,341  INFO : Timer initialised
+2021-01-12 14:54:28,414  INFO : Sending QR to server
+2021-01-12 14:54:31,381  INFO : Sending QR to server
+2021-01-12 14:54:34,421  INFO : Sending QR to server
+2021-01-12 14:54:37,422  INFO : Sending QR to server
+2021-01-12 14:54:40,401  INFO : Sending QR to server
+2021-01-12 14:54:43,423  INFO : Sending QR to server
+2021-01-12 14:54:46,420  INFO : Sending QR to server
+2021-01-12 14:54:49,401  INFO : Sending QR to server
+2021-01-12 14:54:52,413  INFO : Sending QR to server
+2021-01-12 14:54:55,420  INFO : Sending QR to server
+2021-01-12 14:55:08,489  INFO : Previous driver timer initialised
+2021-01-12 14:55:08,489  INFO : Timer killed successfully
+2021-01-12 14:55:38,600  ERROR : Error occurred trying to kill timer
+2021-01-12 14:55:38,641  ERROR : Error occurred trying to kill timer
+2021-01-12 14:55:38,677  ERROR : Error occurred trying to kill timer
+2021-01-12 14:56:17,232  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 14:56:17,253  INFO : Sending message to r2mp
+2021-01-12 14:56:21,643  INFO : New Request
+2021-01-12 14:56:21,644  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:56:21,644  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:56:21,645  INFO : About getting driver status
+2021-01-12 14:56:21,667  INFO : Driver Status - LoggedIn
+2021-01-12 14:56:21,667  INFO : Checking if driver is unknown
+2021-01-12 14:56:21,667  INFO : Previous driver timer initialised
+2021-01-12 14:56:21,667  INFO : subscribing to new messages
+2021-01-12 14:56:21,668  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-12 14:56:23,198  INFO : New Request
+2021-01-12 14:56:23,199  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:56:23,199  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:56:24,402  INFO : About getting driver status
+2021-01-12 14:56:24,417  INFO : Driver Status - LoggedIn
+2021-01-12 14:56:24,418  INFO : Checking if driver is unknown
+2021-01-12 14:56:24,418  INFO : Previous driver timer initialised
+2021-01-12 14:56:24,418  INFO : subscribing to new messages
+2021-01-12 14:56:24,418  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-12 14:56:40,077  INFO : New Request
+2021-01-12 14:56:40,078  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:56:40,078  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:56:40,078  INFO : About getting driver status
+2021-01-12 14:56:40,174  INFO : Driver Status - LoggedIn
+2021-01-12 14:56:40,175  INFO : Checking if driver is unknown
+2021-01-12 14:56:40,175  INFO : Previous driver timer initialised
+2021-01-12 14:56:40,175  INFO : subscribing to new messages
+2021-01-12 14:56:40,176  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-12 14:56:41,351  INFO : New Request
+2021-01-12 14:56:41,352  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:56:41,353  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:56:41,353  INFO : About getting driver status
+2021-01-12 14:56:41,411  INFO : Driver Status - LoggedIn
+2021-01-12 14:56:41,411  INFO : Checking if driver is unknown
+2021-01-12 14:56:41,412  INFO : Previous driver timer initialised
+2021-01-12 14:56:41,412  INFO : subscribing to new messages
+2021-01-12 14:56:41,412  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-12 14:56:44,247  INFO : New Request
+2021-01-12 14:56:44,247  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:56:44,248  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:56:44,248  INFO : About getting driver status
+2021-01-12 14:56:44,310  INFO : Driver Status - LoggedIn
+2021-01-12 14:56:44,311  INFO : Checking if driver is unknown
+2021-01-12 14:56:44,311  INFO : Previous driver timer initialised
+2021-01-12 14:56:44,311  INFO : subscribing to new messages
+2021-01-12 14:56:44,312  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-12 14:56:44,979  INFO : New Request
+2021-01-12 14:56:44,980  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:56:44,980  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:56:44,980  INFO : About getting driver status
+2021-01-12 14:56:45,044  INFO : Driver Status - LoggedIn
+2021-01-12 14:56:45,044  INFO : Checking if driver is unknown
+2021-01-12 14:56:45,044  INFO : Previous driver timer initialised
+2021-01-12 14:56:45,044  INFO : subscribing to new messages
+2021-01-12 14:56:45,045  INFO : Sending :Terrific Tuesdayto 233209559406@c.us
+2021-01-12 14:56:45,701  INFO : New Request
+2021-01-12 14:56:45,701  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:56:45,702  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:56:45,702  INFO : About getting driver status
+2021-01-12 14:56:45,714  INFO : Driver Status - LoggedIn
+2021-01-12 14:56:45,714  INFO : Checking if driver is unknown
+2021-01-12 14:56:45,714  INFO : Previous driver timer initialised
+2021-01-12 14:56:45,714  INFO : subscribing to new messages
+2021-01-12 14:56:45,714  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-12 14:56:46,371  INFO : New Request
+2021-01-12 14:56:53,334  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 14:56:53,334  INFO : Sending message to r2mp
+2021-01-12 14:56:54,505  INFO : New Request
+2021-01-12 14:56:54,505  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:56:54,506  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:56:54,506  INFO : About getting driver status
+2021-01-12 14:56:54,515  INFO : Driver Status - LoggedIn
+2021-01-12 14:56:54,515  INFO : Checking if driver is unknown
+2021-01-12 14:56:54,515  INFO : Previous driver timer initialised
+2021-01-12 14:56:54,515  INFO : subscribing to new messages
+2021-01-12 14:56:54,515  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-12 14:56:55,414  INFO : New Request
+2021-01-12 14:56:55,415  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:56:55,416  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:56:55,416  INFO : About getting driver status
+2021-01-12 14:56:55,429  INFO : Driver Status - LoggedIn
+2021-01-12 14:56:55,430  INFO : Checking if driver is unknown
+2021-01-12 14:56:55,430  INFO : Previous driver timer initialised
+2021-01-12 14:56:55,430  INFO : subscribing to new messages
+2021-01-12 14:56:55,431  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-12 14:57:11,343  INFO : New Request
+2021-01-12 14:57:11,345  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:57:11,345  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:57:11,345  INFO : About getting driver status
+2021-01-12 14:57:11,613  INFO : Driver Status - LoggedIn
+2021-01-12 14:57:11,614  INFO : Checking if driver is unknown
+2021-01-12 14:57:11,614  INFO : Previous driver timer initialised
+2021-01-12 14:57:11,614  INFO : subscribing to new messages
+2021-01-12 14:57:11,614  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-12 14:57:14,798  INFO : New Request
+2021-01-12 14:57:14,799  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:57:14,799  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:57:14,799  INFO : About getting driver status
+2021-01-12 14:57:14,927  INFO : Driver Status - LoggedIn
+2021-01-12 14:57:14,928  INFO : Checking if driver is unknown
+2021-01-12 14:57:14,928  INFO : Previous driver timer initialised
+2021-01-12 14:57:14,928  INFO : subscribing to new messages
+2021-01-12 14:57:14,929  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-12 14:57:15,576  INFO : New Request
+2021-01-12 14:57:15,577  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:57:15,577  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:57:15,577  INFO : About getting driver status
+2021-01-12 14:57:15,589  INFO : Driver Status - LoggedIn
+2021-01-12 14:57:15,589  INFO : Checking if driver is unknown
+2021-01-12 14:57:15,589  INFO : Previous driver timer initialised
+2021-01-12 14:57:15,589  INFO : subscribing to new messages
+2021-01-12 14:57:15,590  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-12 14:57:16,239  INFO : New Request
+2021-01-12 14:57:16,239  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:57:16,240  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:57:16,240  INFO : About getting driver status
+2021-01-12 14:57:16,250  INFO : Driver Status - LoggedIn
+2021-01-12 14:57:16,251  INFO : Checking if driver is unknown
+2021-01-12 14:57:16,251  INFO : Previous driver timer initialised
+2021-01-12 14:57:16,251  INFO : subscribing to new messages
+2021-01-12 14:57:16,252  INFO : Sending :Terrific Tuesdayto 233209559406@c.us
+2021-01-12 14:57:17,006  INFO : New Request
+2021-01-12 14:57:17,007  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 14:57:17,007  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 14:57:17,007  INFO : About getting driver status
+2021-01-12 14:57:17,088  INFO : Driver Status - LoggedIn
+2021-01-12 14:57:17,088  INFO : Checking if driver is unknown
+2021-01-12 14:57:17,088  INFO : Previous driver timer initialised
+2021-01-12 14:57:17,088  INFO : subscribing to new messages
+2021-01-12 14:57:17,089  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-12 14:57:17,754  INFO : New Request
+2021-01-12 15:05:24,151  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 15:05:24,184  INFO : Sending message to r2mp
+2021-01-12 15:05:27,917  INFO : New Request
+2021-01-12 15:05:27,923  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:05:27,924  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:05:27,924  INFO : About getting driver status
+2021-01-12 15:05:27,959  INFO : Driver Status - LoggedIn
+2021-01-12 15:05:27,959  INFO : Checking if driver is unknown
+2021-01-12 15:05:27,959  INFO : Previous driver timer initialised
+2021-01-12 15:05:27,959  INFO : subscribing to new messages
+2021-01-12 15:05:27,960  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-12 15:05:28,877  INFO : New Request
+2021-01-12 15:05:28,877  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:05:28,878  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:05:28,878  INFO : About getting driver status
+2021-01-12 15:05:28,886  INFO : Driver Status - LoggedIn
+2021-01-12 15:05:28,886  INFO : Checking if driver is unknown
+2021-01-12 15:05:28,886  INFO : Previous driver timer initialised
+2021-01-12 15:05:28,886  INFO : subscribing to new messages
+2021-01-12 15:05:28,886  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-12 15:05:44,546  INFO : New Request
+2021-01-12 15:05:44,548  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:05:44,548  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:05:44,548  INFO : About getting driver status
+2021-01-12 15:05:44,646  INFO : Driver Status - LoggedIn
+2021-01-12 15:05:44,646  INFO : Checking if driver is unknown
+2021-01-12 15:05:44,646  INFO : Previous driver timer initialised
+2021-01-12 15:05:44,646  INFO : subscribing to new messages
+2021-01-12 15:05:44,647  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-12 15:05:45,682  INFO : New Request
+2021-01-12 15:05:45,683  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:05:45,683  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:05:45,683  INFO : About getting driver status
+2021-01-12 15:05:45,743  INFO : Driver Status - LoggedIn
+2021-01-12 15:05:45,743  INFO : Checking if driver is unknown
+2021-01-12 15:05:45,743  INFO : Previous driver timer initialised
+2021-01-12 15:05:45,743  INFO : subscribing to new messages
+2021-01-12 15:05:45,743  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-12 15:05:46,502  INFO : New Request
+2021-01-12 15:05:46,503  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:05:46,503  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:05:46,503  INFO : About getting driver status
+2021-01-12 15:05:46,515  INFO : Driver Status - LoggedIn
+2021-01-12 15:05:46,515  INFO : Checking if driver is unknown
+2021-01-12 15:05:46,515  INFO : Previous driver timer initialised
+2021-01-12 15:05:46,515  INFO : subscribing to new messages
+2021-01-12 15:05:46,516  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-12 15:05:49,339  INFO : New Request
+2021-01-12 15:05:49,340  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:05:49,340  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:05:49,340  INFO : About getting driver status
+2021-01-12 15:05:49,466  INFO : Driver Status - LoggedIn
+2021-01-12 15:05:49,466  INFO : Checking if driver is unknown
+2021-01-12 15:05:49,466  INFO : Previous driver timer initialised
+2021-01-12 15:05:49,467  INFO : subscribing to new messages
+2021-01-12 15:05:49,467  INFO : Sending :Terrific Tuesdayto 233209559406@c.us
+2021-01-12 15:05:50,141  INFO : New Request
+2021-01-12 15:05:50,142  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:05:50,142  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:05:50,142  INFO : About getting driver status
+2021-01-12 15:05:50,155  INFO : Driver Status - LoggedIn
+2021-01-12 15:05:50,155  INFO : Checking if driver is unknown
+2021-01-12 15:05:50,155  INFO : Previous driver timer initialised
+2021-01-12 15:05:50,155  INFO : subscribing to new messages
+2021-01-12 15:05:50,156  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-12 15:05:50,818  INFO : New Request
+2021-01-12 15:05:57,688  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 15:05:57,688  INFO : Sending message to r2mp
+2021-01-12 15:05:59,025  INFO : New Request
+2021-01-12 15:05:59,026  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:05:59,026  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:05:59,026  INFO : About getting driver status
+2021-01-12 15:05:59,091  INFO : Driver Status - LoggedIn
+2021-01-12 15:05:59,091  INFO : Checking if driver is unknown
+2021-01-12 15:05:59,091  INFO : Previous driver timer initialised
+2021-01-12 15:05:59,091  INFO : subscribing to new messages
+2021-01-12 15:05:59,091  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-12 15:05:59,819  INFO : New Request
+2021-01-12 15:05:59,819  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:05:59,820  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:05:59,820  INFO : About getting driver status
+2021-01-12 15:05:59,828  INFO : Driver Status - LoggedIn
+2021-01-12 15:05:59,828  INFO : Checking if driver is unknown
+2021-01-12 15:05:59,828  INFO : Previous driver timer initialised
+2021-01-12 15:05:59,828  INFO : subscribing to new messages
+2021-01-12 15:05:59,829  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-12 15:06:15,487  INFO : New Request
+2021-01-12 15:06:15,487  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:06:15,487  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:06:15,487  INFO : About getting driver status
+2021-01-12 15:06:15,635  INFO : Driver Status - LoggedIn
+2021-01-12 15:06:15,636  INFO : Checking if driver is unknown
+2021-01-12 15:06:15,636  INFO : Previous driver timer initialised
+2021-01-12 15:06:15,636  INFO : subscribing to new messages
+2021-01-12 15:06:15,636  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-12 15:06:18,668  INFO : New Request
+2021-01-12 15:06:18,670  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:06:18,670  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:06:18,670  INFO : About getting driver status
+2021-01-12 15:06:18,737  INFO : Driver Status - LoggedIn
+2021-01-12 15:06:18,737  INFO : Checking if driver is unknown
+2021-01-12 15:06:18,738  INFO : Previous driver timer initialised
+2021-01-12 15:06:18,738  INFO : subscribing to new messages
+2021-01-12 15:06:18,738  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-12 15:06:19,394  INFO : New Request
+2021-01-12 15:06:19,395  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:06:19,395  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:06:19,395  INFO : About getting driver status
+2021-01-12 15:06:19,453  INFO : Driver Status - LoggedIn
+2021-01-12 15:06:19,453  INFO : Checking if driver is unknown
+2021-01-12 15:06:19,453  INFO : Previous driver timer initialised
+2021-01-12 15:06:19,453  INFO : subscribing to new messages
+2021-01-12 15:06:19,453  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-12 15:06:20,094  INFO : New Request
+2021-01-12 15:06:20,095  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:06:20,095  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:06:20,095  INFO : About getting driver status
+2021-01-12 15:06:20,103  INFO : Driver Status - LoggedIn
+2021-01-12 15:06:20,103  INFO : Checking if driver is unknown
+2021-01-12 15:06:20,103  INFO : Previous driver timer initialised
+2021-01-12 15:06:20,103  INFO : subscribing to new messages
+2021-01-12 15:06:20,104  INFO : Sending :Terrific Tuesdayto 233209559406@c.us
+2021-01-12 15:06:20,763  INFO : New Request
+2021-01-12 15:06:20,764  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:06:20,764  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:06:20,764  INFO : About getting driver status
+2021-01-12 15:06:20,775  INFO : Driver Status - LoggedIn
+2021-01-12 15:06:20,775  INFO : Checking if driver is unknown
+2021-01-12 15:06:20,776  INFO : Previous driver timer initialised
+2021-01-12 15:06:20,776  INFO : subscribing to new messages
+2021-01-12 15:06:20,777  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-12 15:06:21,421  INFO : New Request
+2021-01-12 15:08:17,725  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 15:08:17,725  INFO : Sending message to r2mp
+2021-01-12 15:08:18,737  INFO : New Request
+2021-01-12 15:08:18,738  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:08:18,738  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:08:18,738  INFO : About getting driver status
+2021-01-12 15:08:18,750  INFO : Driver Status - LoggedIn
+2021-01-12 15:08:18,750  INFO : Checking if driver is unknown
+2021-01-12 15:08:18,750  INFO : Previous driver timer initialised
+2021-01-12 15:08:18,750  INFO : subscribing to new messages
+2021-01-12 15:08:18,751  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-12 15:08:19,477  INFO : New Request
+2021-01-12 15:08:19,477  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:08:19,478  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:08:19,478  INFO : About getting driver status
+2021-01-12 15:08:19,519  INFO : Driver Status - LoggedIn
+2021-01-12 15:08:19,519  INFO : Checking if driver is unknown
+2021-01-12 15:08:19,519  INFO : Previous driver timer initialised
+2021-01-12 15:08:19,519  INFO : subscribing to new messages
+2021-01-12 15:08:19,520  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-12 15:08:35,267  INFO : New Request
+2021-01-12 15:08:35,268  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:08:35,268  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:08:35,268  INFO : About getting driver status
+2021-01-12 15:08:35,513  INFO : Driver Status - LoggedIn
+2021-01-12 15:08:35,513  INFO : Checking if driver is unknown
+2021-01-12 15:08:35,513  INFO : Previous driver timer initialised
+2021-01-12 15:08:35,514  INFO : subscribing to new messages
+2021-01-12 15:08:35,514  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-12 15:08:36,462  INFO : New Request
+2021-01-12 15:08:36,463  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:08:36,463  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:08:36,463  INFO : About getting driver status
+2021-01-12 15:08:36,472  INFO : Driver Status - LoggedIn
+2021-01-12 15:08:36,473  INFO : Checking if driver is unknown
+2021-01-12 15:08:36,473  INFO : Previous driver timer initialised
+2021-01-12 15:08:36,473  INFO : subscribing to new messages
+2021-01-12 15:08:36,474  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-12 15:08:37,118  INFO : New Request
+2021-01-12 15:08:37,118  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:08:37,118  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:08:37,119  INFO : About getting driver status
+2021-01-12 15:08:37,181  INFO : Driver Status - LoggedIn
+2021-01-12 15:08:37,182  INFO : Checking if driver is unknown
+2021-01-12 15:08:37,182  INFO : Previous driver timer initialised
+2021-01-12 15:08:37,182  INFO : subscribing to new messages
+2021-01-12 15:08:37,182  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-12 15:08:37,942  INFO : New Request
+2021-01-12 15:08:37,943  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:08:37,943  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:08:37,943  INFO : About getting driver status
+2021-01-12 15:08:37,954  INFO : Driver Status - LoggedIn
+2021-01-12 15:08:37,954  INFO : Checking if driver is unknown
+2021-01-12 15:08:37,954  INFO : Previous driver timer initialised
+2021-01-12 15:08:37,955  INFO : subscribing to new messages
+2021-01-12 15:08:37,956  INFO : Sending :Terrific Tuesdayto 233209559406@c.us
+2021-01-12 15:08:38,721  INFO : New Request
+2021-01-12 15:08:38,725  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:08:38,726  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:08:38,726  INFO : About getting driver status
+2021-01-12 15:08:38,744  INFO : Driver Status - LoggedIn
+2021-01-12 15:08:38,744  INFO : Checking if driver is unknown
+2021-01-12 15:08:38,745  INFO : Previous driver timer initialised
+2021-01-12 15:08:38,745  INFO : subscribing to new messages
+2021-01-12 15:08:38,746  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-12 15:08:39,412  INFO : New Request
+2021-01-12 15:10:31,856  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 15:10:31,857  INFO : Sending message to r2mp
+2021-01-12 15:23:02,574  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-12 15:25:12,501  INFO : New Request
+2021-01-12 15:25:12,502  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:25:12,503  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:25:12,503  INFO : About getting driver status
+2021-01-12 15:25:12,517  INFO : Driver Status - LoggedIn
+2021-01-12 15:25:12,517  INFO : Checking if driver is unknown
+2021-01-12 15:25:12,517  INFO : Previous driver timer initialised
+2021-01-12 15:25:12,517  INFO : subscribing to new messages
+2021-01-12 15:25:12,517  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-12 15:25:17,213  INFO : New Request
+2021-01-12 15:25:17,214  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:25:17,214  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:25:17,214  INFO : About getting driver status
+2021-01-12 15:25:17,227  INFO : Driver Status - LoggedIn
+2021-01-12 15:25:17,228  INFO : Checking if driver is unknown
+2021-01-12 15:25:17,228  INFO : Previous driver timer initialised
+2021-01-12 15:25:17,228  INFO : subscribing to new messages
+2021-01-12 15:25:17,228  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-12 15:25:32,826  INFO : New Request
+2021-01-12 15:25:32,827  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:25:32,827  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:25:32,828  INFO : About getting driver status
+2021-01-12 15:25:32,929  INFO : Driver Status - LoggedIn
+2021-01-12 15:25:32,930  INFO : Checking if driver is unknown
+2021-01-12 15:25:32,930  INFO : Previous driver timer initialised
+2021-01-12 15:25:32,930  INFO : subscribing to new messages
+2021-01-12 15:25:32,930  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-12 15:25:34,063  INFO : New Request
+2021-01-12 15:25:34,063  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:25:34,064  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:25:34,064  INFO : About getting driver status
+2021-01-12 15:25:34,140  INFO : Driver Status - LoggedIn
+2021-01-12 15:25:34,140  INFO : Checking if driver is unknown
+2021-01-12 15:25:34,140  INFO : Previous driver timer initialised
+2021-01-12 15:25:34,140  INFO : subscribing to new messages
+2021-01-12 15:25:34,140  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-12 15:25:34,778  INFO : New Request
+2021-01-12 15:25:34,778  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:25:34,778  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:25:34,779  INFO : About getting driver status
+2021-01-12 15:25:34,787  INFO : Driver Status - LoggedIn
+2021-01-12 15:25:34,788  INFO : Checking if driver is unknown
+2021-01-12 15:25:34,788  INFO : Previous driver timer initialised
+2021-01-12 15:25:34,788  INFO : subscribing to new messages
+2021-01-12 15:25:34,788  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-12 15:25:35,549  INFO : New Request
+2021-01-12 15:25:35,550  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:25:35,550  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:25:35,550  INFO : About getting driver status
+2021-01-12 15:25:35,628  INFO : Driver Status - LoggedIn
+2021-01-12 15:25:35,628  INFO : Checking if driver is unknown
+2021-01-12 15:25:35,628  INFO : Previous driver timer initialised
+2021-01-12 15:25:35,628  INFO : subscribing to new messages
+2021-01-12 15:25:35,628  INFO : Sending :Terrific Tuesdayto 233209559406@c.us
+2021-01-12 15:25:36,277  INFO : New Request
+2021-01-12 15:25:36,278  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:25:36,278  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:25:36,278  INFO : About getting driver status
+2021-01-12 15:25:36,289  INFO : Driver Status - LoggedIn
+2021-01-12 15:25:36,289  INFO : Checking if driver is unknown
+2021-01-12 15:25:36,289  INFO : Previous driver timer initialised
+2021-01-12 15:25:36,289  INFO : subscribing to new messages
+2021-01-12 15:25:36,290  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-12 15:25:36,946  INFO : New Request
+2021-01-12 15:32:46,494  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 15:32:46,495  INFO : Sending message to r2mp
+2021-01-12 15:34:50,962  INFO : New Request
+2021-01-12 15:34:50,962  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:34:50,963  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:34:50,963  INFO : About getting driver status
+2021-01-12 15:34:50,974  INFO : Driver Status - LoggedIn
+2021-01-12 15:34:50,974  INFO : Checking if driver is unknown
+2021-01-12 15:34:50,974  INFO : Previous driver timer initialised
+2021-01-12 15:34:50,974  INFO : subscribing to new messages
+2021-01-12 15:34:50,975  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
+2021-01-12 15:35:01,490  INFO : New Request
+2021-01-12 15:35:01,490  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:35:01,491  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:35:01,491  INFO : About getting driver status
+2021-01-12 15:35:01,505  INFO : Driver Status - LoggedIn
+2021-01-12 15:35:01,505  INFO : Checking if driver is unknown
+2021-01-12 15:35:01,506  INFO : Previous driver timer initialised
+2021-01-12 15:35:01,506  INFO : subscribing to new messages
+2021-01-12 15:35:01,506  INFO : Sending : What can I help you order today?to 233209559406@c.us
+2021-01-12 15:35:17,467  INFO : New Request
+2021-01-12 15:35:17,468  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:35:17,468  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:35:17,469  INFO : About getting driver status
+2021-01-12 15:35:17,663  INFO : Driver Status - LoggedIn
+2021-01-12 15:35:17,663  INFO : Checking if driver is unknown
+2021-01-12 15:35:17,663  INFO : Previous driver timer initialised
+2021-01-12 15:35:17,663  INFO : subscribing to new messages
+2021-01-12 15:35:17,664  INFO : Sending :Popular Ordersto 233209559406@c.us
+2021-01-12 15:35:18,975  INFO : New Request
+2021-01-12 15:35:18,976  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:35:18,976  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:35:18,976  INFO : About getting driver status
+2021-01-12 15:35:19,031  INFO : Driver Status - LoggedIn
+2021-01-12 15:35:19,032  INFO : Checking if driver is unknown
+2021-01-12 15:35:19,032  INFO : Previous driver timer initialised
+2021-01-12 15:35:19,032  INFO : subscribing to new messages
+2021-01-12 15:35:19,032  INFO : Sending :Classic Pizzasto 233209559406@c.us
+2021-01-12 15:35:24,925  INFO : New Request
+2021-01-12 15:35:24,926  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:35:24,926  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:35:24,926  INFO : About getting driver status
+2021-01-12 15:35:25,106  INFO : Driver Status - LoggedIn
+2021-01-12 15:35:25,106  INFO : Checking if driver is unknown
+2021-01-12 15:35:25,106  INFO : Previous driver timer initialised
+2021-01-12 15:35:25,106  INFO : subscribing to new messages
+2021-01-12 15:35:25,107  INFO : Sending :Deluxe Pizzasto 233209559406@c.us
+2021-01-12 15:35:26,037  INFO : New Request
+2021-01-12 15:35:26,037  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:35:26,038  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:35:26,038  INFO : About getting driver status
+2021-01-12 15:35:26,105  INFO : Driver Status - LoggedIn
+2021-01-12 15:35:26,105  INFO : Checking if driver is unknown
+2021-01-12 15:35:26,105  INFO : Previous driver timer initialised
+2021-01-12 15:35:26,105  INFO : subscribing to new messages
+2021-01-12 15:35:26,105  INFO : Sending :Terrific Tuesdayto 233209559406@c.us
+2021-01-12 15:35:26,757  INFO : New Request
+2021-01-12 15:35:26,759  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 15:35:26,759  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 15:35:26,759  INFO : About getting driver status
+2021-01-12 15:35:26,776  INFO : Driver Status - LoggedIn
+2021-01-12 15:35:26,776  INFO : Checking if driver is unknown
+2021-01-12 15:35:26,777  INFO : Previous driver timer initialised
+2021-01-12 15:35:26,777  INFO : subscribing to new messages
+2021-01-12 15:35:26,777  INFO : Sending :Toppingsto 233209559406@c.us
+2021-01-12 15:35:27,730  INFO : New Request
+2021-01-12 15:46:30,635  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 15:46:30,654  INFO : Sending message to r2mp
+2021-01-12 16:20:01,271  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-01-12 16:20:01,325  INFO : Sending message to r2mp
+2021-01-12 16:20:41,578  INFO : New Request
+2021-01-12 16:20:41,578  INFO : API call POST http://0.0.0.0:8888/chats/233209559406%40c.us/messages
+2021-01-12 16:20:41,579  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-12 16:20:41,579  INFO : About getting driver status
+2021-01-12 16:20:41,662  INFO : Driver Status - LoggedIn
+2021-01-12 16:20:41,662  INFO : Checking if driver is unknown
+2021-01-12 16:20:41,662  INFO : Previous driver timer initialised
+2021-01-12 16:20:41,662  INFO : subscribing to new messages
+2021-01-12 16:20:41,663  INFO : Sending :Hey!
+Welcome to SummerHut Pizza Demo.
+ 
+
+Our menu will pop up in a secondto 233209559406@c.us
