@@ -441,6 +441,7 @@ def send_message_to_client(message_group, appId, storage):
             body["type"] = "text"
             body["timeSent"] = message.timestamp.isoformat()
             body["senderMsisdn"] = message.chat_id.replace("@c.us", "")
+            body['senderUsername'] = message._js_obj['sender']['pushname']
             body["messageId"] = message.id
             body["companyId"] = appId
             body["appId"] = appId
@@ -449,9 +450,8 @@ def send_message_to_client(message_group, appId, storage):
             if message._js_obj["quotedMsg"] is not None:
                 text = message._js_obj['quotedMsg']['body']
                 body['content'] = text
-                body['quick_reply_payload'] = { "payload" : payload[text] }
-                body['quick_reply'] = { "payload" : payload[text] }
-                body['payload'] = payload[text]
+                body['postback'] = { "payload" : payload[text] }
+                body['quick_reply'] = payload[text]
             forward_message_to_r2mp(body)
 
 
