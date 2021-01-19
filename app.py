@@ -462,7 +462,7 @@ def forward_message_to_r2mp(message_data):
     response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
                              headers=headers,
                              json=message_data)
-    logger.info("Message " + message_data['content'] +" sent to" + SERVER + "/api/v1/bot?channelType=WHATSAPP ---- "+ str(response))
+    logger.info("Message " + message_data['content'] +" sent to " + SERVER + "/api/v1/bot?channelType=WHATSAPP ---- "+ str(response))
 
 
 
@@ -832,6 +832,7 @@ def send_message(chat_id):
     """
 
     data = request.json
+    logger.info("Message from R2MP "+ json)
     contents = data.get("contents")
     message = data.get("message")
     chat = g.driver.get_chat_from_id(chat_id)
