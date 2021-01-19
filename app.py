@@ -836,7 +836,6 @@ def send_message(chat_id):
     message = data.get("message")
     chat = g.driver.get_chat_from_id(chat_id)
 
-    logger.info("Payload from R2MP -- Content : "+ contents + "  ~ Message : "+ message)
     if message is not None:
         res = chat.send_message(message)
     for content in contents:
