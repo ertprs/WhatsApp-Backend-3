@@ -836,8 +836,9 @@ def send_message(chat_id):
     message = data.get("message")
     chat = g.driver.get_chat_from_id(chat_id)
 
+    logger.info("Payload from R2MP -- Content : "+ contents + "  ~ Message : "+ message)
     if message is not None:
-        chat.send_message(message)
+        res = chat.send_message(message)
     for content in contents:
         title = content.get('title')
         intent = content.get('payload')
@@ -846,10 +847,13 @@ def send_message(chat_id):
         if intent is not None:
             payload[title] = intent
         if image_url is None:
-            chat.send_message(title)
+            res = chat.send_message(title)
         else:
-            chat.send_media(image_url, title)
-    return True
+            res = chat.send_media(image_url, title)
+    if res:
+        return jsonify(res)
+    else:
+        return False
 
     # files = request.files
     #
