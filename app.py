@@ -832,7 +832,7 @@ def send_message(chat_id):
     """
 
     data = request.json
-    logger.info("Message from R2MP "+ json)
+    logger.info("Message from R2MP "+ str(json))
     contents = data.get("contents")
     message = data.get("message")
     chat = g.driver.get_chat_from_id(chat_id)
