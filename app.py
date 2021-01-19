@@ -424,7 +424,7 @@ def reformat_message_r2mp(message, appId):
 
 
 def send_message_to_client(message_group, appId, storage):
-    logger.info("Sending message to r2mp")
+    logger.info("About to send message")
     # recipient_msisdn = message_group.chat.get_js_obj()['messages'][0]['to']['user']
     message = message_group.messages[0]
     if message.type == "chat" or message.type == "location":
@@ -462,6 +462,7 @@ def forward_message_to_r2mp(message_data):
     response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
                              headers=headers,
                              json=message_data)
+    logger.info("Message " + message_data['content'] +" sent to" + SERVER + "/api/v1/bot?channelType=WHATSAPP ---- "+ response)
 
 
 def get_client_info(client_id):
