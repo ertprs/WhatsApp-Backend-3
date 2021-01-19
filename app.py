@@ -1,8 +1,8 @@
 """
 ******************************************************************
 
-		File name	: webapi.py
-		Description	: Flask based API to work with webwhatsapi
+        File name   : webapi.py
+        Description : Flask based API to work with webwhatsapi
                       Called from wsgi.py. Can be run as a
                       standalone file to (cmd: python WebAPI.py)
 
@@ -20,8 +20,8 @@
         Requirements: Mentioned in Pipfile
 
 # Change Logs
-DATE		PROGRAMMER		COMMENT
-18/09/18	rbnishant		Initial Version
+DATE        PROGRAMMER      COMMENT
+18/09/18    rbnishant       Initial Version
 
 *****************************************************************/
 """
@@ -168,7 +168,7 @@ SANDBOX_URL = "http://r2mp-sandbox.rancardmobility.com"
 PRODUCTION_URL = "http://r2mp.rancard.com"
 LOCAL = "http://localhost:8080"
 
-SERVER = SANDBOX_URL
+SERVER = LOCAL
 
 # API key needed for auth with this API, change as per usage
 API_KEY = "5ohsRCA8os7xW7arVagm3O861lMZwFfl"
@@ -424,7 +424,7 @@ def reformat_message_r2mp(message, appId):
 
 
 def send_message_to_client(message_group, appId, storage):
-    logger.info("About to send message")
+    logger.info("Sending message to r2mp")
     # recipient_msisdn = message_group.chat.get_js_obj()['messages'][0]['to']['user']
     message = message_group.messages[0]
     if message.type == "chat" or message.type == "location":
@@ -463,6 +463,7 @@ def forward_message_to_r2mp(message_data):
                              headers=headers,
                              json=message_data)
     logger.info("Message " + message_data['content'] +" sent to" + SERVER + "/api/v1/bot?channelType=WHATSAPP ---- "+ str(response))
+
 
 
 def get_client_info(client_id):
@@ -830,21 +831,41 @@ def send_message(chat_id):
     is sent
     """
 
-    files = request.files
+    data = request.json
+    contents = data.get("contents")
+    message = data.get("message")
+    chat = g.driver.get_chat_from_id(chat_id)
 
-    if files:
-        res = send_media(chat_id, request)
-    else:
-        message = request.form.get("message")
-        logger.info("Sending :" +message + "to " + chat_id)
-        res = g.driver.chat_send_message(chat_id, message)
+    if message is not None:
+        chat.send_message(message)
+    for content in contents:
+        title = content.get('title')
+        intent = content.get('payload')
+        image_url = content.get('imageUrl')
 
-        if request.form.get("payload") is not None:
-            payload[message] = request.form.get("payload")
-    if res:
-        return jsonify(res)
-    else:
-        return False
+        if intent is not None:
+            payload[title] = intent
+        if image_url is None:
+            chat.send_message(title)
+        else:
+            chat.send_media(image_url, title)
+    return True
+
+    # files = request.files
+    #
+    # if files:
+    #     res = send_media(chat_id, request)
+    # else:
+    #     message = request.form.get("message")
+    #     logger.info("Sending :" +message + "to " + chat_id)
+    #     res = g.driver.chat_send_message(chat_id, message)
+    #
+    #     if request.form.get("payload") is not None:
+    #         payload[message] = request.form.get("payload")
+    # if res:
+    #     return jsonify(res)
+    # else:
+    #     return False
 
 
 @app.route("/messages/<msg_id>/download", methods=["GET"])
