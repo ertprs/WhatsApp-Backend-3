@@ -41,6 +41,7 @@ sys.path.insert(0, BASE_DIR)
 
 from flask import Flask, send_file, request, abort, g, jsonify, session
 from flask.json import JSONEncoder
+from urllib import request as urllibrequest
 from functools import wraps
 from logging.handlers import TimedRotatingFileHandler
 from selenium.common.exceptions import WebDriverException, NoSuchElementException
@@ -473,7 +474,6 @@ def forward_message_to_r2mp(message_data):
     logger.info("Message " + message_data['content'] +" sent to " + SERVER + "/api/v1/bot?channelType=WHATSAPP ---- "+ str(response))
 
 
-
 def get_client_info(client_id):
     """Get the status of a perticular client, as to he/she is connected or not
 
@@ -549,6 +549,25 @@ def send_media(chat_id, requestObj):
     for file_path in file_paths:
         res = g.driver.send_media(file_path, chat_id, caption)
     return res
+
+
+def get_file_name(url):
+    parts = url.split('/')
+    return parts[len(parts) - 1]
+
+
+def download_file(url):
+    file_name = get_file_name(url)
+    file_path = os.path.join(STATIC_FILES_PATH, file_name)
+    try:
+        logger.info("About to downloading files : " + url)
+        save_path = urllibrequest.urlretrieve(url, filename=file_path)[0]
+        time.sleep(2)
+        logging.info("Dowloading files")
+        return save_path
+    except Exception:
+        logger.exception("Error in downloading file " + url)
+        return False
 
 
 def create_static_profile_path(client_id):
@@ -856,7 +875,8 @@ def send_message(chat_id):
         if image_url is None:
             res = chat.send_message(title)
         else:
-            res = chat.send_media(image_url, title)
+            file_path = download_file(image_url)
+            res = chat.send_media(file_path, title)
     if res:
         return jsonify(res)
     else:
