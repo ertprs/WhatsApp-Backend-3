@@ -167,6 +167,8 @@ payload = dict()
 SANDBOX_URL = "http://r2mp-sandbox.rancardmobility.com"
 PRODUCTION_URL = "http://r2mp.rancard.com"
 LOCAL = "http://localhost:8080"
+PRODUCTION_URL2 = "https://r2mp2.rancard.com"
+
 
 SERVER = SANDBOX_URL
 
@@ -446,6 +448,12 @@ def send_message_to_client(message_group, appId, storage):
             body["companyId"] = appId
             body["appId"] = appId
 
+            # message is a reply to a quick reply
+            if message.content in payload:
+                body["content"] = message.content
+                body['postback'] = {"payload": payload[message.content]}
+                body['quick_reply'] = payload[message.content]
+
             # if its a reply
             if message._js_obj["quotedMsg"] is not None:
                 text = message._js_obj['quotedMsg']['body']
@@ -458,7 +466,7 @@ def send_message_to_client(message_group, appId, storage):
 def forward_message_to_r2mp(message_data):
     headers = {'Content-Type': 'application/json; charset=utf-8', 'x-r2-wp-screen-name': message_data["companyId"],
                'msisdn': message_data["recipientMsisdn"]}
-
+    payload.clear()
     response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
                              headers=headers,
                              json=message_data)
