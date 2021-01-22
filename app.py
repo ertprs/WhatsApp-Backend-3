@@ -457,10 +457,16 @@ def send_message_to_client(message_group, appId, storage):
 
             # if its a reply
             if message._js_obj["quotedMsg"] is not None:
-                text = message._js_obj['quotedMsg']['body']
-                body['content'] = text
-                body['postback'] = { "payload" : payload[text] }
-                body['quick_reply'] = payload[text]
+                if message._js_obj["quotedMsg"]["type"] == "chat":
+                    text = message._js_obj['quotedMsg']['body']
+                    body['content'] = text
+                    body['postback'] = {"payload": payload[text]}
+                    body['quick_reply'] = payload[text]
+                else:
+                    text = message._js_obj['quotedMsg']['caption']
+                    body['content'] = text
+                    body['postback'] = {"payload": payload[text]}
+                    body['quick_reply'] = payload[text]
             forward_message_to_r2mp(body)
 
 

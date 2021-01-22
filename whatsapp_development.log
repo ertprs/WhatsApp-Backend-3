@@ -5624,3 +5624,710 @@ GHS 40.0 | Large sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP -
 2021-01-20 15:35:45,554  INFO : Message Hello sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
 2021-01-20 15:37:21,655  INFO : [<MessageGroup - 1 message in Collect $$>]
 2021-01-20 15:38:19,377  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 10:41:04,828  INFO : New Request
+2021-01-22 10:41:04,869  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-22 10:41:04,869  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 10:41:15,610  INFO : New Request
+2021-01-22 10:41:15,611  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-22 10:41:15,611  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 10:41:15,612  INFO : About to initialise new driver 
+2021-01-22 10:41:21,068  INFO : About getting driver status
+2021-01-22 10:41:34,203  INFO : Driver Status - NotLoggedIn
+2021-01-22 10:41:34,203  INFO : Checking if driver is unknown
+2021-01-22 10:41:34,203  INFO : New timer started for driver
+2021-01-22 10:41:34,203  INFO : subscribing to new messages
+2021-01-22 10:41:34,204  INFO : QR requested
+2021-01-22 10:41:34,204  INFO : Timer initialised
+2021-01-22 10:41:37,302  INFO : Sending QR to server
+2021-01-22 10:41:40,277  INFO : Sending QR to server
+2021-01-22 10:41:43,254  INFO : Sending QR to server
+2021-01-22 10:41:46,276  INFO : Sending QR to server
+2021-01-22 10:41:49,273  INFO : Sending QR to server
+2021-01-22 10:41:52,253  INFO : Sending QR to server
+2021-01-22 10:41:55,312  INFO : Sending QR to server
+2021-01-22 10:41:58,253  INFO : Sending QR to server
+2021-01-22 10:42:01,296  INFO : Sending QR to server
+2021-01-22 10:42:04,272  INFO : Sending QR to server
+2021-01-22 10:42:07,293  INFO : Sending QR to server
+2021-01-22 10:42:10,254  INFO : Sending QR to server
+2021-01-22 10:42:13,307  INFO : Sending QR to server
+2021-01-22 10:42:16,253  INFO : Sending QR to server
+2021-01-22 10:42:19,293  INFO : Sending QR to server
+2021-01-22 10:42:22,252  INFO : Sending QR to server
+2021-01-22 10:42:25,293  INFO : Sending QR to server
+2021-01-22 10:42:28,307  INFO : Sending QR to server
+2021-01-22 10:42:31,292  INFO : Sending QR to server
+2021-01-22 10:42:34,315  INFO : Sending QR to server
+2021-01-22 10:42:37,285  INFO : Sending QR to server
+2021-01-22 10:42:40,293  INFO : Sending QR to server
+2021-01-22 10:42:43,293  INFO : Sending QR to server
+2021-01-22 10:42:46,275  INFO : Sending QR to server
+2021-01-22 10:42:49,284  INFO : Sending QR to server
+2021-01-22 10:42:52,270  INFO : Sending QR to server
+2021-01-22 10:42:55,268  INFO : Sending QR to server
+2021-01-22 10:42:58,290  INFO : Sending QR to server
+2021-01-22 10:43:01,267  INFO : Sending QR to server
+2021-01-22 10:43:04,310  INFO : Sending QR to server
+2021-01-22 10:43:07,269  INFO : Sending QR to server
+2021-01-22 10:43:10,290  INFO : Sending QR to server
+2021-01-22 10:43:13,288  INFO : Sending QR to server
+2021-01-22 10:43:16,308  INFO : Sending QR to server
+2021-01-22 10:43:19,291  INFO : Sending QR to server
+2021-01-22 10:43:22,284  INFO : Sending QR to server
+2021-01-22 10:43:25,266  INFO : Sending QR to server
+2021-01-22 10:43:28,316  INFO : Sending QR to server
+2021-01-22 10:43:31,268  INFO : Sending QR to server
+2021-01-22 10:43:35,356  INFO : Sending QR to server
+2021-01-22 10:43:37,282  INFO : Sending QR to server
+2021-01-22 10:43:40,266  INFO : Sending QR to server
+2021-01-22 10:43:43,309  INFO : Sending QR to server
+2021-01-22 10:43:46,266  INFO : Sending QR to server
+2021-01-22 10:43:49,303  INFO : Sending QR to server
+2021-01-22 10:43:52,268  INFO : Sending QR to server
+2021-01-22 10:43:55,308  INFO : Sending QR to server
+2021-01-22 10:43:58,267  INFO : Sending QR to server
+2021-01-22 10:47:30,086  INFO : New Request
+2021-01-22 10:47:30,088  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-01-22 10:47:30,089  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 10:47:30,089  INFO : About to initialise new driver 
+2021-01-22 10:47:32,608  INFO : About getting driver status
+2021-01-22 10:47:43,334  INFO : Driver Status - NotLoggedIn
+2021-01-22 10:47:43,334  INFO : Checking if driver is unknown
+2021-01-22 10:47:43,334  INFO : New timer started for driver
+2021-01-22 10:47:43,334  INFO : subscribing to new messages
+2021-01-22 10:47:43,335  INFO : QR requested
+2021-01-22 10:47:43,335  INFO : Timer initialised
+2021-01-22 10:47:46,409  INFO : Sending QR to server
+2021-01-22 10:47:49,432  INFO : Sending QR to server
+2021-01-22 10:47:52,431  INFO : Sending QR to server
+2021-01-22 10:47:55,412  INFO : Sending QR to server
+2021-01-22 10:47:58,415  INFO : Sending QR to server
+2021-01-22 10:48:01,413  INFO : Sending QR to server
+2021-01-22 10:48:04,429  INFO : Sending QR to server
+2021-01-22 10:48:07,413  INFO : Sending QR to server
+2021-01-22 10:48:20,438  INFO : Previous driver timer initialised
+2021-01-22 10:48:20,438  INFO : Timer killed successfully
+2021-01-22 10:48:50,573  ERROR : Error occurred trying to kill timer
+2021-01-22 10:48:50,604  ERROR : Error occurred trying to kill timer
+2021-01-22 10:48:50,628  ERROR : Error occurred trying to kill timer
+2021-01-22 10:48:56,680  INFO : [<MessageGroup - 4 messages in Collect $$>]
+2021-01-22 10:49:05,502  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 10:49:20,237  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 10:49:43,523  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 10:49:50,861  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 10:50:01,649  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 10:50:14,042  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 10:50:34,271  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 10:50:34,587  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 10:50:54,478  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 10:51:05,404  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 10:53:07,781  INFO : [<MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>]
+2021-01-22 10:54:19,603  INFO : [<MessageGroup - 1 message in CPEN >]
+2021-01-22 10:57:11,856  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 10:57:40,588  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 10:57:56,781  INFO : [<MessageGroup - 1 message in CPEN >]
+2021-01-22 10:58:08,073  INFO : [<MessageGroup - 1 message in CPEN >]
+2021-01-22 10:59:17,980  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 10:59:23,980  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:00:24,313  INFO : [<MessageGroup - 1 message in Test Phone>]
+2021-01-22 11:00:24,313  INFO : Sending message to r2mp
+2021-01-22 11:00:24,341  INFO : Message Hello sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:01:00,518  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:01:29,630  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:01:31,722  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:03:08,353  INFO : New Request
+2021-01-22 11:03:08,354  INFO : API call POST http://0.0.0.0:8888/chats/233204754507%40c.us/messages
+2021-01-22 11:03:08,355  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:03:08,355  INFO : About getting driver status
+2021-01-22 11:03:08,391  INFO : Driver Status - LoggedIn
+2021-01-22 11:03:08,393  INFO : Checking if driver is unknown
+2021-01-22 11:03:08,393  INFO : Previous driver timer initialised
+2021-01-22 11:03:08,393  INFO : subscribing to new messages
+2021-01-22 11:03:08,413  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:04:14,161  INFO : [<MessageGroup - 1 message in Team RSL_COVID-19 DR Page>]
+2021-01-22 11:04:16,054  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:05:42,225  INFO : New Request
+2021-01-22 11:05:42,226  INFO : API call POST http://0.0.0.0:8888/chats/233204754507%40c.us/messages
+2021-01-22 11:05:42,226  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:05:42,226  INFO : About getting driver status
+2021-01-22 11:05:42,239  INFO : Driver Status - LoggedIn
+2021-01-22 11:05:42,239  INFO : Checking if driver is unknown
+2021-01-22 11:05:42,240  INFO : Previous driver timer initialised
+2021-01-22 11:05:42,240  INFO : subscribing to new messages
+2021-01-22 11:05:57,804  INFO : [<MessageGroup - 1 message in Test Phone>]
+2021-01-22 11:05:57,805  INFO : Sending message to r2mp
+2021-01-22 11:05:57,843  INFO : Message Sure, what is your difficulty? sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:06:06,203  INFO : [<MessageGroup - 2 messages in Test Phone>]
+2021-01-22 11:06:06,204  INFO : Sending message to r2mp
+2021-01-22 11:06:07,788  INFO : [<MessageGroup - 3 messages in Test Phone>]
+2021-01-22 11:06:07,789  INFO : Sending message to r2mp
+2021-01-22 11:06:09,807  INFO : [<MessageGroup - 3 messages in Test Phone>]
+2021-01-22 11:06:09,808  INFO : Sending message to r2mp
+2021-01-22 11:06:11,699  INFO : [<MessageGroup - 4 messages in Test Phone>]
+2021-01-22 11:06:11,699  INFO : Sending message to r2mp
+2021-01-22 11:06:13,997  INFO : [<MessageGroup - 3 messages in Test Phone>]
+2021-01-22 11:06:13,998  INFO : Sending message to r2mp
+2021-01-22 11:06:32,413  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:06:51,774  INFO : Message my bot is not responding  
+Question 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:06:51,791  INFO : New Request
+2021-01-22 11:06:51,792  INFO : API call POST http://0.0.0.0:8888/chats/233204754507%40c.us/messages
+2021-01-22 11:06:51,798  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:06:51,801  INFO : Message Was This Answer Helpful? sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:06:51,802  INFO : About getting driver status
+2021-01-22 11:06:51,810  INFO : Message Yes sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:06:51,811  INFO : Message How long will it take to get a response to my message? 
+Question 2 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:06:51,813  INFO : Message Hi Customer ,  I do not have enough information to answer your earlier text, below is a list of issues people usually engage me on. Hopefully they'll be useful to you too. sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:06:51,814  INFO : Driver Status - LoggedIn
+2021-01-22 11:06:51,815  INFO : Checking if driver is unknown
+2021-01-22 11:06:51,818  INFO : Previous driver timer initialised
+2021-01-22 11:06:51,818  INFO : subscribing to new messages
+2021-01-22 11:06:51,830  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:07:07,341  INFO : New Request
+2021-01-22 11:07:07,341  INFO : API call POST http://0.0.0.0:8888/chats/233204754507%40c.us/messages
+2021-01-22 11:07:07,341  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:07:07,342  INFO : About getting driver status
+2021-01-22 11:07:07,353  INFO : Driver Status - LoggedIn
+2021-01-22 11:07:07,353  INFO : Checking if driver is unknown
+2021-01-22 11:07:07,353  INFO : Previous driver timer initialised
+2021-01-22 11:07:07,354  INFO : subscribing to new messages
+2021-01-22 11:07:07,357  INFO : New Request
+2021-01-22 11:07:07,358  INFO : API call POST http://0.0.0.0:8888/chats/233204754507%40c.us/messages
+2021-01-22 11:07:07,358  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:07:07,359  INFO : About getting driver status
+2021-01-22 11:07:07,369  INFO : New Request
+2021-01-22 11:07:07,373  INFO : API call POST http://0.0.0.0:8888/chats/233204754507%40c.us/messages
+2021-01-22 11:07:07,374  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:07:07,374  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:07:07,376  INFO : About getting driver status
+2021-01-22 11:07:07,381  INFO : New Request
+2021-01-22 11:07:07,382  INFO : API call POST http://0.0.0.0:8888/chats/233204754507%40c.us/messages
+2021-01-22 11:07:07,383  INFO : Driver Status - LoggedIn
+2021-01-22 11:07:07,384  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:07:07,385  INFO : New Request
+2021-01-22 11:07:07,385  INFO : Checking if driver is unknown
+2021-01-22 11:07:07,386  INFO : About getting driver status
+2021-01-22 11:07:07,387  INFO : API call POST http://0.0.0.0:8888/chats/233204754507%40c.us/messages
+2021-01-22 11:07:07,387  INFO : Previous driver timer initialised
+2021-01-22 11:07:07,388  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:07:07,388  INFO : subscribing to new messages
+2021-01-22 11:07:07,390  INFO : Driver Status - LoggedIn
+2021-01-22 11:07:07,390  INFO : About getting driver status
+2021-01-22 11:07:07,391  INFO : Checking if driver is unknown
+2021-01-22 11:07:07,392  INFO : Previous driver timer initialised
+2021-01-22 11:07:07,392  INFO : subscribing to new messages
+2021-01-22 11:07:07,398  INFO : Driver Status - LoggedIn
+2021-01-22 11:07:07,398  INFO : Checking if driver is unknown
+2021-01-22 11:07:07,398  INFO : Previous driver timer initialised
+2021-01-22 11:07:07,398  INFO : subscribing to new messages
+2021-01-22 11:07:07,407  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:07:07,431  INFO : Driver Status - LoggedIn
+2021-01-22 11:07:07,432  INFO : Checking if driver is unknown
+2021-01-22 11:07:07,432  INFO : Previous driver timer initialised
+2021-01-22 11:07:07,432  INFO : subscribing to new messages
+2021-01-22 11:07:07,444  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:07:22,636  INFO : [<MessageGroup - 2 messages in Test Phone>]
+2021-01-22 11:07:22,636  INFO : Sending message to r2mp
+2021-01-22 11:07:22,676  INFO : Message When ever you experience any service issues we are happy to assist you get the best experience . sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:07:25,935  INFO : [<MessageGroup - 1 message in Test Phone>]
+2021-01-22 11:07:25,936  INFO : Sending message to r2mp
+2021-01-22 11:07:38,724  INFO : New Request
+2021-01-22 11:07:38,725  INFO : API call POST http://0.0.0.0:8888/chats/233204754507%40c.us/messages
+2021-01-22 11:07:38,725  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:07:38,725  INFO : About getting driver status
+2021-01-22 11:07:38,741  INFO : Driver Status - LoggedIn
+2021-01-22 11:07:38,741  INFO : Checking if driver is unknown
+2021-01-22 11:07:38,741  INFO : Previous driver timer initialised
+2021-01-22 11:07:38,741  INFO : subscribing to new messages
+2021-01-22 11:07:38,758  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:12:30,147  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-01-22 11:12:30,147  INFO : Sending message to r2mp
+2021-01-22 11:12:31,212  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-01-22 11:12:31,213  INFO : Sending message to r2mp
+2021-01-22 11:12:31,245  INFO : Message Hello sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:12:50,597  INFO : New Request
+2021-01-22 11:12:50,597  INFO : API call POST http://0.0.0.0:8888/chats/233504047733%40c.us/messages
+2021-01-22 11:12:50,597  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:12:50,598  INFO : About getting driver status
+2021-01-22 11:12:50,607  INFO : Driver Status - LoggedIn
+2021-01-22 11:12:50,607  INFO : Checking if driver is unknown
+2021-01-22 11:12:50,607  INFO : Previous driver timer initialised
+2021-01-22 11:12:50,608  INFO : subscribing to new messages
+2021-01-22 11:12:50,618  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:12:58,282  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:13:04,180  INFO : New Request
+2021-01-22 11:13:04,181  INFO : API call POST http://0.0.0.0:8888/chats/233504047733%40c.us/messages
+2021-01-22 11:13:04,181  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:13:04,181  INFO : About getting driver status
+2021-01-22 11:13:04,189  INFO : Driver Status - LoggedIn
+2021-01-22 11:13:04,189  INFO : Checking if driver is unknown
+2021-01-22 11:13:04,189  INFO : Previous driver timer initialised
+2021-01-22 11:13:04,189  INFO : subscribing to new messages
+2021-01-22 11:13:30,280  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-01-22 11:13:30,281  INFO : Sending message to r2mp
+2021-01-22 11:13:30,325  INFO : Message Classic Pizzas sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:14:22,159  INFO : New Request
+2021-01-22 11:14:22,160  INFO : API call POST http://0.0.0.0:8888/chats/233504047733%40c.us/messages
+2021-01-22 11:14:22,160  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:14:22,160  INFO : About getting driver status
+2021-01-22 11:14:22,170  INFO : Driver Status - LoggedIn
+2021-01-22 11:14:22,170  INFO : Checking if driver is unknown
+2021-01-22 11:14:22,170  INFO : Previous driver timer initialised
+2021-01-22 11:14:22,171  INFO : subscribing to new messages
+2021-01-22 11:14:22,189  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fi.ibb.co%2FvjhHk6B%2F5066-Ghana-PI-Thumbnail-Images-1080x1080-HR-4.jpg&aspectRatio=1.910000&q=2
+2021-01-22 11:14:30,870  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fi.ibb.co%2FkyKngS7%2F5066-Ghana-PI-Thumbnail-Images-1080x1080-HR-13.jpg&aspectRatio=1.910000&q=2
+2021-01-22 11:14:40,335  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fi.ibb.co%2FFqm0NfS%2F5066-Ghana-PI-Thumbnail-Images-1080x1080-HR-15.jpg&aspectRatio=1.910000&q=2
+2021-01-22 11:17:04,335  INFO : [<MessageGroup - 1 message in Dela>]
+2021-01-22 11:17:04,336  INFO : Sending message to r2mp
+2021-01-22 11:17:04,353  INFO : Message Lornaporch20@outlook.com 
+
+Miller2020 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:17:12,971  INFO : New Request
+2021-01-22 11:17:12,972  INFO : API call POST http://0.0.0.0:8888/chats/233548003865%40c.us/messages
+2021-01-22 11:17:12,981  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:17:12,982  INFO : About getting driver status
+2021-01-22 11:17:13,024  INFO : Driver Status - LoggedIn
+2021-01-22 11:17:13,025  INFO : Checking if driver is unknown
+2021-01-22 11:17:13,025  INFO : Previous driver timer initialised
+2021-01-22 11:17:13,025  INFO : subscribing to new messages
+2021-01-22 11:17:13,038  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:17:16,335  INFO : New Request
+2021-01-22 11:17:16,335  INFO : API call POST http://0.0.0.0:8888/chats/233548003865%40c.us/messages
+2021-01-22 11:17:16,335  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:17:16,336  INFO : About getting driver status
+2021-01-22 11:17:16,346  INFO : Driver Status - LoggedIn
+2021-01-22 11:17:16,346  INFO : Checking if driver is unknown
+2021-01-22 11:17:16,346  INFO : Previous driver timer initialised
+2021-01-22 11:17:16,346  INFO : subscribing to new messages
+2021-01-22 11:17:22,525  INFO : [<MessageGroup - 1 message in Dela>]
+2021-01-22 11:17:22,526  INFO : Sending message to r2mp
+2021-01-22 11:17:22,566  INFO : Message Make you no create profile for top sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:18:11,323  INFO : [<MessageGroup - 1 message in Dela>]
+2021-01-22 11:18:11,323  INFO : Sending message to r2mp
+2021-01-22 11:19:26,482  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-01-22 11:19:26,482  INFO : Sending message to r2mp
+2021-01-22 11:19:44,392  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:20:20,572  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-22 11:20:20,573  INFO : Sending message to r2mp
+2021-01-22 11:20:21,729  INFO : [<MessageGroup - 2 messages in Gr>]
+2021-01-22 11:20:21,729  INFO : Sending message to r2mp
+2021-01-22 11:20:58,931  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:21:22,748  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:23:12,663  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:23:42,456  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-01-22 11:23:42,457  INFO : Sending message to r2mp
+2021-01-22 11:23:58,377  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:24:12,374  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:24:22,478  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:24:35,431  INFO : [<MessageGroup - 1 message in Collect $$>, <MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:24:36,472  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:24:50,679  INFO : [<MessageGroup - 1 message in Adjah.>]
+2021-01-22 11:24:50,680  INFO : Sending message to r2mp
+2021-01-22 11:25:05,112  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:25:12,480  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:25:26,486  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:25:55,452  INFO : [<MessageGroup - 1 message in Boys Abr3>, <MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:26:02,509  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:26:10,608  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:26:12,392  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:26:59,030  INFO : [<MessageGroup - 1 message in CPEN >]
+2021-01-22 11:27:23,257  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:28:28,470  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:30:20,784  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-22 11:30:20,785  INFO : Sending message to r2mp
+2021-01-22 11:32:30,992  INFO : New Request
+2021-01-22 11:32:30,993  INFO : API call POST http://0.0.0.0:8888/chats/233548003865%40c.us/messages
+2021-01-22 11:32:30,993  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:32:31,020  INFO : About getting driver status
+2021-01-22 11:32:31,060  INFO : Driver Status - LoggedIn
+2021-01-22 11:32:31,061  INFO : Checking if driver is unknown
+2021-01-22 11:32:31,061  INFO : Previous driver timer initialised
+2021-01-22 11:32:31,061  INFO : subscribing to new messages
+2021-01-22 11:32:31,088  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:32:31,101  INFO : Message Sure sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:32:31,135  INFO : Message Don't mind me sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:32:31,147  INFO : Message Im smiling sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:32:31,160  INFO : Message 🐺 pizza sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:32:34,243  INFO : New Request
+2021-01-22 11:32:34,243  INFO : API call POST http://0.0.0.0:8888/chats/233277494731%40c.us/messages
+2021-01-22 11:32:34,243  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:32:34,244  INFO : About getting driver status
+2021-01-22 11:32:34,263  INFO : Driver Status - LoggedIn
+2021-01-22 11:32:34,263  INFO : Checking if driver is unknown
+2021-01-22 11:32:34,263  INFO : Previous driver timer initialised
+2021-01-22 11:32:34,263  INFO : subscribing to new messages
+2021-01-22 11:32:34,282  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:32:46,456  INFO : New Request
+2021-01-22 11:32:46,466  INFO : API call POST http://0.0.0.0:8888/chats/233504047733%40c.us/messages
+2021-01-22 11:32:46,466  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:32:46,466  INFO : About getting driver status
+2021-01-22 11:32:46,461  INFO : New Request
+2021-01-22 11:32:46,477  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-22 11:32:46,478  INFO : Driver Status - LoggedIn
+2021-01-22 11:32:46,479  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:32:46,479  INFO : Checking if driver is unknown
+2021-01-22 11:32:46,480  INFO : About getting driver status
+2021-01-22 11:32:46,486  INFO : Previous driver timer initialised
+2021-01-22 11:32:46,486  INFO : subscribing to new messages
+2021-01-22 11:32:46,513  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:32:46,522  INFO : Driver Status - LoggedIn
+2021-01-22 11:32:46,522  INFO : Checking if driver is unknown
+2021-01-22 11:32:46,522  INFO : Previous driver timer initialised
+2021-01-22 11:32:46,523  INFO : subscribing to new messages
+2021-01-22 11:32:46,541  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:32:48,620  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-22 11:32:48,620  INFO : Sending message to r2mp
+2021-01-22 11:33:21,270  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:33:38,065  INFO : Message Not cool kraa sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:33:41,714  INFO : New Request
+2021-01-22 11:33:41,715  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-22 11:33:41,715  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:33:41,715  INFO : About getting driver status
+2021-01-22 11:33:41,779  INFO : New Request
+2021-01-22 11:33:41,780  INFO : API call POST http://0.0.0.0:8888/chats/233277494731%40c.us/messages
+2021-01-22 11:33:41,780  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:33:41,781  INFO : About getting driver status
+2021-01-22 11:33:41,802  ERROR : Error in downloading file http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+Traceback (most recent call last):
+  File "/home/rancard005/Development/Rancard/WhatsApp-Backend/app.py", line 564, in download_file
+    save_path = urllibrequest.urlretrieve(url, filename=file_path)[0]
+  File "/usr/lib/python3.6/urllib/request.py", line 248, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 500: Internal Server Error
+2021-01-22 11:33:42,540  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:33:42,546  INFO : Driver Status - LoggedIn
+2021-01-22 11:33:42,546  INFO : Checking if driver is unknown
+2021-01-22 11:33:42,546  INFO : Previous driver timer initialised
+2021-01-22 11:33:42,546  INFO : subscribing to new messages
+2021-01-22 11:33:42,551  INFO : Driver Status - LoggedIn
+2021-01-22 11:33:42,552  INFO : Checking if driver is unknown
+2021-01-22 11:33:42,552  INFO : Previous driver timer initialised
+2021-01-22 11:33:42,552  INFO : subscribing to new messages
+2021-01-22 11:33:42,561  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:33:43,897  INFO : New Request
+2021-01-22 11:33:43,899  INFO : API call POST http://0.0.0.0:8888/chats/233547019934%40c.us/messages
+2021-01-22 11:33:43,899  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:33:43,900  INFO : About getting driver status
+2021-01-22 11:33:44,641  INFO : Driver Status - LoggedIn
+2021-01-22 11:33:44,641  INFO : Checking if driver is unknown
+2021-01-22 11:33:44,641  INFO : Previous driver timer initialised
+2021-01-22 11:33:44,642  INFO : subscribing to new messages
+2021-01-22 11:33:45,762  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:33:53,510  INFO : New Request
+2021-01-22 11:33:53,510  INFO : API call POST http://0.0.0.0:8888/chats/233547019934%40c.us/messages
+2021-01-22 11:33:53,510  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:33:53,511  INFO : About getting driver status
+2021-01-22 11:33:53,520  INFO : Driver Status - LoggedIn
+2021-01-22 11:33:53,520  INFO : Checking if driver is unknown
+2021-01-22 11:33:53,520  INFO : Previous driver timer initialised
+2021-01-22 11:33:53,520  INFO : subscribing to new messages
+2021-01-22 11:34:12,575  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:34:15,668  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-22 11:34:15,668  INFO : Sending message to r2mp
+2021-01-22 11:34:15,706  INFO : Message Waa look oo sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:34:25,621  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-22 11:34:25,621  INFO : Sending message to r2mp
+2021-01-22 11:35:26,887  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:36:30,611  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:37:12,604  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-22 11:37:12,605  INFO : Sending message to r2mp
+2021-01-22 11:37:20,603  INFO : [<MessageGroup - 1 message in Gr>]
+2021-01-22 11:37:20,604  INFO : Sending message to r2mp
+2021-01-22 11:38:05,174  INFO : Message You did it?? sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:38:05,183  INFO : Message Cool cool sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:38:05,221  INFO : New Request
+2021-01-22 11:38:05,221  INFO : API call POST http://0.0.0.0:8888/chats/233547019934%40c.us/messages
+2021-01-22 11:38:05,221  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:38:05,221  INFO : About getting driver status
+2021-01-22 11:38:05,237  INFO : Driver Status - LoggedIn
+2021-01-22 11:38:05,272  INFO : Checking if driver is unknown
+2021-01-22 11:38:05,272  INFO : Previous driver timer initialised
+2021-01-22 11:38:05,272  INFO : subscribing to new messages
+2021-01-22 11:38:11,867  INFO : New Request
+2021-01-22 11:38:11,870  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-22 11:38:11,879  INFO : New Request
+2021-01-22 11:38:11,881  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:38:11,881  INFO : About getting driver status
+2021-01-22 11:38:11,883  INFO : API call POST http://0.0.0.0:8888/chats/233552607614%40c.us/messages
+2021-01-22 11:38:11,888  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:38:11,889  INFO : About getting driver status
+2021-01-22 11:38:11,899  INFO : Driver Status - LoggedIn
+2021-01-22 11:38:11,899  INFO : Checking if driver is unknown
+2021-01-22 11:38:11,899  INFO : Previous driver timer initialised
+2021-01-22 11:38:11,899  INFO : subscribing to new messages
+2021-01-22 11:38:11,934  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:38:11,948  INFO : Driver Status - LoggedIn
+2021-01-22 11:38:11,948  INFO : Checking if driver is unknown
+2021-01-22 11:38:11,948  INFO : Previous driver timer initialised
+2021-01-22 11:38:11,951  INFO : subscribing to new messages
+2021-01-22 11:38:38,933  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-22 11:38:38,934  INFO : Sending message to r2mp
+2021-01-22 11:39:11,473  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-22 11:39:11,474  INFO : Sending message to r2mp
+2021-01-22 11:39:11,515  INFO : Message The project Foster and I are working on now.
+
+Very intensive sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:42:22,049  INFO : [<MessageGroup - 1 message in AYITI KODZO/KOMRA FAMILY>]
+2021-01-22 11:43:14,343  INFO : New Request
+2021-01-22 11:43:14,343  INFO : API call POST http://0.0.0.0:8888/chats/233547019934%40c.us/messages
+2021-01-22 11:43:14,344  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:43:14,344  INFO : About getting driver status
+2021-01-22 11:43:14,377  INFO : Driver Status - LoggedIn
+2021-01-22 11:43:14,377  INFO : Checking if driver is unknown
+2021-01-22 11:43:14,378  INFO : Previous driver timer initialised
+2021-01-22 11:43:14,378  INFO : subscribing to new messages
+2021-01-22 11:43:35,778  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-22 11:43:35,779  INFO : Sending message to r2mp
+2021-01-22 11:43:35,819  INFO : Message What is chat menu sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:45:26,850  INFO : [<MessageGroup - 1 message in CPEN >]
+2021-01-22 11:45:56,749  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-22 11:45:56,750  INFO : Sending message to r2mp
+2021-01-22 11:46:07,189  INFO : [<MessageGroup - 1 message in CPEN >]
+2021-01-22 11:46:12,657  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-22 11:46:12,658  INFO : Sending message to r2mp
+2021-01-22 11:46:14,651  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-22 11:46:14,652  INFO : Sending message to r2mp
+2021-01-22 11:46:20,763  INFO : [<MessageGroup - 1 message in CPEN >]
+2021-01-22 11:47:07,298  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:47:14,773  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:47:15,872  INFO : [<MessageGroup - 3 messages in Boys Abr3>]
+2021-01-22 11:47:18,981  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-22 11:47:18,982  INFO : Sending message to r2mp
+2021-01-22 11:47:25,850  INFO : [<MessageGroup - 1 message in Richard Adarkwa>]
+2021-01-22 11:47:25,850  INFO : Sending message to r2mp
+2021-01-22 11:47:32,781  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:47:46,906  INFO : [<MessageGroup - 1 message in Boys Abr3>]
+2021-01-22 11:48:44,803  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:49:00,914  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:49:28,819  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:49:46,822  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:50:02,312  INFO : Message When can we do that sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:50:02,318  INFO : Message Joshua wants to have a call sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:50:02,328  INFO : New Request
+2021-01-22 11:50:02,331  INFO : Message Ok sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:50:02,334  INFO : API call POST http://0.0.0.0:8888/chats/233547019934%40c.us/messages
+2021-01-22 11:50:02,336  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:50:02,337  INFO : About getting driver status
+2021-01-22 11:50:02,358  INFO : Driver Status - LoggedIn
+2021-01-22 11:50:02,359  INFO : Checking if driver is unknown
+2021-01-22 11:50:02,359  INFO : Previous driver timer initialised
+2021-01-22 11:50:02,359  INFO : subscribing to new messages
+2021-01-22 11:50:05,486  INFO : New Request
+2021-01-22 11:50:05,486  INFO : API call POST http://0.0.0.0:8888/chats/233547019934%40c.us/messages
+2021-01-22 11:50:05,487  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:50:05,487  INFO : About getting driver status
+2021-01-22 11:50:05,489  INFO : New Request
+2021-01-22 11:50:05,490  INFO : API call POST http://0.0.0.0:8888/chats/233547019934%40c.us/messages
+2021-01-22 11:50:05,490  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:50:05,490  INFO : About getting driver status
+2021-01-22 11:50:06,239  INFO : Driver Status - LoggedIn
+2021-01-22 11:50:06,239  INFO : Checking if driver is unknown
+2021-01-22 11:50:06,240  INFO : Previous driver timer initialised
+2021-01-22 11:50:06,240  INFO : subscribing to new messages
+2021-01-22 11:50:06,245  INFO : Driver Status - LoggedIn
+2021-01-22 11:50:06,246  INFO : Checking if driver is unknown
+2021-01-22 11:50:06,246  INFO : Previous driver timer initialised
+2021-01-22 11:50:06,246  INFO : subscribing to new messages
+2021-01-22 11:50:07,397  INFO : New Request
+2021-01-22 11:50:07,399  INFO : API call POST http://0.0.0.0:8888/chats/233547019934%40c.us/messages
+2021-01-22 11:50:07,399  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 11:50:07,400  INFO : About getting driver status
+2021-01-22 11:50:07,409  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:50:07,424  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 11:50:08,472  INFO : Driver Status - LoggedIn
+2021-01-22 11:50:08,472  INFO : Checking if driver is unknown
+2021-01-22 11:50:08,473  INFO : Previous driver timer initialised
+2021-01-22 11:50:08,479  INFO : subscribing to new messages
+2021-01-22 11:52:31,345  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:53:04,279  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:53:07,352  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:53:22,974  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:53:26,639  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:53:31,903  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:53:35,052  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:53:39,243  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:53:40,190  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:53:56,991  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:54:40,073  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:54:58,085  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:55:00,092  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:55:17,247  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:56:34,792  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:56:34,907  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:56:47,034  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:57:33,052  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:57:37,277  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:57:49,467  INFO : [<MessageGroup - 1 message in Fafa>]
+2021-01-22 11:57:49,469  INFO : Sending message to r2mp
+2021-01-22 11:57:49,482  INFO : Message 😂😂yes, I do sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 11:57:51,686  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:58:03,093  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-22 11:58:08,123  INFO : [<MessageGroup - 1 message in Fafa>]
+2021-01-22 11:58:08,123  INFO : Sending message to r2mp
+2021-01-22 11:58:13,171  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:58:16,976  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:58:22,974  INFO : [<MessageGroup - 2 messages in Collect $$>]
+2021-01-22 11:58:28,978  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 11:59:47,435  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 12:00:04,827  INFO : Message I don't post like half because it'll look weird to me 😂 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 12:00:04,851  INFO : New Request
+2021-01-22 12:00:04,852  INFO : API call POST http://0.0.0.0:8888/chats/233561549028%40c.us/messages
+2021-01-22 12:00:04,852  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 12:00:04,853  INFO : About getting driver status
+2021-01-22 12:00:04,878  INFO : Driver Status - LoggedIn
+2021-01-22 12:00:04,878  INFO : Checking if driver is unknown
+2021-01-22 12:00:04,878  INFO : Previous driver timer initialised
+2021-01-22 12:00:04,879  INFO : subscribing to new messages
+2021-01-22 12:00:04,901  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 12:00:07,955  INFO : New Request
+2021-01-22 12:00:07,956  INFO : API call POST http://0.0.0.0:8888/chats/233561549028%40c.us/messages
+2021-01-22 12:00:07,956  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 12:00:07,956  INFO : About getting driver status
+2021-01-22 12:00:07,968  INFO : Driver Status - LoggedIn
+2021-01-22 12:00:07,968  INFO : Checking if driver is unknown
+2021-01-22 12:00:07,968  INFO : Previous driver timer initialised
+2021-01-22 12:00:07,969  INFO : subscribing to new messages
+2021-01-22 12:00:07,993  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 12:00:15,188  INFO : New Request
+2021-01-22 12:00:15,189  INFO : API call POST http://0.0.0.0:8888/chats/233561549028%40c.us/messages
+2021-01-22 12:00:15,189  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 12:00:15,189  INFO : About getting driver status
+2021-01-22 12:00:15,197  INFO : Driver Status - LoggedIn
+2021-01-22 12:00:15,198  INFO : Checking if driver is unknown
+2021-01-22 12:00:15,198  INFO : Previous driver timer initialised
+2021-01-22 12:00:15,198  INFO : subscribing to new messages
+2021-01-22 12:00:20,206  INFO : New Request
+2021-01-22 12:00:20,207  INFO : API call POST http://0.0.0.0:8888/chats/233561549028%40c.us/messages
+2021-01-22 12:00:20,207  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 12:00:20,207  INFO : About getting driver status
+2021-01-22 12:00:20,802  INFO : Driver Status - LoggedIn
+2021-01-22 12:00:20,803  INFO : Checking if driver is unknown
+2021-01-22 12:00:20,803  INFO : Previous driver timer initialised
+2021-01-22 12:00:20,803  INFO : subscribing to new messages
+2021-01-22 12:00:27,112  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-01-22 12:00:27,113  INFO : Sending message to r2mp
+2021-01-22 12:00:27,139  INFO : Message Hello sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 12:00:33,181  INFO : New Request
+2021-01-22 12:00:33,182  INFO : API call POST http://0.0.0.0:8888/chats/233504047733%40c.us/messages
+2021-01-22 12:00:33,182  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 12:00:33,183  INFO : About getting driver status
+2021-01-22 12:00:33,190  INFO : Driver Status - LoggedIn
+2021-01-22 12:00:33,191  INFO : Checking if driver is unknown
+2021-01-22 12:00:33,191  INFO : Previous driver timer initialised
+2021-01-22 12:00:33,191  INFO : subscribing to new messages
+2021-01-22 12:00:33,200  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 12:00:36,567  INFO : New Request
+2021-01-22 12:00:36,567  INFO : API call POST http://0.0.0.0:8888/chats/233504047733%40c.us/messages
+2021-01-22 12:00:36,568  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 12:00:36,568  INFO : About getting driver status
+2021-01-22 12:00:36,579  INFO : Driver Status - LoggedIn
+2021-01-22 12:00:36,579  INFO : Checking if driver is unknown
+2021-01-22 12:00:36,579  INFO : Previous driver timer initialised
+2021-01-22 12:00:36,579  INFO : subscribing to new messages
+2021-01-22 12:00:51,215  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-01-22 12:00:51,216  INFO : Sending message to r2mp
+2021-01-22 12:00:51,254  INFO : Message Classic Pizzas sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 12:00:53,109  INFO : [<MessageGroup - 1 message in Fafa>]
+2021-01-22 12:00:53,110  INFO : Sending message to r2mp
+2021-01-22 12:00:56,264  INFO : Message What's happening here?? sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 12:00:56,285  INFO : New Request
+2021-01-22 12:00:56,285  INFO : API call POST http://0.0.0.0:8888/chats/233504047733%40c.us/messages
+2021-01-22 12:00:56,285  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 12:00:56,286  INFO : About getting driver status
+2021-01-22 12:00:56,296  INFO : Driver Status - LoggedIn
+2021-01-22 12:00:56,296  INFO : Checking if driver is unknown
+2021-01-22 12:00:56,296  INFO : Previous driver timer initialised
+2021-01-22 12:00:56,297  INFO : subscribing to new messages
+2021-01-22 12:00:56,306  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fi.ibb.co%2FvjhHk6B%2F5066-Ghana-PI-Thumbnail-Images-1080x1080-HR-4.jpg&aspectRatio=1.910000&q=2
+2021-01-22 12:00:58,510  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fi.ibb.co%2FkyKngS7%2F5066-Ghana-PI-Thumbnail-Images-1080x1080-HR-13.jpg&aspectRatio=1.910000&q=2
+2021-01-22 12:01:00,702  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fi.ibb.co%2FFqm0NfS%2F5066-Ghana-PI-Thumbnail-Images-1080x1080-HR-15.jpg&aspectRatio=1.910000&q=2
+2021-01-22 12:01:17,083  INFO : New Request
+2021-01-22 12:01:17,084  INFO : API call POST http://0.0.0.0:8888/chats/233561549028%40c.us/messages
+2021-01-22 12:01:17,084  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 12:01:17,084  INFO : About getting driver status
+2021-01-22 12:01:17,092  INFO : Driver Status - LoggedIn
+2021-01-22 12:01:17,092  INFO : Checking if driver is unknown
+2021-01-22 12:01:17,092  INFO : Previous driver timer initialised
+2021-01-22 12:01:17,092  INFO : subscribing to new messages
+2021-01-22 12:01:29,431  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 12:01:35,229  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-01-22 12:01:35,229  INFO : Sending message to r2mp
+2021-01-22 12:01:47,121  INFO : [<MessageGroup - 1 message in Fafa>]
+2021-01-22 12:01:47,121  INFO : Sending message to r2mp
+2021-01-22 12:01:47,154  INFO : Message You work with SummerHut Pizza? sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 12:01:57,126  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-01-22 12:01:57,127  INFO : Sending message to r2mp
+2021-01-22 12:02:03,126  INFO : [<MessageGroup - 1 message in Fafa>]
+2021-01-22 12:02:03,127  INFO : Sending message to r2mp
+2021-01-22 12:02:15,017  INFO : New Request
+2021-01-22 12:02:15,017  INFO : API call POST http://0.0.0.0:8888/chats/233561549028%40c.us/messages
+2021-01-22 12:02:15,018  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 12:02:15,026  INFO : About getting driver status
+2021-01-22 12:02:15,040  INFO : Message Hello sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 12:02:15,045  INFO : Driver Status - LoggedIn
+2021-01-22 12:02:15,045  INFO : Checking if driver is unknown
+2021-01-22 12:02:15,046  INFO : Previous driver timer initialised
+2021-01-22 12:02:15,046  INFO : subscribing to new messages
+2021-01-22 12:02:15,063  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 12:02:19,554  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-22 12:02:24,221  INFO : New Request
+2021-01-22 12:02:24,221  INFO : API call POST http://0.0.0.0:8888/chats/233504047733%40c.us/messages
+2021-01-22 12:02:24,221  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 12:02:24,222  INFO : About getting driver status
+2021-01-22 12:02:24,234  INFO : Driver Status - LoggedIn
+2021-01-22 12:02:24,234  INFO : Checking if driver is unknown
+2021-01-22 12:02:24,234  INFO : Previous driver timer initialised
+2021-01-22 12:02:24,234  INFO : subscribing to new messages
+2021-01-22 12:02:24,249  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fr2mp-sandbox.rancardmobility.com%2Fimages%2Ffilestore%2F5f3aa3db468d0a1aa2e2c476_1599737725615_SummerHutCard%281%29.jpg&height=1200&width=630
+2021-01-22 12:02:27,141  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 12:02:29,347  INFO : New Request
+2021-01-22 12:02:29,348  INFO : API call POST http://0.0.0.0:8888/chats/233504047733%40c.us/messages
+2021-01-22 12:02:29,348  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 12:02:29,348  INFO : About getting driver status
+2021-01-22 12:02:29,359  INFO : Driver Status - LoggedIn
+2021-01-22 12:02:29,359  INFO : Checking if driver is unknown
+2021-01-22 12:02:29,359  INFO : Previous driver timer initialised
+2021-01-22 12:02:29,360  INFO : subscribing to new messages
+2021-01-22 12:02:33,160  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 12:02:36,224  INFO : [<MessageGroup - 1 message in Its Swagger Szn >]
+2021-01-22 12:02:49,164  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 12:02:55,141  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-01-22 12:02:55,141  INFO : Sending message to r2mp
+2021-01-22 12:02:55,162  INFO : Message Popular Orders sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-01-22 12:03:01,144  INFO : New Request
+2021-01-22 12:03:01,145  INFO : API call POST http://0.0.0.0:8888/chats/233504047733%40c.us/messages
+2021-01-22 12:03:01,145  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-01-22 12:03:01,146  INFO : About getting driver status
+2021-01-22 12:03:01,155  INFO : Driver Status - LoggedIn
+2021-01-22 12:03:01,155  INFO : Checking if driver is unknown
+2021-01-22 12:03:01,155  INFO : Previous driver timer initialised
+2021-01-22 12:03:01,156  INFO : subscribing to new messages
+2021-01-22 12:03:01,166  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fi.ibb.co%2FFqm0NfS%2F5066-Ghana-PI-Thumbnail-Images-1080x1080-HR-15.jpg&aspectRatio=1.910000&q=2
+2021-01-22 12:03:03,340  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 12:03:03,484  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fi.ibb.co%2Fs1SHMsf%2F5066-Ghana-PI-Thumbnail-Images-1080x1080-HR-8.jpg&aspectRatio=1.910000&q=2
+2021-01-22 12:03:20,338  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fi.ibb.co%2Fykq9BxS%2F5066-Ghana-PI-Thumbnail-Images-1080x1080-HR-6.jpg&aspectRatio=1.910000&q=2
+2021-01-22 12:03:37,652  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fi.ibb.co%2FvjhHk6B%2F5066-Ghana-PI-Thumbnail-Images-1080x1080-HR-4.jpg&aspectRatio=1.910000&q=2
+2021-01-22 12:03:39,861  INFO : About to downloading files : http://localhost:8080/api/v1/images/resize?imageUrl=https%3A%2F%2Fi.ibb.co%2FkyKngS7%2F5066-Ghana-PI-Thumbnail-Images-1080x1080-HR-13.jpg&aspectRatio=1.910000&q=2
+2021-01-22 12:03:47,076  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 12:03:55,481  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 12:04:39,177  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 12:06:16,007  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 12:06:19,695  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 12:06:27,629  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 12:08:41,446  INFO : [<MessageGroup - 1 message in Collect $$>]
+2021-01-22 12:09:18,448  INFO : New Request
+2021-01-22 12:09:18,449  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-01-22 12:09:18,449  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
