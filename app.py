@@ -914,7 +914,7 @@ def send_message(chat_id):
             file_path = download_file(image_url)
             res = chat.send_media(file_path, number_emoji(title))
     if instruction is not None:
-        res = chat.send_message(instruction)
+        chat.send_message(instruction)
     if res:
         return jsonify(res)
     else:
