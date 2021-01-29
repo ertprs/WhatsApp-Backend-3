@@ -164,6 +164,7 @@ semaphores = dict()
 
 # store quick replies payload
 payload = dict()
+payload2 = dict()
 
 SANDBOX_URL = "http://r2mp-sandbox.rancardmobility.com"
 PRODUCTION_URL = "http://r2mp.rancard.com"
@@ -397,8 +398,7 @@ def check_new_messages(client_id):
             # for message_group in res:
             message_group = res[0]
             if not message_group.chat._js_obj["isGroup"]:
-                storage = session
-                forwarder = threading.Thread(target=send_message_to_client, args=(message_group, client_id, storage))
+                forwarder = threading.Thread(target=send_message_to_client, args=(message_group, client_id))
                 forwarder.start()
     except Exception as e:
         print(str(e))
@@ -426,13 +426,19 @@ def reformat_message_r2mp(message, appId):
     return body
 
 
-def send_message_to_client(message_group, appId, storage):
-    logger.info("Sending message to r2mp")
-    # recipient_msisdn = message_group.chat.get_js_obj()['messages'][0]['to']['user']
+def number_emoji(text):
+    return text.replace(".1.", "1️⃣", 1).replace(".2.", "2️⃣", 1).replace(".3.", "3️⃣", 1).replace(".4.", "4️⃣", 1).replace(".5.", "5️⃣", 1).replace(".6.", "6️⃣", 1)\
+        .replace(".7.", "7️⃣", 1).replace(".8.", "8️⃣", 1).replace(".9.", "9️⃣", 1).replace(".10.", " 🔟", 1).replace(".11.", '1️⃣1️⃣', 1).replace(".12.", "1️⃣2️⃣", 1)\
+
+
+
+# Process the incoming message and forward to whoever wants it
+def send_message_to_client(message_group, appId):
+    logger.info("About to process incoming message")
     message = message_group.messages[0]
+    chat = message_group.chat
     if message.type == "chat" or message.type == "location":
             body = {}
-            # body['recipientMsisdn'] = recipient_msisdn
             body["recipientMsisdn"] = message._js_obj["to"].replace("@c.us", "")
             body["content"] = message.content if message.type == "chat" else "https://www.latlong.net/c/?lat=" + str(
                 message.latitude) + "&long=" + str(message.longitude)
@@ -451,9 +457,23 @@ def send_message_to_client(message_group, appId, storage):
 
             # message is a reply to a quick reply
             if message.content in payload:
+                logger.info("User swiped to reply option")
                 body["content"] = message.content
                 body['postback'] = {"payload": payload[message.content]}
                 body['quick_reply'] = payload[message.content]
+            else:
+                # User typed in the choice of order
+                if len(message.content) < 3 and message.content.isdigit():
+                    logger.info("User choice out of range")
+                    chat.send_message("‼  Choice out of range. Please send any number from 1 to " + str(len(payload)) + " to make a selection")
+                    return
+
+            if message.content.lower().replace(" ", "") in payload2:
+                # User type in full the prefered choice
+                msg = message.content.lower().replace(" ", "")
+                body["content"] = message.content
+                body['postback'] = {"payload": payload2[msg]}
+                body['quick_reply'] = payload2[msg]
 
             # if its a reply
             if message._js_obj["quotedMsg"] is not None:
@@ -468,12 +488,15 @@ def send_message_to_client(message_group, appId, storage):
                     body['postback'] = {"payload": payload[text]}
                     body['quick_reply'] = payload[text]
             forward_message_to_r2mp(body)
+    else:
+        logger.info("Media Message incoming")
 
 
 def forward_message_to_r2mp(message_data):
     headers = {'Content-Type': 'application/json; charset=utf-8', 'x-r2-wp-screen-name': message_data["companyId"],
                'msisdn': message_data["recipientMsisdn"]}
     payload.clear()
+    payload2.clear()
     response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
                              headers=headers,
                              json=message_data)
@@ -867,22 +890,31 @@ def send_message(chat_id):
     data = request.json
     contents = data.get("contents")
     message = data.get("message")
+    instruction = data.get("instruction")
     chat = g.driver.get_chat_from_id(chat_id)
 
     if message is not None:
         res = chat.send_message(message)
     for content in contents:
-        title = content.get('title')
+        number = contents.index(content) + 1
+        option = content.get('title')
+        title = "."+ str(number) + ". " + option
         intent = content.get('payload')
         image_url = content.get('imageUrl')
 
         if intent is not None:
-            payload[title] = intent
+            # payload[title] = intent
+            payload[str(number)] = intent
+
+            # remove whitespaces and put in the second payload
+            payload2[option.lower().replace(" ", "")] = intent
         if image_url is None:
-            res = chat.send_message(title)
+            res = chat.send_message(number_emoji(title))
         else:
             file_path = download_file(image_url)
-            res = chat.send_media(file_path, title)
+            res = chat.send_media(file_path, number_emoji(title))
+    if instruction is not None:
+        res = chat.send_message(instruction)
     if res:
         return jsonify(res)
     else:
