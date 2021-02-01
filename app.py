@@ -395,11 +395,11 @@ def check_new_messages(client_id):
         # If we have new messages, do something with it
         if res:
             logger.info(res)
-            # for message_group in res:
-            message_group = res[0]
-            if not message_group.chat._js_obj["isGroup"]:
-                forwarder = threading.Thread(target=send_message_to_client, args=(message_group, client_id))
-                forwarder.start()
+            for message_group in res:
+            # message_group = res[0]
+                if not message_group.chat._js_obj["isGroup"]:
+                    forwarder = threading.Thread(target=send_message_to_client, args=(message_group, client_id))
+                    forwarder.start()
     except Exception as e:
         print(str(e))
         pass
