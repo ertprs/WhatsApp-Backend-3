@@ -456,37 +456,37 @@ def send_message_to_client(message_group, appId):
             body["appId"] = appId
 
             # message is a reply to a quick reply
-            if message.content in payload:
+            if message.content in payload[message.chat_id]:
                 logger.info("User swiped to reply option")
                 body["content"] = message.content
-                body['postback'] = {"payload": payload[message.content]}
-                body['quick_reply'] = payload[message.content]
+                body['postback'] = {"payload": payload[message.chat_id][message.content]}
+                body['quick_reply'] = payload[message.chat_id][message.content]
             else:
                 # User typed in the choice of order
                 if len(message.content) < 3 and message.content.isdigit():
                     logger.info("User choice out of range")
-                    chat.send_message("‼  Choice out of range. Please send any number from 1 to " + str(len(payload)) + " to make a selection")
+                    chat.send_message("‼  Choice out of range. Please send any number from 1 to " + str(len(payload[message.chat_id])) + " to make a selection")
                     return
 
-            if message.content.lower().replace(" ", "") in payload2:
+            if message.content.lower().replace(" ", "") in payload2[message.chat_id]:
                 # User type in full the prefered choice
                 msg = message.content.lower().replace(" ", "")
                 body["content"] = message.content
-                body['postback'] = {"payload": payload2[msg]}
-                body['quick_reply'] = payload2[msg]
+                body['postback'] = {"payload": payload2[message.chat_id][msg]}
+                body['quick_reply'] = payload2[message.chat_id][msg]
 
             # if its a reply
             if message._js_obj["quotedMsg"] is not None:
                 if message._js_obj["quotedMsg"]["type"] == "chat":
                     text = message._js_obj['quotedMsg']['body']
                     body['content'] = text
-                    body['postback'] = {"payload": payload[text]}
-                    body['quick_reply'] = payload[text]
+                    body['postback'] = {"payload": payload[message.chat_id][text]}
+                    body['quick_reply'] = payload[message.chat_id][text]
                 else:
                     text = message._js_obj['quotedMsg']['caption']
                     body['content'] = text
-                    body['postback'] = {"payload": payload[text]}
-                    body['quick_reply'] = payload[text]
+                    body['postback'] = {"payload": payload[message.chat_id][text]}
+                    body['quick_reply'] = payload[message.chat_id][text]
             forward_message_to_r2mp(body)
     else:
         logger.info("Media Message incoming")
@@ -495,8 +495,7 @@ def send_message_to_client(message_group, appId):
 def forward_message_to_r2mp(message_data):
     headers = {'Content-Type': 'application/json; charset=utf-8', 'x-r2-wp-screen-name': message_data["companyId"],
                'msisdn': message_data["recipientMsisdn"]}
-    payload.clear()
-    payload2.clear()
+
     response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
                              headers=headers,
                              json=message_data)
@@ -896,6 +895,8 @@ def send_message(chat_id):
     message = data.get("message")
     instruction = data.get("instruction")
     chat = g.driver.get_chat_from_id(chat_id)
+    payload[chat_id] = dict()
+    payload2[chat_id] = dict()
 
     if message is not None:
         res = chat.send_message(message)
@@ -908,10 +909,11 @@ def send_message(chat_id):
 
         if intent is not None:
             # payload[title] = intent
-            payload[str(number)] = intent
+            # payload[str(number)] = intent
+            payload[chat_id][str(number)] = intent
 
             # remove whitespaces and put in the second payload
-            payload2[option.lower().replace(" ", "")] = intent
+            payload2[chat_id][option.lower().replace(" ", "")] = intent
         if image_url is None:
             res = chat.send_message(number_emoji(title))
         else:
