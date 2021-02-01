@@ -487,18 +487,20 @@ def send_message_to_client(message_group, appId):
                     body['content'] = text
                     body['postback'] = {"payload": payload[message.chat_id][text]}
                     body['quick_reply'] = payload[message.chat_id][text]
-            forward_message_to_r2mp(body)
+            forward_message_to_r2mp(body, message.chat_id)
     else:
         logger.info("Media Message incoming")
 
 
-def forward_message_to_r2mp(message_data):
+def forward_message_to_r2mp(message_data, chat_id):
     headers = {'Content-Type': 'application/json; charset=utf-8', 'x-r2-wp-screen-name': message_data["companyId"],
                'msisdn': message_data["recipientMsisdn"]}
 
     response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
                              headers=headers,
                              json=message_data)
+    payload[chat_id] = dict()
+    payload2[chat_id] = dict()
     logger.info("Message " + message_data['content'] +" sent to " + SERVER + "/api/v1/bot?channelType=WHATSAPP ---- "+ str(response))
 
 
@@ -895,8 +897,8 @@ def send_message(chat_id):
     message = data.get("message")
     instruction = data.get("instruction")
     chat = g.driver.get_chat_from_id(chat_id)
-    payload[chat_id] = dict()
-    payload2[chat_id] = dict()
+    # payload[chat_id] = dict()
+    # payload2[chat_id] = dict()
 
     if message is not None:
         res = chat.send_message(message)
