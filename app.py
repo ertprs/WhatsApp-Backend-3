@@ -887,6 +887,7 @@ def send_message(chat_id):
     is sent
     """
 
+    global res
     data = request.json
     contents = data.get("contents")
     message = data.get("message")
