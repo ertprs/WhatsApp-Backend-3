@@ -434,9 +434,17 @@ def number_emoji(text):
 
 # Process the incoming message and forward to whoever wants it
 def send_message_to_client(message_group, appId):
+
     logger.info("About to process incoming message")
     message = message_group.messages[0]
     chat = message_group.chat
+
+    # check if chat has payload else create
+    if message.chat_id not in payload and message.chat_id not in payload2:
+        payload[message.chat_id] = dict()
+        payload2[message.chat_id] = dict()
+
+    # check if message is a chat
     if message.type == "chat" or message.type == "location":
             body = {}
             body["recipientMsisdn"] = message._js_obj["to"].replace("@c.us", "")
@@ -499,8 +507,8 @@ def forward_message_to_r2mp(message_data, chat_id):
     response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
                              headers=headers,
                              json=message_data)
-    payload[chat_id] = dict()
-    payload2[chat_id] = dict()
+    # payload[chat_id] = dict()
+    # payload2[chat_id] = dict()
     logger.info("Message " + message_data['content'] +" sent to " + SERVER + "/api/v1/bot?channelType=WHATSAPP ---- "+ str(response))
 
 
@@ -897,8 +905,8 @@ def send_message(chat_id):
     message = data.get("message")
     instruction = data.get("instruction")
     chat = g.driver.get_chat_from_id(chat_id)
-    # payload[chat_id] = dict()
-    # payload2[chat_id] = dict()
+    payload[chat_id] = dict()
+    payload2[chat_id] = dict()
 
     if message is not None:
         res = chat.send_message(message)
