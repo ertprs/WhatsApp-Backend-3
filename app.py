@@ -34,6 +34,7 @@ import requests
 import sys
 import time
 import threading
+import random
 import werkzeug
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -142,14 +143,12 @@ app.json_encoder = WhatsAPIJSONEncoder
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s  %(levelname)s : %(message)s', )
 
-
 logger = logging.getLogger("WhatsApp Backend")
 handler = logging.FileHandler('whatsapp_development.log')
 formatter = logging.Formatter('%(asctime)s  %(levelname)s : %(message)s')
 handler.setFormatter(formatter)
 # handler.setLevel(logging.INFO)
 logger.addHandler(handler)
-
 
 app.debug = True
 
@@ -166,11 +165,15 @@ semaphores = dict()
 payload = dict()
 payload2 = dict()
 
+emojis_numbers = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "🔟"]
+faces = ['😎', '😋', '😉', '😌', '😇', '😊', '😀', '😃', '🤤', '🤠', '👻', '😺', '🕺']
+hands = ['💪', '🤞', '🤞', '👍', '👊', '✊', '🤛', '🤜', '🤞', '✌', '🤟', '🤘', '👌', '👈', '🖖']
+numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+
 SANDBOX_URL = "http://r2mp-sandbox.rancardmobility.com"
 PRODUCTION_URL = "http://r2mp.rancard.com"
 LOCAL = "http://localhost:8080"
 PRODUCTION_URL2 = "https://r2mp2.rancard.com"
-
 
 SERVER = SANDBOX_URL
 
@@ -396,7 +399,7 @@ def check_new_messages(client_id):
         if res:
             logger.info(res)
             for message_group in res:
-            # message_group = res[0]
+                # message_group = res[0]
                 if not message_group.chat._js_obj["isGroup"]:
                     forwarder = threading.Thread(target=send_message_to_client, args=(message_group, client_id))
                     forwarder.start()
@@ -427,14 +430,17 @@ def reformat_message_r2mp(message, appId):
 
 
 def number_emoji(text):
-    return text.replace(".1.", "1️⃣", 1).replace(".2.", "2️⃣", 1).replace(".3.", "3️⃣", 1).replace(".4.", "4️⃣", 1).replace(".5.", "5️⃣", 1).replace(".6.", "6️⃣", 1)\
-        .replace(".7.", "7️⃣", 1).replace(".8.", "8️⃣", 1).replace(".9.", "9️⃣", 1).replace(".10.", " 🔟", 1).replace(".11.", '1️⃣1️⃣', 1).replace(".12.", "1️⃣2️⃣", 1)\
-
-
-
+    return text.replace(".1.", "1️⃣", 1).replace(".2.", "2️⃣", 1).replace(".3.", "3️⃣", 1).replace(".4.", "4️⃣",
+                                                                                                   1).replace(".5.",
+                                                                                                              "5️⃣",
+                                                                                                              1).replace(
+        ".6.", "6️⃣", 1) \
+        .replace(".7.", "7️⃣", 1).replace(".8.", "8️⃣", 1).replace(".9.", "9️⃣", 1).replace(".10.", " 🔟", 1).replace(
+        ".11.", '1️⃣1️⃣', 1).replace(".12.", "1️⃣2️⃣", 1) \
+ \
+ \
 # Process the incoming message and forward to whoever wants it
 def send_message_to_client(message_group, appId):
-
     logger.info("About to process incoming message")
     message = message_group.messages[0]
     chat = message_group.chat
@@ -446,56 +452,57 @@ def send_message_to_client(message_group, appId):
 
     # check if message is a chat
     if message.type == "chat" or message.type == "location":
-            body = {}
-            body["recipientMsisdn"] = message._js_obj["to"].replace("@c.us", "")
-            body["content"] = message.content if message.type == "chat" else "https://www.latlong.net/c/?lat=" + str(
-                message.latitude) + "&long=" + str(message.longitude)
-            if message.type == "location":
-                location_url = "https://www.latlong.net/c/?lat=" + str(message.latitude) + "&long=" + str(
-                    message.longitude)
-                body["content"] = '<a href="' + location_url + '" target="_blank"> Click to view location </a>'
-            body['content'] = message.content
-            body["type"] = "text"
-            body["timeSent"] = message.timestamp.isoformat()
-            body["senderMsisdn"] = message.chat_id.replace("@c.us", "")
-            body['senderUsername'] = message._js_obj['sender']['pushname']
-            body["messageId"] = message.id
-            body["companyId"] = appId
-            body["appId"] = appId
+        body = {}
+        body["recipientMsisdn"] = message._js_obj["to"].replace("@c.us", "")
+        body["content"] = message.content if message.type == "chat" else "https://www.latlong.net/c/?lat=" + str(
+            message.latitude) + "&long=" + str(message.longitude)
+        if message.type == "location":
+            location_url = "https://www.latlong.net/c/?lat=" + str(message.latitude) + "&long=" + str(
+                message.longitude)
+            body["content"] = '<a href="' + location_url + '" target="_blank"> Click to view location </a>'
+        body['content'] = message.content
+        body["type"] = "text"
+        body["timeSent"] = message.timestamp.isoformat()
+        body["senderMsisdn"] = message.chat_id.replace("@c.us", "")
+        body['senderUsername'] = message._js_obj['sender']['pushname']
+        body["messageId"] = message.id
+        body["companyId"] = appId
+        body["appId"] = appId
 
-            # message is a reply to a quick reply
-            if message.content in payload[message.chat_id]:
-                logger.info("User swiped to reply option")
-                body["content"] = message.content
-                body['postback'] = {"payload": payload[message.chat_id][message.content]}
-                body['quick_reply'] = payload[message.chat_id][message.content]
+        # message is a reply to a quick reply
+        if message.content in payload[message.chat_id]:
+            logger.info("User swiped to reply option")
+            body["content"] = message.content
+            body['postback'] = {"payload": payload[message.chat_id][message.content]}
+            body['quick_reply'] = payload[message.chat_id][message.content]
+        else:
+            # User typed in the choice of order
+            if len(message.content) < 3 and message.content.isdigit():
+                logger.info("User choice out of range")
+                chat.send_message("‼ 🖐 Choice out of range 😬 . 🤗 Please send any number from 1 to " + str(
+                    len(payload[message.chat_id])) + " to make a 🤝 selection")
+                return
+
+        if message.content.lower().replace(" ", "") in payload2[message.chat_id]:
+            # User type in full the prefered choice
+            msg = message.content.lower().replace(" ", "")
+            body["content"] = message.content
+            body['postback'] = {"payload": payload2[message.chat_id][msg]}
+            body['quick_reply'] = payload2[message.chat_id][msg]
+
+        # if its a reply
+        if message._js_obj["quotedMsg"] is not None:
+            if message._js_obj["quotedMsg"]["type"] == "chat":
+                text = message._js_obj['quotedMsg']['body']
+                body['content'] = text
+                body['postback'] = {"payload": payload[message.chat_id][text]}
+                body['quick_reply'] = payload[message.chat_id][text]
             else:
-                # User typed in the choice of order
-                if len(message.content) < 3 and message.content.isdigit():
-                    logger.info("User choice out of range")
-                    chat.send_message("‼  Choice out of range. Please send any number from 1 to " + str(len(payload[message.chat_id])) + " to make a selection")
-                    return
-
-            if message.content.lower().replace(" ", "") in payload2[message.chat_id]:
-                # User type in full the prefered choice
-                msg = message.content.lower().replace(" ", "")
-                body["content"] = message.content
-                body['postback'] = {"payload": payload2[message.chat_id][msg]}
-                body['quick_reply'] = payload2[message.chat_id][msg]
-
-            # if its a reply
-            if message._js_obj["quotedMsg"] is not None:
-                if message._js_obj["quotedMsg"]["type"] == "chat":
-                    text = message._js_obj['quotedMsg']['body']
-                    body['content'] = text
-                    body['postback'] = {"payload": payload[message.chat_id][text]}
-                    body['quick_reply'] = payload[message.chat_id][text]
-                else:
-                    text = message._js_obj['quotedMsg']['caption']
-                    body['content'] = text
-                    body['postback'] = {"payload": payload[message.chat_id][text]}
-                    body['quick_reply'] = payload[message.chat_id][text]
-            forward_message_to_r2mp(body, message.chat_id)
+                text = message._js_obj['quotedMsg']['caption']
+                body['content'] = text
+                body['postback'] = {"payload": payload[message.chat_id][text]}
+                body['quick_reply'] = payload[message.chat_id][text]
+        forward_message_to_r2mp(body, message.chat_id)
     else:
         logger.info("Media Message incoming")
 
@@ -509,7 +516,9 @@ def forward_message_to_r2mp(message_data, chat_id):
                              json=message_data)
     # payload[chat_id] = dict()
     # payload2[chat_id] = dict()
-    logger.info("Message " + message_data['content'] +" sent to " + SERVER + "/api/v1/bot?channelType=WHATSAPP ---- "+ str(response))
+    logger.info(
+        "Message " + message_data['content'] + " sent to " + SERVER + "/api/v1/bot?channelType=WHATSAPP ---- " + str(
+            response))
 
 
 def get_client_info(client_id):
@@ -597,15 +606,19 @@ def get_file_name(url):
 def download_file(url):
     file_name = get_file_name(url)
     file_path = os.path.join(STATIC_FILES_PATH, file_name)
-    try:
-        logger.info("About to downloading files : " + url)
-        save_path = urllibrequest.urlretrieve(url, filename=file_path)[0]
-        time.sleep(2)
-        logging.info("Dowloading files")
-        return save_path
-    except Exception:
-        logger.exception("Error in downloading file " + url)
-        return False
+
+    if not os.path.isfile(file_path):
+        try:
+            logger.info("About to downloading files : " + url)
+            save_path = urllibrequest.urlretrieve(url, filename=file_path)[0]
+            time.sleep(2)
+            logging.info("Dowloading files")
+            return save_path
+        except Exception:
+            logger.exception("Error in downloading file " + url)
+            return False
+    else:
+        return file_path
 
 
 def create_static_profile_path(client_id):
@@ -898,22 +911,33 @@ def send_message(chat_id):
 
     # global res
     res = {
-        'status':'Sending Message Failed'
+        'status': 'Sending Message Failed'
     }
     data = request.json
     contents = data.get("contents")
     message = data.get("message")
     instruction = data.get("instruction")
+    card = data.get("card")
+
     chat = g.driver.get_chat_from_id(chat_id)
     payload[chat_id] = dict()
     payload2[chat_id] = dict()
 
     if message is not None:
-        res = chat.send_message(message)
+        msg = message + " "+ random.choice(faces)
+        res = chat.send_message(msg)
+
+    if card is not None:
+        caption = card.get('caption')
+        image_url = card.get('imageUrl').replace("https", "http")
+
+        file_path = download_file(image_url)
+        res = chat.send_media(file_path, caption)
+
     for content in contents:
         number = contents.index(content) + 1
         option = content.get('title')
-        title = "."+ str(number) + ". " + option
+        title = "." + str(number) + ". " + option
         intent = content.get('payload')
         image_url = content.get('imageUrl')
 
@@ -928,9 +952,13 @@ def send_message(chat_id):
             res = chat.send_message(number_emoji(title))
         else:
             file_path = download_file(image_url)
+            time.sleep(2)
             res = chat.send_media(file_path, number_emoji(title))
     if instruction is not None:
-        res = chat.send_message(instruction)
+        text = "{0} Do type {1} to select an option {2}".format(random.choice(faces),
+                                                                ', '.join(numbers[0:len(contents)]),
+                                                                random.choice(hands))
+        res = chat.send_message(text)
     if res:
         return jsonify(res)
     else:
