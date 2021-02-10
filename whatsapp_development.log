@@ -9459,3 +9459,1084 @@ urllib.error.HTTPError: HTTP Error 503: Service Unavailable
 2021-02-02 17:32:19,598  INFO : Checking if driver is unknown
 2021-02-02 17:32:19,598  INFO : Previous driver timer initialised
 2021-02-02 17:32:19,598  INFO : subscribing to new messages
+2021-02-04 18:21:26,245  INFO : New Request
+2021-02-04 18:21:26,278  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-02-04 18:21:26,278  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-04 18:21:26,278  INFO : About to initialise new driver 
+2021-02-04 18:21:34,295  INFO : About getting driver status
+2021-02-04 18:21:44,891  INFO : Driver Status - NotLoggedIn
+2021-02-04 18:21:44,892  INFO : Checking if driver is unknown
+2021-02-04 18:21:44,892  INFO : New timer started for driver
+2021-02-04 18:21:44,892  INFO : subscribing to new messages
+2021-02-04 18:21:44,892  INFO : QR requested
+2021-02-04 18:21:44,892  INFO : Timer initialised
+2021-02-04 18:21:47,988  INFO : Sending QR to server
+2021-02-04 18:21:50,969  INFO : Sending QR to server
+2021-02-04 18:21:53,972  INFO : Sending QR to server
+2021-02-04 18:21:56,968  INFO : Sending QR to server
+2021-02-04 18:21:59,971  INFO : Sending QR to server
+2021-02-04 18:22:02,970  INFO : Sending QR to server
+2021-02-04 18:22:05,963  INFO : Sending QR to server
+2021-02-04 18:22:09,002  INFO : Sending QR to server
+2021-02-04 18:22:11,971  INFO : Sending QR to server
+2021-02-04 18:22:14,993  INFO : Sending QR to server
+2021-02-04 18:22:17,968  INFO : Sending QR to server
+2021-02-04 18:22:20,972  INFO : Sending QR to server
+2021-02-04 18:22:23,985  INFO : Sending QR to server
+2021-02-04 18:22:26,948  INFO : Sending QR to server
+2021-02-04 18:22:29,967  INFO : Sending QR to server
+2021-02-04 18:22:32,988  INFO : Sending QR to server
+2021-02-04 18:22:35,986  INFO : Sending QR to server
+2021-02-04 18:22:38,985  INFO : Sending QR to server
+2021-02-04 18:22:41,985  INFO : Sending QR to server
+2021-02-04 18:22:44,987  INFO : Sending QR to server
+2021-02-04 18:22:47,964  INFO : Sending QR to server
+2021-02-04 18:22:50,987  INFO : Sending QR to server
+2021-02-04 18:22:53,984  INFO : Sending QR to server
+2021-02-04 18:22:56,984  INFO : Sending QR to server
+2021-02-04 18:23:00,004  INFO : Sending QR to server
+2021-02-04 18:23:02,987  INFO : Sending QR to server
+2021-02-04 18:23:05,968  INFO : Sending QR to server
+2021-02-04 18:23:08,968  INFO : Sending QR to server
+2021-02-04 18:23:11,984  INFO : Sending QR to server
+2021-02-04 18:23:14,987  INFO : Sending QR to server
+2021-02-04 18:23:17,987  INFO : Sending QR to server
+2021-02-04 18:23:21,003  INFO : Sending QR to server
+2021-02-04 18:23:23,986  INFO : Sending QR to server
+2021-02-04 18:23:26,984  INFO : Sending QR to server
+2021-02-04 18:23:29,997  INFO : Sending QR to server
+2021-02-04 18:23:33,005  INFO : Sending QR to server
+2021-02-04 18:23:35,983  INFO : Sending QR to server
+2021-02-04 18:23:38,984  INFO : Sending QR to server
+2021-02-04 18:23:41,982  INFO : Sending QR to server
+2021-02-04 18:23:46,826  INFO : Sending QR to server
+2021-02-04 18:23:47,983  INFO : Sending QR to server
+2021-02-04 18:23:51,004  INFO : Sending QR to server
+2021-02-04 18:23:54,001  INFO : Sending QR to server
+2021-02-04 18:23:56,984  INFO : Sending QR to server
+2021-02-04 18:23:59,984  INFO : Sending QR to server
+2021-02-04 18:24:02,980  INFO : Sending QR to server
+2021-02-04 18:24:06,020  INFO : Sending QR to server
+2021-02-04 18:24:09,003  INFO : Sending QR to server
+2021-02-04 18:24:12,004  INFO : Sending QR to server
+2021-02-04 18:24:15,001  INFO : Sending QR to server
+2021-02-04 18:24:17,998  INFO : Sending QR to server
+2021-02-04 18:24:21,004  INFO : Sending QR to server
+2021-02-04 18:24:23,999  INFO : Sending QR to server
+2021-02-04 18:24:26,999  INFO : Sending QR to server
+2021-02-04 18:24:30,000  INFO : Sending QR to server
+2021-02-04 18:24:32,999  INFO : Sending QR to server
+2021-02-04 18:24:35,992  INFO : Sending QR to server
+2021-02-04 18:24:39,018  INFO : Sending QR to server
+2021-02-04 18:24:42,014  INFO : Sending QR to server
+2021-02-04 18:24:44,996  INFO : Sending QR to server
+2021-02-04 18:24:47,996  INFO : Sending QR to server
+2021-02-04 18:24:51,026  INFO : Sending QR to server
+2021-02-04 18:24:54,015  INFO : Sending QR to server
+2021-02-04 18:24:57,010  INFO : Sending QR to server
+2021-02-04 18:24:59,997  INFO : Sending QR to server
+2021-02-04 18:25:02,998  INFO : Sending QR to server
+2021-02-04 18:25:06,017  INFO : Sending QR to server
+2021-02-04 18:25:09,015  INFO : Sending QR to server
+2021-02-04 18:25:12,017  INFO : Sending QR to server
+2021-02-04 18:25:15,018  INFO : Sending QR to server
+2021-02-04 18:25:17,979  INFO : Sending QR to server
+2021-02-04 18:25:21,014  INFO : Sending QR to server
+2021-02-04 18:25:24,013  INFO : Sending QR to server
+2021-02-04 18:25:27,016  INFO : Sending QR to server
+2021-02-04 18:25:30,013  INFO : Sending QR to server
+2021-02-04 18:25:33,028  INFO : Sending QR to server
+2021-02-04 18:25:36,014  INFO : Sending QR to server
+2021-02-04 18:25:38,995  INFO : Sending QR to server
+2021-02-04 18:25:42,027  INFO : Sending QR to server
+2021-02-04 18:25:45,026  INFO : Sending QR to server
+2021-02-04 18:25:49,573  INFO : Sending QR to server
+2021-02-04 18:25:51,010  INFO : Sending QR to server
+2021-02-04 18:25:54,009  INFO : Sending QR to server
+2021-02-04 18:25:57,013  INFO : Sending QR to server
+2021-02-04 18:26:00,016  INFO : Sending QR to server
+2021-02-04 18:26:03,008  INFO : Sending QR to server
+2021-02-04 18:26:06,014  INFO : Sending QR to server
+2021-02-04 18:26:09,028  INFO : Sending QR to server
+2021-02-04 18:26:12,024  INFO : Sending QR to server
+2021-02-04 18:26:15,028  INFO : Sending QR to server
+2021-02-04 18:26:18,029  INFO : Sending QR to server
+2021-02-04 18:26:21,011  INFO : Sending QR to server
+2021-02-04 18:26:24,026  INFO : Sending QR to server
+2021-02-04 18:26:27,010  INFO : Sending QR to server
+2021-02-04 18:26:30,025  INFO : Sending QR to server
+2021-02-04 18:26:33,028  INFO : Sending QR to server
+2021-02-04 18:26:36,023  INFO : Sending QR to server
+2021-02-04 18:26:39,026  INFO : Sending QR to server
+2021-02-04 18:26:42,010  INFO : Sending QR to server
+2021-02-04 18:26:45,040  INFO : Sending QR to server
+2021-02-04 18:26:48,025  INFO : Sending QR to server
+2021-02-04 18:26:51,023  INFO : Sending QR to server
+2021-02-04 18:26:54,025  INFO : Sending QR to server
+2021-02-04 18:26:57,044  INFO : Sending QR to server
+2021-02-04 18:27:00,025  INFO : Sending QR to server
+2021-02-04 18:27:03,027  INFO : Sending QR to server
+2021-02-04 18:27:06,022  INFO : Sending QR to server
+2021-02-04 18:27:09,022  INFO : Sending QR to server
+2021-02-04 18:27:12,021  INFO : Sending QR to server
+2021-02-04 18:27:15,040  INFO : Sending QR to server
+2021-02-04 18:27:18,023  INFO : Sending QR to server
+2021-02-04 18:27:21,042  INFO : Sending QR to server
+2021-02-04 18:27:24,040  INFO : Sending QR to server
+2021-02-04 18:27:27,020  INFO : Sending QR to server
+2021-02-04 18:27:30,023  INFO : Sending QR to server
+2021-02-04 18:27:33,020  INFO : Sending QR to server
+2021-02-04 18:27:36,043  INFO : Sending QR to server
+2021-02-04 18:27:39,039  INFO : Sending QR to server
+2021-02-04 18:27:42,058  INFO : Sending QR to server
+2021-02-04 18:27:45,038  INFO : Sending QR to server
+2021-02-04 18:27:48,035  INFO : Sending QR to server
+2021-02-04 18:27:52,594  INFO : Sending QR to server
+2021-02-04 18:27:54,040  INFO : Sending QR to server
+2021-02-04 18:27:57,040  INFO : Sending QR to server
+2021-02-04 18:28:00,049  INFO : Sending QR to server
+2021-02-04 18:28:03,037  INFO : Sending QR to server
+2021-02-04 18:28:06,039  INFO : Sending QR to server
+2021-02-04 18:28:09,032  INFO : Sending QR to server
+2021-02-04 18:28:12,040  INFO : Sending QR to server
+2021-02-04 18:28:25,070  INFO : Previous driver timer initialised
+2021-02-04 18:28:25,070  INFO : Timer killed successfully
+2021-02-04 18:28:55,176  ERROR : Error occurred trying to kill timer
+2021-02-04 18:28:55,201  ERROR : Error occurred trying to kill timer
+2021-02-04 18:28:55,225  ERROR : Error occurred trying to kill timer
+2021-02-07 11:16:57,743  INFO : New Request
+2021-02-07 11:16:57,775  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-02-07 11:16:57,775  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:16:57,775  INFO : About to initialise new driver 
+2021-02-07 11:17:04,981  INFO : About getting driver status
+2021-02-07 11:17:33,573  INFO : Driver Status - LoggedInAnotherBrowser
+2021-02-07 11:17:33,573  INFO : Checking if driver is unknown
+2021-02-07 11:17:33,573  INFO : Re-initiaising driver
+2021-02-07 11:17:53,653  INFO : New timer started for driver
+2021-02-07 11:17:53,654  INFO : subscribing to new messages
+2021-02-07 11:17:53,654  INFO : QR requested
+2021-02-07 11:17:53,654  INFO : Timer initialised
+2021-02-07 11:18:06,735  INFO : Previous driver timer initialised
+2021-02-07 11:18:06,735  INFO : Timer killed successfully
+2021-02-07 11:18:36,887  ERROR : Error occurred trying to kill timer
+2021-02-07 11:18:36,907  ERROR : Error occurred trying to kill timer
+2021-02-07 11:18:36,922  ERROR : Error occurred trying to kill timer
+2021-02-07 11:20:25,751  INFO : New Request
+2021-02-07 11:20:25,751  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-02-07 11:20:25,752  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:20:25,752  INFO : About to initialise new driver 
+2021-02-07 11:20:30,300  INFO : About getting driver status
+2021-02-07 11:20:58,239  INFO : Driver Status - LoggedInAnotherBrowser
+2021-02-07 11:20:58,239  INFO : Checking if driver is unknown
+2021-02-07 11:20:58,239  INFO : Re-initiaising driver
+2021-02-07 11:21:18,297  INFO : New timer started for driver
+2021-02-07 11:21:18,297  INFO : subscribing to new messages
+2021-02-07 11:21:18,298  INFO : QR requested
+2021-02-07 11:21:18,298  INFO : Timer initialised
+2021-02-07 11:21:31,343  INFO : Previous driver timer initialised
+2021-02-07 11:21:31,343  INFO : Timer killed successfully
+2021-02-07 11:21:59,469  INFO : New Request
+2021-02-07 11:21:59,469  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-02-07 11:21:59,469  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:22:01,478  ERROR : Error occurred trying to kill timer
+2021-02-07 11:22:01,507  ERROR : Error occurred trying to kill timer
+2021-02-07 11:22:01,532  ERROR : Error occurred trying to kill timer
+2021-02-07 11:24:06,601  INFO : New Request
+2021-02-07 11:24:06,601  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-02-07 11:24:06,602  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:24:06,602  INFO : About to initialise new driver 
+2021-02-07 11:24:17,904  INFO : About getting driver status
+2021-02-07 11:24:27,945  INFO : Driver Status - NotLoggedIn
+2021-02-07 11:24:27,945  INFO : Checking if driver is unknown
+2021-02-07 11:24:27,945  INFO : New timer started for driver
+2021-02-07 11:24:27,945  INFO : subscribing to new messages
+2021-02-07 11:24:27,945  INFO : QR requested
+2021-02-07 11:24:27,945  INFO : Timer initialised
+2021-02-07 11:24:31,051  INFO : Sending QR to server
+2021-02-07 11:24:34,014  INFO : Sending QR to server
+2021-02-07 11:24:37,020  INFO : Sending QR to server
+2021-02-07 11:24:40,036  INFO : Sending QR to server
+2021-02-07 11:24:43,015  INFO : Sending QR to server
+2021-02-07 11:24:45,999  INFO : Sending QR to server
+2021-02-07 11:24:49,036  INFO : Sending QR to server
+2021-02-07 11:24:51,994  INFO : Sending QR to server
+2021-02-07 11:24:55,019  INFO : Sending QR to server
+2021-02-07 11:24:58,016  INFO : Sending QR to server
+2021-02-07 11:25:01,035  INFO : Sending QR to server
+2021-02-07 11:25:14,219  INFO : Previous driver timer initialised
+2021-02-07 11:25:14,220  INFO : Timer killed successfully
+2021-02-07 11:25:44,323  ERROR : Error occurred trying to kill timer
+2021-02-07 11:25:44,350  ERROR : Error occurred trying to kill timer
+2021-02-07 11:25:44,371  ERROR : Error occurred trying to kill timer
+2021-02-07 11:26:23,307  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-02-07 11:26:23,307  INFO : About to process incoming message
+2021-02-07 11:26:23,333  INFO : Message Hey sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 11:26:44,838  INFO : New Request
+2021-02-07 11:26:44,838  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:26:44,838  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:26:44,839  INFO : About getting driver status
+2021-02-07 11:26:44,850  INFO : Driver Status - LoggedIn
+2021-02-07 11:26:44,851  INFO : Checking if driver is unknown
+2021-02-07 11:26:44,851  INFO : Previous driver timer initialised
+2021-02-07 11:26:44,851  INFO : subscribing to new messages
+2021-02-07 11:26:45,581  INFO : New Request
+2021-02-07 11:26:45,581  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:26:45,582  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:26:45,582  INFO : About getting driver status
+2021-02-07 11:26:45,592  INFO : Driver Status - LoggedIn
+2021-02-07 11:26:45,593  INFO : Checking if driver is unknown
+2021-02-07 11:26:45,593  INFO : Previous driver timer initialised
+2021-02-07 11:26:45,593  INFO : subscribing to new messages
+2021-02-07 11:27:37,534  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-02-07 11:27:37,534  INFO : About to process incoming message
+2021-02-07 11:27:37,569  INFO : Message Hey sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 11:27:54,535  INFO : New Request
+2021-02-07 11:27:54,535  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:27:54,535  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:27:54,536  INFO : About getting driver status
+2021-02-07 11:27:54,550  INFO : Driver Status - LoggedIn
+2021-02-07 11:27:54,550  INFO : Checking if driver is unknown
+2021-02-07 11:27:54,550  INFO : Previous driver timer initialised
+2021-02-07 11:27:54,550  INFO : subscribing to new messages
+2021-02-07 11:27:55,201  INFO : New Request
+2021-02-07 11:27:55,201  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:27:55,202  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:27:55,202  INFO : About getting driver status
+2021-02-07 11:27:55,218  INFO : Driver Status - LoggedIn
+2021-02-07 11:27:55,218  INFO : Checking if driver is unknown
+2021-02-07 11:27:55,218  INFO : Previous driver timer initialised
+2021-02-07 11:27:55,218  INFO : subscribing to new messages
+2021-02-07 11:31:19,205  INFO : New Request
+2021-02-07 11:31:19,205  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-02-07 11:31:19,206  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:31:20,816  INFO : New Request
+2021-02-07 11:31:20,816  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-02-07 11:31:20,816  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:31:20,816  INFO : About to initialise new driver 
+2021-02-07 11:31:26,920  INFO : About getting driver status
+2021-02-07 11:31:57,006  INFO : Driver Status - Unknown
+2021-02-07 11:31:57,006  INFO : Checking if driver is unknown
+2021-02-07 11:31:57,006  INFO : Re-initiaising driver
+2021-02-07 11:31:57,060  INFO : New timer started for driver
+2021-02-07 11:31:57,060  INFO : subscribing to new messages
+2021-02-07 11:31:57,061  INFO : QR requested
+2021-02-07 11:31:57,061  INFO : Timer initialised
+2021-02-07 11:32:10,126  INFO : Previous driver timer initialised
+2021-02-07 11:32:10,126  INFO : Timer killed successfully
+2021-02-07 11:32:40,244  ERROR : Error occurred trying to kill timer
+2021-02-07 11:32:40,273  ERROR : Error occurred trying to kill timer
+2021-02-07 11:32:40,292  ERROR : Error occurred trying to kill timer
+2021-02-07 11:32:58,881  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 11:32:58,881  INFO : About to process incoming message
+2021-02-07 11:32:58,921  INFO : Message Hey sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 11:33:16,067  INFO : New Request
+2021-02-07 11:33:16,068  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:33:16,068  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:33:16,068  INFO : About getting driver status
+2021-02-07 11:33:16,090  INFO : Driver Status - LoggedIn
+2021-02-07 11:33:16,090  INFO : Checking if driver is unknown
+2021-02-07 11:33:16,091  INFO : Previous driver timer initialised
+2021-02-07 11:33:16,091  INFO : subscribing to new messages
+2021-02-07 11:33:16,632  INFO : New Request
+2021-02-07 11:33:16,632  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:33:16,632  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:33:16,633  INFO : About getting driver status
+2021-02-07 11:33:16,642  INFO : Driver Status - LoggedIn
+2021-02-07 11:33:16,642  INFO : Checking if driver is unknown
+2021-02-07 11:33:16,642  INFO : Previous driver timer initialised
+2021-02-07 11:33:16,642  INFO : subscribing to new messages
+2021-02-07 11:33:38,052  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 11:33:38,053  INFO : About to process incoming message
+2021-02-07 11:33:38,094  INFO : Message Hello sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 11:33:40,244  INFO : New Request
+2021-02-07 11:33:40,245  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:33:40,245  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:33:40,245  INFO : About getting driver status
+2021-02-07 11:33:40,253  INFO : Driver Status - LoggedIn
+2021-02-07 11:33:40,253  INFO : Checking if driver is unknown
+2021-02-07 11:33:40,253  INFO : Previous driver timer initialised
+2021-02-07 11:33:40,253  INFO : subscribing to new messages
+2021-02-07 11:33:40,639  INFO : New Request
+2021-02-07 11:33:40,639  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:33:40,640  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:33:40,640  INFO : About getting driver status
+2021-02-07 11:33:40,647  INFO : Driver Status - LoggedIn
+2021-02-07 11:33:40,648  INFO : Checking if driver is unknown
+2021-02-07 11:33:40,648  INFO : Previous driver timer initialised
+2021-02-07 11:33:40,648  INFO : subscribing to new messages
+2021-02-07 11:35:10,904  INFO : New Request
+2021-02-07 11:35:10,905  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-02-07 11:35:10,905  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:35:14,244  INFO : New Request
+2021-02-07 11:35:14,245  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-02-07 11:35:14,245  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:35:14,245  INFO : About to initialise new driver 
+2021-02-07 11:35:16,884  INFO : About getting driver status
+2021-02-07 11:35:47,121  INFO : Driver Status - Unknown
+2021-02-07 11:35:47,121  INFO : Checking if driver is unknown
+2021-02-07 11:35:47,121  INFO : Re-initiaising driver
+2021-02-07 11:35:47,178  INFO : New timer started for driver
+2021-02-07 11:35:47,179  INFO : subscribing to new messages
+2021-02-07 11:35:47,179  INFO : QR requested
+2021-02-07 11:35:47,179  INFO : Timer initialised
+2021-02-07 11:36:00,307  INFO : Previous driver timer initialised
+2021-02-07 11:36:00,307  INFO : Timer killed successfully
+2021-02-07 11:36:30,460  ERROR : Error occurred trying to kill timer
+2021-02-07 11:36:30,486  ERROR : Error occurred trying to kill timer
+2021-02-07 11:36:30,514  ERROR : Error occurred trying to kill timer
+2021-02-07 11:45:20,500  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 11:45:20,500  INFO : About to process incoming message
+2021-02-07 11:45:20,532  INFO : Message Hey sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 11:45:37,878  INFO : New Request
+2021-02-07 11:45:37,879  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:45:37,879  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:45:37,879  INFO : About getting driver status
+2021-02-07 11:45:37,890  INFO : Driver Status - LoggedIn
+2021-02-07 11:45:37,890  INFO : Checking if driver is unknown
+2021-02-07 11:45:37,891  INFO : Previous driver timer initialised
+2021-02-07 11:45:37,891  INFO : subscribing to new messages
+2021-02-07 11:45:41,340  INFO : New Request
+2021-02-07 11:45:41,340  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:45:41,341  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:45:41,341  INFO : About getting driver status
+2021-02-07 11:45:41,350  INFO : Driver Status - LoggedIn
+2021-02-07 11:45:41,351  INFO : Checking if driver is unknown
+2021-02-07 11:45:41,351  INFO : Previous driver timer initialised
+2021-02-07 11:45:41,351  INFO : subscribing to new messages
+2021-02-07 11:48:57,377  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 11:48:57,379  INFO : About to process incoming message
+2021-02-07 11:48:57,380  INFO : User swiped to reply option
+2021-02-07 11:48:57,419  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 11:48:57,729  INFO : New Request
+2021-02-07 11:48:57,729  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:48:57,729  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:48:57,729  INFO : About getting driver status
+2021-02-07 11:48:57,737  INFO : Driver Status - LoggedIn
+2021-02-07 11:48:57,737  INFO : Checking if driver is unknown
+2021-02-07 11:48:57,737  INFO : Previous driver timer initialised
+2021-02-07 11:48:57,737  INFO : subscribing to new messages
+2021-02-07 11:56:52,690  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 11:56:52,691  INFO : About to process incoming message
+2021-02-07 11:56:52,727  INFO : Message Hey sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 11:57:09,948  INFO : New Request
+2021-02-07 11:57:09,948  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:57:09,949  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:57:09,949  INFO : About getting driver status
+2021-02-07 11:57:09,963  INFO : Driver Status - LoggedIn
+2021-02-07 11:57:09,963  INFO : Checking if driver is unknown
+2021-02-07 11:57:09,963  INFO : Previous driver timer initialised
+2021-02-07 11:57:09,963  INFO : subscribing to new messages
+2021-02-07 11:57:13,370  INFO : New Request
+2021-02-07 11:57:13,371  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:57:13,371  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:57:13,371  INFO : About getting driver status
+2021-02-07 11:57:13,383  INFO : Driver Status - LoggedIn
+2021-02-07 11:57:13,383  INFO : Checking if driver is unknown
+2021-02-07 11:57:13,383  INFO : Previous driver timer initialised
+2021-02-07 11:57:13,383  INFO : subscribing to new messages
+2021-02-07 11:59:38,524  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 11:59:38,525  INFO : About to process incoming message
+2021-02-07 11:59:38,525  INFO : User swiped to reply option
+2021-02-07 11:59:38,560  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 11:59:38,771  INFO : New Request
+2021-02-07 11:59:38,771  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 11:59:38,771  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 11:59:38,771  INFO : About getting driver status
+2021-02-07 11:59:38,779  INFO : Driver Status - LoggedIn
+2021-02-07 11:59:38,779  INFO : Checking if driver is unknown
+2021-02-07 11:59:38,779  INFO : Previous driver timer initialised
+2021-02-07 11:59:38,779  INFO : subscribing to new messages
+2021-02-07 12:00:46,859  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:00:46,860  INFO : About to process incoming message
+2021-02-07 12:00:46,861  INFO : User swiped to reply option
+2021-02-07 12:00:46,906  INFO : Message 3 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:00:47,148  INFO : New Request
+2021-02-07 12:00:47,148  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:00:47,148  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:00:47,148  INFO : About getting driver status
+2021-02-07 12:00:47,159  INFO : Driver Status - LoggedIn
+2021-02-07 12:00:47,160  INFO : Checking if driver is unknown
+2021-02-07 12:00:47,160  INFO : Previous driver timer initialised
+2021-02-07 12:00:47,160  INFO : subscribing to new messages
+2021-02-07 12:01:04,655  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:01:04,656  INFO : About to process incoming message
+2021-02-07 12:01:04,656  INFO : User swiped to reply option
+2021-02-07 12:01:04,696  INFO : Message 2 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:01:04,972  INFO : New Request
+2021-02-07 12:01:04,973  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:01:04,973  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:01:04,973  INFO : About getting driver status
+2021-02-07 12:01:04,988  INFO : Driver Status - LoggedIn
+2021-02-07 12:01:04,988  INFO : Checking if driver is unknown
+2021-02-07 12:01:04,988  INFO : Previous driver timer initialised
+2021-02-07 12:01:04,989  INFO : subscribing to new messages
+2021-02-07 12:06:57,151  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:06:57,151  INFO : About to process incoming message
+2021-02-07 12:06:57,698  INFO : Message Hey sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:11:59,235  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:11:59,236  INFO : About to process incoming message
+2021-02-07 12:11:59,273  INFO : Message Hey sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:20:29,522  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:20:29,522  INFO : About to process incoming message
+2021-02-07 12:20:29,821  INFO : Message Hello sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:22:07,106  INFO : New Request
+2021-02-07 12:22:07,107  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:22:07,108  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:22:07,109  INFO : About getting driver status
+2021-02-07 12:22:07,125  INFO : Driver Status - LoggedIn
+2021-02-07 12:22:07,125  INFO : Checking if driver is unknown
+2021-02-07 12:22:07,126  INFO : Previous driver timer initialised
+2021-02-07 12:22:07,126  INFO : subscribing to new messages
+2021-02-07 12:22:30,041  INFO : New Request
+2021-02-07 12:22:30,041  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:22:30,042  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:22:30,042  INFO : About getting driver status
+2021-02-07 12:22:30,057  INFO : Driver Status - LoggedIn
+2021-02-07 12:22:30,057  INFO : Checking if driver is unknown
+2021-02-07 12:22:30,057  INFO : Previous driver timer initialised
+2021-02-07 12:22:30,058  INFO : subscribing to new messages
+2021-02-07 12:23:01,405  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:23:01,406  INFO : About to process incoming message
+2021-02-07 12:23:01,428  INFO : Message Hey sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:28:42,353  INFO : New Request
+2021-02-07 12:28:42,354  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:28:42,354  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:28:42,354  INFO : About getting driver status
+2021-02-07 12:28:42,367  INFO : Driver Status - LoggedIn
+2021-02-07 12:28:42,367  INFO : Checking if driver is unknown
+2021-02-07 12:28:42,368  INFO : Previous driver timer initialised
+2021-02-07 12:28:42,368  INFO : subscribing to new messages
+2021-02-07 12:29:10,621  INFO : New Request
+2021-02-07 12:29:10,622  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:29:10,622  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:29:10,622  INFO : About getting driver status
+2021-02-07 12:29:10,634  INFO : Driver Status - LoggedIn
+2021-02-07 12:29:10,635  INFO : Checking if driver is unknown
+2021-02-07 12:29:10,635  INFO : Previous driver timer initialised
+2021-02-07 12:29:10,635  INFO : subscribing to new messages
+2021-02-07 12:29:59,725  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:29:59,726  INFO : About to process incoming message
+2021-02-07 12:29:59,726  INFO : User swiped to reply option
+2021-02-07 12:29:59,762  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:30:10,561  INFO : New Request
+2021-02-07 12:30:10,562  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:30:10,562  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:30:10,563  INFO : About getting driver status
+2021-02-07 12:30:10,586  INFO : Driver Status - LoggedIn
+2021-02-07 12:30:10,586  INFO : Checking if driver is unknown
+2021-02-07 12:30:10,586  INFO : Previous driver timer initialised
+2021-02-07 12:30:10,586  INFO : subscribing to new messages
+2021-02-07 12:30:37,515  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:30:37,515  INFO : About to process incoming message
+2021-02-07 12:30:37,515  INFO : User swiped to reply option
+2021-02-07 12:30:37,534  INFO : Message 2 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:30:40,225  INFO : New Request
+2021-02-07 12:30:40,225  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:30:40,225  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:30:40,225  INFO : About getting driver status
+2021-02-07 12:30:40,238  INFO : Driver Status - LoggedIn
+2021-02-07 12:30:40,238  INFO : Checking if driver is unknown
+2021-02-07 12:30:40,239  INFO : Previous driver timer initialised
+2021-02-07 12:30:40,239  INFO : subscribing to new messages
+2021-02-07 12:30:51,524  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:30:51,525  INFO : About to process incoming message
+2021-02-07 12:30:51,525  INFO : User swiped to reply option
+2021-02-07 12:30:51,549  INFO : Message 2 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:30:53,850  INFO : New Request
+2021-02-07 12:30:53,850  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:30:53,851  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:30:53,851  INFO : About getting driver status
+2021-02-07 12:30:53,864  INFO : Driver Status - LoggedIn
+2021-02-07 12:30:53,864  INFO : Checking if driver is unknown
+2021-02-07 12:30:53,864  INFO : Previous driver timer initialised
+2021-02-07 12:30:53,864  INFO : subscribing to new messages
+2021-02-07 12:31:13,755  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:31:13,755  INFO : About to process incoming message
+2021-02-07 12:31:13,756  INFO : User swiped to reply option
+2021-02-07 12:31:13,779  INFO : Message 2 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:31:18,088  INFO : New Request
+2021-02-07 12:31:18,089  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:31:18,089  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:31:18,089  INFO : About getting driver status
+2021-02-07 12:31:18,100  INFO : Driver Status - LoggedIn
+2021-02-07 12:31:18,100  INFO : Checking if driver is unknown
+2021-02-07 12:31:18,100  INFO : Previous driver timer initialised
+2021-02-07 12:31:18,100  INFO : subscribing to new messages
+2021-02-07 12:31:22,439  INFO : New Request
+2021-02-07 12:31:22,440  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:31:22,441  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:31:22,441  INFO : About getting driver status
+2021-02-07 12:31:22,452  INFO : Driver Status - LoggedIn
+2021-02-07 12:31:22,453  INFO : Checking if driver is unknown
+2021-02-07 12:31:22,453  INFO : Previous driver timer initialised
+2021-02-07 12:31:22,453  INFO : subscribing to new messages
+2021-02-07 12:31:25,335  INFO : New Request
+2021-02-07 12:31:25,335  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:31:25,335  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:31:25,336  INFO : About getting driver status
+2021-02-07 12:31:25,347  INFO : Driver Status - LoggedIn
+2021-02-07 12:31:25,348  INFO : Checking if driver is unknown
+2021-02-07 12:31:25,348  INFO : Previous driver timer initialised
+2021-02-07 12:31:25,348  INFO : subscribing to new messages
+2021-02-07 12:31:41,752  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:31:41,753  INFO : About to process incoming message
+2021-02-07 12:31:41,753  INFO : User swiped to reply option
+2021-02-07 12:31:41,772  INFO : Message 2 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:31:51,212  INFO : New Request
+2021-02-07 12:31:51,212  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:31:51,212  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:31:51,212  INFO : About getting driver status
+2021-02-07 12:31:51,221  INFO : Driver Status - LoggedIn
+2021-02-07 12:31:51,221  INFO : Checking if driver is unknown
+2021-02-07 12:31:51,221  INFO : Previous driver timer initialised
+2021-02-07 12:31:51,221  INFO : subscribing to new messages
+2021-02-07 12:32:51,773  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:32:51,774  INFO : About to process incoming message
+2021-02-07 12:32:51,775  INFO : User swiped to reply option
+2021-02-07 12:32:51,800  INFO : Message 2 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:32:57,552  INFO : New Request
+2021-02-07 12:32:57,552  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:32:57,553  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:32:57,553  INFO : About getting driver status
+2021-02-07 12:32:57,562  INFO : Driver Status - LoggedIn
+2021-02-07 12:32:57,562  INFO : Checking if driver is unknown
+2021-02-07 12:32:57,562  INFO : Previous driver timer initialised
+2021-02-07 12:32:57,562  INFO : subscribing to new messages
+2021-02-07 12:33:09,557  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:33:09,558  INFO : About to process incoming message
+2021-02-07 12:33:09,558  INFO : User swiped to reply option
+2021-02-07 12:33:09,583  INFO : Message 3 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:33:12,093  INFO : New Request
+2021-02-07 12:33:12,093  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:33:12,093  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:33:12,094  INFO : About getting driver status
+2021-02-07 12:33:12,107  INFO : Driver Status - LoggedIn
+2021-02-07 12:33:12,107  INFO : Checking if driver is unknown
+2021-02-07 12:33:12,107  INFO : Previous driver timer initialised
+2021-02-07 12:33:12,108  INFO : subscribing to new messages
+2021-02-07 12:33:31,678  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:33:31,679  INFO : About to process incoming message
+2021-02-07 12:33:31,679  INFO : User swiped to reply option
+2021-02-07 12:33:31,696  INFO : Message 3 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:33:38,837  INFO : New Request
+2021-02-07 12:33:38,838  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:33:38,838  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:33:38,838  INFO : About getting driver status
+2021-02-07 12:33:38,850  INFO : Driver Status - LoggedIn
+2021-02-07 12:33:38,850  INFO : Checking if driver is unknown
+2021-02-07 12:33:38,850  INFO : Previous driver timer initialised
+2021-02-07 12:33:38,850  INFO : subscribing to new messages
+2021-02-07 12:34:11,696  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:34:11,697  INFO : About to process incoming message
+2021-02-07 12:34:11,697  INFO : User swiped to reply option
+2021-02-07 12:34:11,718  INFO : Message 3 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:34:19,002  INFO : New Request
+2021-02-07 12:34:19,002  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:34:19,002  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:34:19,003  INFO : About getting driver status
+2021-02-07 12:34:19,011  INFO : Driver Status - LoggedIn
+2021-02-07 12:34:19,011  INFO : Checking if driver is unknown
+2021-02-07 12:34:19,011  INFO : Previous driver timer initialised
+2021-02-07 12:34:19,011  INFO : subscribing to new messages
+2021-02-07 12:34:23,916  INFO : New Request
+2021-02-07 12:34:23,916  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:34:23,917  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:34:23,917  INFO : About getting driver status
+2021-02-07 12:34:23,925  INFO : Driver Status - LoggedIn
+2021-02-07 12:34:23,926  INFO : Checking if driver is unknown
+2021-02-07 12:34:23,926  INFO : Previous driver timer initialised
+2021-02-07 12:34:23,926  INFO : subscribing to new messages
+2021-02-07 12:34:27,895  INFO : New Request
+2021-02-07 12:34:27,896  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:34:27,896  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:34:27,896  INFO : About getting driver status
+2021-02-07 12:34:27,903  INFO : Driver Status - LoggedIn
+2021-02-07 12:34:27,903  INFO : Checking if driver is unknown
+2021-02-07 12:34:27,904  INFO : Previous driver timer initialised
+2021-02-07 12:34:27,904  INFO : subscribing to new messages
+2021-02-07 12:34:39,710  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:34:39,710  INFO : About to process incoming message
+2021-02-07 12:34:39,710  INFO : User swiped to reply option
+2021-02-07 12:34:39,724  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:34:45,986  INFO : New Request
+2021-02-07 12:34:45,986  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:34:45,986  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:34:45,987  INFO : About getting driver status
+2021-02-07 12:34:46,001  INFO : Driver Status - LoggedIn
+2021-02-07 12:34:46,001  INFO : Checking if driver is unknown
+2021-02-07 12:34:46,002  INFO : Previous driver timer initialised
+2021-02-07 12:34:46,002  INFO : subscribing to new messages
+2021-02-07 12:34:57,694  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:34:57,695  INFO : About to process incoming message
+2021-02-07 12:34:57,696  INFO : User swiped to reply option
+2021-02-07 12:34:57,716  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:34:59,898  INFO : New Request
+2021-02-07 12:34:59,899  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:34:59,899  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:34:59,899  INFO : About getting driver status
+2021-02-07 12:34:59,909  INFO : Driver Status - LoggedIn
+2021-02-07 12:34:59,909  INFO : Checking if driver is unknown
+2021-02-07 12:34:59,909  INFO : Previous driver timer initialised
+2021-02-07 12:34:59,909  INFO : subscribing to new messages
+2021-02-07 12:35:13,607  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-07 12:35:13,607  INFO : About to process incoming message
+2021-02-07 12:35:13,608  INFO : User swiped to reply option
+2021-02-07 12:35:13,623  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-07 12:35:15,650  INFO : New Request
+2021-02-07 12:35:15,651  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:35:15,651  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:35:15,651  INFO : About getting driver status
+2021-02-07 12:35:15,664  INFO : Driver Status - LoggedIn
+2021-02-07 12:35:15,664  INFO : Checking if driver is unknown
+2021-02-07 12:35:15,665  INFO : Previous driver timer initialised
+2021-02-07 12:35:15,665  INFO : subscribing to new messages
+2021-02-07 12:35:21,896  INFO : New Request
+2021-02-07 12:35:21,896  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-07 12:35:21,897  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-07 12:35:21,897  INFO : About getting driver status
+2021-02-07 12:35:21,907  INFO : Driver Status - LoggedIn
+2021-02-07 12:35:21,907  INFO : Checking if driver is unknown
+2021-02-07 12:35:21,908  INFO : Previous driver timer initialised
+2021-02-07 12:35:21,908  INFO : subscribing to new messages
+2021-02-08 09:10:45,402  INFO : New Request
+2021-02-08 09:10:45,441  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-02-08 09:10:45,441  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:10:49,770  INFO : New Request
+2021-02-08 09:10:49,770  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-02-08 09:10:49,770  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:10:49,770  INFO : About to initialise new driver 
+2021-02-08 09:10:55,637  INFO : About getting driver status
+2021-02-08 09:11:25,783  INFO : Driver Status - Unknown
+2021-02-08 09:11:25,783  INFO : Checking if driver is unknown
+2021-02-08 09:11:25,784  INFO : Re-initiaising driver
+2021-02-08 09:11:25,838  INFO : New timer started for driver
+2021-02-08 09:11:25,839  INFO : subscribing to new messages
+2021-02-08 09:11:25,839  INFO : QR requested
+2021-02-08 09:11:25,839  INFO : Timer initialised
+2021-02-08 09:11:38,941  INFO : Previous driver timer initialised
+2021-02-08 09:11:38,941  INFO : Timer killed successfully
+2021-02-08 09:12:09,074  ERROR : Error occurred trying to kill timer
+2021-02-08 09:12:09,104  ERROR : Error occurred trying to kill timer
+2021-02-08 09:12:09,135  ERROR : Error occurred trying to kill timer
+2021-02-08 09:14:34,846  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 09:14:34,847  INFO : About to process incoming message
+2021-02-08 09:14:34,876  INFO : Message Hello sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:17:51,832  INFO : New Request
+2021-02-08 09:17:51,833  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:17:51,833  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:17:51,833  INFO : About getting driver status
+2021-02-08 09:17:51,850  INFO : Driver Status - LoggedIn
+2021-02-08 09:17:51,850  INFO : Checking if driver is unknown
+2021-02-08 09:17:51,851  INFO : Previous driver timer initialised
+2021-02-08 09:17:51,851  INFO : subscribing to new messages
+2021-02-08 09:18:06,824  INFO : New Request
+2021-02-08 09:18:06,825  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:18:06,825  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:18:06,826  INFO : About getting driver status
+2021-02-08 09:18:06,834  INFO : Driver Status - LoggedIn
+2021-02-08 09:18:06,834  INFO : Checking if driver is unknown
+2021-02-08 09:18:06,835  INFO : Previous driver timer initialised
+2021-02-08 09:18:06,835  INFO : subscribing to new messages
+2021-02-08 09:18:36,929  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 09:18:36,930  INFO : About to process incoming message
+2021-02-08 09:18:36,930  INFO : User swiped to reply option
+2021-02-08 09:18:36,966  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:18:39,570  INFO : New Request
+2021-02-08 09:18:39,570  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:18:39,570  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:18:39,571  INFO : About getting driver status
+2021-02-08 09:18:39,579  INFO : Driver Status - LoggedIn
+2021-02-08 09:18:39,579  INFO : Checking if driver is unknown
+2021-02-08 09:18:39,579  INFO : Previous driver timer initialised
+2021-02-08 09:18:39,579  INFO : subscribing to new messages
+2021-02-08 09:25:17,201  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 09:25:17,230  INFO : About to process incoming message
+2021-02-08 09:25:17,739  INFO : Message Hey sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:25:43,999  INFO : New Request
+2021-02-08 09:25:44,001  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:25:44,002  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:25:44,002  INFO : About getting driver status
+2021-02-08 09:25:44,066  INFO : Driver Status - LoggedIn
+2021-02-08 09:25:44,067  INFO : Checking if driver is unknown
+2021-02-08 09:25:44,067  INFO : Previous driver timer initialised
+2021-02-08 09:25:44,067  INFO : subscribing to new messages
+2021-02-08 09:25:53,227  INFO : New Request
+2021-02-08 09:25:53,227  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:25:53,227  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:25:53,228  INFO : About getting driver status
+2021-02-08 09:25:53,237  INFO : Driver Status - LoggedIn
+2021-02-08 09:25:53,237  INFO : Checking if driver is unknown
+2021-02-08 09:25:53,237  INFO : Previous driver timer initialised
+2021-02-08 09:25:53,237  INFO : subscribing to new messages
+2021-02-08 09:26:09,160  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 09:26:09,161  INFO : About to process incoming message
+2021-02-08 09:26:09,161  INFO : User swiped to reply option
+2021-02-08 09:26:09,187  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:26:22,175  INFO : New Request
+2021-02-08 09:26:22,175  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:26:22,176  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:26:22,176  INFO : About getting driver status
+2021-02-08 09:26:22,184  INFO : Driver Status - LoggedIn
+2021-02-08 09:26:22,185  INFO : Checking if driver is unknown
+2021-02-08 09:26:22,185  INFO : Previous driver timer initialised
+2021-02-08 09:26:22,185  INFO : subscribing to new messages
+2021-02-08 09:28:39,166  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 09:28:39,166  INFO : About to process incoming message
+2021-02-08 09:28:39,167  INFO : User swiped to reply option
+2021-02-08 09:28:39,191  INFO : Message 2 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:28:42,675  INFO : New Request
+2021-02-08 09:28:42,676  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:28:42,676  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:28:42,677  INFO : About getting driver status
+2021-02-08 09:28:42,690  INFO : Driver Status - LoggedIn
+2021-02-08 09:28:42,690  INFO : Checking if driver is unknown
+2021-02-08 09:28:42,690  INFO : Previous driver timer initialised
+2021-02-08 09:28:42,690  INFO : subscribing to new messages
+2021-02-08 09:28:55,194  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 09:28:55,195  INFO : About to process incoming message
+2021-02-08 09:28:55,195  INFO : User swiped to reply option
+2021-02-08 09:28:55,218  INFO : Message 2 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:28:57,028  INFO : New Request
+2021-02-08 09:28:57,030  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:28:57,030  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:28:57,031  INFO : About getting driver status
+2021-02-08 09:28:57,039  INFO : Driver Status - LoggedIn
+2021-02-08 09:28:57,040  INFO : Checking if driver is unknown
+2021-02-08 09:28:57,040  INFO : Previous driver timer initialised
+2021-02-08 09:28:57,040  INFO : subscribing to new messages
+2021-02-08 09:29:11,285  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 09:29:11,286  INFO : About to process incoming message
+2021-02-08 09:29:11,286  INFO : User swiped to reply option
+2021-02-08 09:29:11,307  INFO : Message 3 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:29:13,097  INFO : New Request
+2021-02-08 09:29:13,098  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:29:13,098  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:29:13,098  INFO : About getting driver status
+2021-02-08 09:29:13,108  INFO : Driver Status - LoggedIn
+2021-02-08 09:29:13,108  INFO : Checking if driver is unknown
+2021-02-08 09:29:13,108  INFO : Previous driver timer initialised
+2021-02-08 09:29:13,108  INFO : subscribing to new messages
+2021-02-08 09:29:16,363  INFO : New Request
+2021-02-08 09:29:16,363  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:29:16,363  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:29:16,363  INFO : About getting driver status
+2021-02-08 09:29:16,374  INFO : Driver Status - LoggedIn
+2021-02-08 09:29:16,374  INFO : Checking if driver is unknown
+2021-02-08 09:29:16,375  INFO : Previous driver timer initialised
+2021-02-08 09:29:16,375  INFO : subscribing to new messages
+2021-02-08 09:29:18,896  INFO : New Request
+2021-02-08 09:29:18,897  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:29:18,897  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:29:18,897  INFO : About getting driver status
+2021-02-08 09:29:18,910  INFO : Driver Status - LoggedIn
+2021-02-08 09:29:18,911  INFO : Checking if driver is unknown
+2021-02-08 09:29:18,911  INFO : Previous driver timer initialised
+2021-02-08 09:29:18,911  INFO : subscribing to new messages
+2021-02-08 09:29:31,185  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 09:29:31,186  INFO : About to process incoming message
+2021-02-08 09:29:31,187  INFO : User swiped to reply option
+2021-02-08 09:29:31,209  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:29:33,259  INFO : New Request
+2021-02-08 09:29:33,259  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:29:33,259  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:29:33,260  INFO : About getting driver status
+2021-02-08 09:29:33,269  INFO : Driver Status - LoggedIn
+2021-02-08 09:29:33,269  INFO : Checking if driver is unknown
+2021-02-08 09:29:33,270  INFO : Previous driver timer initialised
+2021-02-08 09:29:33,270  INFO : subscribing to new messages
+2021-02-08 09:29:45,379  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 09:29:45,379  INFO : About to process incoming message
+2021-02-08 09:29:45,379  INFO : User swiped to reply option
+2021-02-08 09:29:45,400  INFO : Message 3 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:29:47,232  INFO : New Request
+2021-02-08 09:29:47,233  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:29:47,233  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:29:47,233  INFO : About getting driver status
+2021-02-08 09:29:47,244  INFO : Driver Status - LoggedIn
+2021-02-08 09:29:47,244  INFO : Checking if driver is unknown
+2021-02-08 09:29:47,244  INFO : Previous driver timer initialised
+2021-02-08 09:29:47,244  INFO : subscribing to new messages
+2021-02-08 09:30:07,305  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 09:30:07,305  INFO : About to process incoming message
+2021-02-08 09:30:07,306  INFO : User swiped to reply option
+2021-02-08 09:30:07,336  INFO : Message 2 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:30:12,006  INFO : New Request
+2021-02-08 09:30:12,007  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:30:12,007  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:30:12,007  INFO : About getting driver status
+2021-02-08 09:30:12,018  INFO : Driver Status - LoggedIn
+2021-02-08 09:30:12,018  INFO : Checking if driver is unknown
+2021-02-08 09:30:12,018  INFO : Previous driver timer initialised
+2021-02-08 09:30:12,018  INFO : subscribing to new messages
+2021-02-08 09:30:25,199  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 09:30:25,199  INFO : About to process incoming message
+2021-02-08 09:30:25,212  INFO : Message 0248801964 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:30:45,472  INFO : New Request
+2021-02-08 09:30:45,473  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:30:45,473  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:30:45,473  INFO : About getting driver status
+2021-02-08 09:30:45,488  INFO : Driver Status - LoggedIn
+2021-02-08 09:30:45,488  INFO : Checking if driver is unknown
+2021-02-08 09:30:45,488  INFO : Previous driver timer initialised
+2021-02-08 09:30:45,488  INFO : subscribing to new messages
+2021-02-08 09:30:53,155  INFO : New Request
+2021-02-08 09:30:53,155  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:30:53,156  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:30:53,156  INFO : About getting driver status
+2021-02-08 09:30:53,165  INFO : Driver Status - LoggedIn
+2021-02-08 09:30:53,165  INFO : Checking if driver is unknown
+2021-02-08 09:30:53,165  INFO : Previous driver timer initialised
+2021-02-08 09:30:53,165  INFO : subscribing to new messages
+2021-02-08 09:33:35,368  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-02-08 09:33:35,369  INFO : About to process incoming message
+2021-02-08 09:33:35,390  INFO : Message Hi sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:33:37,339  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 09:33:37,339  INFO : About to process incoming message
+2021-02-08 09:33:37,358  INFO : Message Hi sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:35:49,531  INFO : New Request
+2021-02-08 09:35:49,531  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:35:49,531  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:35:49,532  INFO : About getting driver status
+2021-02-08 09:35:49,542  INFO : Driver Status - LoggedIn
+2021-02-08 09:35:49,542  INFO : Checking if driver is unknown
+2021-02-08 09:35:49,542  INFO : Previous driver timer initialised
+2021-02-08 09:35:49,542  INFO : subscribing to new messages
+2021-02-08 09:37:56,946  INFO : New Request
+2021-02-08 09:37:56,947  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 09:37:56,947  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:37:56,947  INFO : About getting driver status
+2021-02-08 09:37:56,957  INFO : Driver Status - LoggedIn
+2021-02-08 09:37:56,958  INFO : Checking if driver is unknown
+2021-02-08 09:37:56,958  INFO : Previous driver timer initialised
+2021-02-08 09:37:56,958  INFO : subscribing to new messages
+2021-02-08 09:38:31,744  INFO : New Request
+2021-02-08 09:38:31,744  INFO : API call POST http://0.0.0.0:8888/chats/233548410151%40c.us/messages
+2021-02-08 09:38:31,745  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:38:31,745  INFO : About getting driver status
+2021-02-08 09:38:31,756  INFO : Driver Status - LoggedIn
+2021-02-08 09:38:31,756  INFO : Checking if driver is unknown
+2021-02-08 09:38:31,756  INFO : Previous driver timer initialised
+2021-02-08 09:38:31,757  INFO : subscribing to new messages
+2021-02-08 09:38:35,432  INFO : New Request
+2021-02-08 09:38:35,432  INFO : API call POST http://0.0.0.0:8888/chats/233548410151%40c.us/messages
+2021-02-08 09:38:35,432  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:38:35,433  INFO : About getting driver status
+2021-02-08 09:38:35,444  INFO : Driver Status - LoggedIn
+2021-02-08 09:38:35,444  INFO : Checking if driver is unknown
+2021-02-08 09:38:35,445  INFO : Previous driver timer initialised
+2021-02-08 09:38:35,445  INFO : subscribing to new messages
+2021-02-08 09:41:33,406  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-02-08 09:41:33,406  INFO : About to process incoming message
+2021-02-08 09:41:33,407  INFO : User swiped to reply option
+2021-02-08 09:41:33,424  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 09:58:18,311  INFO : New Request
+2021-02-08 09:58:18,312  INFO : API call POST http://0.0.0.0:8888/chats/233548410151%40c.us/messages
+2021-02-08 09:58:18,312  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 09:58:18,312  INFO : About getting driver status
+2021-02-08 09:58:18,321  INFO : Driver Status - LoggedIn
+2021-02-08 09:58:18,321  INFO : Checking if driver is unknown
+2021-02-08 09:58:18,321  INFO : Previous driver timer initialised
+2021-02-08 09:58:18,322  INFO : subscribing to new messages
+2021-02-08 10:09:01,951  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-02-08 10:09:01,951  INFO : About to process incoming message
+2021-02-08 10:09:01,972  INFO : Message Hello sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 10:09:18,398  INFO : New Request
+2021-02-08 10:09:18,398  INFO : API call POST http://0.0.0.0:8888/chats/233246874376%40c.us/messages
+2021-02-08 10:09:18,398  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 10:09:18,398  INFO : About getting driver status
+2021-02-08 10:09:18,413  INFO : Driver Status - LoggedIn
+2021-02-08 10:09:18,413  INFO : Checking if driver is unknown
+2021-02-08 10:09:18,413  INFO : Previous driver timer initialised
+2021-02-08 10:09:18,414  INFO : subscribing to new messages
+2021-02-08 10:09:19,443  INFO : New Request
+2021-02-08 10:09:19,444  INFO : API call POST http://0.0.0.0:8888/chats/233246874376%40c.us/messages
+2021-02-08 10:09:19,445  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 10:09:19,445  INFO : About getting driver status
+2021-02-08 10:09:19,461  INFO : Driver Status - LoggedIn
+2021-02-08 10:09:19,461  INFO : Checking if driver is unknown
+2021-02-08 10:09:19,462  INFO : Previous driver timer initialised
+2021-02-08 10:09:19,462  INFO : subscribing to new messages
+2021-02-08 10:09:55,715  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-02-08 10:09:55,715  INFO : About to process incoming message
+2021-02-08 10:09:55,715  INFO : User swiped to reply option
+2021-02-08 10:09:55,740  INFO : Message 2 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 10:09:55,929  INFO : New Request
+2021-02-08 10:09:55,930  INFO : API call POST http://0.0.0.0:8888/chats/233246874376%40c.us/messages
+2021-02-08 10:09:55,931  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 10:09:55,931  INFO : About getting driver status
+2021-02-08 10:09:55,943  INFO : Driver Status - LoggedIn
+2021-02-08 10:09:55,944  INFO : Checking if driver is unknown
+2021-02-08 10:09:55,944  INFO : Previous driver timer initialised
+2021-02-08 10:09:55,944  INFO : subscribing to new messages
+2021-02-08 10:42:12,491  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 10:42:12,491  INFO : About to process incoming message
+2021-02-08 10:42:12,838  INFO : Message Hey sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 10:42:30,845  INFO : New Request
+2021-02-08 10:42:30,846  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 10:42:30,846  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 10:42:30,846  INFO : About getting driver status
+2021-02-08 10:42:30,870  INFO : Driver Status - LoggedIn
+2021-02-08 10:42:30,870  INFO : Checking if driver is unknown
+2021-02-08 10:42:30,870  INFO : Previous driver timer initialised
+2021-02-08 10:42:30,870  INFO : subscribing to new messages
+2021-02-08 10:42:34,593  INFO : New Request
+2021-02-08 10:42:34,593  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 10:42:34,594  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 10:42:34,594  INFO : About getting driver status
+2021-02-08 10:42:34,602  INFO : Driver Status - LoggedIn
+2021-02-08 10:42:34,603  INFO : Checking if driver is unknown
+2021-02-08 10:42:34,603  INFO : Previous driver timer initialised
+2021-02-08 10:42:34,603  INFO : subscribing to new messages
+2021-02-08 11:35:59,322  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 11:35:59,344  INFO : About to process incoming message
+2021-02-08 11:35:59,344  INFO : User swiped to reply option
+2021-02-08 11:35:59,369  INFO : Message 3 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 11:35:59,820  INFO : New Request
+2021-02-08 11:35:59,821  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 11:35:59,821  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:35:59,821  INFO : About getting driver status
+2021-02-08 11:35:59,837  INFO : Driver Status - LoggedIn
+2021-02-08 11:35:59,837  INFO : Checking if driver is unknown
+2021-02-08 11:35:59,837  INFO : Previous driver timer initialised
+2021-02-08 11:35:59,837  INFO : subscribing to new messages
+2021-02-08 11:36:00,905  INFO : About to downloading files : https://i.ibb.co/SV4ZbkT/5066-Ghana-PI-Thumbnail-Images-1080x1080-HR-12.jpg
+2021-02-08 11:36:26,017  INFO : About to downloading files : https://i.ibb.co/yXBQT9z/5066-Ghana-PI-Thumbnail-Images-1080x1080-HR-10.jpg
+2021-02-08 11:37:29,357  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 11:37:29,358  INFO : About to process incoming message
+2021-02-08 11:37:29,358  INFO : User swiped to reply option
+2021-02-08 11:37:29,402  INFO : Message 3 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 11:37:29,715  INFO : New Request
+2021-02-08 11:37:29,715  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 11:37:29,716  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:37:29,716  INFO : About getting driver status
+2021-02-08 11:37:29,741  INFO : Driver Status - LoggedIn
+2021-02-08 11:37:29,741  INFO : Checking if driver is unknown
+2021-02-08 11:37:29,741  INFO : Previous driver timer initialised
+2021-02-08 11:37:29,741  INFO : subscribing to new messages
+2021-02-08 11:37:47,359  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 11:37:47,360  INFO : About to process incoming message
+2021-02-08 11:37:47,360  INFO : User swiped to reply option
+2021-02-08 11:37:47,400  INFO : Message 3 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 11:37:47,686  INFO : New Request
+2021-02-08 11:37:47,687  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 11:37:47,687  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:37:47,688  INFO : About getting driver status
+2021-02-08 11:37:47,698  INFO : Driver Status - LoggedIn
+2021-02-08 11:37:47,698  INFO : Checking if driver is unknown
+2021-02-08 11:37:47,699  INFO : Previous driver timer initialised
+2021-02-08 11:37:47,699  INFO : subscribing to new messages
+2021-02-08 11:38:03,363  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 11:38:03,364  INFO : About to process incoming message
+2021-02-08 11:38:03,364  INFO : User swiped to reply option
+2021-02-08 11:38:03,398  INFO : Message 3 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 11:38:03,745  INFO : New Request
+2021-02-08 11:38:03,746  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 11:38:03,746  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:38:03,746  INFO : About getting driver status
+2021-02-08 11:38:03,763  INFO : Driver Status - LoggedIn
+2021-02-08 11:38:03,764  INFO : Checking if driver is unknown
+2021-02-08 11:38:03,764  INFO : Previous driver timer initialised
+2021-02-08 11:38:03,764  INFO : subscribing to new messages
+2021-02-08 11:38:04,835  INFO : New Request
+2021-02-08 11:38:04,835  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 11:38:04,835  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:38:04,835  INFO : About getting driver status
+2021-02-08 11:38:04,844  INFO : Driver Status - LoggedIn
+2021-02-08 11:38:04,844  INFO : Checking if driver is unknown
+2021-02-08 11:38:04,844  INFO : Previous driver timer initialised
+2021-02-08 11:38:04,844  INFO : subscribing to new messages
+2021-02-08 11:38:06,003  INFO : New Request
+2021-02-08 11:38:06,004  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 11:38:06,004  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:38:06,004  INFO : About getting driver status
+2021-02-08 11:38:06,013  INFO : Driver Status - LoggedIn
+2021-02-08 11:38:06,013  INFO : Checking if driver is unknown
+2021-02-08 11:38:06,013  INFO : Previous driver timer initialised
+2021-02-08 11:38:06,013  INFO : subscribing to new messages
+2021-02-08 11:38:43,371  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 11:38:43,372  INFO : About to process incoming message
+2021-02-08 11:38:43,372  INFO : User swiped to reply option
+2021-02-08 11:38:43,397  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 11:38:43,760  INFO : New Request
+2021-02-08 11:38:43,761  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 11:38:43,761  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:38:43,761  INFO : About getting driver status
+2021-02-08 11:38:43,771  INFO : Driver Status - LoggedIn
+2021-02-08 11:38:43,771  INFO : Checking if driver is unknown
+2021-02-08 11:38:43,771  INFO : Previous driver timer initialised
+2021-02-08 11:38:43,771  INFO : subscribing to new messages
+2021-02-08 11:38:59,392  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 11:38:59,392  INFO : About to process incoming message
+2021-02-08 11:38:59,393  INFO : User swiped to reply option
+2021-02-08 11:38:59,429  INFO : Message 3 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 11:38:59,694  INFO : New Request
+2021-02-08 11:38:59,694  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 11:38:59,694  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:38:59,694  INFO : About getting driver status
+2021-02-08 11:38:59,702  INFO : Driver Status - LoggedIn
+2021-02-08 11:38:59,703  INFO : Checking if driver is unknown
+2021-02-08 11:38:59,703  INFO : Previous driver timer initialised
+2021-02-08 11:38:59,703  INFO : subscribing to new messages
+2021-02-08 11:39:15,324  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-02-08 11:39:15,324  INFO : About to process incoming message
+2021-02-08 11:39:15,325  INFO : User swiped to reply option
+2021-02-08 11:39:15,338  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 11:39:15,829  INFO : New Request
+2021-02-08 11:39:15,830  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 11:39:15,830  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:39:15,830  INFO : About getting driver status
+2021-02-08 11:39:15,837  INFO : Driver Status - LoggedIn
+2021-02-08 11:39:15,838  INFO : Checking if driver is unknown
+2021-02-08 11:39:15,838  INFO : Previous driver timer initialised
+2021-02-08 11:39:15,838  INFO : subscribing to new messages
+2021-02-08 11:39:17,784  INFO : New Request
+2021-02-08 11:39:17,784  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-02-08 11:39:17,785  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:39:17,785  INFO : About getting driver status
+2021-02-08 11:39:17,796  INFO : Driver Status - LoggedIn
+2021-02-08 11:39:17,796  INFO : Checking if driver is unknown
+2021-02-08 11:39:17,796  INFO : Previous driver timer initialised
+2021-02-08 11:39:17,796  INFO : subscribing to new messages
+2021-02-08 11:44:43,587  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-02-08 11:44:43,587  INFO : About to process incoming message
+2021-02-08 11:44:43,614  INFO : Message Hi sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 11:45:00,584  INFO : New Request
+2021-02-08 11:45:00,584  INFO : API call POST http://0.0.0.0:8888/chats/233243936357%40c.us/messages
+2021-02-08 11:45:00,585  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:45:00,585  INFO : About getting driver status
+2021-02-08 11:45:00,593  INFO : Driver Status - LoggedIn
+2021-02-08 11:45:00,593  INFO : Checking if driver is unknown
+2021-02-08 11:45:00,593  INFO : Previous driver timer initialised
+2021-02-08 11:45:00,593  INFO : subscribing to new messages
+2021-02-08 11:45:04,059  INFO : New Request
+2021-02-08 11:45:04,060  INFO : API call POST http://0.0.0.0:8888/chats/233243936357%40c.us/messages
+2021-02-08 11:45:04,060  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:45:04,060  INFO : About getting driver status
+2021-02-08 11:45:04,069  INFO : Driver Status - LoggedIn
+2021-02-08 11:45:04,069  INFO : Checking if driver is unknown
+2021-02-08 11:45:04,069  INFO : Previous driver timer initialised
+2021-02-08 11:45:04,069  INFO : subscribing to new messages
+2021-02-08 11:45:25,504  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-02-08 11:45:25,504  INFO : About to process incoming message
+2021-02-08 11:45:25,505  INFO : User swiped to reply option
+2021-02-08 11:45:25,540  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 11:45:25,772  INFO : New Request
+2021-02-08 11:45:25,773  INFO : API call POST http://0.0.0.0:8888/chats/233243936357%40c.us/messages
+2021-02-08 11:45:25,773  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:45:25,773  INFO : About getting driver status
+2021-02-08 11:45:25,781  INFO : Driver Status - LoggedIn
+2021-02-08 11:45:25,781  INFO : Checking if driver is unknown
+2021-02-08 11:45:25,782  INFO : Previous driver timer initialised
+2021-02-08 11:45:25,782  INFO : subscribing to new messages
+2021-02-08 11:46:16,672  INFO : [<MessageGroup - 1 message in (empty)>]
+2021-02-08 11:46:16,672  INFO : About to process incoming message
+2021-02-08 11:46:16,672  INFO : User swiped to reply option
+2021-02-08 11:46:16,688  INFO : Message 5 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-02-08 11:46:16,945  INFO : New Request
+2021-02-08 11:46:16,945  INFO : API call POST http://0.0.0.0:8888/chats/233243936357%40c.us/messages
+2021-02-08 11:46:16,945  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-08 11:46:16,946  INFO : About getting driver status
+2021-02-08 11:46:16,964  INFO : Driver Status - LoggedIn
+2021-02-08 11:46:16,964  INFO : Checking if driver is unknown
+2021-02-08 11:46:16,964  INFO : Previous driver timer initialised
+2021-02-08 11:46:16,964  INFO : subscribing to new messages

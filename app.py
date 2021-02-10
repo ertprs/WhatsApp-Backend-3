@@ -923,16 +923,18 @@ def send_message(chat_id):
     payload[chat_id] = dict()
     payload2[chat_id] = dict()
 
-    if message is not None:
-        msg = message + " "+ random.choice(faces)
-        res = chat.send_message(msg)
-
     if card is not None:
         caption = card.get('caption')
         image_url = card.get('imageUrl').replace("https", "http")
 
         file_path = download_file(image_url)
         res = chat.send_media(file_path, caption)
+        time.sleep(3)
+    
+    if message is not None:
+        msg = message + " "+ random.choice(faces)
+        res = chat.send_message(msg)
+
 
     for content in contents:
         number = contents.index(content) + 1
