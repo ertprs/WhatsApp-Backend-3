@@ -911,7 +911,7 @@ def send_message(chat_id):
 
     # global res
     res = {
-        'status': 'Sending Message Failed'
+        'status': 'Message Received'
     }
     data = request.json
     contents = data.get("contents")
@@ -929,12 +929,12 @@ def send_message(chat_id):
         image_url = card.get('imageUrl').replace("https", "http")
 
         file_path = download_file(image_url)
-        res = chat.send_media(file_path, caption)
+        chat.send_media(file_path, caption)
         time.sleep(3)
     
     if message is not None:
         msg = message + " "+ random.choice(faces)
-        res = chat.send_message(msg)
+        chat.send_message(msg)
 
     for content in contents:
         number = contents.index(content) + 1
@@ -951,20 +951,20 @@ def send_message(chat_id):
             # remove whitespaces and put in the second payload
             payload2[chat_id][option.lower().replace(" ", "")] = intent
         if image_url is None:
-            selection = selection + number_emoji(title) + " \n"
-            # res = chat.send_message(number_emoji(title))
+            # selection = selection + number_emoji(title) + " \n"
+            chat.send_message(number_emoji(title))
         else:
             file_path = download_file(image_url)
-            res = chat.send_media(file_path, number_emoji(title))
+            chat.send_media(file_path, number_emoji(title))
 
-    if selection is not "":
-        res = chat.send_message(selection)
+    # if selection is not "":
+    #     res = chat.send_message(selection)
 
     if instruction is not None:
         text = "{0} Do type {1} to select an option {2}".format(random.choice(faces),
                                                                 ', '.join(numbers[0:len(contents)]),
                                                                 random.choice(hands))
-        res = chat.send_message(text)
+        chat.send_message(text)
     if res:
         return jsonify(res)
     else:
