@@ -33,9 +33,11 @@ import shutil
 import requests
 import sys
 import time
+import json
 import threading
 import random
 import werkzeug
+import urllib3
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
@@ -142,6 +144,7 @@ app = Flask(__name__)
 app.json_encoder = WhatsAPIJSONEncoder
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s  %(levelname)s : %(message)s', )
+http = urllib3.PoolManager(num_pools=50)
 
 logger = logging.getLogger("WhatsApp Backend")
 handler = logging.FileHandler('whatsapp_development.log')
@@ -343,7 +346,10 @@ def serve_user_login(client_id):
             'qr': qr
         }
         logger.info("Sending QR to server")
-        response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
+        encoded_data = json.dumps(body).encode('utf-8')
+        url = SERVER + '/api/v1/whatsapp/webhook'
+        response = http.request('POST', url, body=encoded_data, headers={'Content-Type': 'application/json'})
+        # response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
     except NoSuchElementException:
         phone = drivers[client_id].get_id().replace("\"", "").replace("@c.us", "")
         body = {
@@ -440,6 +446,8 @@ def number_emoji(text):
  \
  \
 # Process the incoming message and forward to whoever wants it
+
+
 def send_message_to_client(message_group, appId):
     logger.info("About to process incoming message")
     message = message_group.messages[0]
@@ -511,9 +519,12 @@ def forward_message_to_r2mp(message_data, chat_id):
     headers = {'Content-Type': 'application/json; charset=utf-8', 'x-r2-wp-screen-name': message_data["companyId"],
                'msisdn': message_data["recipientMsisdn"]}
 
-    response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
-                             headers=headers,
-                             json=message_data)
+    # response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
+    #                          headers=headers,
+    #                          json=message_data)
+    url = SERVER + '/api/v1/bot?channelType=WHATSAPP'
+    encoded_data = json.dumps(message_data).encode('utf-8')
+    response = http.request('POST', url, body=encoded_data, headers=headers)
     # payload[chat_id] = dict()
     # payload2[chat_id] = dict()
     logger.info(
