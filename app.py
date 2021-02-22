@@ -611,7 +611,7 @@ def download_file(url):
         try:
             logger.info("About to downloading files : " + url)
             save_path = urllibrequest.urlretrieve(url, filename=file_path)[0]
-            time.sleep(2)
+            time.sleep(5)
             logging.info("Dowloading files")
             return save_path
         except Exception:
@@ -918,6 +918,7 @@ def send_message(chat_id):
     message = data.get("message")
     instruction = data.get("instruction")
     card = data.get("card")
+    selection = str()
 
     chat = g.driver.get_chat_from_id(chat_id)
     payload[chat_id] = dict()
@@ -935,7 +936,6 @@ def send_message(chat_id):
         msg = message + " "+ random.choice(faces)
         res = chat.send_message(msg)
 
-
     for content in contents:
         number = contents.index(content) + 1
         option = content.get('title')
@@ -951,11 +951,15 @@ def send_message(chat_id):
             # remove whitespaces and put in the second payload
             payload2[chat_id][option.lower().replace(" ", "")] = intent
         if image_url is None:
-            res = chat.send_message(number_emoji(title))
+            selection = selection + number_emoji(title) + " \n"
+            # res = chat.send_message(number_emoji(title))
         else:
             file_path = download_file(image_url)
-            time.sleep(2)
             res = chat.send_media(file_path, number_emoji(title))
+
+    if selection is not "":
+        res = chat.send_message(selection)
+
     if instruction is not None:
         text = "{0} Do type {1} to select an option {2}".format(random.choice(faces),
                                                                 ', '.join(numbers[0:len(contents)]),
