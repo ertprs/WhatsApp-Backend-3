@@ -1009,7 +1009,7 @@ def send_blast(chat_id):
     media_url = data.get('image')
 
     if media_url is None:
-        g.driver.chat_send_message(chat_id, message)
+        g.driver.send_message_to_id(chat_id, message)
     else:
         file_path = download_file(media_url)
         g.driver.send_media(file_path, chat_id, message)
