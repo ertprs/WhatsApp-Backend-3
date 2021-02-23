@@ -998,6 +998,26 @@ def send_message(chat_id):
     #     return False
 
 
+@app.route("/blast/<chat_id>/messages", methods=["POST"])
+@login_required
+def send_blast(chat_id):
+    res = {
+        'status': 'Message Received'
+    }
+    data = request.json
+    message = data.get('message')
+    media_url = data.get('image')
+
+    if media_url is None:
+        g.driver.chat_send_message(chat_id, message)
+    else:
+        file_path = download_file(media_url)
+        g.driver.send_media(file_path, chat_id, message)
+    return jsonify(res)
+
+
+
+
 @app.route("/messages/<msg_id>/download", methods=["GET"])
 @login_required
 def download_message_media(msg_id):
