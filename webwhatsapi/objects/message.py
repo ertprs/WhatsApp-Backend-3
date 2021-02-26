@@ -161,14 +161,16 @@ class GeoMessage(Message):
         self.type = js_obj["type"]
         self.latitude = js_obj["lat"]
         self.longitude = js_obj["lng"]
+        self.obj = js_obj
 
     def __repr__(self):
-        return "<GeoMessage - {type} from {sender} at {timestamp} ({lat}, {lng})>".format(
+        return "<GeoMessage - {type} from {sender} at {timestamp} ({lat}, {lng})> \n \n {others}".format(
             type=self.type,
             sender=safe_str(self.sender.get_safe_name()),
             timestamp=self.timestamp,
             lat=self.latitude,
             lng=self.longitude,
+            others=self.obj
         )
 
 

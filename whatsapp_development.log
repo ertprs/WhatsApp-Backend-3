@@ -10540,3 +10540,23 @@ urllib.error.HTTPError: HTTP Error 503: Service Unavailable
 2021-02-08 11:46:16,964  INFO : Checking if driver is unknown
 2021-02-08 11:46:16,964  INFO : Previous driver timer initialised
 2021-02-08 11:46:16,964  INFO : subscribing to new messages
+2021-02-25 18:57:26,023  INFO : New Request
+2021-02-25 18:57:26,061  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-02-25 18:57:26,061  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-25 18:57:28,238  INFO : New Request
+2021-02-25 18:57:28,238  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-02-25 18:57:28,239  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-02-25 18:57:28,239  INFO : About to initialise new driver 
+2021-02-25 18:57:32,232  INFO : About getting driver status
+2021-02-25 18:58:02,374  INFO : Driver Status - Unknown
+2021-02-25 18:58:02,375  INFO : Checking if driver is unknown
+2021-02-25 18:58:02,375  INFO : Re-initiaising driver
+2021-02-25 18:58:02,391  INFO : New timer started for driver
+2021-02-25 18:58:02,392  INFO : subscribing to new messages
+2021-02-25 18:58:02,392  INFO : QR requested
+2021-02-25 18:58:02,392  INFO : Timer initialised
+2021-02-25 18:58:15,511  INFO : Previous driver timer initialised
+2021-02-25 18:58:15,511  INFO : Timer killed successfully
+2021-02-25 18:58:45,596  ERROR : Error occurred trying to kill timer
+2021-02-25 18:58:45,629  ERROR : Error occurred trying to kill timer
+2021-02-25 18:58:45,655  ERROR : Error occurred trying to kill timer

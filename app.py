@@ -424,7 +424,7 @@ def reformat_message_r2mp(message, appId):
     # body['recipientMsisdn'] = recipient_msisdn
     if message.type == "location":
         location_url = "https://www.latlong.net/c/?lat=" + str(message.latitude) + "&long=" + str(message.longitude)
-        body["content"] = '<a href="' + location_url + '" target="_blank"> Click to view location </a>'
+        body["location"] = '<a href="' + location_url + '" target="_blank"> Click to view location </a>'
     body['content'] = message.content
     body["type"] = "text"
     body["timeSent"] = message.timestamp.isoformat()
@@ -465,10 +465,13 @@ def send_message_to_client(message_group, appId):
         body["content"] = message.content if message.type == "chat" else "https://www.latlong.net/c/?lat=" + str(
             message.latitude) + "&long=" + str(message.longitude)
         if message.type == "location":
+            logger.info(message)
+            body['latitude'] = message.latitude
+            body['longitude'] = message.longitude
             location_url = "https://www.latlong.net/c/?lat=" + str(message.latitude) + "&long=" + str(
                 message.longitude)
             body["content"] = '<a href="' + location_url + '" target="_blank"> Click to view location </a>'
-        body['content'] = message.content
+        # body['content'] = message.content
         body["type"] = "text"
         body["timeSent"] = message.timestamp.isoformat()
         body["senderMsisdn"] = message.chat_id.replace("@c.us", "")
