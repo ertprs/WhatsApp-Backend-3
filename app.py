@@ -33,11 +33,9 @@ import shutil
 import requests
 import sys
 import time
-import json
 import threading
 import random
 import werkzeug
-import urllib3
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
@@ -144,7 +142,6 @@ app = Flask(__name__)
 app.json_encoder = WhatsAPIJSONEncoder
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s  %(levelname)s : %(message)s', )
-http = urllib3.PoolManager(num_pools=50)
 
 logger = logging.getLogger("WhatsApp Backend")
 handler = logging.FileHandler('whatsapp_development.log')
@@ -346,10 +343,7 @@ def serve_user_login(client_id):
             'qr': qr
         }
         logger.info("Sending QR to server")
-        encoded_data = json.dumps(body).encode('utf-8')
-        url = SERVER + '/api/v1/whatsapp/webhook'
-        response = http.request('POST', url, body=encoded_data, headers={'Content-Type': 'application/json'})
-        # response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
+        response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
     except NoSuchElementException:
         phone = drivers[client_id].get_id().replace("\"", "").replace("@c.us", "")
         body = {
@@ -424,7 +418,7 @@ def reformat_message_r2mp(message, appId):
     # body['recipientMsisdn'] = recipient_msisdn
     if message.type == "location":
         location_url = "https://www.latlong.net/c/?lat=" + str(message.latitude) + "&long=" + str(message.longitude)
-        body["location"] = '<a href="' + location_url + '" target="_blank"> Click to view location </a>'
+        body["content"] = '<a href="' + location_url + '" target="_blank"> Click to view location </a>'
     body['content'] = message.content
     body["type"] = "text"
     body["timeSent"] = message.timestamp.isoformat()
@@ -444,8 +438,7 @@ def number_emoji(text):
         .replace(".7.", "7️⃣", 1).replace(".8.", "8️⃣", 1).replace(".9.", "9️⃣", 1).replace(".10.", " 🔟", 1).replace(
         ".11.", '1️⃣1️⃣', 1).replace(".12.", "1️⃣2️⃣", 1) \
  \
- \
-# Process the incoming message and forward to whoever wants it
+        # Process the incoming message and forward to whoever wants it
 
 
 def send_message_to_client(message_group, appId):
@@ -465,13 +458,10 @@ def send_message_to_client(message_group, appId):
         body["content"] = message.content if message.type == "chat" else "https://www.latlong.net/c/?lat=" + str(
             message.latitude) + "&long=" + str(message.longitude)
         if message.type == "location":
-            logger.info(message)
-            body['latitude'] = message.latitude
-            body['longitude'] = message.longitude
             location_url = "https://www.latlong.net/c/?lat=" + str(message.latitude) + "&long=" + str(
                 message.longitude)
             body["content"] = '<a href="' + location_url + '" target="_blank"> Click to view location </a>'
-        # body['content'] = message.content
+        body['content'] = message.content
         body["type"] = "text"
         body["timeSent"] = message.timestamp.isoformat()
         body["senderMsisdn"] = message.chat_id.replace("@c.us", "")
@@ -522,12 +512,9 @@ def forward_message_to_r2mp(message_data, chat_id):
     headers = {'Content-Type': 'application/json; charset=utf-8', 'x-r2-wp-screen-name': message_data["companyId"],
                'msisdn': message_data["recipientMsisdn"]}
 
-    # response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
-    #                          headers=headers,
-    #                          json=message_data)
-    url = SERVER + '/api/v1/bot?channelType=WHATSAPP'
-    encoded_data = json.dumps(message_data).encode('utf-8')
-    response = http.request('POST', url, body=encoded_data, headers=headers)
+    response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
+                             headers=headers,
+                             json=message_data)
     # payload[chat_id] = dict()
     # payload2[chat_id] = dict()
     logger.info(
@@ -625,7 +612,7 @@ def download_file(url):
         try:
             logger.info("About to downloading files : " + url)
             save_path = urllibrequest.urlretrieve(url, filename=file_path)[0]
-            time.sleep(5)
+            time.sleep(2)
             logging.info("Dowloading files")
             return save_path
         except Exception:
@@ -925,14 +912,13 @@ def send_message(chat_id):
 
     # global res
     res = {
-        'status': 'Message Received'
+        'status': 'Sending Message Failed'
     }
     data = request.json
     contents = data.get("contents")
     message = data.get("message")
     instruction = data.get("instruction")
     card = data.get("card")
-    selection = str()
 
     chat = g.driver.get_chat_from_id(chat_id)
     payload[chat_id] = dict()
@@ -943,12 +929,12 @@ def send_message(chat_id):
         image_url = card.get('imageUrl').replace("https", "http")
 
         file_path = download_file(image_url)
-        chat.send_media(file_path, caption)
+        res = chat.send_media(file_path, caption)
         time.sleep(3)
-    
+
     if message is not None:
-        msg = message + " "+ random.choice(faces)
-        chat.send_message(msg)
+        msg = message + " " + random.choice(faces)
+        res = chat.send_message(msg)
 
     for content in contents:
         number = contents.index(content) + 1
@@ -965,20 +951,16 @@ def send_message(chat_id):
             # remove whitespaces and put in the second payload
             payload2[chat_id][option.lower().replace(" ", "")] = intent
         if image_url is None:
-            # selection = selection + number_emoji(title) + " \n"
-            chat.send_message(number_emoji(title))
+            res = chat.send_message(number_emoji(title))
         else:
             file_path = download_file(image_url)
-            chat.send_media(file_path, number_emoji(title))
-
-    # if selection is not "":
-    #     res = chat.send_message(selection)
-
+            time.sleep(2)
+            res = chat.send_media(file_path, number_emoji(title))
     if instruction is not None:
         text = "{0} Do type {1} to select an option {2}".format(random.choice(faces),
                                                                 ', '.join(numbers[0:len(contents)]),
                                                                 random.choice(hands))
-        chat.send_message(text)
+        res = chat.send_message(text)
     if res:
         return jsonify(res)
     else:
@@ -999,26 +981,6 @@ def send_message(chat_id):
     #     return jsonify(res)
     # else:
     #     return False
-
-
-@app.route("/blast/<chat_id>/messages", methods=["POST"])
-@login_required
-def send_blast(chat_id):
-    res = {
-        'status': 'Message Received'
-    }
-    data = request.json
-    message = data.get('message')
-    media_url = data.get('image')
-
-    if media_url is None:
-        g.driver.send_message_to_id(chat_id, message)
-    else:
-        file_path = download_file(media_url)
-        g.driver.send_media(file_path, chat_id, message)
-    return jsonify(res)
-
-
 
 
 @app.route("/messages/<msg_id>/download", methods=["GET"])
