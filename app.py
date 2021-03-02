@@ -346,10 +346,10 @@ def serve_user_login(client_id):
             'qr': qr
         }
         logger.info("Sending QR to server")
-        encoded_data = json.dumps(body).encode('utf-8')
-        url = SERVER + '/api/v1/whatsapp/webhook'
-        response = http.request('POST', url, body=encoded_data, headers={'Content-Type': 'application/json'})
-        # response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
+        # encoded_data = json.dumps(body).encode('utf-8')
+        # url = SERVER + '/api/v1/whatsapp/webhook'
+        # response = http.request('POST', url, body=encoded_data, headers={'Content-Type': 'application/json'})
+        response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
     except NoSuchElementException:
         phone = drivers[client_id].get_id().replace("\"", "").replace("@c.us", "")
         body = {
@@ -522,12 +522,12 @@ def forward_message_to_r2mp(message_data, chat_id):
     headers = {'Content-Type': 'application/json; charset=utf-8', 'x-r2-wp-screen-name': message_data["companyId"],
                'msisdn': message_data["recipientMsisdn"]}
 
-    # response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
-    #                          headers=headers,
-    #                          json=message_data)
-    url = SERVER + '/api/v1/bot?channelType=WHATSAPP'
-    encoded_data = json.dumps(message_data).encode('utf-8')
-    response = http.request('POST', url, body=encoded_data, headers=headers)
+    response = requests.post(SERVER + "/api/v1/bot?channelType=WHATSAPP",
+                             headers=headers,
+                             json=message_data)
+    # url = SERVER + '/api/v1/bot?channelType=WHATSAPP'
+    # encoded_data = json.dumps(message_data).encode('utf-8')
+    # response = http.request('POST', url, body=encoded_data, headers=headers)
     # payload[chat_id] = dict()
     # payload2[chat_id] = dict()
     logger.info(
@@ -624,6 +624,7 @@ def download_file(url):
     if not os.path.isfile(file_path):
         try:
             logger.info("About to downloading files : " + url)
+            save_path = urllibrequest.urlretrieve(url, filename=file_path)[0]
             save_path = urllibrequest.urlretrieve(url, filename=file_path)[0]
             time.sleep(5)
             logging.info("Dowloading files")
@@ -965,20 +966,20 @@ def send_message(chat_id):
             # remove whitespaces and put in the second payload
             payload2[chat_id][option.lower().replace(" ", "")] = intent
         if image_url is None:
-            # selection = selection + number_emoji(title) + " \n"
-            chat.send_message(number_emoji(title))
+            selection = selection + number_emoji(title) + " \n"
+            # chat.send_message(number_emoji(title))
         else:
             file_path = download_file(image_url)
             chat.send_media(file_path, number_emoji(title))
 
-    # if selection is not "":
-    #     res = chat.send_message(selection)
-
     if instruction is not None:
-        text = "{0} Do type {1} to select an option {2}".format(random.choice(faces),
+        text = "\n\n\n{0} Do type {1} to select an option {2}".format(random.choice(faces),
                                                                 ', '.join(numbers[0:len(contents)]),
                                                                 random.choice(hands))
-        chat.send_message(text)
+        selection = selection + text
+
+    if selection is not "":
+        res = chat.send_message(selection)
     if res:
         return jsonify(res)
     else:
