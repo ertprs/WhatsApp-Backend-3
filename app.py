@@ -38,6 +38,7 @@ import threading
 import random
 import werkzeug
 import urllib3
+import googlemaps
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
@@ -139,6 +140,9 @@ class NewMessageObserver:
 ###########################
 """
 
+GOOGLE_API_KEY = 'AIzaSyBAPz88HCjuOjq7nHNdm1X-HPRwYqFE4oc'
+
+
 # Flask Application
 app = Flask(__name__)
 app.json_encoder = WhatsAPIJSONEncoder
@@ -154,6 +158,9 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 
 app.debug = True
+
+gmaps = googlemaps.Client(key=GOOGLE_API_KEY)
+
 
 # Logger
 
@@ -172,6 +179,7 @@ emojis_numbers = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️�
 faces = ['😎', '😋', '😉', '😌', '😇', '😊', '😀', '😃', '🤤', '🤠', '👻', '😺', '🕺']
 hands = ['💪', '🤞', '🤞', '👍', '👊', '✊', '🤛', '🤜', '🤞', '✌', '🤟', '🤘', '👌', '👈', '🖖']
 numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+
 
 SANDBOX_URL = "http://r2mp-sandbox.rancardmobility.com"
 PRODUCTION_URL = "http://r2mp.rancard.com"
@@ -453,32 +461,24 @@ def send_message_to_client(message_group, appId):
     message = message_group.messages[0]
     chat = message_group.chat
 
+    body = dict()
+    body["recipientMsisdn"] = message._js_obj["to"].replace("@c.us", "")
+    body["timeSent"] = message.timestamp.isoformat()
+    body["senderMsisdn"] = message.chat_id.replace("@c.us", "")
+    body['senderUsername'] = message._js_obj['sender']['pushname']
+    body["messageId"] = message.id
+    body["companyId"] = appId
+    body["appId"] = appId
+
     # check if chat has payload else create
     if message.chat_id not in payload and message.chat_id not in payload2:
         payload[message.chat_id] = dict()
         payload2[message.chat_id] = dict()
 
     # check if message is a chat
-    if message.type == "chat" or message.type == "location":
-        body = {}
-        body["recipientMsisdn"] = message._js_obj["to"].replace("@c.us", "")
-        body["content"] = message.content if message.type == "chat" else "https://www.latlong.net/c/?lat=" + str(
-            message.latitude) + "&long=" + str(message.longitude)
-        if message.type == "location":
-            logger.info(message)
-            body['latitude'] = message.latitude
-            body['longitude'] = message.longitude
-            location_url = "https://www.latlong.net/c/?lat=" + str(message.latitude) + "&long=" + str(
-                message.longitude)
-            body["content"] = '<a href="' + location_url + '" target="_blank"> Click to view location </a>'
-        # body['content'] = message.content
+    if message.type == "chat":
+        body["content"] = message.content
         body["type"] = "text"
-        body["timeSent"] = message.timestamp.isoformat()
-        body["senderMsisdn"] = message.chat_id.replace("@c.us", "")
-        body['senderUsername'] = message._js_obj['sender']['pushname']
-        body["messageId"] = message.id
-        body["companyId"] = appId
-        body["appId"] = appId
 
         # message is a reply to a quick reply
         if message.content in payload[message.chat_id]:
@@ -495,7 +495,7 @@ def send_message_to_client(message_group, appId):
                 return
 
         if message.content.lower().replace(" ", "") in payload2[message.chat_id]:
-            # User type in full the prefered choice
+            # User type in full the preferred choice
             msg = message.content.lower().replace(" ", "")
             body["content"] = message.content
             body['postback'] = {"payload": payload2[message.chat_id][msg]}
@@ -514,6 +514,20 @@ def send_message_to_client(message_group, appId):
                 body['postback'] = {"payload": payload[message.chat_id][text]}
                 body['quick_reply'] = payload[message.chat_id][text]
         forward_message_to_r2mp(body, message.chat_id)
+    elif message.type == "location":
+
+        address = gmaps.reverse_geocode((message.latitude, message.longitude))
+        place_id = address[0]['place_id']
+        formatted_address = address[0]['formatted_address']
+        location_intent = "intent.useLocation.{0}".format(place_id)
+
+        body['postback'] = {"payload": location_intent}
+        body['quick_reply'] = location_intent
+        body['content'] = formatted_address
+        body['text'] = 'text'
+
+        forward_message_to_r2mp(body, message.chat_id)
+
     else:
         logger.info("Media Message incoming")
 
