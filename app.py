@@ -526,6 +526,8 @@ def send_message_to_client(message_group, appId):
         body['content'] = formatted_address
         body['text'] = 'text'
 
+        delivery_info = "Your ongoing order will be delivered at {0} after confirmation".format(formatted_address)
+        chat.send_message(delivery_info)
         forward_message_to_r2mp(body, message.chat_id)
 
     else:
