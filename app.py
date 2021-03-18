@@ -190,7 +190,8 @@ PRODUCTION_URL = "http://r2mp.rancard.com"
 LOCAL = "http://localhost:8080"
 PRODUCTION_URL2 = "https://r2mp2.rancard.com"
 
-SERVER = LOCAL
+SERVER = SANDBOX_URL
+WEBHOOK = SANDBOX_URL
 
 # API key needed for auth with this API, change as per usage
 API_KEY = "5ohsRCA8os7xW7arVagm3O861lMZwFfl"
@@ -361,7 +362,7 @@ def serve_user_login(client_id):
         # encoded_data = json.dumps(body).encode('utf-8')
         # url = SERVER + '/api/v1/whatsapp/webhook'
         # response = http.request('POST', url, body=encoded_data, headers={'Content-Type': 'application/json'})
-        response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
+        response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
     except NoSuchElementException:
         phone = drivers[client_id].get_id().replace("\"", "").replace("@c.us", "")
         body = {
@@ -382,7 +383,7 @@ def serve_user_login(client_id):
         except:
             logger.error("Error occurred trying to kill timer")
             pass
-        response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
+        response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
 
 
 def check_new_messages(client_id):
