@@ -38,7 +38,10 @@ import threading
 import random
 import werkzeug
 import urllib3
+import datetime
 import googlemaps
+
+from Database.storage import TwilioConfig
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
@@ -52,6 +55,8 @@ from selenium.common.exceptions import WebDriverException, NoSuchElementExceptio
 from werkzeug.utils import secure_filename
 from webwhatsapi import MessageGroup, WhatsAPIDriver, WhatsAPIDriverStatus
 from webwhatsapi.objects.whatsapp_object import WhatsappObject
+from twilio.twiml.messaging_response import MessagingResponse
+from twilio.rest import Client
 
 """
 ###########################
@@ -142,7 +147,6 @@ class NewMessageObserver:
 
 GOOGLE_API_KEY = 'AIzaSyBAPz88HCjuOjq7nHNdm1X-HPRwYqFE4oc'
 
-
 # Flask Application
 app = Flask(__name__)
 app.json_encoder = WhatsAPIJSONEncoder
@@ -161,7 +165,6 @@ app.debug = True
 
 gmaps = googlemaps.Client(key=GOOGLE_API_KEY)
 
-
 # Logger
 
 # Driver store all the instances of webdriver for each of the client user
@@ -170,6 +173,8 @@ drivers = dict()
 timers = dict()
 # Store list of semaphores
 semaphores = dict()
+
+twilio_config_db = TwilioConfig()
 
 # store quick replies payload
 payload = dict()
@@ -180,13 +185,12 @@ faces = ['😎', '😋', '😉', '😌', '😇', '😊', '😀', '😃', '🤤',
 hands = ['💪', '🤞', '🤞', '👍', '👊', '✊', '🤛', '🤜', '🤞', '✌', '🤟', '🤘', '👌', '👈', '🖖']
 numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
 
-
 SANDBOX_URL = "http://r2mp-sandbox.rancardmobility.com"
 PRODUCTION_URL = "http://r2mp.rancard.com"
 LOCAL = "http://localhost:8080"
 PRODUCTION_URL2 = "https://r2mp2.rancard.com"
 
-SERVER = SANDBOX_URL
+SERVER = LOCAL
 
 # API key needed for auth with this API, change as per usage
 API_KEY = "5ohsRCA8os7xW7arVagm3O861lMZwFfl"
@@ -452,8 +456,7 @@ def number_emoji(text):
         .replace(".7.", "7️⃣", 1).replace(".8.", "8️⃣", 1).replace(".9.", "9️⃣", 1).replace(".10.", " 🔟", 1).replace(
         ".11.", '1️⃣1️⃣', 1).replace(".12.", "1️⃣2️⃣", 1) \
  \
- \
-# Process the incoming message and forward to whoever wants it
+        # Process the incoming message and forward to whoever wants it
 
 
 def send_message_to_client(message_group, appId):
@@ -688,6 +691,30 @@ def release_semaphore(client_id):
         semaphores[client_id].release()
 
 
+def reply_twilio(message, recipient, appId, imageUrl):
+    config = twilio_config_db.get_config(appId)
+
+    if config is not None:
+        account_sid = config['config']['account_sid']
+        auth_token = config['config']['auth_token']
+        msisdn = config['msisdn']
+
+        client = Client(account_sid, auth_token)
+
+        if imageUrl is None:
+            message = client.messages.create(
+                from_='whatsapp:+{0}'.format(msisdn),
+                body=message,
+                to='whatsapp:+{0}'.format(recipient),
+            )
+        else:
+            message = client.messages.create(
+
+            )
+
+        logger.info("Sending message to twilio")
+
+
 @app.before_request
 def before_request():
     logger.info("New Request")
@@ -743,7 +770,8 @@ def before_request():
                 g.driver_status != WhatsAPIDriverStatus.NotLoggedIn
                 and g.driver_status != WhatsAPIDriverStatus.LoggedIn
         ):
-            logger.info("Re-initiaising driver")
+            logger.info("Re-"
+                        " driver")
             drivers[g.client_id] = init_client(g.client_id)
             g.driver_status = g.driver.get_status()
 
@@ -789,7 +817,7 @@ def on_bad_internal_server_error(e):
 """
 
 
-# ---------------------------- Client -----------------------------------------
+# ---------------------------- Client ------------------------------------
 
 
 @app.route("/client", methods=["PUT"])
@@ -898,6 +926,65 @@ def get_contacts():
     return jsonify(g.driver.get_contacts())
 
 
+@app.route("/receive/{appId}", methods=["POST"])
+@login_required
+def receive_message(appId):
+    data = request.json
+    request_dict = request.form.to_dict()
+    sender_msisdn = request_dict.get("From").split(":+")[1]
+    chat_id = sender_msisdn + "@c.us"
+    content = str(request_dict.get("Body"))
+    recipient_msisdn = request_dict.get("To").split(":+")[1]
+    message_id = request_dict.get("MessageSid")
+
+    body = dict()
+    body["recipientMsisdn"] = recipient_msisdn
+    body["timeSent"] = datetime.datetime.utcnow().isoformat()
+    body["senderMsisdn"] = sender_msisdn
+    body["messageId"] = message_id
+    body["appId"] = appId
+    body["companyId"] = appId
+
+    # check if chat has payload else create
+    if chat_id not in payload and chat_id not in payload2:
+        payload[chat_id] = dict()
+        payload2[chat_id] = dict()
+
+    try:
+        num_media = int(request.values.get("NumMedia"))
+    except (ValueError, TypeError):
+        return "Invalid request: invalid or missing NumMedia parameter", 400
+
+    if not num_media:
+        logger.info("Chat incoming")
+
+        if content in payload[chat_id]:
+            logger.info("User swiped to reply option")
+            body["content"] = content
+            body['postback'] = {"payload": payload[chat_id][content]}
+            body['quick_reply'] = payload[chat_id][content]
+        else:
+            # User typed in the choice of order
+            if len(content) < 3 and content.isdigit():
+                logger.info("User choice out of range")
+                response = MessagingResponse()
+                msg = response.message("‼ 🖐 Choice out of range 😬 . 🤗 Please send any number from 1 to " + str(
+                    len(payload[chat_id])) + " to make a 🤝 selection")
+                return str(response)
+
+        if content.lower().replace(" ", "") in payload2[chat_id]:
+            # User type in full the preferred choice
+            msg = content.lower().replace(" ", "")
+            body["content"] = content
+            body['postback'] = {"payload": payload2[chat_id][msg]}
+            body['quick_reply'] = payload2[chat_id][msg]
+
+        forward_message_to_r2mp(body, chat_id)
+
+    else:
+        logger.info("Media Message, will process later")
+
+
 # ------------------------------- Chats ---------------------------------------
 
 
@@ -950,22 +1037,30 @@ def send_message(chat_id):
     instruction = data.get("instruction")
     card = data.get("card")
     selection = str()
+    appId = g.client_id
 
     chat = g.driver.get_chat_from_id(chat_id)
     payload[chat_id] = dict()
     payload2[chat_id] = dict()
 
+    config = twilio_config_db.get_config(appId)
+    isActive = False
+    if config is not None:
+        isActive = config["isActive"]
+
     if card is not None:
         caption = card.get('caption')
         image_url = card.get('imageUrl').replace("https", "http")
+        # file_path = download_file(image_url)
 
-        file_path = download_file(image_url)
-        chat.send_media(file_path, caption)
+        reply_twilio(caption, chat_id, appId, image_url) if isActive else chat.send_media(download_file(image_url),
+                                                                                          caption)
+
         time.sleep(3)
-    
+
     if message is not None:
-        msg = message + " "+ random.choice(faces)
-        chat.send_message(msg)
+        msg = message + " " + random.choice(faces)
+        reply_twilio(msg, chat_id, appId, None) if isActive else chat.send_message(msg)
 
     for content in contents:
         number = contents.index(content) + 1
@@ -985,22 +1080,20 @@ def send_message(chat_id):
             selection = selection + number_emoji(title) + " \n"
             # chat.send_message(number_emoji(title))
         else:
-            file_path = download_file(image_url)
-            chat.send_media(file_path, number_emoji(title))
+            # file_path = download_file(image_url)
+            reply_twilio(number_emoji(title), chat_id, appId, image_url) if isActive else chat.send_media(
+                download_file(image_url), number_emoji(title))
 
     if instruction is not None:
-        text = "\n\n\n{0} Do type {1} to select an option {2}".format(random.choice(faces),
-                                                                ', '.join(numbers[0:len(contents)]),
-                                                                random.choice(hands))
+        text = "\n\n\nDo type {0} to select an option".format(', '.join(numbers[0:len(contents)]))
         selection = selection + text
 
     if selection is not "":
-        res = chat.send_message(selection)
+        reply_twilio(selection, chat_id, appId, None) if isActive else chat.send_message(selection)
     if res:
         return jsonify(res)
     else:
         return False
-
     # files = request.files
     #
     # if files:
@@ -1036,8 +1129,6 @@ def send_blast(chat_id):
     return jsonify(res)
 
 
-
-
 @app.route("/messages/<msg_id>/download", methods=["GET"])
 @login_required
 def download_message_media(msg_id):
@@ -1057,6 +1148,53 @@ def download_message_media(msg_id):
 
 
 # --------------------------- Admin methods ----------------------------------
+
+@app.route("/admin/twilio/update/<app_id>")
+def update_twilio_config(app_id):
+    is_active = request.form.get("active")
+
+    if is_active is None or type(is_active) is not bool:
+        return jsonify({"Error": "State boolean value of driver activity"})
+
+    if app_id is None:
+        return jsonify({"Error": "No App Id provided"})
+
+    if app_id not in drivers:
+        return jsonify({"Error": "Scan and connect your company to whatsapp on R2MP"})
+
+    if is_active:
+        try:
+            timers[app_id].stop()
+            timers[app_id] = None
+            release_semaphore(app_id)
+            semaphores[app_id] = None
+            twilio_config_db.update_config(app_id, is_active)
+            return jsonify({"Success": "Config updated successfully"})
+        except:
+            return jsonify({"Error": "Twilio Config update failed"})
+            pass
+    else:
+        # update db and turn on the timer
+        init_timer(app_id)
+        twilio_config_db.update_config(app_id, is_active)
+        return jsonify({"Success": "Timer Initialised and config updated successfully"})
+
+
+@app.route("/admin/twilio/create/<app_id>")
+def create_twilio_config(app_id):
+    account_sid = request.form.get("account_sid")
+    auth_token = request.form.get("auth_token")
+
+    if account_sid is None or auth_token is None:
+        return jsonify({
+            "Error": "Please provide account_sid, auth_token and active status for the appId"
+        })
+
+    config = twilio_config_db.create_config(app_id, auth_token, account_sid)
+    return jsonify({
+        "Success":"config created successfully",
+        "config": str(config)
+    })
 
 
 @app.route("/admin/clients", methods=["GET"])
