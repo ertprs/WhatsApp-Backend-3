@@ -1163,7 +1163,7 @@ def download_message_media(msg_id):
 
 # --------------------------- Admin methods ----------------------------------
 
-@app.route("/admin/twilio/update/<app_id>")
+@app.route("/admin/twilio/update/<app_id>", methods=["PUT"])
 def update_twilio_config(app_id):
     is_active = request.form.get("active")
 
@@ -1194,7 +1194,7 @@ def update_twilio_config(app_id):
         return jsonify({"Success": "Timer Initialised and config updated successfully"})
 
 
-@app.route("/admin/twilio/create/<app_id>")
+@app.route("/admin/twilio/create/<app_id>", methods=["POST"])
 def create_twilio_config(app_id):
     account_sid = request.form.get("account_sid")
     auth_token = request.form.get("auth_token")
