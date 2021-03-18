@@ -161,7 +161,7 @@ handler.setFormatter(formatter)
 # handler.setLevel(logging.INFO)
 logger.addHandler(handler)
 
-app.debug = True
+app.debug = False
 
 gmaps = googlemaps.Client(key=GOOGLE_API_KEY)
 
@@ -692,9 +692,11 @@ def release_semaphore(client_id):
 
 
 def reply_twilio(message, recipient, appId, imageUrl):
+    logger.info("Retrieving config from db for appId" + appId)
     config = twilio_config_db.get_config(appId)
 
     if config is not None:
+        logger.info("Twilio Config Retrieved successfully "+ str(config))
         account_sid = config['config']['account_sid']
         auth_token = config['config']['auth_token']
         msisdn = config['msisdn']
@@ -702,17 +704,22 @@ def reply_twilio(message, recipient, appId, imageUrl):
         client = Client(account_sid, auth_token)
 
         if imageUrl is None:
+            logger.info("Sending Twilio Message ")
             message = client.messages.create(
                 from_='whatsapp:+{0}'.format(msisdn),
                 body=message,
                 to='whatsapp:+{0}'.format(recipient),
             )
         else:
+            logger.info("Twilio Message contains image")
             message = client.messages.create(
-
+                from_='whatsapp:+{0}'.format(msisdn),
+                body=message,
+                to='whatsapp:+{0}'.format(recipient),
+                media_url=[imageUrl]
             )
 
-        logger.info("Sending message to twilio")
+        logger.info("Twilio Message sent  - "+  str(message))
 
 
 @app.before_request
@@ -930,6 +937,8 @@ def get_contacts():
 @login_required
 def receive_message(appId):
     data = request.json
+    logger.info("Twilio Message "+ str(data)+" Received for Company "+ str(appId))
+
     request_dict = request.form.to_dict()
     sender_msisdn = request_dict.get("From").split(":+")[1]
     chat_id = sender_msisdn + "@c.us"
