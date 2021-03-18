@@ -186,13 +186,12 @@ hands = ['💪', '🤞', '🤞', '👍', '👊', '✊', '🤛', '🤜', '🤞', 
 numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
 
 SANDBOX_URL = "http://r2mp-sandbox.rancardmobility.com"
-SANDBOX_URL2 = "https://rgw-copy.rancardmobility.com"
 PRODUCTION_URL = "http://r2mp.rancard.com"
 LOCAL = "http://localhost:8080"
 PRODUCTION_URL2 = "https://r2mp2.rancard.com"
 
 SERVER = SANDBOX_URL
-WEBHOOK = SANDBOX_URL2
+WEBHOOK = SANDBOX_URL
 
 # API key needed for auth with this API, change as per usage
 API_KEY = "5ohsRCA8os7xW7arVagm3O861lMZwFfl"
@@ -364,6 +363,9 @@ def serve_user_login(client_id):
         # url = SERVER + '/api/v1/whatsapp/webhook'
         # response = http.request('POST', url, body=encoded_data, headers={'Content-Type': 'application/json'})
         response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
+        logger.info("Sending QR to server "+ str(WEBHOOK) + " " + str(response))
+
+
     except NoSuchElementException:
         phone = drivers[client_id].get_id().replace("\"", "").replace("@c.us", "")
         body = {
@@ -385,6 +387,7 @@ def serve_user_login(client_id):
             logger.error("Error occurred trying to kill timer")
             pass
         response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
+        logger.info(str(WEBHOOK)+ " " + str(response))
 
 
 def check_new_messages(client_id):
@@ -1160,7 +1163,7 @@ def download_message_media(msg_id):
 
 # --------------------------- Admin methods ----------------------------------
 
-@app.route("/admin/twilio/update/<app_id>", methods=["PUT"])
+@app.route("/admin/twilio/update/<app_id>")
 def update_twilio_config(app_id):
     is_active = request.form.get("active")
 
@@ -1191,7 +1194,7 @@ def update_twilio_config(app_id):
         return jsonify({"Success": "Timer Initialised and config updated successfully"})
 
 
-@app.route("/admin/twilio/create/<app_id>", methods=["POST"])
+@app.route("/admin/twilio/create/<app_id>")
 def create_twilio_config(app_id):
     account_sid = request.form.get("account_sid")
     auth_token = request.form.get("auth_token")
