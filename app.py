@@ -1167,8 +1167,11 @@ def download_message_media(msg_id):
 def update_twilio_config(app_id):
     is_active = request.form.get("active")
 
-    if is_active is None or type(is_active) is not bool:
-        return jsonify({"Error": "State boolean value of driver activity"})
+    try:
+        if is_active is None or not eval(is_active.title()):
+            return jsonify({"Error": "State boolean value of driver activity"})
+    except NameError:
+        return jsonify({"Error":"Please assign either True or False to active key."})
 
     if app_id is None:
         return jsonify({"Error": "No App Id provided"})
