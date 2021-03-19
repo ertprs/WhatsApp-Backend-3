@@ -701,8 +701,8 @@ def reply_twilio(message, recipient, appId, imageUrl):
 
     if config is not None:
         logger.info("Twilio Config Retrieved successfully "+ str(config))
-        account_sid = config['config']['account_sid']
-        auth_token = config['config']['auth_token']
+        account_sid = config['config']['accountSid']
+        auth_token = config['config']['authToken']
         msisdn = config['msisdn']
 
         client = Client(account_sid, auth_token)
