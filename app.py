@@ -696,6 +696,7 @@ def release_semaphore(client_id):
 
 
 def reply_twilio(message, recipient, appId, imageUrl):
+    recipient = recipient.replace("@c.us", "")
     logger.info("Retrieving config from db for appId" + appId)
     config = twilio_config_db.get_config(appId)
 
@@ -747,48 +748,49 @@ def before_request():
     g.client_id = request.headers.get("client_id")
     rule_parent = request.url_rule.rule.split("/")[1]
 
-    if API_KEY and auth_key != API_KEY:
-        abort(401, "you must send valid auth-key")
-        logger.error("You must send a valid auth key")
-        raise Exception()
+    if rule_parent != "open":
+        if API_KEY and auth_key != API_KEY:
+            abort(401, "you must send valid auth-key")
+            logger.error("You must send a valid auth key")
+            raise Exception()
 
-    if not g.client_id and rule_parent != "admin":
-        abort(400, "client ID is mandatory")
-        logger.error("you must send a valid auth ey")
+        if not g.client_id and rule_parent != "admin":
+            abort(400, "client ID is mandatory")
+            logger.error("you must send a valid auth ey")
 
-    logger.info("About acquiring semaphore for client" + g.client_id)
-    acquire_semaphore(g.client_id)
+        logger.info("About acquiring semaphore for client" + g.client_id)
+        acquire_semaphore(g.client_id)
 
-    # Create a driver object if not exist for client requests.
+        # Create a driver object if not exist for client requests.
 
-    if rule_parent != "admin":
-        if g.client_id not in drivers:
-            logger.info("About to initialise new driver ")
-            drivers[g.client_id] = init_client(g.client_id)
+        if rule_parent != "admin":
+            if g.client_id not in drivers:
+                logger.info("About to initialise new driver ")
+                drivers[g.client_id] = init_client(g.client_id)
 
-        g.driver = drivers[g.client_id]
-        g.driver_status = WhatsAPIDriverStatus.Unknown
+            g.driver = drivers[g.client_id]
+            g.driver_status = WhatsAPIDriverStatus.Unknown
 
-        if g.driver is not None:
-            logger.info("About getting driver status")
-            # g.driver_status = WhatsAPIDriverStatus.Unknown
-            g.driver_status = g.driver.get_status()
-            logger.info("Driver Status - " + g.driver_status)
+            if g.driver is not None:
+                logger.info("About getting driver status")
+                # g.driver_status = WhatsAPIDriverStatus.Unknown
+                g.driver_status = g.driver.get_status()
+                logger.info("Driver Status - " + g.driver_status)
 
-        # If driver status is unkown, means driver has closed somehow, reopen it
-        logger.info("Checking if driver is unknown")
-        if (
-                g.driver_status != WhatsAPIDriverStatus.NotLoggedIn
-                and g.driver_status != WhatsAPIDriverStatus.LoggedIn
-        ):
-            logger.info("Re-"
-                        " driver")
-            drivers[g.client_id] = init_client(g.client_id)
-            g.driver_status = g.driver.get_status()
+            # If driver status is unkown, means driver has closed somehow, reopen it
+            logger.info("Checking if driver is unknown")
+            if (
+                    g.driver_status != WhatsAPIDriverStatus.NotLoggedIn
+                    and g.driver_status != WhatsAPIDriverStatus.LoggedIn
+            ):
+                logger.info("Re-"
+                            " driver")
+                drivers[g.client_id] = init_client(g.client_id)
+                g.driver_status = g.driver.get_status()
 
-        init_timer(g.client_id)
-        logger.info("subscribing to new messages")
-        # g.driver.subscribe_new_messages(NewMessageObserver(g.client_id))
+            init_timer(g.client_id)
+            logger.info("subscribing to new messages")
+            # g.driver.subscribe_new_messages(NewMessageObserver(g.client_id))
 
 
 @app.after_request
@@ -937,8 +939,7 @@ def get_contacts():
     return jsonify(g.driver.get_contacts())
 
 
-@app.route("/receive/{appId}", methods=["POST"])
-@login_required
+@app.route("/open/receive/<appId>", methods=["POST"])
 def receive_message(appId):
     data = request.json
     logger.info("Twilio Message "+ str(data)+" Received for Company "+ str(appId))
@@ -1207,13 +1208,14 @@ def update_twilio_config(app_id):
 def create_twilio_config(app_id):
     account_sid = request.form.get("account_sid")
     auth_token = request.form.get("auth_token")
+    msisdn = request.form.get("msisdn")
 
     if account_sid is None or auth_token is None:
         return jsonify({
             "Error": "Please provide account_sid, auth_token and active status for the appId"
         })
 
-    config = twilio_config_db.create_config(app_id, auth_token, account_sid)
+    config = twilio_config_db.create_config(app_id, auth_token, account_sid, msisdn)
     return jsonify({
         "Success":"config created successfully",
         "config": str(config)
