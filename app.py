@@ -358,7 +358,6 @@ def serve_user_login(client_id):
             'isLoggedIn': False,
             'qr': qr
         }
-        logger.info("Sending QR to server")
         # encoded_data = json.dumps(body).encode('utf-8')
         # url = SERVER + '/api/v1/whatsapp/webhook'
         # response = http.request('POST', url, body=encoded_data, headers={'Content-Type': 'application/json'})
@@ -1166,6 +1165,7 @@ def download_message_media(msg_id):
 @app.route("/admin/twilio/update/<app_id>", methods=["PUT"])
 def update_twilio_config(app_id):
     is_active = request.form.get("active")
+    logger.info("Request to update twilio config received to True")
 
     try:
         if is_active is None or not eval(is_active.title()):
@@ -1185,16 +1185,22 @@ def update_twilio_config(app_id):
             timers[app_id] = None
             release_semaphore(app_id)
             semaphores[app_id] = None
-            twilio_config_db.update_config(app_id, is_active)
-            return jsonify({"Success": "Config updated successfully"})
+            config = twilio_config_db.update_config(app_id, is_active)
+            return jsonify({
+                "Success": "Config updated successfully",
+                "config": str(config)
+            })
         except:
             return jsonify({"Error": "Twilio Config update failed"})
             pass
     else:
         # update db and turn on the timer
         init_timer(app_id)
-        twilio_config_db.update_config(app_id, is_active)
-        return jsonify({"Success": "Timer Initialised and config updated successfully"})
+        config = twilio_config_db.update_config(app_id, is_active)
+        return jsonify({
+            "Success": "Timer Initialised and config updated successfully",
+            "config":  str(config)
+        })
 
 
 @app.route("/admin/twilio/create/<app_id>", methods=["POST"])
