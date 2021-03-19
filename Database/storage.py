@@ -16,6 +16,9 @@ class TwilioConfig:
         return config
 
     def create_config(self, appId, auth_token, account_sid):
+        config = self.configs.find_one({"appId": appId})
+        if config is not None:
+            return config
         config = self.configs.insert_one({
             "appId": appId,
             "isActive": False,
