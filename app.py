@@ -46,7 +46,7 @@ from Database.storage import TwilioConfig
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
 
-from flask import Flask, send_file, request, abort, g, jsonify, session
+from flask import Flask, send_file, request, abort, g, jsonify, session, Response
 from flask.json import JSONEncoder
 from urllib import request as urllibrequest
 from functools import wraps
@@ -363,7 +363,6 @@ def serve_user_login(client_id):
         # response = http.request('POST', url, body=encoded_data, headers={'Content-Type': 'application/json'})
         response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
         logger.info("Sending QR to server "+ str(WEBHOOK) + " " + str(response))
-
 
     except NoSuchElementException:
         phone = drivers[client_id].get_id().replace("\"", "").replace("@c.us", "")
@@ -947,6 +946,7 @@ def receive_message(appId):
     request_dict = request.form.to_dict()
     sender_msisdn = request_dict.get("From").split(":+")[1]
     chat_id = sender_msisdn + "@c.us"
+    profile_name = str(request_dict.get("ProfileName"))
     content = str(request_dict.get("Body"))
     recipient_msisdn = request_dict.get("To").split(":+")[1]
     message_id = request_dict.get("MessageSid")
@@ -955,6 +955,7 @@ def receive_message(appId):
     body["recipientMsisdn"] = recipient_msisdn
     body["timeSent"] = datetime.datetime.utcnow().isoformat()
     body["senderMsisdn"] = sender_msisdn
+    body["senderUsername"] = profile_name
     body["messageId"] = message_id
     body["appId"] = appId
     body["companyId"] = appId
@@ -969,34 +970,74 @@ def receive_message(appId):
     except (ValueError, TypeError):
         return "Invalid request: invalid or missing NumMedia parameter", 400
 
+    # Message is a chat
+    # There is no media in the message payload
     if not num_media:
-        logger.info("Chat incoming")
+        if "Address" and "Longitude" in request_dict:
+            lng = str(request_dict.get("Longitude"))
+            lat = str(request_dict.get("Latitude"))
+            formatted_address = str(request_dict.get("Address"))
 
-        if content in payload[chat_id]:
-            logger.info("User swiped to reply option")
-            body["content"] = content
-            body['postback'] = {"payload": payload[chat_id][content]}
-            body['quick_reply'] = payload[chat_id][content]
+            logger.info("Twilio Message - Location incoming")
+            address = gmaps.reverse_geocode((lat, lng))
+            place_id = address[0]['place_id']
+            location_intent = "intent.useLocation.{0}".format(place_id)
+
+            body['postback'] = {"payload": location_intent}
+            body['quick_reply'] = location_intent
+            body['content'] = formatted_address
+            body['text'] = 'text'
+
+            delivery_info = "Your ongoing order will be delivered at {0} after confirmation".format(formatted_address)
+            forward_message_to_r2mp(body, chat_id)
+
         else:
-            # User typed in the choice of order
-            if len(content) < 3 and content.isdigit():
-                logger.info("User choice out of range")
-                response = MessagingResponse()
-                msg = response.message("‼ 🖐 Choice out of range 😬 . 🤗 Please send any number from 1 to " + str(
-                    len(payload[chat_id])) + " to make a 🤝 selection")
-                return str(response)
-
-        if content.lower().replace(" ", "") in payload2[chat_id]:
-            # User type in full the preferred choice
-            msg = content.lower().replace(" ", "")
+            # Incoming message is a chat
+            logger.info("Twilio Message - Chat incoming")
             body["content"] = content
-            body['postback'] = {"payload": payload2[chat_id][msg]}
-            body['quick_reply'] = payload2[chat_id][msg]
+            body["type"] = "text"
 
-        forward_message_to_r2mp(body, chat_id)
+            if content in payload[chat_id]:
+                logger.info("User swiped to reply option")
+                body["content"] = content
+                body['postback'] = {"payload": payload[chat_id][content]}
+                body['quick_reply'] = payload[chat_id][content]
+            else:
+                # User typed in the choice of order
+                if len(content) < 3 and content.isdigit():
+                    logger.info("User choice out of range")
+                    response = MessagingResponse()
+                    msg = response.message("‼ 🖐 Choice out of range 😬 . 🤗 Please send any number from 1 to " + str(
+                        len(payload[chat_id])) + " to make a 🤝 selection")
+                    return str(response)
+
+            if content.lower().replace(" ", "") in payload2[chat_id]:
+                # User type in full the preferred choice
+                msg = content.lower().replace(" ", "")
+                body["content"] = content
+                body['postback'] = {"payload": payload2[chat_id][msg]}
+                body['quick_reply'] = payload2[chat_id][msg]
+
+            forward_message_to_r2mp(body, chat_id)
 
     else:
         logger.info("Media Message, will process later")
+        media_type = request_dict.get("MediaContentType0")
+        media_url = request_dict.get("MediaUrl0")
+
+        body["content"] = content
+        body["type"] = "image"
+
+        if "image" in media_type:
+            body["type"] = "image"
+        elif "audio" in media_type:
+            body["type"] = "audio"
+        elif "video" in media_type:
+            body["type"] = "video"
+
+        forward_message_to_r2mp(body, chat_id)
+
+    return Response("Received", status=200, mimetype='application/json')
 
 
 # ------------------------------- Chats ---------------------------------------
