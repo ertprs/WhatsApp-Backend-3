@@ -187,6 +187,7 @@ LOCAL = "http://localhost:8080"
 PRODUCTION_URL2 = "https://r2mp2.rancard.com"
 
 SERVER = SANDBOX_URL
+WEBHOOK = SANDBOX_URL
 
 # API key needed for auth with this API, change as per usage
 API_KEY = "5ohsRCA8os7xW7arVagm3O861lMZwFfl"
@@ -380,6 +381,59 @@ def serve_user_login(client_id):
             pass
         response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
 
+def serve_user_login_v2(client_id):
+    driver = drivers[client_id]
+
+    # User is logged In
+    if driver.is_logged_in():
+        logger.info("Driver Logged In")
+        phone = drivers[client_id].get_id().replace("\"", "").replace("@c.us", "")
+        body = {
+            'success': True,
+            'isLoggedIn': True,
+            'appId': client_id,
+            "msisdn": phone,
+            "qr": None
+        }
+        try:
+            timer_id = client_id + "login"
+            timers[timer_id].stop()
+            timers[timer_id] = None
+
+            init_timer(client_id)
+
+            logger.info("Timer killed successfully")
+        except:
+            logger.error("Error occurred trying to kill Login timer")
+            pass
+
+        response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
+        logger.info("User logged In "+ str(WEBHOOK)+ " " + str(response))
+
+
+    else:
+        try:
+            logger.info("Not Logged In (Status) - Trying to get QR")
+            qr = driver.get_qr_base64()
+            body = {
+                'success': True,
+                'appId': client_id,
+                'isLoggedIn': False,
+                'qr': qr
+            }
+            response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
+            logger.info("Sending QR to server " + str(WEBHOOK) + " " + str(response))
+        except Exception as e:
+            logger.error("Disconnected (Status) - Failed to get QR . Sending notice")
+            body = {
+                'success': True,
+                'isLoggedIn': False,
+                'appId': client_id,
+                "message": "WhatsApp Web is not connected",
+                "qr": None
+            }
+            response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
+            logger.info("Sending Error to server " + str(WEBHOOK) + " " + str(response))
 
 def check_new_messages(client_id):
     """Check for new unread messages and send them to the custom api
