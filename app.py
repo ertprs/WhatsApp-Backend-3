@@ -390,10 +390,9 @@ def serve_user_login(client_id):
 
 def serve_user_login_v2(client_id):
     driver = drivers[client_id]
-    driver_status = driver.get_status()
 
     # User is logged In
-    if driver_status == WhatsAPIDriverStatus.LoggedIn:
+    if driver.is_logged_in():
         logger.info("Driver Logged In")
         phone = drivers[client_id].get_id().replace("\"", "").replace("@c.us", "")
         body = {
@@ -418,20 +417,8 @@ def serve_user_login_v2(client_id):
         response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
         logger.info("User logged In "+ str(WEBHOOK)+ " " + str(response))
 
-    # User is not connected
-    elif driver_status == WhatsAPIDriverStatus.LoggedInAnotherBrowser:
-        body = {
-            'success': True,
-            'isLoggedIn': False,
-            'appId': client_id,
-            "message": "WhatsApp Web is Logged in another browser",
-            "qr": None
-        }
-        response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
-        logger.info("Logged In another Browser " + str(WEBHOOK) + " " + str(response))
 
     else:
-        logger.info(str(driver_status))
         try:
             logger.info("Not Logged In (Status) - Trying to get QR")
             qr = driver.get_qr_base64()
