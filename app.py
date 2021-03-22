@@ -390,9 +390,10 @@ def serve_user_login(client_id):
 
 def serve_user_login_v2(client_id):
     driver = drivers[client_id]
+    driver_status = driver.get_status()
 
     # User is logged In
-    if g.driver_status == WhatsAPIDriverStatus.LoggedIn:
+    if driver_status == WhatsAPIDriverStatus.LoggedIn:
         logger.info("Driver Logged In")
         phone = drivers[client_id].get_id().replace("\"", "").replace("@c.us", "")
         body = {
@@ -418,7 +419,7 @@ def serve_user_login_v2(client_id):
         logger.info("User logged In "+ str(WEBHOOK)+ " " + str(response))
 
     # User is not connected
-    elif g.driver_status == WhatsAPIDriverStatus.LoggedInAnotherBrowser:
+    elif driver_status == WhatsAPIDriverStatus.LoggedInAnotherBrowser:
         body = {
             'success': True,
             'isLoggedIn': False,
@@ -430,7 +431,7 @@ def serve_user_login_v2(client_id):
         logger.info("Logged In another Browser " + str(WEBHOOK) + " " + str(response))
 
     else:
-        logger.info(str(g.driver_status))
+        logger.info(str(driver_status))
         try:
             logger.info("Not Logged In (Status) - Trying to get QR")
             qr = driver.get_qr_base64()
