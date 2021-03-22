@@ -339,7 +339,7 @@ def init_login_timer(client_id):
         return
     # Create a timer to call check_new_message function after every 2 seconds.
     # client_id param is needed to be passed to check_new_message
-    timers[timer_id] = RepeatedTimer(3, serve_user_login, client_id)
+    timers[timer_id] = RepeatedTimer(3, serve_user_login_v2, client_id)
 
 
 def serve_user_login(client_id):
@@ -386,6 +386,73 @@ def serve_user_login(client_id):
             pass
         response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
         logger.info(str(WEBHOOK)+ " " + str(response))
+
+
+def serve_user_login_v2(client_id):
+    driver = drivers[client_id]
+
+    # User is logged In
+    if driver.driver_status == WhatsAPIDriverStatus.LoggedIn:
+        logger.info("Driver Logged In")
+        phone = drivers[client_id].get_id().replace("\"", "").replace("@c.us", "")
+        body = {
+            'success': True,
+            'isLoggedIn': True,
+            'appId': client_id,
+            "msisdn": phone,
+            "qr": None
+        }
+        try:
+            timer_id = client_id + "login"
+            timers[timer_id].stop()
+            timers[timer_id] = None
+
+            init_timer(client_id)
+
+            logger.info("Timer killed successfully")
+        except:
+            logger.error("Error occurred trying to kill Login timer")
+            pass
+
+        response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
+        logger.info("User logged In "+ str(WEBHOOK)+ " " + str(response))
+
+    # User is not connected
+    elif driver.driver_status == WhatsAPIDriverStatus.LoggedInAnotherBrowser:
+        body = {
+            'success': True,
+            'isLoggedIn': False,
+            'appId': client_id,
+            "message": "WhatsApp Web is Logged in another browser",
+            "qr": None
+        }
+        response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
+        logger.info("Logged In another Browser " + str(WEBHOOK) + " " + str(response))
+
+    else:
+        logger.info(str(driver.driver_status))
+        try:
+            logger.info("Not Logged In (Status) - Trying to get QR")
+            qr = driver.get_qr_base64()
+            body = {
+                'success': True,
+                'appId': client_id,
+                'isLoggedIn': False,
+                'qr': qr
+            }
+            response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
+            logger.info("Sending QR to server " + str(WEBHOOK) + " " + str(response))
+        except Exception as e:
+            logger.error("Disconnected (Status) - Failed to get QR . Sending notice")
+            body = {
+                'success': True,
+                'isLoggedIn': False,
+                'appId': client_id,
+                "message": "WhatsApp Web is not connected",
+                "qr": None
+            }
+            response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
+            logger.info("Sending Error to server " + str(WEBHOOK) + " " + str(response))
 
 
 def check_new_messages(client_id):
@@ -1019,7 +1086,6 @@ def receive_message(appId):
                 body['quick_reply'] = payload2[chat_id][msg]
 
             forward_message_to_r2mp(body, chat_id)
-
     else:
         logger.info("Media Message, will process later")
         media_type = request_dict.get("MediaContentType0")
