@@ -762,12 +762,13 @@ def reply_twilio(message, recipient, appId, imageUrl):
 
         client = Client(account_sid, auth_token)
 
-        if imageUrl is None:
+        if imageUrl is not None:
             logger.info("Sending Twilio Message ")
             message = client.messages.create(
                 from_='whatsapp:+{0}'.format(msisdn),
                 body=message,
                 to='whatsapp:+{0}'.format(recipient),
+                media_url=[imageUrl]
             )
         else:
             logger.info("Twilio Message contains image")
@@ -775,7 +776,6 @@ def reply_twilio(message, recipient, appId, imageUrl):
                 from_='whatsapp:+{0}'.format(msisdn),
                 body=message,
                 to='whatsapp:+{0}'.format(recipient),
-                media_url=[imageUrl]
             )
 
         logger.info("Twilio Message sent  - "+  str(message))
