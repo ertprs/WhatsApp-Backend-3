@@ -381,6 +381,7 @@ def serve_user_login(client_id):
             pass
         response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
 
+
 def serve_user_login_v2(client_id):
     driver = drivers[client_id]
 
@@ -409,8 +410,6 @@ def serve_user_login_v2(client_id):
 
         response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
         logger.info("User logged In "+ str(WEBHOOK)+ " " + str(response))
-
-
     else:
         try:
             logger.info("Not Logged In (Status) - Trying to get QR")
@@ -424,16 +423,9 @@ def serve_user_login_v2(client_id):
             response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
             logger.info("Sending QR to server " + str(WEBHOOK) + " " + str(response))
         except Exception as e:
-            logger.error("Disconnected (Status) - Failed to get QR . Sending notice")
-            body = {
-                'success': True,
-                'isLoggedIn': False,
-                'appId': client_id,
-                "message": "WhatsApp Web is not connected",
-                "qr": None
-            }
-            response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
-            logger.info("Sending Error to server " + str(WEBHOOK) + " " + str(response))
+            logger.error(repr(e))
+            driver.wait_for_login()
+
 
 def check_new_messages(client_id):
     """Check for new unread messages and send them to the custom api
@@ -1043,9 +1035,7 @@ def send_message(chat_id):
             chat.send_media(file_path, number_emoji(title))
 
     if instruction is not None:
-        text = "\n\n\n{0} Do type {1} to select an option {2}".format(random.choice(faces),
-                                                                ', '.join(numbers[0:len(contents)]),
-                                                                random.choice(hands))
+        text = "\n\n\n Do type {0} to select an option".format(', '.join(numbers[0:len(contents)]))
         selection = selection + text
 
     if selection is not "":
@@ -1088,8 +1078,6 @@ def send_blast(chat_id):
         file_path = download_file(media_url)
         g.driver.send_media(file_path, chat_id, message)
     return jsonify(res)
-
-
 
 
 @app.route("/messages/<msg_id>/download", methods=["GET"])
@@ -1161,6 +1149,7 @@ def kill_clients():
                 timers[client] = None
                 release_semaphore(client)
                 semaphores[client] = None
+                logger.info("Deleted Driver Successfully")
             except:
                 pass
 
