@@ -1006,11 +1006,11 @@ def send_message(chat_id):
         image_url = card.get('imageUrl').replace("https", "http")
 
         file_path = download_file(image_url)
-        chat.send_media(file_path, caption)
-        time.sleep(3)
-    
+        res =  chat.send_media(file_path, caption)
+
+    time.sleep(3)
     if message is not None:
-        msg = message + " "+ random.choice(faces)
+        msg = message
         chat.send_message(msg)
 
     for content in contents:
@@ -1032,12 +1032,13 @@ def send_message(chat_id):
             # chat.send_message(number_emoji(title))
         else:
             file_path = download_file(image_url)
-            chat.send_media(file_path, number_emoji(title))
+            res = chat.send_media(file_path, number_emoji(title))
 
     if instruction is not None:
         text = "\n\n\n Do type {0} to select an option".format(', '.join(numbers[0:len(contents)]))
         selection = selection + text
 
+    time.sleep(3)
     if selection is not "":
         res = chat.send_message(selection)
     if res:
