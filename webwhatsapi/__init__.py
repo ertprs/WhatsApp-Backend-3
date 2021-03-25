@@ -293,7 +293,7 @@ class WhatsAPIDriver(object):
 
         profilePath = ""
         if self.client == "chrome":
-            profilePath = ""
+            profilePath = self._profile_path
         else:
             profilePath = self._profile.path
 
