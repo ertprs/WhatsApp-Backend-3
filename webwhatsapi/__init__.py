@@ -249,10 +249,10 @@ class WhatsAPIDriver(object):
 
         elif self.client == "chrome":
             self._profile = webdriver.ChromeOptions()
-            self._profile.add_argument("--no-sandbox")
-            self._profile.add_argument("--headless")
-            self._profile.add_argument("--disable-dev-shm-usage")
-            self._profile.add_argument("--disable-infobars")
+            # self._profile.add_argument("--no-sandbox")
+            # self._profile.add_argument("--headless")
+            # self._profile.add_argument("--disable-dev-shm-usage")
+            # self._profile.add_argument("--disable-infobars")
             # self._profile("")
 
             if self._profile_path is not None:
