@@ -221,6 +221,45 @@ CHROME_WINDOW_SIZE = "910,512"
 """
 
 
+def get_connected_companies():
+    logger.info("Finding connected whatsApp Companies")
+    directory = os.fsencode(CHROME_CACHE_PATH)
+    connected_companies = os.listdir(directory)
+    logger.info(str(len(connected_companies)) + " Connected WhatsApp Companies retrieved "+ str(connected_companies))
+    for company in connected_companies:
+        company = company.decode("utf-8")
+        thread = threading.Thread(target=restore_sessions, args=(company,))
+        thread.start()
+
+
+def restore_sessions(client_id):
+    # assign global variable
+    logger.info("Session Restoration for client "+ str(client_id) + " commencing")
+
+    acquire_semaphore(client_id)
+    logger.info("About getting driver status")
+    # check if client driver exist otherwise create new driver and global variable
+    if client_id not in drivers:
+        drivers[client_id] = init_client(client_id)
+        logger.info("Driver initialised Successfully")
+
+    driver = drivers[client_id]
+    driver_status = WhatsAPIDriverStatus.Unknown
+
+    if driver is not None:
+        driver_status = driver.get_status()
+        logger.info("Driver Status retrieved successfully  "+ driver_status)
+
+    if (
+            driver_status != WhatsAPIDriverStatus.NotLoggedIn
+            and driver_status != WhatsAPIDriverStatus.LoggedIn
+    ):
+        drivers[client_id] = init_client(client_id)
+        driver_status = driver.get_status()
+
+    init_timer(client_id)
+
+
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
@@ -440,6 +479,7 @@ def check_new_messages(client_id):
             or not drivers[client_id].is_logged_in()
     ):
         timers[client_id].stop()
+        logger.info("Driver is not logged in. Cancelling operation")
         return
 
     # Acquire a lock on thread
@@ -1169,6 +1209,7 @@ def hello():
     return "API is running"
 
 
+get_connected_companies()
 if __name__ == "__main__":
     # todo: load presaved active client ids
     app.run(port=8888, host='0.0.0.0')
