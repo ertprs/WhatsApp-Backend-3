@@ -209,7 +209,6 @@ STATIC_FILES_PATH = "static/"
 
 # Seleneium Webdriver configuration
 CHROME_IS_HEADLESS = True
-# CHROME_CACHE_PATH = BASE_DIR + "/sample/flask/chrome_cache/"
 CHROME_CACHE_PATH = BASE_DIR + "/chrome_cache/"
 CHROME_DISABLE_GPU = True
 CHROME_WINDOW_SIZE = "910,512"

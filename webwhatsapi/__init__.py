@@ -293,11 +293,13 @@ class WhatsAPIDriver(object):
 
         profilePath = ""
         if self.client == "chrome":
+            self.wait_for_login()
             profilePath = self._profile_path
         else:
             profilePath = self._profile.path
 
         local_storage_file = os.path.join(profilePath, self._LOCAL_STORAGE_FILE)
+
         if os.path.exists(local_storage_file):
             with open(local_storage_file) as f:
                 self.set_local_storage(loads(f.read()))
