@@ -249,9 +249,9 @@ class WhatsAPIDriver(object):
 
         elif self.client == "chrome":
             self._profile = webdriver.ChromeOptions()
-            # self._profile.add_argument("--no-sandbox")
+            self._profile.add_argument("--no-sandbox")
             # self._profile.add_argument("--headless")
-            # self._profile.add_argument("--disable-dev-shm-usage")
+            self._profile.add_argument("--disable-dev-shm-usage")
             # self._profile.add_argument("--disable-infobars")
             # self._profile("")
 
@@ -290,10 +290,12 @@ class WhatsAPIDriver(object):
 
     def connect(self):
         self.driver.get(self._URL)
+        self.wait_for_login()
+        self.logger.info("Done waiting for login. Is Logged In "+ str(self.is_logged_in()))
 
         profilePath = ""
         if self.client == "chrome":
-            self.wait_for_login()
+
             profilePath = self._profile_path
         else:
             profilePath = self._profile.path
