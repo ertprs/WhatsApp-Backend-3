@@ -343,6 +343,7 @@ def delete_client(client_id, preserve_cache):
             pass
 
     if not preserve_cache:
+        logger.info("Deleting the profile folder for app Id")
         pth = CHROME_CACHE_PATH + g.client_id
         shutil.rmtree(pth)
 
@@ -888,9 +889,9 @@ def create_client():
 
 
 @app.route("/client", methods=["DELETE"])
-def delete_client():
+def remove_client():
     """Delete all objects related to client"""
-    preserve_cache = request.args.get("preserve_cache", True)
+    preserve_cache = request.args.get("preserve_cache", False)
     delete_client(g.client_id, preserve_cache)
     return jsonify({"Success": True})
 
@@ -1170,10 +1171,35 @@ def run_clients():
 
 
 @app.route("/admin/client", methods=["DELETE"])
+def erase_client():
+    data = request.json
+    client = data.get("clients")[0]
+
+    if client in drivers:
+        drivers.pop(client).quit()
+        try:
+            logger.info("Releasing Semaphore and Message time")
+            timers[client].stop()
+            timers[client] = None
+            # release_semaphore(client)
+            # semaphores[client] = None
+
+            logger.info("Deleting profile for client")
+            pth = CHROME_CACHE_PATH + g.client_id
+            shutil.rmtree(pth)
+            return jsonify({"Success": True})
+        except:
+            pass
+    return jsonify({"Error": "Failed to delete profile"})
+
+
+
+
+@app.route("/admin/clients", methods=["DELETE"])
 def kill_clients():
     """Force kill driver and other objects for a perticular clien"""
-    clients = request.form.get("clients")
-    kill_dead = request.args.get("kill_dead", default=False)
+    clients = request.json
+    kill_dead = request.args.get("kill_dead", default=True)
     kill_dead = kill_dead and kill_dead in ["true", "1"]
 
     if not kill_dead and not clients:
@@ -1181,6 +1207,7 @@ def kill_clients():
 
     for client in list(drivers.keys()):
         if kill_dead and not drivers[client].is_logged_in() or client in clients:
+            logger.info("About to delete client")
             drivers.pop(client).quit()
             try:
                 timers[client].stop()

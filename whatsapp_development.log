@@ -11223,3 +11223,589 @@ urllib.error.HTTPError: HTTP Error 503: Service Unavailable
 2021-03-02 17:59:27,572  INFO : About to process incoming message
 2021-03-02 17:59:27,573  INFO : User swiped to reply option
 2021-03-02 17:59:27,609  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-03-30 09:00:09,114  INFO : Finding connected whatsApp Companies
+2021-03-30 09:00:09,147  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-30 09:00:09,148  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-30 09:00:09,148  INFO : About getting driver status
+2021-03-30 09:00:09,746  INFO : Finding connected whatsApp Companies
+2021-03-30 09:00:09,747  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-30 09:00:09,747  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-30 09:00:09,747  INFO : About getting driver status
+2021-03-30 09:00:27,083  INFO : New Request
+2021-03-30 09:00:27,084  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-03-30 09:00:27,084  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 09:00:37,084  INFO : About to initialise new driver 
+2021-03-30 09:00:43,882  INFO : Driver initialised Successfully
+2021-03-30 09:00:43,883  INFO : Driver initialised Successfully
+2021-03-30 09:00:53,909  INFO : Driver Status retrieved successfully  NotLoggedIn
+2021-03-30 09:00:53,910  INFO : Driver Status retrieved successfully  NotLoggedIn
+2021-03-30 09:00:54,039  INFO : New timer started for driver
+2021-03-30 09:00:54,039  INFO : New timer started for driver
+2021-03-30 09:00:56,061  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:00:56,062  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:01:04,707  INFO : About getting driver status
+2021-03-30 09:01:14,776  INFO : Driver Status - NotLoggedIn
+2021-03-30 09:01:14,776  INFO : Checking if driver is unknown
+2021-03-30 09:01:14,776  INFO : Previous driver timer initialised
+2021-03-30 09:01:14,777  INFO : subscribing to new messages
+2021-03-30 09:01:14,777  INFO : QR requested
+2021-03-30 09:01:14,777  INFO : Timer initialised
+2021-03-30 09:01:16,785  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:01:17,781  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:01:20,782  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:01:23,786  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:01:26,790  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:01:29,787  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:01:32,789  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:01:34,189  INFO : Sending QR to server http://r2mp-sandbox.rancardmobility.com <Response [404]>
+2021-03-30 09:01:35,790  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:01:36,559  INFO : Sending QR to server http://r2mp-sandbox.rancardmobility.com <Response [404]>
+2021-03-30 09:01:38,790  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:01:40,945  INFO : Sending QR to server http://r2mp-sandbox.rancardmobility.com <Response [404]>
+2021-03-30 09:01:41,790  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:01:42,989  INFO : Sending QR to server http://r2mp-sandbox.rancardmobility.com <Response [404]>
+2021-03-30 09:01:44,790  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:01:45,582  INFO : Sending QR to server http://r2mp-sandbox.rancardmobility.com <Response [404]>
+2021-03-30 09:01:47,791  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:01:48,561  INFO : Sending QR to server http://r2mp-sandbox.rancardmobility.com <Response [404]>
+2021-03-30 09:02:58,458  INFO : Finding connected whatsApp Companies
+2021-03-30 09:02:58,458  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-30 09:02:58,458  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-30 09:02:58,458  INFO : About getting driver status
+2021-03-30 09:02:59,424  INFO : Finding connected whatsApp Companies
+2021-03-30 09:02:59,424  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-30 09:02:59,425  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-30 09:02:59,425  INFO : About getting driver status
+2021-03-30 09:03:27,080  INFO : Driver initialised Successfully
+2021-03-30 09:03:37,132  INFO : Driver Status retrieved successfully  NotLoggedIn
+2021-03-30 09:03:37,133  INFO : New timer started for driver
+2021-03-30 09:03:39,142  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:04:45,091  INFO : New Request
+2021-03-30 09:04:45,091  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-03-30 09:04:45,092  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 09:04:55,092  INFO : About to initialise new driver 
+2021-03-30 09:05:20,285  INFO : About getting driver status
+2021-03-30 09:05:30,361  INFO : Driver Status - NotLoggedIn
+2021-03-30 09:05:30,361  INFO : Checking if driver is unknown
+2021-03-30 09:05:30,361  INFO : New timer started for driver
+2021-03-30 09:05:30,362  INFO : subscribing to new messages
+2021-03-30 09:05:30,362  INFO : QR requested
+2021-03-30 09:05:30,363  INFO : Timer initialised
+2021-03-30 09:05:32,371  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:05:33,372  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:05:36,372  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:05:39,372  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:05:42,374  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:05:45,374  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:05:48,375  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:05:51,024  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:05:51,188  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:05:51,375  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:05:51,621  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:05:51,753  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:05:51,907  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:05:52,083  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:05:53,018  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:05:54,375  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:05:55,664  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:05:57,374  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:05:59,972  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:06:00,377  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:06:02,029  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:06:03,377  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:06:04,676  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:06:06,378  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:06:09,295  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:06:09,378  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:06:11,162  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:06:12,379  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:06:14,477  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:06:15,379  INFO : Driver Logged In
+2021-03-30 09:06:15,388  INFO : Previous driver timer initialised
+2021-03-30 09:06:15,389  INFO : Timer killed successfully
+2021-03-30 09:06:18,518  INFO : User logged In http://localhost:8080 <Response [200]>
+2021-03-30 09:06:58,313  INFO : New Request
+2021-03-30 09:06:58,331  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-03-30 09:06:58,332  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 09:12:10,163  INFO : New Request
+2021-03-30 09:12:10,310  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-03-30 09:12:10,311  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 09:12:10,311  INFO : About getting driver status
+2021-03-30 09:12:10,464  INFO : Driver Status - LoggedIn
+2021-03-30 09:12:10,465  INFO : Checking if driver is unknown
+2021-03-30 09:12:10,465  INFO : Previous driver timer initialised
+2021-03-30 09:12:10,465  INFO : subscribing to new messages
+2021-03-30 09:12:10,465  INFO : QR requested
+2021-03-30 09:12:10,465  INFO : Timer initialised
+2021-03-30 09:12:13,469  INFO : Driver Logged In
+2021-03-30 09:12:13,474  INFO : Previous driver timer initialised
+2021-03-30 09:12:13,474  INFO : Timer killed successfully
+2021-03-30 09:12:30,020  INFO : User logged In http://localhost:8080 <Response [200]>
+2021-03-30 09:12:51,132  INFO : New Request
+2021-03-30 09:12:51,133  INFO : API call DELETE http://0.0.0.0:8888/client
+2021-03-30 09:12:51,133  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 09:12:51,133  INFO : About getting driver status
+2021-03-30 09:12:51,141  INFO : Driver Status - LoggedIn
+2021-03-30 09:12:51,141  INFO : Checking if driver is unknown
+2021-03-30 09:12:51,141  INFO : Previous driver timer initialised
+2021-03-30 09:12:51,141  INFO : subscribing to new messages
+2021-03-30 09:18:02,497  INFO : Finding connected whatsApp Companies
+2021-03-30 09:18:02,647  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-30 09:18:02,647  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-30 09:18:02,648  INFO : About getting driver status
+2021-03-30 09:18:03,757  INFO : New Request
+2021-03-30 09:18:03,758  INFO : API call DELETE http://0.0.0.0:8888/client
+2021-03-30 09:18:03,759  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 09:18:09,415  INFO : New Request
+2021-03-30 09:18:09,415  INFO : API call DELETE http://0.0.0.0:8888/client
+2021-03-30 09:18:09,416  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 09:18:13,759  INFO : About to initialise new driver 
+2021-03-30 09:18:19,416  INFO : About to initialise new driver 
+2021-03-30 09:18:30,371  INFO : Finding connected whatsApp Companies
+2021-03-30 09:18:30,371  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-30 09:18:30,371  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-30 09:18:30,372  INFO : About getting driver status
+2021-03-30 09:18:30,955  INFO : Finding connected whatsApp Companies
+2021-03-30 09:18:30,955  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-30 09:18:30,955  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-30 09:18:30,956  INFO : About getting driver status
+2021-03-30 09:18:58,840  INFO : Driver initialised Successfully
+2021-03-30 09:19:04,440  INFO : Driver initialised Successfully
+2021-03-30 09:19:08,882  INFO : Driver Status retrieved successfully  NotLoggedIn
+2021-03-30 09:19:08,882  INFO : New timer started for driver
+2021-03-30 09:19:10,891  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:19:14,475  INFO : Driver Status retrieved successfully  NotLoggedIn
+2021-03-30 09:19:14,475  INFO : New timer started for driver
+2021-03-30 09:19:16,484  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:20:45,026  INFO : New Request
+2021-03-30 09:20:45,026  INFO : API call DELETE http://0.0.0.0:8888/client
+2021-03-30 09:20:45,027  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 09:20:55,027  INFO : About getting driver status
+2021-03-30 09:21:05,082  INFO : Driver Status - NotLoggedIn
+2021-03-30 09:21:05,083  INFO : Checking if driver is unknown
+2021-03-30 09:21:05,083  INFO : Previous driver timer initialised
+2021-03-30 09:21:05,083  INFO : subscribing to new messages
+2021-03-30 09:21:05,283  INFO : Deleting the profile folder for app Id
+2021-03-30 09:43:34,197  INFO : Finding connected whatsApp Companies
+2021-03-30 09:43:34,231  INFO : 0 Connected WhatsApp Companies retrieved []
+2021-03-30 09:43:34,803  INFO : Finding connected whatsApp Companies
+2021-03-30 09:43:34,803  INFO : 0 Connected WhatsApp Companies retrieved []
+2021-03-30 09:45:24,735  INFO : New Request
+2021-03-30 09:45:24,736  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-03-30 09:45:24,737  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 09:45:28,304  INFO : New Request
+2021-03-30 09:45:28,305  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-03-30 09:45:28,305  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 09:45:28,305  INFO : About to initialise new driver 
+2021-03-30 09:45:50,837  INFO : About getting driver status
+2021-03-30 09:46:00,868  INFO : Driver Status - NotLoggedIn
+2021-03-30 09:46:00,868  INFO : Checking if driver is unknown
+2021-03-30 09:46:00,868  INFO : New timer started for driver
+2021-03-30 09:46:00,869  INFO : subscribing to new messages
+2021-03-30 09:46:00,869  INFO : QR requested
+2021-03-30 09:46:00,869  INFO : Timer initialised
+2021-03-30 09:46:02,878  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:46:03,878  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:06,875  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:09,879  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:12,883  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:15,880  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:18,876  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:21,603  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:46:21,881  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:22,150  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:46:22,716  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:46:22,798  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:46:22,968  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:46:23,158  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:46:24,107  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:46:24,881  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:26,164  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:46:27,879  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:29,835  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:46:30,883  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:32,150  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:46:33,883  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:35,745  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:46:36,884  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:38,178  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:46:39,884  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:49,907  ERROR : NoSuchElementException('no such element: Unable to locate element: {"method":"css selector","selector":"canvas"}\n  (Session info: headless chrome=88.0.4324.182)', None, None)
+2021-03-30 09:46:49,911  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:49,918  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:49,921  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:59,963  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:59,968  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:46:59,973  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:47:10,013  ERROR : NoSuchElementException('no such element: Unable to locate element: {"method":"css selector","selector":"canvas"}\n  (Session info: headless chrome=88.0.4324.182)', None, None)
+2021-03-30 09:47:20,043  ERROR : NoSuchElementException('no such element: Unable to locate element: {"method":"css selector","selector":"canvas"}\n  (Session info: headless chrome=88.0.4324.182)', None, None)
+2021-03-30 09:47:30,048  ERROR : NoSuchElementException('no such element: Unable to locate element: {"method":"css selector","selector":"canvas"}\n  (Session info: headless chrome=88.0.4324.182)', None, None)
+2021-03-30 09:47:40,095  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:47:40,101  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:47:40,105  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:47:40,112  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:47:50,165  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:47:50,168  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:47:50,170  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:48:00,210  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:48:00,212  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:48:00,214  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:48:20,228  ERROR : NoSuchElementException('no such element: Unable to locate element: {"method":"css selector","selector":"canvas"}\n  (Session info: headless chrome=88.0.4324.182)', None, None)
+2021-03-30 09:48:30,286  ERROR : NoSuchElementException('no such element: Unable to locate element: {"method":"css selector","selector":"canvas"}\n  (Session info: headless chrome=88.0.4324.182)', None, None)
+2021-03-30 09:48:40,321  ERROR : NoSuchElementException('no such element: Unable to locate element: {"method":"css selector","selector":"canvas"}\n  (Session info: headless chrome=88.0.4324.182)', None, None)
+2021-03-30 09:48:40,327  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:48:40,331  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:48:40,334  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:48:40,339  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:48:50,405  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:48:50,409  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:48:50,416  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:00,484  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:00,488  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:00,491  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:10,540  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:10,544  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:10,547  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:10,551  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:20,563  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:20,564  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:20,567  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:30,630  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:30,633  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:30,637  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:40,685  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:40,688  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:40,691  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:49:40,694  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:51:23,955  INFO : Finding connected whatsApp Companies
+2021-03-30 09:51:23,955  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-30 09:51:23,956  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-30 09:51:23,956  INFO : About getting driver status
+2021-03-30 09:51:24,486  INFO : Finding connected whatsApp Companies
+2021-03-30 09:51:24,486  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-30 09:51:24,486  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-30 09:51:24,486  INFO : About getting driver status
+2021-03-30 09:51:40,977  INFO : New Request
+2021-03-30 09:51:40,977  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-03-30 09:51:40,977  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 09:51:50,978  INFO : About to initialise new driver 
+2021-03-30 09:51:51,539  INFO : Driver initialised Successfully
+2021-03-30 09:51:53,055  INFO : New Request
+2021-03-30 09:51:53,056  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-03-30 09:51:53,056  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 09:51:58,240  INFO : Driver initialised Successfully
+2021-03-30 09:52:01,602  INFO : Driver Status retrieved successfully  NotLoggedIn
+2021-03-30 09:52:01,602  INFO : New timer started for driver
+2021-03-30 09:52:03,056  INFO : About getting driver status
+2021-03-30 09:52:04,786  INFO : New Request
+2021-03-30 09:52:04,787  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-03-30 09:52:04,787  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 09:52:08,283  INFO : Driver Status retrieved successfully  NotLoggedIn
+2021-03-30 09:52:08,283  INFO : New timer started for driver
+2021-03-30 09:52:10,289  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:52:13,068  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:52:13,071  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:52:13,074  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:52:13,079  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:52:13,086  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:52:13,096  INFO : Driver Status - NotLoggedIn
+2021-03-30 09:52:13,096  INFO : Checking if driver is unknown
+2021-03-30 09:52:13,097  INFO : Previous driver timer initialised
+2021-03-30 09:52:13,097  INFO : subscribing to new messages
+2021-03-30 09:52:13,097  INFO : QR requested
+2021-03-30 09:52:13,097  INFO : Timer initialised
+2021-03-30 09:52:13,098  INFO : About getting driver status
+2021-03-30 09:52:14,094  INFO : About getting driver status
+2021-03-30 09:52:23,129  INFO : Driver Status - NotLoggedIn
+2021-03-30 09:52:23,129  INFO : Checking if driver is unknown
+2021-03-30 09:52:23,129  INFO : Previous driver timer initialised
+2021-03-30 09:52:23,129  INFO : subscribing to new messages
+2021-03-30 09:52:23,129  INFO : QR requested
+2021-03-30 09:52:23,130  INFO : Timer initialised
+2021-03-30 09:52:24,104  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:52:24,106  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:24,109  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:52:24,112  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:24,115  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:52:24,122  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:52:24,125  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:24,127  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:52:24,141  INFO : Driver Status - NotLoggedIn
+2021-03-30 09:52:24,141  INFO : Checking if driver is unknown
+2021-03-30 09:52:24,142  INFO : Previous driver timer initialised
+2021-03-30 09:52:24,142  INFO : subscribing to new messages
+2021-03-30 09:52:24,142  INFO : QR requested
+2021-03-30 09:52:24,142  INFO : Timer initialised
+2021-03-30 09:52:25,108  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:26,150  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 09:52:28,108  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:31,108  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:34,108  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:37,109  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:40,108  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:41,964  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:42,472  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:42,890  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:43,043  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:43,112  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:43,228  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:43,405  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:43,582  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:43,776  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:44,361  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:44,845  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:46,111  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:47,485  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:49,113  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:50,866  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:52,110  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:53,382  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:55,114  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:58,083  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:52:58,112  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:52:59,926  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:01,115  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:02,422  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:04,115  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:05,803  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:07,116  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:08,389  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:10,113  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:13,117  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:16,117  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:19,118  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:22,118  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:25,119  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:27,822  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:28,119  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:28,403  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:28,894  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:29,041  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:29,206  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:29,376  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:30,163  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:31,118  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:32,467  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:34,120  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:35,874  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:37,121  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:38,403  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:40,121  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:42,904  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:43,122  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:44,918  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:46,123  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:47,457  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:49,123  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:52,123  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:52,280  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:53,846  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:53:55,124  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:53:58,125  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:01,125  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:04,126  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:07,126  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:10,126  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:12,740  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:13,127  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:13,271  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:13,866  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:13,995  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:14,175  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:14,342  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:15,122  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:16,124  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:17,402  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:19,128  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:20,882  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:22,128  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:23,403  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:25,129  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:27,905  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:28,129  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:29,885  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:31,130  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:32,570  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:34,131  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:36,899  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:37,131  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:38,877  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:40,131  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:43,132  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:46,132  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:49,133  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:52,134  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:55,134  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:57,766  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:58,135  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:54:58,331  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:58,849  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:58,961  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:59,326  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:54:59,339  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:55:00,029  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:55:01,135  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:55:02,406  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:55:04,136  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:55:05,884  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:55:07,136  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:55:08,465  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:55:10,137  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:55:12,918  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:55:13,137  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:55:15,353  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:55:16,137  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 09:55:19,138  INFO : Driver Logged In
+2021-03-30 09:55:19,148  INFO : Previous driver timer initialised
+2021-03-30 09:55:19,148  INFO : Timer killed successfully
+2021-03-30 09:55:19,404  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 09:55:21,942  INFO : User logged In http://localhost:8080 <Response [200]>
+2021-03-30 10:05:39,651  INFO : New Request
+2021-03-30 10:05:39,651  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-03-30 10:05:39,652  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 10:20:24,850  INFO : Finding connected whatsApp Companies
+2021-03-30 10:20:24,866  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-30 10:20:24,867  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-30 10:20:24,867  INFO : About getting driver status
+2021-03-30 10:20:53,263  INFO : Driver initialised Successfully
+2021-03-30 10:20:55,946  INFO : New Request
+2021-03-30 10:20:55,947  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-03-30 10:20:55,948  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 10:21:03,283  INFO : Driver Status retrieved successfully  NotLoggedIn
+2021-03-30 10:21:03,283  INFO : New timer started for driver
+2021-03-30 10:21:05,292  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 10:21:05,878  INFO : Finding connected whatsApp Companies
+2021-03-30 10:21:05,879  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-30 10:21:05,879  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-30 10:21:05,879  INFO : About getting driver status
+2021-03-30 10:21:12,433  INFO : Finding connected whatsApp Companies
+2021-03-30 10:21:12,433  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-30 10:21:12,434  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-30 10:21:12,434  INFO : About getting driver status
+2021-03-30 10:21:13,048  INFO : Finding connected whatsApp Companies
+2021-03-30 10:21:13,048  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-30 10:21:13,048  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-30 10:21:13,056  INFO : About getting driver status
+2021-03-30 10:21:41,383  INFO : Driver initialised Successfully
+2021-03-30 10:21:41,385  INFO : Driver initialised Successfully
+2021-03-30 10:21:51,409  INFO : Driver Status retrieved successfully  NotLoggedIn
+2021-03-30 10:21:51,409  INFO : New timer started for driver
+2021-03-30 10:21:51,413  INFO : Driver Status retrieved successfully  NotLoggedIn
+2021-03-30 10:21:51,414  INFO : New timer started for driver
+2021-03-30 10:21:53,420  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 10:21:53,423  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 10:22:34,949  INFO : New Request
+2021-03-30 10:22:34,950  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-03-30 10:22:34,951  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 10:22:44,951  INFO : About getting driver status
+2021-03-30 10:22:55,021  INFO : Driver Status - NotLoggedIn
+2021-03-30 10:22:55,021  INFO : Checking if driver is unknown
+2021-03-30 10:22:55,022  INFO : Previous driver timer initialised
+2021-03-30 10:22:55,022  INFO : subscribing to new messages
+2021-03-30 10:22:55,022  INFO : QR requested
+2021-03-30 10:22:55,023  INFO : Timer initialised
+2021-03-30 10:22:57,031  INFO : Driver is not logged in. Cancelling operation
+2021-03-30 10:22:58,032  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:01,033  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:04,032  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:07,033  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:10,033  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:13,030  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:15,809  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:16,034  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:16,364  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:16,872  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:16,988  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:17,172  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:17,355  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:18,168  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:19,035  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:20,309  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:22,035  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:24,187  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:25,036  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:26,424  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:28,032  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:29,875  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:31,037  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:32,658  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:34,037  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:35,414  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:37,038  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:40,039  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:41,449  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:42,959  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:43,039  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:44,397  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:23:46,039  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:49,036  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:52,040  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:55,041  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:23:58,042  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:24:01,041  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:24:03,393  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:24:03,451  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:24:03,648  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:24:04,018  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:24:04,042  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:24:04,110  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:24:04,235  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:24:05,305  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:24:07,043  INFO : Not Logged In (Status) - Trying to get QR
+2021-03-30 10:24:09,453  INFO : Sending QR to server http://localhost:8080 <Response [200]>
+2021-03-30 10:24:10,057  INFO : Driver Logged In
+2021-03-30 10:24:10,064  INFO : Previous driver timer initialised
+2021-03-30 10:24:10,065  INFO : Timer killed successfully
+2021-03-30 10:24:12,832  INFO : User logged In http://localhost:8080 <Response [200]>
+2021-03-30 10:24:28,169  INFO : New Request
+2021-03-30 10:24:28,169  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-03-30 10:24:28,169  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 12:34:32,991  INFO : New Request
+2021-03-30 12:34:33,033  INFO : API call DELETE http://0.0.0.0:8888/admin/client
+2021-03-30 12:34:33,033  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 12:34:58,398  INFO : New Request
+2021-03-30 12:34:58,398  INFO : API call POST http://0.0.0.0:8888/screen/qr/request
+2021-03-30 12:34:58,398  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 12:34:58,399  INFO : About to initialise new driver 
+2021-03-30 12:35:25,829  INFO : About getting driver status
+2021-03-30 12:35:25,840  INFO : Driver Status - LoggedIn
+2021-03-30 12:35:25,840  INFO : Checking if driver is unknown
+2021-03-30 12:35:25,840  INFO : New timer started for driver
+2021-03-30 12:35:25,841  INFO : subscribing to new messages
+2021-03-30 12:35:25,841  INFO : QR requested
+2021-03-30 12:35:25,841  INFO : Timer initialised
+2021-03-30 12:35:28,851  INFO : Driver Logged In
+2021-03-30 12:35:28,859  INFO : Previous driver timer initialised
+2021-03-30 12:35:28,860  INFO : Timer killed successfully
+2021-03-30 12:35:46,062  INFO : User logged In http://localhost:8080 <Response [200]>
+2021-03-30 12:36:44,857  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-03-30 12:36:44,857  INFO : About to process incoming message
+2021-03-30 12:36:44,877  INFO : Message Hello sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-03-30 12:37:02,436  INFO : New Request
+2021-03-30 12:37:02,437  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-03-30 12:37:02,437  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 12:37:02,437  INFO : About getting driver status
+2021-03-30 12:37:02,453  INFO : Driver Status - LoggedIn
+2021-03-30 12:37:02,454  INFO : Checking if driver is unknown
+2021-03-30 12:37:02,454  INFO : Previous driver timer initialised
+2021-03-30 12:37:02,454  INFO : subscribing to new messages
+2021-03-30 12:37:03,925  INFO : New Request
+2021-03-30 12:37:03,927  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-03-30 12:37:03,928  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 12:37:03,930  INFO : About getting driver status
+2021-03-30 12:37:03,968  INFO : Driver Status - LoggedIn
+2021-03-30 12:37:03,969  INFO : Checking if driver is unknown
+2021-03-30 12:37:03,969  INFO : Previous driver timer initialised
+2021-03-30 12:37:03,969  INFO : subscribing to new messages
+2021-03-30 12:37:44,868  INFO : [<MessageGroup - 1 message in 4teen>]
+2021-03-30 12:37:44,869  INFO : About to process incoming message
+2021-03-30 12:37:44,869  INFO : User swiped to reply option
+2021-03-30 12:37:44,886  INFO : Message 1 sent to http://localhost:8080/api/v1/bot?channelType=WHATSAPP ---- <Response [200]>
+2021-03-30 12:37:45,345  INFO : New Request
+2021-03-30 12:37:45,345  INFO : API call POST http://0.0.0.0:8888/chats/233248801964%40c.us/messages
+2021-03-30 12:37:45,345  INFO : About acquiring semaphore for client5f3aa3db468d0a1aa2e2c476
+2021-03-30 12:37:45,345  INFO : About getting driver status
+2021-03-30 12:37:45,353  INFO : Driver Status - LoggedIn
+2021-03-30 12:37:45,353  INFO : Checking if driver is unknown
+2021-03-30 12:37:45,353  INFO : Previous driver timer initialised
+2021-03-30 12:37:45,353  INFO : subscribing to new messages
