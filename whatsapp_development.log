@@ -11809,3 +11809,11 @@ urllib.error.HTTPError: HTTP Error 503: Service Unavailable
 2021-03-30 12:37:45,353  INFO : Checking if driver is unknown
 2021-03-30 12:37:45,353  INFO : Previous driver timer initialised
 2021-03-30 12:37:45,353  INFO : subscribing to new messages
+2021-03-31 13:04:38,300  INFO : Finding connected whatsApp Companies
+2021-03-31 13:04:38,321  INFO : 1 Connected WhatsApp Companies retrieved [b'5f3aa3db468d0a1aa2e2c476']
+2021-03-31 13:04:38,321  INFO : Session Restoration for client 5f3aa3db468d0a1aa2e2c476 commencing
+2021-03-31 13:04:38,321  INFO : About getting driver status
+2021-03-31 13:05:06,218  INFO : Driver initialised Successfully
+2021-03-31 13:05:16,287  INFO : Driver Status retrieved successfully  NotLoggedIn
+2021-03-31 13:05:16,288  INFO : New timer started for driver
+2021-03-31 13:05:18,297  INFO : Driver is not logged in. Cancelling operation

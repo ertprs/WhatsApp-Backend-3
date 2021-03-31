@@ -39,6 +39,7 @@ import random
 import werkzeug
 import urllib3
 import googlemaps
+import uuid
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
@@ -715,8 +716,11 @@ def send_media(chat_id, requestObj):
 
 
 def get_file_name(url):
-    parts = url
-    return parts
+    name = uuid.uuid5(uuid.NAMESPACE_URL, str(url))
+
+    # parts = url.split('-')
+    # return parts[len(parts) - 1] + ".jpg"
+    return str(name) + ".jpg"
 
 
 def download_file(url):
