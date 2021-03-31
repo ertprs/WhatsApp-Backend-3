@@ -715,8 +715,8 @@ def send_media(chat_id, requestObj):
 
 
 def get_file_name(url):
-    parts = url.split('/')
-    return parts[len(parts) - 1]
+    parts = url
+    return parts
 
 
 def download_file(url):
@@ -1191,8 +1191,6 @@ def erase_client():
         except:
             pass
     return jsonify({"Error": "Failed to delete profile"})
-
-
 
 
 @app.route("/admin/clients", methods=["DELETE"])
