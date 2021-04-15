@@ -726,18 +726,15 @@ def get_file_name(url):
 def download_file(url):
     file_name = get_file_name(url)
     file_path = os.path.join(STATIC_FILES_PATH, file_name)
-
     if not os.path.isfile(file_path):
-        try:
-            logger.info("About to downloading files : " + url)
-            save_path = urllibrequest.urlretrieve(url, filename=file_path)[0]
-            save_path = urllibrequest.urlretrieve(url, filename=file_path)[0]
-            time.sleep(5)
-            logging.info("Dowloading files")
-            return save_path
-        except Exception:
-            logger.exception("Error in downloading file " + url)
-            return False
+        print("About to download image")
+        r = requests.get(url, stream=True)
+        if r.status_code == 200:
+            r.raw.decode_content = True
+            with open(file_path, 'wb') as f:
+                shutil.copyfileobj(r.raw, f)
+                f.close()
+                return file_path
     else:
         return file_path
 
