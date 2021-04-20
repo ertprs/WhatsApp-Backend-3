@@ -723,7 +723,7 @@ def get_file_name(url):
     return str(name) + ".jpg"
 
 
-def download_file2(url):
+def download_file(url):
     file_name = get_file_name(url)
     file_path = os.path.join(STATIC_FILES_PATH, file_name)
     if not os.path.isfile(file_path):
@@ -739,7 +739,7 @@ def download_file2(url):
         return file_path
 
 
-def download_file(url):
+def download_file2(url):
     file_name = get_file_name(url)
     file_path = os.path.join(STATIC_FILES_PATH, file_name)
 
