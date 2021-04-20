@@ -1066,8 +1066,8 @@ def send_message(chat_id):
 
         file_path = download_file(image_url)
         res = chat.send_media(file_path, caption)
-        time.sleep(2)
 
+    time.sleep(2)
     if message is not None:
         msg = message
         chat.send_message(msg)
