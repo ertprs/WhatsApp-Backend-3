@@ -1251,7 +1251,6 @@ def hello():
     return "API is running"
 
 
-get_connected_companies()
 if __name__ == "__main__":
     # todo: load presaved active client ids
     app.run(port=8888, host='0.0.0.0')
