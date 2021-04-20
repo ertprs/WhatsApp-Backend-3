@@ -1049,6 +1049,7 @@ def send_message(chat_id):
         file_path = download_file(image_url)
         res = chat.send_media(file_path, caption)
 
+    time.sleep(2)
     if message is not None:
         msg = message
         chat.send_message(msg)
@@ -1073,6 +1074,7 @@ def send_message(chat_id):
         else:
             file_path = download_file(image_url)
             res = chat.send_media(file_path, number_emoji(title))
+            time.sleep(2)
 
     if instruction is not None:
         text = "\n\n\n Do type {0} to select an option".format(', '.join(numbers[0:len(contents)]))
