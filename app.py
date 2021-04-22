@@ -53,6 +53,7 @@ from selenium.common.exceptions import WebDriverException, NoSuchElementExceptio
 from werkzeug.utils import secure_filename
 from webwhatsapi import MessageGroup, WhatsAPIDriver, WhatsAPIDriverStatus
 from webwhatsapi.objects.whatsapp_object import WhatsappObject
+import xmltodict
 
 """
 ###########################
@@ -180,6 +181,7 @@ emojis_numbers = ["1️⃣", "2️⃣", "3️⃣", "4️⃣", "5️⃣", "6️�
 faces = ['😎', '😋', '😉', '😌', '😇', '😊', '😀', '😃', '🤤', '🤠', '👻', '😺', '🕺']
 hands = ['💪', '🤞', '🤞', '👍', '👊', '✊', '🤛', '🤜', '🤞', '✌', '🤟', '🤘', '👌', '👈', '🖖']
 numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
+food_ordering = ['60801469fb0e7e25432c5b7c']
 
 
 SANDBOX_URL = "http://r2mp-sandbox.rancardmobility.com"
@@ -502,8 +504,12 @@ def check_new_messages(client_id):
             for message_group in res:
                 # message_group = res[0]
                 if not message_group.chat._js_obj["isGroup"]:
-                    forwarder = threading.Thread(target=send_message_to_client, args=(message_group, client_id))
-                    forwarder.start()
+                    if client_id in food_ordering:
+                        forwarder = threading.Thread(target=process_message_to_randy, args=(message_group, client_id))
+                        forwarder.start()
+                    else:
+                        forwarder = threading.Thread(target=send_message_to_client, args=(message_group, client_id))
+                        forwarder.start()
     except Exception as e:
         print(str(e))
         pass
@@ -791,6 +797,43 @@ def release_semaphore(client_id):
 
     if client_id in semaphores:
         semaphores[client_id].release()
+
+
+def process_message_to_randy(message_group, client_id):
+    logger.info('About to send the message to Randy')
+    message = message_group.messages[0]
+    chat = message_group.chat
+
+    url = 'https://twilio.rancardmobility.com'
+    payload_to_randy = {'SmsMessageSid': 'SM0{0}'.format(message.id),
+               'NumMedia': '0',
+               'ProfileName': message._js_obj['sender']['pushname'],
+               'SmsSid': 'SM0{0}'.format(message.id),
+               'WaId': message._js_obj["to"].replace("@c.us", ""),
+               'SmsStatus': 'received',
+               'Body': message.content,
+               'To': 'whatsapp:+{0}'.format(message._js_obj['to'].replace('@c.us', '')),
+               'NumSegments': '1',
+               'MessageSid': 'SM0{0}'.format(message.id),
+               'AccountSid': 'AC7787685627e3c6ddc5ea5eb1003aaeb1',
+               'From': 'whatsapp:+{0}'.format(message.chat_id.replace("@c.us", "")),
+               'ApiVersion': '2010-04-01'
+               }
+    response = requests.post(url, data=payload_to_randy)
+
+    logger.info('Sending ' + message.content + ' to ' + url + str(response))
+
+    json_response = xmltodict.parse(response.text)
+
+    texts = json_response['Response']['Message']
+    final_text = ''
+    for text in texts:
+        final_text = final_text + text['body']
+    logger.info('Replying ' + final_text)
+    chat.send_message(final_text)
+
+
+
 
 
 @app.before_request
