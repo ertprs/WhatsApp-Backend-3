@@ -834,7 +834,7 @@ def process_message_to_randy(message_group, client_id):
     else:
         for text in texts:
             final_text = final_text + text['Body']
-            chat.send_message(final_text)
+            chat.send_message(text['Body'])
         logger.info('Replying ' + final_text)
 
 
