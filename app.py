@@ -827,10 +827,15 @@ def process_message_to_randy(message_group, client_id):
 
     texts = json_response['Response']['Message']
     final_text = ''
-    for text in texts:
-        final_text = final_text + text['Body']
-    logger.info('Replying ' + final_text)
-    chat.send_message(final_text)
+
+    if len(texts) == 1:
+        final_text = texts['Body']
+        chat.send_message(final_text)
+    else:
+        for text in texts:
+            final_text = final_text + text['Body']
+            chat.send_message(final_text)
+        logger.info('Replying ' + final_text)
 
 
 
