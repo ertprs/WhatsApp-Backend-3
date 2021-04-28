@@ -820,6 +820,17 @@ def process_message_to_randy(message_group, client_id):
                'From': 'whatsapp:+{0}'.format(message.chat_id.replace("@c.us", "")),
                'ApiVersion': '2010-04-01'
                }
+    if message.type == 'location':
+        payload_to_randy['address'] = dict()
+        address = gmaps.reverse_geocode((message.latitude, message.longitude))
+        place_id = address[0]['place_id']
+        formatted_address = address[0]['formatted_address']
+
+        payload_to_randy['address']['formatted_address'] = formatted_address
+        payload_to_randy['address']['place_id'] = place_id
+        payload_to_randy['address']['latitude'] = message.latitude
+        payload_to_randy['address']['longitude'] = message.longitude
+
     response = requests.post(url, data=payload_to_randy)
 
     logger.info('Sending ' + message.content + ' to ' + url + str(response))
@@ -837,9 +848,6 @@ def process_message_to_randy(message_group, client_id):
             final_text = final_text + text['Body']
             chat.send_message(text['Body'])
         logger.info('Replying ' + final_text)
-
-
-
 
 
 @app.before_request
