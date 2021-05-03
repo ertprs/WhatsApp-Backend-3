@@ -805,7 +805,7 @@ def process_message_to_randy(message_group, client_id):
     chat = message_group.chat
 
     # url = 'https://twilio.rancardmobility.com'
-    url = 'https://cb4460e7fe6c.ngrok.io'
+    url = 'https://51eebb4bfcee.ngrok.io'
     payload_to_randy = {'SmsMessageSid': 'SM0{0}'.format(message.id),
                'NumMedia': '0',
                'ProfileName': message._js_obj['sender']['pushname'],
