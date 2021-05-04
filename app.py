@@ -145,6 +145,7 @@ class NewMessageObserver:
 GOOGLE_API_KEY = 'AIzaSyBAPz88HCjuOjq7nHNdm1X-HPRwYqFE4oc'
 
 
+
 # Flask Application
 app = Flask(__name__)
 app.json_encoder = WhatsAPIJSONEncoder
@@ -805,7 +806,7 @@ def process_message_to_randy(message_group, client_id):
     chat = message_group.chat
 
     # url = 'https://twilio.rancardmobility.com'
-    url = 'https://51eebb4bfcee.ngrok.io'
+    url = 'https://46024d788630.ngrok.io'
     payload_to_randy = {'SmsMessageSid': 'SM0{0}'.format(message.id),
                'NumMedia': '0',
                'ProfileName': message._js_obj['sender']['pushname'],
