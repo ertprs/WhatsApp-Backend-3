@@ -440,6 +440,8 @@ def serve_user_login_v2(client_id):
             "msisdn": phone,
             "qr": None
         }
+        drivers[client_id].save_sessions()
+
         try:
             timer_id = client_id + "login"
             timers[timer_id].stop()
