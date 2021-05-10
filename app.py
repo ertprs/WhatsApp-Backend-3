@@ -364,7 +364,6 @@ def init_timer(client_id):
     # Create a timer to call check_new_message function after every 2 seconds.
     # client_id param is needed to be passed to check_new_message
     logger.info("New timer started for driver")
-    drivers[client_id].save_sessions()
     timers[client_id] = RepeatedTimer(2, check_new_messages, client_id)
 
 
@@ -405,6 +404,7 @@ def serve_user_login(client_id):
         response = requests.post(SERVER + '/api/v1/whatsapp/webhook', json=body)
     except NoSuchElementException:
         phone = drivers[client_id].get_id().replace("\"", "").replace("@c.us", "")
+        drivers[client_id].save_sessions()
         body = {
             'success': True,
             'isLoggedIn': True,
