@@ -175,6 +175,8 @@ class WhatsAPIDriver(object):
         cookies = self.driver.get_cookies()
         pickle.dump(cookies, open(os.path.join(self._profile_path, self._COOKIES_FILE), "wb"))
 
+        self.logger.info('Local Storage and Cookies saved successfully')
+
     def set_proxy(self, proxy):
         self.logger.info("Setting proxy to %s" % proxy)
         proxy_address, proxy_port = proxy.split(":")
