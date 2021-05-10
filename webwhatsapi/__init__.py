@@ -166,7 +166,7 @@ class WhatsAPIDriver(object):
         """Function to save the browser profile"""
 
         self.logger.info(
-            "Saving profile from %s to %s" % (self._profile.path, self._profile_path)
+            "Saving sessions. Cookies and Local storage about to be saved"
         )
 
         with open(os.path.join(self._profile_path, self._LOCAL_STORAGE_FILE), "w") as f:
