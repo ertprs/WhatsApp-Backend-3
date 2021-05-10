@@ -6,6 +6,7 @@ WebWhatsAPI module
 
 import binascii
 import logging
+import pickle
 import os
 import shutil
 import tempfile
@@ -71,6 +72,7 @@ class WhatsAPIDriver(object):
     _URL = "https://web.whatsapp.com"
 
     _LOCAL_STORAGE_FILE = "localStorage.json"
+    _COOKIES_FILE = 'cookies.pkl'
 
     _SELECTORS = {
         "firstrun": "#wrapper",
@@ -159,6 +161,19 @@ class WhatsAPIDriver(object):
 
         with open(os.path.join(self._profile_path, self._LOCAL_STORAGE_FILE), "w") as f:
             f.write(dumps(self.get_local_storage()))
+
+    def save_sessions(self):
+        """Function to save the browser profile"""
+
+        self.logger.info(
+            "Saving profile from %s to %s" % (self._profile.path, self._profile_path)
+        )
+
+        with open(os.path.join(self._profile_path, self._LOCAL_STORAGE_FILE), "w") as f:
+            f.write(dumps(self.get_local_storage()))
+
+        cookies = self.driver.get_cookies()
+        pickle.dump(cookies, open(os.path.join(self._profile_path, self._COOKIES_FILE), "wb"))
 
     def set_proxy(self, proxy):
         self.logger.info("Setting proxy to %s" % proxy)
@@ -290,24 +305,30 @@ class WhatsAPIDriver(object):
             self.connect()
 
     def connect(self):
+        self.logger.info("About to connect and open WhatsApp Web")
+
         self.driver.get(self._URL)
-        self.wait_for_login()
-        self.logger.info("Done waiting for login. Is Logged In "+ str(self.is_logged_in()))
 
-        profilePath = ""
-        if self.client == "chrome":
-
-            profilePath = self._profile_path
-        else:
-            profilePath = self._profile.path
+        profilePath = self._profile_path
 
         local_storage_file = os.path.join(profilePath, self._LOCAL_STORAGE_FILE)
+        cookies_file = os.path.join(profilePath, self._COOKIES_FILE)
 
         if os.path.exists(local_storage_file):
+            self.logger.info("Setting local storage")
             with open(local_storage_file) as f:
                 self.set_local_storage(loads(f.read()))
-
             self.driver.refresh()
+
+        if os.path.exists(cookies_file):
+            self.logger.info("Setting cookies")
+            cookies = pickle.load(open(cookies_file, "rb"))
+            for cookie in cookies:
+                self.driver.add_cookie(cookie)
+            self.driver.refresh()
+
+        self.wait_for_login()
+        self.logger.info("Done waiting for login. Is Logged In "+ str(self.is_logged_in()))
 
     def is_logged_in(self):
         """Returns if user is logged. Can be used if non-block needed for wait_for_login"""
