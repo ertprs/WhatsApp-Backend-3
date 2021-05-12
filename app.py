@@ -378,7 +378,7 @@ def init_login_timer(client_id):
         return
     # Create a timer to call check_new_message function after every 2 seconds.
     # client_id param is needed to be passed to check_new_message
-    timers[timer_id] = RepeatedTimer(3, serve_user_login, client_id)
+    timers[timer_id] = RepeatedTimer(3, serve_user_login_v2, client_id)
 
 
 def serve_user_login(client_id):
