@@ -239,7 +239,6 @@ def restore_sessions(client_id):
     # assign global variable
     logger.info("Session Restoration for client "+ str(client_id) + " commencing")
 
-    acquire_semaphore(client_id)
     logger.info("About getting driver status")
     # check if client driver exist otherwise create new driver and global variable
     if client_id not in drivers:
@@ -254,6 +253,7 @@ def restore_sessions(client_id):
         logger.info("Driver Status retrieved successfully  "+ driver_status)
 
     if drivers[client_id].is_logged_in():
+        acquire_semaphore(client_id)
         init_timer(client_id)
 
 
@@ -486,12 +486,14 @@ def check_new_messages(client_id):
         return
 
     # Acquire a lock on thread
+    logger.info("Acquiring a lock on thread {0}".format(client_id))
     if not acquire_semaphore(client_id, True):
         return
 
     try:
         body = {}
         # Get all unread messages
+        logger.info('Get all unread for {0}'.format(client_id))
         res = drivers[client_id].get_unread()
         # Mark all of them as seen
         for message_group in res:
