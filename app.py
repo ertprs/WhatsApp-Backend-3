@@ -363,8 +363,13 @@ def init_timer(client_id):
         return
     # Create a timer to call check_new_message function after every 2 seconds.
     # client_id param is needed to be passed to check_new_message
-    logger.info("New timer started for driver")
-    timers[client_id] = RepeatedTimer(2, check_new_messages, client_id)
+    if (
+            client_id not in drivers
+            or not drivers[client_id]
+            or not drivers[client_id].is_logged_in()
+    ):
+        timers[client_id] = RepeatedTimer(2, check_new_messages, client_id)
+        logger.info("New timer started for driver " + client_id)
 
 
 def init_login_timer(client_id):
@@ -486,7 +491,7 @@ def check_new_messages(client_id):
             or not drivers[client_id].is_logged_in()
     ):
         timers[client_id].stop()
-        logger.info("Driver is not logged in. Cancelling operation")
+        logger.info("Driver {0} is not logged in. Cancelling operation".format(client_id))
         return
 
     # Acquire a lock on thread
