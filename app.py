@@ -463,12 +463,11 @@ def serve_user_login_v2(client_id):
             response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
             logger.info("Sending QR to server " + str(WEBHOOK) + " " + str(response))
         except Exception as e:
-            logger.error(repr(e))
-            driver.wait_for_login()
+            if not driver.is_logged_in():
+                driver.wait_for_login()
 
 
 def check_new_messages(client_id):
-    logger.info("Checking for new messages {0}".format(client_id))
 
     """Check for new unread messages and send them to the custom api
 
@@ -493,7 +492,6 @@ def check_new_messages(client_id):
     try:
         body = {}
         # Get all unread messages
-        logger.info('Get all unread for {0}'.format(client_id))
         res = drivers[client_id].get_unread()
         # Mark all of them as seen
         for message_group in res:
