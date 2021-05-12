@@ -253,14 +253,8 @@ def restore_sessions(client_id):
         driver_status = driver.get_status()
         logger.info("Driver Status retrieved successfully  "+ driver_status)
 
-    if (
-            driver_status != WhatsAPIDriverStatus.NotLoggedIn
-            and driver_status != WhatsAPIDriverStatus.LoggedIn
-    ):
-        drivers[client_id] = init_client(client_id)
-        driver_status = driver.get_status()
-
-    init_timer(client_id)
+    if drivers[client_id].is_logged_in():
+        init_timer(client_id)
 
 
 def login_required(f):
@@ -363,13 +357,8 @@ def init_timer(client_id):
         return
     # Create a timer to call check_new_message function after every 2 seconds.
     # client_id param is needed to be passed to check_new_message
-    if (
-            client_id not in drivers
-            or not drivers[client_id]
-            or not drivers[client_id].is_logged_in()
-    ):
-        timers[client_id] = RepeatedTimer(2, check_new_messages, client_id)
-        logger.info("New timer started for driver " + client_id)
+    timers[client_id] = RepeatedTimer(2, check_new_messages, client_id)
+    logger.info("New timer started for driver " + client_id)
 
 
 def init_login_timer(client_id):
@@ -479,6 +468,8 @@ def serve_user_login_v2(client_id):
 
 
 def check_new_messages(client_id):
+    logger.info("Checking for new messages {0}".format(client_id))
+
     """Check for new unread messages and send them to the custom api
 
     @param client_id: ID of client user
