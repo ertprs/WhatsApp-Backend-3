@@ -486,9 +486,9 @@ def check_new_messages(client_id):
         return
 
     # Acquire a lock on thread
-    logger.info("Acquiring a lock on thread {0}".format(client_id))
-    if not acquire_semaphore(client_id, True):
-        return
+    # logger.info("Acquiring a lock on thread {0}".format(client_id))
+    # if not acquire_semaphore(client_id, True):
+    #     return
 
     try:
         body = {}
