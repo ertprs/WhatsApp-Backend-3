@@ -486,7 +486,6 @@ def check_new_messages(client_id):
             or not drivers[client_id].is_logged_in()
     ):
         timers[client_id].stop()
-        drivers[client_id].close()
         logger.info("Driver is not logged in. Cancelling operation")
         return
 
