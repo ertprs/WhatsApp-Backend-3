@@ -345,13 +345,32 @@ class WhatsAPIDriver(object):
     def get_id(self):
         return self.driver.execute_script("return window.localStorage['last-wid'];")
 
+    def alert_user_login(self):
+        """
+        Waits for the app to log in or for the QR to appear
+        :return: bool: True if has logged in, false if asked for QR
+        """
+        self.logger.info("Waiting for login")
+        WebDriverWait(self.driver, 1800).until(EC.visibility_of_element_located((By.CSS_SELECTOR, self._SELECTORS['mainPage'])))
+
+        try:
+            self.driver.find_element_by_css_selector(self._SELECTORS['mainPage'])
+            self.logger.info("Logged In")
+            return True
+        except NoSuchElementException:
+            self.driver.find_element_by_css_selector(self._SELECTORS['qrCode'])
+            self.logger.info("Scan Code QR")
+            return False
+        except TimeoutException:
+            self.logger.info("Scan Code TimeOut")
+            return False
+
     def wait_for_login(self, timeout=90):
         """
         Waits for the app to log in or for the QR to appear
         :return: bool: True if has logged in, false if asked for QR
         """
         self.logger.info("Waiting for login")
-        timeout = 1800
         WebDriverWait(self.driver, timeout).until(EC.visibility_of_element_located((By.CSS_SELECTOR, self._SELECTORS['mainPage'] + ',' + self._SELECTORS['qrCode'])))
 
         try:

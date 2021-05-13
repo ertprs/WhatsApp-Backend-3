@@ -1041,7 +1041,7 @@ def get_qr():
 
 
 def process_request(client_id):
-    state = drivers[client_id].wait_for_login(timeout=1800)
+    state = drivers[client_id].alert_user_login()
 
     if state:
         send_data(client_id)
