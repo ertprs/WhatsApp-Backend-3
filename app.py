@@ -1048,13 +1048,17 @@ def process_request(client_id):
         stop_login_timer(client_id)
 
 
+def start_wait(client_id):
+    forwarder = threading.Thread(target=process_request, args=(client_id))
+    forwarder.start()
+
+
 @app.route("/screen/qr/request", methods=["POST"])
 def initialise_authentication():
     logger.info("QR requested")
     init_login_timer(g.client_id)
     client_id = g.client_id
-    forwarder = threading.Thread(target=process_request, args=(client_id,))
-    forwarder.start()
+    start_wait(client_id)
     return jsonify({
         "success": True
     })
