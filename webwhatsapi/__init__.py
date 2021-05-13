@@ -320,14 +320,17 @@ class WhatsAPIDriver(object):
             self.logger.info("Setting local storage")
             with open(local_storage_file) as f:
                 self.set_local_storage(loads(f.read()))
+                self.driver.refresh()
 
         if os.path.exists(cookies_file):
             self.logger.info("Setting cookies")
             cookies = pickle.load(open(cookies_file, "rb"))
             for cookie in cookies:
                 self.driver.add_cookie(cookie)
+                self.driver.refresh()
 
-        self.driver.refresh()
+        self.wait_for_login()
+        self.logger.info("Waiting for QR or login page "+ str(self.is_logged_in()))
 
     def is_logged_in(self):
         """Returns if user is logged. Can be used if non-block needed for wait_for_login"""
@@ -375,7 +378,6 @@ class WhatsAPIDriver(object):
 
         try:
             self.driver.find_element_by_css_selector(self._SELECTORS['mainPage'])
-            self.logger.info("Logged In")
             return True
         except NoSuchElementException:
             self.driver.find_element_by_css_selector(self._SELECTORS['qrCode'])
