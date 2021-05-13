@@ -1039,19 +1039,22 @@ def get_qr():
     qr = g.driver.get_qr_plain()
     return jsonify({"qr": qr})
 
+def process_request(client_id):
+    state = g.driver.wait_for_login(timeout=1800)
+
+    if state:
+        send_data(client_id)
+    else:
+        stop_login_timer(client_id)
+
 
 @app.route("/screen/qr/request", methods=["POST"])
 def initialise_authentication():
     logger.info("QR requested")
     init_login_timer(g.client_id)
 
-    state = g.driver.wait_for_login(timeout=1800)
-
-    if state:
-        send_data(g.client_id)
-    else:
-        stop_login_timer(g.client_id)
-
+    forwarder = threading.Thread(target=process_request, args=(g.client_id,))
+    forwarder.start()
     return jsonify({
         "success": True
     })
