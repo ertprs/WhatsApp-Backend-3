@@ -1049,7 +1049,7 @@ def process_request(client_id):
 
 
 def start_wait(client_id):
-    forwarder = threading.Thread(target=process_request, args=(client_id))
+    forwarder = threading.Thread(target=process_request, args=(client_id,))
     forwarder.start()
 
 
