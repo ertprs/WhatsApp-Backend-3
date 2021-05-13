@@ -372,7 +372,7 @@ def init_login_timer(client_id):
         return
     # Create a timer to call check_new_message function after every 2 seconds.
     # client_id param is needed to be passed to check_new_message
-    timers[timer_id] = RepeatedTimer(3, serve_user_login_v2, client_id)
+    timers[timer_id] = RepeatedTimer(5, send_qr, client_id)
 
 
 def serve_user_login(client_id):
@@ -465,6 +465,56 @@ def serve_user_login_v2(client_id):
         except Exception as e:
             if not driver.is_logged_in():
                 driver.wait_for_login()
+
+
+def send_qr(client_id):
+    driver = drivers[client_id]
+
+    if not driver.is_logged_in():
+        qr_code = driver.get_qr_base64()
+        body = {
+            'success': True,
+            'appId': client_id,
+            'isLoggedIn': False,
+            'qr': qr_code
+        }
+        response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
+        logger.info("Sending QR to server " + str(WEBHOOK) + " " + str(response))
+
+
+def send_data(client_id):
+    logger.info("Driver Logged In")
+
+    # get phone number from local storage
+    phone = drivers[client_id].get_id().replace("\"", "").replace("@c.us", "")
+    body = {
+        'success': True,
+        'isLoggedIn': True,
+        'appId': client_id,
+        "msisdn": phone,
+        "qr": None
+    }
+    drivers[client_id].save_sessions()
+    # Stop Login timer
+    stop_login_timer(client_id)
+
+    # Send post requests to r2mp
+    response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
+    logger.info("User logged In " + str(WEBHOOK) + " " + str(response))
+
+
+def stop_login_timer(client_id):
+    try:
+        timer_id = client_id + "login"
+        timers[timer_id].stop()
+        timers[timer_id] = None
+
+        init_timer(client_id)
+
+        logger.info("Timer killed successfully")
+    except:
+        logger.error("Error occurred trying to kill Login timer")
+        pass
 
 
 def check_new_messages(client_id):
@@ -993,20 +1043,37 @@ def get_qr():
 
 
 @app.route("/screen/qr/request", methods=["POST"])
-def begin_login_timer():
+def initialise_authentication():
     logger.info("QR requested")
-    """ Initialise login timer """
-    try:
-        init_login_timer(g.client_id)
-        logger.info("Timer initialised")
-        return jsonify({
-            "success": True
-        })
-    except Exception:
-        logger.error("Timer initialisation failed")
-        return jsonify({
-            "success": False
-        })
+    init_login_timer(g.client_id)
+
+    state = g.driver.wait_for_login(180)
+
+    if state:
+        send_data(g.client_id)
+    else:
+        stop_login_timer(g.client_id)
+
+    return jsonify({
+        "success": True
+    })
+
+
+# @app.route("/screen/qr/request", methods=["POST"])
+# def begin_login_timer():
+#     logger.info("QR requested")
+#     """ Initialise login timer """
+#     try:
+#         init_login_timer(g.client_id)
+#         logger.info("Timer initialised")
+#         return jsonify({
+#             "success": True
+#         })
+#     except Exception:
+#         logger.error("Timer initialisation failed")
+#         return jsonify({
+#             "success": False
+#         })
 
 
 @app.route("/screen/qr/base64", methods=["GET"])

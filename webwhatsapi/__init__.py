@@ -23,7 +23,7 @@ from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from resizeimage import resizeimage
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.firefox.options import Options
@@ -320,17 +320,14 @@ class WhatsAPIDriver(object):
             self.logger.info("Setting local storage")
             with open(local_storage_file) as f:
                 self.set_local_storage(loads(f.read()))
-            self.driver.refresh()
 
         if os.path.exists(cookies_file):
             self.logger.info("Setting cookies")
             cookies = pickle.load(open(cookies_file, "rb"))
             for cookie in cookies:
                 self.driver.add_cookie(cookie)
-            self.driver.refresh()
 
-        self.wait_for_login()
-        self.logger.info("Done waiting for login. Is Logged In "+ str(self.is_logged_in()))
+        self.driver.refresh()
 
     def is_logged_in(self):
         """Returns if user is logged. Can be used if non-block needed for wait_for_login"""
@@ -359,6 +356,8 @@ class WhatsAPIDriver(object):
             return True
         except NoSuchElementException:
             self.driver.find_element_by_css_selector(self._SELECTORS['qrCode'])
+            return False
+        except TimeoutException:
             return False
 
     def get_qr_plain(self):
