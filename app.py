@@ -252,7 +252,7 @@ def restore_sessions(client_id):
         driver_status = driver.get_status()
         logger.info("Driver Status retrieved successfully  "+ driver_status)
 
-    if drivers[client_id].is_logged_in():
+    if driver_status == WhatsAPIDriverStatus.LoggedIn:
         acquire_semaphore(client_id)
         init_timer(client_id)
 
