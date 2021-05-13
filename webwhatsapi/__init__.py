@@ -351,6 +351,7 @@ class WhatsAPIDriver(object):
         :return: bool: True if has logged in, false if asked for QR
         """
         self.logger.info("Waiting for login")
+        timeout = 1800
         WebDriverWait(self.driver, timeout).until(EC.visibility_of_element_located((By.CSS_SELECTOR, self._SELECTORS['mainPage'] + ',' + self._SELECTORS['qrCode'])))
 
         try:
@@ -359,10 +360,10 @@ class WhatsAPIDriver(object):
             return True
         except NoSuchElementException:
             self.driver.find_element_by_css_selector(self._SELECTORS['qrCode'])
-            self.logger.info("Scan Code")
+            self.logger.info("Scan Code QR")
             return False
         except TimeoutException:
-            self.logger.info("Scan Code")
+            self.logger.info("Scan Code TimeOut")
             return False
 
     def get_qr_plain(self):
