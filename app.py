@@ -464,7 +464,7 @@ def serve_user_login_v2(client_id):
             logger.info("Sending QR to server " + str(WEBHOOK) + " " + str(response))
         except Exception as e:
             if not driver.is_logged_in():
-                # driver.wait_for_login()
+                driver.wait_for_login()
 
 
 def send_qr(client_id):
