@@ -1045,7 +1045,7 @@ def initialise_authentication():
     logger.info("QR requested")
     init_login_timer(g.client_id)
 
-    state = g.driver.wait_for_login(180)
+    state = g.driver.wait_for_login(1800)
 
     if state:
         send_data(g.client_id)
