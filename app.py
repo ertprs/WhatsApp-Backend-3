@@ -464,7 +464,7 @@ def serve_user_login_v2(client_id):
             logger.info("Sending QR to server " + str(WEBHOOK) + " " + str(response))
         except Exception as e:
             if not driver.is_logged_in():
-                driver.wait_for_login()
+                # driver.wait_for_login()
 
 
 def send_qr(client_id):
@@ -1045,7 +1045,7 @@ def initialise_authentication():
     logger.info("QR requested")
     init_login_timer(g.client_id)
 
-    state = g.driver.wait_for_login(1800)
+    state = g.driver.wait_for_login(timeout=1800)
 
     if state:
         send_data(g.client_id)
