@@ -530,8 +530,6 @@ def check_new_messages(client_id):
             or not drivers[client_id]
             or not drivers[client_id].is_logged_in()
     ):
-        timers[client_id].stop()
-        logger.info("Driver {0} is not logged in. Cancelling operation".format(client_id))
         return
 
     # Acquire a lock on thread
