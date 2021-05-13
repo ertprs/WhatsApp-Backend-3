@@ -1052,8 +1052,8 @@ def process_request(client_id):
 def initialise_authentication():
     logger.info("QR requested")
     init_login_timer(g.client_id)
-
-    forwarder = threading.Thread(target=process_request, args=(g.client_id,))
+    client_id = g.client_id
+    forwarder = threading.Thread(target=process_request, args=(client_id,))
     forwarder.start()
     return jsonify({
         "success": True
