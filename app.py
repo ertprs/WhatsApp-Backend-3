@@ -912,6 +912,10 @@ def before_request():
     g.client_id = request.headers.get("client_id")
     rule_parent = request.url_rule.rule.split("/")[1]
 
+    if rule_parent == "test":
+        return
+
+
     if API_KEY and auth_key != API_KEY:
         abort(401, "you must send valid auth-key")
         logger.error("You must send a valid auth key")
@@ -1368,6 +1372,11 @@ def get_last_exception():
 @app.route("/")
 def hello():
     return "API is running"
+
+@app.route("/test/ping")
+def ping():
+    return "Application is running"
+
 
 
 get_connected_companies()
