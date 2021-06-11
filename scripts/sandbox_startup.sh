@@ -6,7 +6,7 @@ export LC_ALL=en_US.utf-8
 export LANG=en_US.utf-8
 export FLASK_ENV=sandbox
 
-PROJECT_DIR="/var/www/sandbox/r2-whatsapp-twilio"
+PROJECT_DIR="/var/www/sandbox/WhatsApp-Backend"
 LOG="$PROJECT_DIR/whatsapp_development.log"
 pid_file="$PROJECT_DIR/app.pid"
 PROJECT_NAME="WHATSAPP API BACKEND"
