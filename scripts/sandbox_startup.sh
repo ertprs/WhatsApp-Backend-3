@@ -1,7 +1,5 @@
 #!/bin/sh
 
-source /opt/python/py3/bin/activate
-
 export LC_ALL=en_US.utf-8
 export LANG=en_US.utf-8
 export FLASK_ENV=sandbox
@@ -14,6 +12,7 @@ PROJECT_NAME="WHATSAPP API BACKEND"
 case $1 in
 start)
   cd "$PROJECT_DIR"
+  source venv/bin/activate
   echo "Starting $PROJECT_NAME"
   /opt/python/py3/bin/python /opt/python/py3/bin/flask run -h 0.0.0.0 -p 8888 &
   netstat -tulpn | grep 8888 | awk '{print $NF}' | awk -F '/' '{print $1}' > $pid_file
