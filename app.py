@@ -30,6 +30,8 @@ import json
 import logging
 import os
 import shutil
+from datetime import datetime
+
 import requests
 import sys
 import time
@@ -256,6 +258,7 @@ def restore_sessions(client_id):
         acquire_semaphore(client_id)
         init_timer(client_id)
 
+
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
@@ -357,7 +360,6 @@ def init_timer(client_id):
     # Create a timer to call check_new_message function after every 2 seconds.
     # client_id param is needed to be passed to check_new_message
     timers[client_id] = RepeatedTimer(2, check_new_messages, client_id)
-    logger.info("New timer started for driver " + client_id)
 
 
 def init_login_timer(client_id):
@@ -462,8 +464,16 @@ def serve_user_login_v2(client_id):
             response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
             logger.info("Sending QR to server " + str(WEBHOOK) + " " + str(response))
         except Exception as e:
-            if not driver.is_logged_in():
-                driver.wait_for_login()
+            logger.error("Disconnected (Status) - Failed to get QR . Sending notice")
+            body = {
+                'success': True,
+                'isLoggedIn': False,
+                'appId': client_id,
+                "message": "WhatsApp Web is not connected",
+                "qr": None
+            }
+            response = requests.post(WEBHOOK + '/api/v1/whatsapp/webhook', json=body)
+            logger.info("Sending Error to server " + str(WEBHOOK) + " " + str(response))
 
 
 def send_qr(client_id):
@@ -1125,6 +1135,106 @@ def get_contacts():
     """Get contact list as json"""
     return jsonify(g.driver.get_contacts())
 
+
+@app.route("/open/receive/<appId>", methods=["POST"])
+def receive_message(appId):
+    data = request.json
+    logger.info("Twilio Message "+ str(data)+" Received for Company "+ str(appId))
+
+    request_dict = request.form.to_dict()
+    sender_msisdn = request_dict.get("From").split(":+")[1]
+    chat_id = sender_msisdn + "@c.us"
+    profile_name = str(request_dict.get("ProfileName"))
+    content = str(request_dict.get("Body"))
+    recipient_msisdn = request_dict.get("To").split(":+")[1]
+    message_id = request_dict.get("MessageSid")
+
+    body = dict()
+    body["recipientMsisdn"] = recipient_msisdn
+    body["timeSent"] = datetime.datetime.utcnow().isoformat()
+    body["senderMsisdn"] = sender_msisdn
+    body["senderUsername"] = profile_name
+    body["messageId"] = message_id
+    body["appId"] = appId
+    body["companyId"] = appId
+
+    # check if chat has payload else create
+    if chat_id not in payload and chat_id not in payload2:
+        payload[chat_id] = dict()
+        payload2[chat_id] = dict()
+
+    try:
+        num_media = int(request.values.get("NumMedia"))
+    except (ValueError, TypeError):
+        return "Invalid request: invalid or missing NumMedia parameter", 400
+
+    # Message is a chat
+    # There is no media in the message payload
+    if not num_media:
+        if "Address" and "Longitude" in request_dict:
+            lng = str(request_dict.get("Longitude"))
+            lat = str(request_dict.get("Latitude"))
+            formatted_address = str(request_dict.get("Address"))
+
+            logger.info("Twilio Message - Location incoming")
+            address = gmaps.reverse_geocode((lat, lng))
+            place_id = address[0]['place_id']
+            location_intent = "intent.useLocation.{0}".format(place_id)
+
+            body['postback'] = {"payload": location_intent}
+            body['quick_reply'] = location_intent
+            body['content'] = formatted_address
+            body['text'] = 'text'
+
+            delivery_info = "Your ongoing order will be delivered at {0} after confirmation".format(formatted_address)
+            forward_message_to_r2mp(body, chat_id)
+
+        else:
+            # Incoming message is a chat
+            logger.info("Twilio Message - Chat incoming")
+            body["content"] = content
+            body["type"] = "text"
+
+            if content in payload[chat_id]:
+                logger.info("User swiped to reply option")
+                body["content"] = content
+                body['postback'] = {"payload": payload[chat_id][content]}
+                body['quick_reply'] = payload[chat_id][content]
+            else:
+                # User typed in the choice of order
+                if len(content) < 3 and content.isdigit():
+                    logger.info("User choice out of range")
+                    response = MessagingResponse()
+                    msg = response.message("‼ 🖐 Choice out of range 😬 . 🤗 Please send any number from 1 to " + str(
+                        len(payload[chat_id])) + " to make a 🤝 selection")
+                    return str(response)
+
+            if content.lower().replace(" ", "") in payload2[chat_id]:
+                # User type in full the preferred choice
+                msg = content.lower().replace(" ", "")
+                body["content"] = content
+                body['postback'] = {"payload": payload2[chat_id][msg]}
+                body['quick_reply'] = payload2[chat_id][msg]
+
+            forward_message_to_r2mp(body, chat_id)
+    else:
+        logger.info("Media Message, will process later")
+        media_type = request_dict.get("MediaContentType0")
+        media_url = request_dict.get("MediaUrl0")
+
+        body["content"] = content
+        body["type"] = "image"
+
+        if "image" in media_type:
+            body["type"] = "image"
+        elif "audio" in media_type:
+            body["type"] = "audio"
+        elif "video" in media_type:
+            body["type"] = "video"
+
+        forward_message_to_r2mp(body, chat_id)
+
+    return Response("Received", status=200, mimetype='application/json')
 
 # ------------------------------- Chats ---------------------------------------
 
