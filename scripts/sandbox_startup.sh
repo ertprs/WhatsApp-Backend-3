@@ -16,7 +16,7 @@ start)
   cd "$PROJECT_DIR"
   echo "Starting $PROJECT_NAME"
   /opt/python/py3/bin/python /opt/python/py3/bin/flask run -h 0.0.0.0 -p 8888 &
-  netstat -tulpn | grep 5958 | awk '{print $NF}' | awk -F '/' '{print $1}' > $pid_file
+  netstat -tulpn | grep 8888 | awk '{print $NF}' | awk -F '/' '{print $1}' > $pid_file
   pid=$(cat $pid_file)
   echo -n "Started $PROJECT_NAME WITH PID: $pid on port: $PORT"
   tail -f $LOG
@@ -34,7 +34,7 @@ restart)
   echo "Starting $PROJECT_NAME"
   cd "$PROJECT_DIR"
   /opt/python/py3/bin/python /opt/python/py3/bin/flask run -h 0.0.0.0 -p 8888 &
-  netstat -tulpn | grep 5958 | awk '{print $NF}' | awk -F '/' '{print $1}' > $pid_file
+  netstat -tulpn | grep 8888 | awk '{print $NF}' | awk -F '/' '{print $1}' > $pid_file
   pid=$(cat $pid_file)
   echo -n "Started $PROJECT_NAME WITH PID: $pid on port: $PORT"
   echo
