@@ -92,7 +92,7 @@ class WhatsAPIDriver(object):
         "UnreadChatBanner": ".message-list",
         "ReconnectLink": ".action",
         "WhatsappQrIcon": "span.icon:nth-child(2)",
-        "QRReloader": "div[data-ref] > span > div",
+        "QRReloader": "div[data-ref] > span > button > div",
         "OpenHereButton": "div[data-animate-modal-body=true] div[role=button]:nth-child(2)",
     }
 
@@ -354,7 +354,7 @@ class WhatsAPIDriver(object):
         :return: bool: True if has logged in, false if asked for QR
         """
         self.logger.info("Waiting for login")
-        WebDriverWait(self.driver, 1800).until(EC.visibility_of_element_located((By.CSS_SELECTOR, self._SELECTORS['mainPage'])))
+        WebDriverWait(self.driver, 600).until(EC.visibility_of_element_located((By.CSS_SELECTOR, self._SELECTORS['mainPage'])))
 
         try:
             self.driver.find_element_by_css_selector(self._SELECTORS['mainPage'])
