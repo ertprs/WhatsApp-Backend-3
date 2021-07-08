@@ -882,9 +882,9 @@ def process_message_to_randy(message_group, client_id):
         payload_to_randy['latitude'] = message.latitude
         payload_to_randy['longitude'] = message.longitude
 
-    response = requests.post(url, data=payload_to_randy)
+    response = requests.post(url, data=payload_to_randy, verify=False)
 
-    logger.info('Sending ' + message.content + ' to ' + url + str(response))
+    logger.info('Sending ' + message.content + ' to ' + url + str(response) + str(response.json()))
 
     json_response = xmltodict.parse(response.text)
 
