@@ -884,7 +884,7 @@ def process_message_to_randy(message_group, client_id):
 
     response = requests.post(url, data=payload_to_randy)
 
-    logger.info('Sending ' + message.content + ' to ' + url + str(response) + str(response.json()))
+    logger.info('Sending ' + message.content + ' to ' + url + str(response))
 
     json_response = xmltodict.parse(response.text)
 
